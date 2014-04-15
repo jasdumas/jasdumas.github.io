@@ -1,8 +1,8 @@
-h2, h3 {
+h2, h3, p {
 
   color: #000000;
-  font-family: 'Pacifico', cursive;
-  font-size: 47.64px;
+  font-family: 'Arial',sans-serif;
+  font-size: 40px;
   text-align: center;
   
 }
