@@ -1,14 +1,16 @@
-var invocation = new XMLHttpRequest();
-var dataUrl = 'https://gist.githubusercontent.com/jasdumas/30b4a2e7388be9f894ae/raw/a8afaf2e938b3f6cf1bf70e52736b919520d17d5/marker-points.csv';
+//var invocation = new XMLHttpRequest();
+//var dataUrl = 'https://gist.githubusercontent.com/jasdumas/30b4a2e7388be9f894ae/raw/a8afaf2e938b3f6cf1bf70e52736b919520d17d5/marker-points.csv';
    
-function callOtherDomain() {
-  if(invocation) {    
-    invocation.open('GET', dataUrl, true);
-    invocation.withCredentials = true;
-    invocation.onreadystatechange = handler;
-    invocation.send(); 
-  }
-}
+//function callOtherDomain() {
+  //if(invocation) {    
+    //invocation.open('GET', dataUrl, true);
+    //invocation.withCredentials = true;
+    //invocation.onreadystatechange = handler;
+    //invocation.send(); 
+  //}
+//}
+
+Access-Control-Allow-Origin: http://jasdumas.github.io/
 
 //var dataUrl = 'data/marker-points.csv';
 var maxZoom = 15;
