@@ -1,4 +1,4 @@
-var dataUrl = 'data/marker-points.csv';
+var dataUrl = 'http://erichsen-group.com/demoland/datademo/projects/data/sites.csv';
 var maxZoom = 9;
 var fieldSeparator = ',';
 var baseUrl = 'http://otile{s}.mqcdn.com/tiles/1.0.0/osm/{z}/{x}/{y}.jpg';
