@@ -19,7 +19,7 @@ var geoJSON = {
         "type": "Feature",
         "geometry": {
           "type": "Point",
-          "coordinates": [-77.03238901390978, 38.913188059745586]
+          "coordinates": [38.91318805974558, -77.03238901390978]
         },
         "properties": {
           "title": "Mapbox DC",
