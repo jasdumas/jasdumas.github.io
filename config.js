@@ -1,4 +1,16 @@
-var dataUrl = 'data/marker-points.csv';
+var invocation = new XMLHttpRequest();
+var url = 'https://github.com/jasdumas/jasdumas.github.io/blob/master/data/marker-points.csv';
+   
+function callOtherDomain() {
+  if(invocation) {    
+    invocation.open('GET', url, true);
+    invocation.onreadystatechange = handler;
+    invocation.send(); 
+  }
+}
+
+
+//var dataUrl = 'data/marker-points.csv';
 var maxZoom = 15;
 var fieldSeparator = ',';
 var baseUrl = 'http://otile{s}.mqcdn.com/tiles/1.0.0/osm/{z}/{x}/{y}.jpg';
