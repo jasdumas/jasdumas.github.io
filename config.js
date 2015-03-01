@@ -1,5 +1,5 @@
 var invocation = new XMLHttpRequest();
-var url = 'https://github.com/jasdumas/jasdumas.github.io/blob/master/data/marker-points.csv';
+var dataUrl = 'https://github.com/jasdumas/jasdumas.github.io/blob/master/data/marker-points.csv';
    
 function callOtherDomain() {
   if(invocation) {    
