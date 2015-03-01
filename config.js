@@ -10,8 +10,34 @@
   //}
 //}
 //Access-Control-Allow-Origin: http://jasdumas.github.io/
-var dataUrl = 'https://github.com/jasdumas/jasdumas.github.io/blob/master/data/marker-points.csv';
+//var dataUrl = 'https://github.com/jasdumas/jasdumas.github.io/blob/master/data/marker-points.csv';
 //var dataUrl = 'data/marker-points.csv';
+var geoJSON = {
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-77.03238901390978, 38.913188059745586]
+        },
+        "properties": {
+          "title": "Mapbox DC",
+          "marker-symbol": "monument"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-122.414, 37.776]
+        },
+        "properties": {
+          "title": "Mapbox SF",
+          "marker-symbol": "harbor"
+        }
+      }
+    ]};
 var maxZoom = 15;
 var fieldSeparator = ',';
 //Access-Control-Allow-Origin: http://otile{s}.mqcdn.com/
