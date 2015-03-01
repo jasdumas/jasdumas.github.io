@@ -4,11 +4,11 @@ var dataUrl = 'https://github.com/jasdumas/jasdumas.github.io/blob/master/data/m
 function callOtherDomain() {
   if(invocation) {    
     invocation.open('GET', dataUrl, true);
+    invocation.withCredentials = true;
     invocation.onreadystatechange = handler;
     invocation.send(); 
   }
 }
-
 
 //var dataUrl = 'data/marker-points.csv';
 var maxZoom = 15;
