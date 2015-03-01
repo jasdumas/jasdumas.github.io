@@ -9,9 +9,8 @@
     //invocation.send(); 
   //}
 //}
-
 Access-Control-Allow-Origin: http://jasdumas.github.io/
-
+var dataUrl = 'https://gist.githubusercontent.com/jasdumas/30b4a2e7388be9f894ae/raw/a8afaf2e938b3f6cf1bf70e52736b919520d17d5/marker-points.csv';
 //var dataUrl = 'data/marker-points.csv';
 var maxZoom = 15;
 var fieldSeparator = ',';
