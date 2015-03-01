@@ -1,6 +1,6 @@
-Access-Control-Allow-Origin: https://github.com/jasdumas/jasdumas.github.io/
-Access-Control-Allow-Origin: http://otile{s}.mqcdn.com/
-var dataUrl = 'https://github.com/jasdumas/jasdumas.github.io/blob/master/data/marker-points.csv';
+//Access-Control-Allow-Origin: https://github.com/jasdumas/jasdumas.github.io/
+//Access-Control-Allow-Origin: http://otile{s}.mqcdn.com/
+var dataUrl = 'https://github.com/jasdumas/jasdumas.github.io/blob/master/marker-points.csv';
 //var dataUrl = 'data/marker-points.csv';
 var maxZoom = 15;
 var fieldSeparator = ',';
