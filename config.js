@@ -1,4 +1,3 @@
-response.addHeader("Access-Control-Allow-Origin", "*");
 var dataUrl = 'https://github.com/jasdumas/jasdumas.github.io/blob/master/data/marker-points.csv';
 //var dataUrl = 'data/marker-points.csv';
 var maxZoom = 15;
