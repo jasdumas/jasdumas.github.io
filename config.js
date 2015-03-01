@@ -3,7 +3,7 @@ var dataUrl = 'https://github.com/jasdumas/jasdumas.github.io/blob/master/data/m
    
 function callOtherDomain() {
   if(invocation) {    
-    invocation.open('GET', url, true);
+    invocation.open('GET', dataUrl, true);
     invocation.onreadystatechange = handler;
     invocation.send(); 
   }
