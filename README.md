@@ -1,4 +1,4 @@
-jasdumas.github.io
+##jasdumas.github.io
 ==================
-
-Status: The site is a work in-progress please excuse me for the messy or lack of CSS3
+Status: new site is up as of today (April 10th 2015).
+I've been learning how to use bootstrap and this site is a manifestation of that new knowledge. I'll be periodically updating the site to include more info and current projects as they arise. 
