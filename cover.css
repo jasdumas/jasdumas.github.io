@@ -36,17 +36,18 @@ body {
 }*/
 body {
 /*css for full size background image*/
-  background: url(https://jasdumas.files.wordpress.com/2014/07/img_1182.jpg) no-repeat center center fixed; 
+  background: url(http://www.dickson-constant.com/medias/images/catalogue/api/6688-turquoise-680.jpg);
+  /*no-repeat center center fixed; */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  
+
   height: 100%;
   background-color: #060;
   color: #fff;
   text-align: center;
-   
+
 }
 
 
@@ -129,7 +130,7 @@ body {
   padding: 3 20px;
    margin: 30px;
   background-color: #ffffff;
-  
+
   opacity:0.8;
   filter:alpha(opacity=60); /* For IE8 and earlier */
   margin: 5%;
@@ -186,4 +187,3 @@ body {
     width: 700px;
   }
 }
-
