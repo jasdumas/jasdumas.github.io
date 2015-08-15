@@ -15,7 +15,7 @@ a:hover {
 .btn-default:focus {
   color: #FFFFFF;
   text-shadow: none; /* Prevent inheritence from `body` */
-  background-color: #00CC66;
+  background-color: #F08080;
   border: 1px solid #fff;
 }
 
@@ -36,15 +36,16 @@ body {
 }*/
 body {
 /*css for full size background image*/
-  background: url(http://www.dickson-constant.com/medias/images/catalogue/api/6688-turquoise-680.jpg);
+/*  background: url(http://www.dickson-constant.com/medias/images/catalogue/api/6688-turquoise-680.jpg); */
   /*no-repeat center center fixed; */
+
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 
   height: 100%;
-  background-color: #060;
+  background-color: #6495ED;
   color: #fff;
   text-align: center;
 
@@ -149,7 +150,7 @@ body {
  */
 
 .mastfoot {
-  color: #FF0033; /* IE8 proofing */
+  color: #F08080; /* IE8 proofing */
   /*color: rgba(255,255,255,.5)*/ ;
 }
 
