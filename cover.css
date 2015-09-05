@@ -6,7 +6,7 @@
 a,
 a:focus,
 a:hover {
-  color: #fff;
+  color: #FCB314;
 }
 
 /* Custom default button */
@@ -36,8 +36,8 @@ body {
 }*/
 body {
 /*css for full size background image*/
-/*  background: url(http://www.dickson-constant.com/medias/images/catalogue/api/6688-turquoise-680.jpg); */
-  /*no-repeat center center fixed; */
+  background: url(http://7-themes.com/data_images/out/78/7040469-lake-mountains-woods.jpg);
+  no-repeat center center fixed;
 
   -webkit-background-size: cover;
   -moz-background-size: cover;
