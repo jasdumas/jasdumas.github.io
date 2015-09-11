@@ -1,0 +1,67 @@
+==================================================================
+https://keybase.io/jasdumas
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://jasdumas.github.io
+  * I am jasdumas (https://keybase.io/jasdumas) on keybase.
+  * I have a public key with fingerprint BEF3 A21F 55D3 5EA8 2128  16EA 03BB 2F31 2341 6436
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "bef3a21f55d35ea8212816ea03bb2f3123416436",
+            "host": "keybase.io",
+            "key_id": "03bb2f3123416436",
+            "kid": "0101adedc4ee2fd26ca867373dde4fe55c9027f30838cd5f3917975b1d31f00d01c20a",
+            "uid": "c72c61736de920fe9d6c407548b3cb19",
+            "username": "jasdumas"
+        },
+        "service": {
+            "hostname": "jasdumas.github.io",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1442007775,
+    "expire_in": 157680000,
+    "prev": "7f992de9a989cb6f80a01e1d3e6d576361077f6426ce0e3f6b161afeeb9ff952",
+    "seqno": 5,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.43
+Comment: https://keybase.io/crypto
+
+yMIZAnicbZJdSFRBGIZXXSPFKKiLbgwZo6K2mjlzfjcNSsq0KCIDs3A558zM7snc
+s+05qy3RUtRF9F8UWFcVRIX2JwZFRBmK0JbRVZFaFwmm3WhmZejWHK2baG6G+b73
+fT7ej+mYlePLz7o7cfhHjb25MivdXp7wbR+t/LAfGDZJguB+UEenLmZFwzQei1tR
+FwSBQRnWBcQkiWCJ6qqABBXJVIfYMASGkYBFJItYBgEQsR3PwTGG7tAVls1r/BGy
+CK/+R1833UAQ6YQSU6RUYESQTV2VFaxgQqjIqCSZGhQUhqGKVZNIDGtI0RTJQAQj
+BiGByBSgznGJKZypCKaMFCwTqgmQUY3IpggVSVQNbBpI84QOjUf1esrVu3WHJOp1
+BxwIAF5tsEzqrcBL8o9iRdhyIwljOlUsbru2ae/h/Yjrxpyg53eTMc/QSI3QH1TI
+sKKEb5M7GmjcsewoCCKuNF3LYyNRFCBUFEUKALovZsVpyPIUkiKrkB9vDm3gSIVp
+msDz6JqqmYbMVKhDRPkCqEy4GMuIU5gs8t1RSDGTDSQjnVFqaIxpkgC8cHujNgjy
+Sa4e5kjHCkd1NxGn4MCzp7v8vqx834zcbO8/+PLz5vz9JePVM333ywTcVICiCwLP
+j3xbRnp6L6arL1d8bX/0/uhFobC1pjk1WfQrc8Q/9KQtb+nIkorc46Oh1fPg+Iv2
+SSc5cWknrLwXxvhhXnHbZGrVjabyxrMlVWl77MsP6B9cP5RebC8MnaoqmNt1/XvX
+uqLXjzu73Vut82tP43MNY6krl5xN8ZyRBxuHP5Wt6T2fVdTZnb3jVX+zufz2oZLM
+G6O0uDzzbu3g2Z6tI/0l/pMTLR13BvYuBiuHN5w4Wfjz2tXaloOzy1IdN3sWnVqX
+eyEdbDk20JmEtx+gvkz25QiYvfTMhLGl1l/6dleg4uPLbSW+Q8cjK6uSjcHP6aa+
+niDorwXjvwECqTBH
+=4A+B
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/jasdumas
+
+==================================================================
