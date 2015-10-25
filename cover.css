@@ -15,7 +15,7 @@ a:hover {
 .btn-default:focus {
   color: #FFFFFF;
   text-shadow: none; /* Prevent inheritence from `body` */
-  background-color: #F08080;
+  background-color: #FCB314;
   border: 1px solid #fff;
 }
 
@@ -150,7 +150,7 @@ body {
  */
 
 .mastfoot {
-  color: #F08080; /* IE8 proofing */
+  color: #FCB314; /* IE8 proofing */
   /*color: rgba(255,255,255,.5)*/ ;
 }
 
@@ -187,4 +187,10 @@ body {
   .cover-container {
     width: 700px;
   }
+}
+/* button divider*/
+.divider{
+    width:5px;
+    height:auto;
+    display:inline-block;
 }
