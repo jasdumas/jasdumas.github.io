@@ -152,6 +152,7 @@ body {
 .mastfoot {
   color: #FCB314; /* IE8 proofing */
   /*color: rgba(255,255,255,.5)*/ ;
+  font-weight: bold;
 }
 
 
