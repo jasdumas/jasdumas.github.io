@@ -4,6 +4,8 @@ title: About me
 subtitle: ... and all that jazz!
 ---
 
+:saxophone:
+
 I like long hikes, big data, cold craft beer, and my scottish terrier mix dog, [Fiona](https://twitter.com/jasdumas/status/679480102443417600).
 
 
