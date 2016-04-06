@@ -8,7 +8,7 @@
 #baseurl: ""
 
 # If you are building a GitHub project page then use these settings:
-url: "jasdumas.github.io"
+url: "http://jasdumas.github.io"
 baseurl: ""
 
 # Of course don't forget to change the username and projectname to YOUR username and project
@@ -41,7 +41,7 @@ navbar-links:
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
   name: Jasmine Dumas
-  email: "http://jasdumas.github.io"
+  url: "jasdumas.github.io"
   github: jasdumas
   twitter: jasdumas
   linkedin: jasminedumas
