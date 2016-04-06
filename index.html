@@ -7,9 +7,22 @@ css: "/css/index.css"
 meta-title: "Jasmine Dumas"
 meta-description: "Graduate student in Computer Science - Data Science & Cloud Computing with a Background in Biomedical Engineering."
 bigimg:
-  - "/img/brussels-and-me.jpg" : "Successful Vegetable Garden (2015)"
+  - "/img/mystic5.jpg" : "North Stonington, CT"
+  - "/img/mystic4.jpg" : "North Stonington, CT"
+  - "/img/so-g-goat.jpg" : "Goat!"
+  - "/img/mystic3.jpg" : "North Stonington, CT"
+  - "/img/mystic5.jpg" : "North Stonington, CT"
+  - "/img/mystic1.jpg" : "North Stonington, CT"
+  - "/img/mystic2.jpg" : "North Stonington, CT"
+  - "/img/ri-beach.jpg" : "Misquamicut State Beach, Westerly, RI (2015)"
+  - "/img/hiking-gay-city.jpg" : "Gay City State Park, Hebron, CT (2015)"
+  - "/img/ri-trip.jpg" : "Aquidneck Island, Newport, RI (2015)"
+  - "/img/ri-kite-festival.jpg" : "Brenton Point State Park, Newport, RI (2015)"
+  - "/img/so-g-farm.jpg" : "South Glastonbury, CT"
+  - "/img/garden.jpg" : "Sucessful Garden at Home!"
+  - "/img/hiking-ny.jpg" : "James Baird State Park, Pleasant Valley, NY"
   - "/img/cherry-blossom.jpg" : "Cherry Blossom Festival, Washington, DC (2016)"
-  - "/img/fiona1.jpg" : "Fiona, My Dog (2015)"
+  - "/img/fiona1.jpg" : "Fiona, My Dog"
   - "/img/hiking-glastonbury1.jpg" : "Great Pond Reserve (2015)"
   - "/img/lake-champlain_vt.jpg" : "Lake Champlain, Burlington, VT (2016)"
   - "/img/montreal1.jpg" : "Île de Montréal, Montréal, Canada (2015)"
@@ -32,7 +45,7 @@ bigimg:
     ">
     <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
     <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-  </form>  
+  </form>
 </div> -->
 
 <div class="posts-list">
@@ -40,23 +53,23 @@ bigimg:
   <article class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
 	  <h2 class="post-title">{{ post.title }}</h2>
-	
+
 	  {% if post.subtitle %}
 	  <h3 class="post-subtitle">
 	    {{ post.subtitle }}
 	  </h3>
-	  {% endif %}  
+	  {% endif %}
     </a>
 
     <p class="post-meta">
       Posted on {{ post.date | date: "%B %-d, %Y" }}
     </p>
-  
+
     <div class="post-entry">
       {{ post.content | truncatewords: 50 | strip_html | xml_escape}}
 	  <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">Read More</a>
     </div>
-  
+
    </article>
   {% endfor %}
 </div>
