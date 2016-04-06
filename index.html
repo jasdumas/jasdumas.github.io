@@ -1,132 +1,74 @@
-<!DOCTYPE html>
+---
+layout: page
+title: Hi, I'm Jasmine
+subtitle: Data Scientist / Software Developer / Rock Band Champ
+fb-img: "jasdumas.github.io"
+css: "/css/index.css"
+meta-title: "Jasmine Dumas"
+meta-description: "Graduate student in Computer Science - Data Science & Cloud Computing with a Background in Biomedical Engineering."
+bigimg:
+  - "/img/big-imgs/costa-rica-house.jpeg" : "Montezuma, Costa Rica (2011)"
+  - "/img/big-imgs/grouse-grind.jpeg" : "Vancouver, Canada (2014)"
+  - "/img/big-imgs/hawaii1.jpeg" : "Kauai, HI, USA (2014)"
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
+---
 
-    <title>Jasmine Dumas</title>
+<!--<div class="main-explain-area jumbotron">
+  <p>This website is powered by GitHub Pages/Jekyll and can be built in <strong>under 5 minutes</strong>. Literally.</p>
+  <p>Head over to <a href="https://github.com/daattali/beautiful-jekyll#readme">the GitHub project</a>
+  to get started.</p>
+  <div class="get-started-wrap">
+    <a class="btn btn-success btn-lg get-started-btn" href="https://github.com/daattali/beautiful-jekyll#readme">Get Started!</a>
+  </div>
+  <p>This template was designed to look great on both desktops and smaller (mobile) devices.</p>
+  <p>Below are sample blog posts for illustration purposes.</p>
+  <p>If you like this theme, please consider supporting me :)</p>
+  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" style="text-align: center;">
+    <input type="hidden" name="cmd" value="_s-xclick">
+    <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+    ">
+    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+  </form>  
+</div> -->
 
-    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+<div class="posts-list">
+  {% for post in paginator.posts %}
+  <article class="post-preview">
+    <a href="{{ post.url | prepend: site.baseurl }}">
+	  <h2 class="post-title">{{ post.title }}</h2>
+	
+	  {% if post.subtitle %}
+	  <h3 class="post-subtitle">
+	    {{ post.subtitle }}
+	  </h3>
+	  {% endif %}  
+    </a>
 
-    <!-- Custom styles for this template -->
-    <link href="cover.css" rel="stylesheet">
-    <link href="fonts/glyphicons-halflings-regular.eot">
-    <link href="sticky-footer.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-74123437-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-  </head>
-
-
-
-  <body>
-
-    <div class="site-wrapper">
-
-      <div class="site-wrapper-inner">
-
-        <div class="cover-container">
-
-          <div class="masthead clearfix">
-            <div class="inner">
-              <h3 class="masthead-brand">
-                <a href="https://github.com/jasdumas">
-                  <i class="fa fa-github" ></i>
-                </a>
-                <a href="https://twitter.com/jasdumas">
-                  <i class="fa fa-twitter" ></i>
-                </a>
-                <a href="https://www.linkedin.com/in/jasminedumas">
-                  <i class="fa fa-linkedin" ></i>
-                </a>
-                <a href="http://stackoverflow.com/users/4143444/jasmine-dumas">
-                  <i class="fa fa-stack-overflow"></i>
-                </a>
-                <a href="https://soundcloud.com/jasmine-dumas">
-                  <i class="fa fa-soundcloud"></i>
-                </a>
-                <a href="google.com/+JasmineDumas1">
-                  <i class="fa fa-google-plus"></i>
-                </a>
-                <a href="https://keybase.io/jasdumas">
-                  <i class="fa fa-key"></i>
-                </a>
-
-            </h3>
-
-
-
-              <nav>
-                <ul class="nav masthead-nav">
-                  <li class="active"><a href="index.html">Home</a></li>
-                  <li><a href="projects.html">Projects</a></li>
-                  <li><a href="presentations.html">Research</a></li>
-                  <li><a href="http://jasdumas.github.io/blog">Blog</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-                </ul>
-
-
-              </nav>
-
-            </div>
-          </div>
-
-          <div class="inner cover">
-            <p></p>
-            <h1 class="cover-heading">Hi there! I'm Jasmine Dumas, a Data Nerd based in Glastonbury, CT.</h1>
-            <p class="lead">I'm also a M.S. Candidate in Predictive Analytics at DePaul University.</p>
-
-            <p class="lead">
-              <a href="https://www.linkedin.com/in/jasminedumas" class="btn btn-lg btn-default">Let's Work Together!</a>
-            </p>
-            <p></p>
-          </div>
-
-          <div class="mastfoot">
-            <div class="inner">
-              <p>Made with <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>  in Connecticut</p>
-
-
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
+    <p class="post-meta">
+      Posted on {{ post.date | date: "%B %-d, %Y" }}
+    </p>
+  
+    <div class="post-entry">
+      {{ post.content | truncatewords: 50 | strip_html | xml_escape}}
+	  <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">Read More</a>
     </div>
+  
+   </article>
+  {% endfor %}
+</div>
 
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-    <script src="../../assets/js/docs.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
-  </body>
-  </html>
+{% if paginator.total_pages > 1 %}
+<ul class="pager main-pager">
+  {% if paginator.previous_page %}
+  <li class="previous">
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
+  </li>
+  {% endif %}
+  {% if paginator.next_page %}
+  <li class="next">
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
+  </li>
+  {% endif %}
+</ul>
+{% endif %}

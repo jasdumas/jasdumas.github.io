@@ -1,4 +1,3 @@
-##jasdumas.github.io
-==================
-Status: new site is up as of today (April 10th 2015).
-I've been learning how to use bootstrap and this site is a manifestation of that new knowledge. I'll be periodically updating the site to include more info and current projects as they arise. 
+# Beautiful Jekyll source code
+
+This is the source code of Beautiful Jekyll that is responsible for generating [the demo website for this theme](http://deanattali.com/beautiful-jekyll).  To learn how to build a similarly awesome looking website in minutes, go to the [main Beautiful Jekyll page](https://github.com/daattali/beautiful-jekyll#readme).
