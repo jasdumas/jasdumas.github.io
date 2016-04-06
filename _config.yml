@@ -30,7 +30,8 @@ navbar-links:
   Home: ""
   Projects: projects
   Resources:
-    - Getting started: getstarted
+    - Data Resources: ds-resources
+    - Papers & Presentations: 
   About me: aboutme
 
 
@@ -43,6 +44,8 @@ author:
   email: Jasmine.dumas@gmail.com
   github: jasdumas
   twitter: jasdumas
+  linkedin: jasminedumas
+  stackoverflow: 4143444/jasmine-dumas
 
  
 # Select which links to show in the footer
@@ -53,11 +56,11 @@ footer-links-active:
   twitter: true
   github: true
   linkedin: true
-  stackoverflow: false
+  stackoverflow: true
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "jasdumas.github.io/beautiful-jekyll"  # eg. "deanattali.com/beautiful-jekyll"
+url-pretty: "jasdumas.github.io"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Misc --- #
 
@@ -70,7 +73,7 @@ google_analytics: UA-74123437-1
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
 # Output options (more information on Jekyll's site)
-timezone: "America"
+timezone: "America/New_York"
 #markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
