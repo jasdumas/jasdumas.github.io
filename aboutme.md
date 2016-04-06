@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About me
-subtitle: ... and all that jazz! :saxophone:
+subtitle: ... and all that jazz!
 ---
 
 
