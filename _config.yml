@@ -41,7 +41,7 @@ navbar-links:
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
   name: Jasmine Dumas
-  url: "jasdumas.github.io"
+  website: "jasdumas.github.io"
   github: jasdumas
   twitter: jasdumas
   linkedin: jasminedumas
@@ -78,6 +78,8 @@ timezone: "America/New_York"
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
 paginate: 5
+gems:
+  - jemoji
 
 # Default YAML values (more information on Jekyll's site)
 defaults:
