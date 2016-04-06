@@ -18,4 +18,4 @@ So, yesterday I researched and explored other beautiful jekyll users pages and f
 
 I hope this site offers a great resource to others looking to enter the data science industry or if you just want to look at some interesting photos of my puppy! Cheers and many thanks to Dean!
 
-![Strange Case of Dr Jekyll and Mr Hyde](https://upload.wikimedia.org/wikipedia/commons/7/78/Dr_Jekyll_and_Mr_Hyde_poster_edit2.jpg)
+![Strange Case of Dr Jekyll and Mr Hyde](https://upload.wikimedia.org/wikipedia/commons/7/78/Dr_Jekyll_and_Mr_Hyde_poster_edit2.jpg | width=100)
