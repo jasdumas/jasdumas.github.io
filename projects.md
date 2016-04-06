@@ -25,3 +25,5 @@ subtitle: Projects, Research, Data Viz
 * [My soloved Project Euler problems](https://github.com/jasdumas/LeonhardEuler): For fun I like to stretch my mathematical and python knowledge and attempt to solve these famous problems.
 
 * [Star Wars 2048 Game](http://jasdumas.github.io/2048/): This project involved conceptualizing a re-design for the popular web application game 2048. In my version I gave it a much needed Star Wars upgrade where the objective is to achieve the highest square of Yoda!
+
+* [GestureCare (freelance consulting)](http://www.gesturekit.com/labs/gesturecare/): First open source cross-platform tool to create gesture-driven apps.
