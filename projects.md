@@ -8,7 +8,7 @@ subtitle: Projects, Research, Data Viz
 
 * [RTalk Podcast](http://rtalk.org/): I co-host a "semi-infrequent" podcast on the statistical software and programming language R with some buddies in the community. 
 
-* [dumas: My personal R package](https://github.com/jasdumas/dumas): My vanity R package filled with useful functions for analysis and R development.
+* [dumas](https://github.com/jasdumas/dumas): My vanity R package filled with useful functions for analysis and R development.
 
 * [shinyGEO](http://jasdumas.github.io/shinyGEO/): The Gene Expression Omnibus Analysis with Shiny (Project Name: GEO-AWS) is a web application to download gene expression datasets from the GEO Repository and perform differential expression and survival analyses. This project was partially development as part of the [2015 Google Summer of Code program](http://www.google-melange.com/gsoc/project/details/google/gsoc2015/jasdumas/5668600916475904). 
 
