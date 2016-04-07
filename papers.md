@@ -21,12 +21,6 @@ datasets. American Association for Cancer Research Annual Meeting, New Orleans, 
 
 ### Slide Decks
 
-* [to err is human: decoding error messages in R](http://rpubs.com/jasdumas/to-err)
+* [to err is human: decoding error messages in R](http://rpubs.com/jasdumas/to-err): A re-useable presentation deck for new R programmers on decoding confusing error messages and gaining confidence in programming.
 
-* [Medical Device Design &amp; Evaluation (EECS X445.23) - Final](http://prezi.com/6bkt7iwwci41/?utm_campaign=share&utm_medium=copy&rc=ex0share)
-
-* [BME-X408-project 1](http://prezi.com/sy11bqnub5np/?utm_campaign=share&utm_medium=copy&rc=ex0share)
-
-* [BME-X408-project 2](http://prezi.com/cqe2z4mmxvnp/?utm_campaign=share&utm_medium=copy&rc=ex0share)
-
-* [BME-X408-project 3](http://prezi.com/6k7v4vwj1qco/?utm_campaign=share&utm_medium=copy&rc=ex0share)
+* UCI Extension Presentations: [Medical Device Design &amp; Evaluation (EECS X445.23) - Final](http://prezi.com/6bkt7iwwci41/?utm_campaign=share&utm_medium=copy&rc=ex0share), [BME-X408-project 1](http://prezi.com/sy11bqnub5np/?utm_campaign=share&utm_medium=copy&rc=ex0share), [BME-X408-project 2](http://prezi.com/cqe2z4mmxvnp/?utm_campaign=share&utm_medium=copy&rc=ex0share), [BME-X408-project 3](http://prezi.com/6k7v4vwj1qco/?utm_campaign=share&utm_medium=copy&rc=ex0share)
