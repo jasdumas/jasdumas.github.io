@@ -12,6 +12,8 @@ subtitle: technical writing, research publications, slide decks
 
 ### Posters & Abstracts
 
+[**Dumas, J.**, Gargano, M.A., Dancik, G.M., 2016. shinyGEO: a web application for analyzing Gene Expression Omnibus (GEO) datasets using shiny. useR Conference 2016. Stanford, CA (poster)](https://github.com/jasdumas/jasdumas.github.io/blob/oldsite/shinyGEO_useR_2016.docx) *Accepted April 6 2016*
+
 * [**Dumas, J.**, Gargano, M.A., Dancik, G.M., 2016. An online tool for biomarker analysis in Gene Expression Omnibus (GEO)
 datasets. American Association for Cancer Research Annual Meeting, New Orleans, LA, USA (poster)](http://www.abstractsonline.com/Plan/ViewAbstract.aspx?mID=4017&sKey=b710c4a6-fafb-4546-a4ef-94ef72d93639&cKey=0243e952-bd00-4008-84b0-53222a594ee9&mKey=1d10d749-4b6a-4ab3-bcd4-f80fb1922267)
 
