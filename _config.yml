@@ -41,7 +41,7 @@ navbar-links:
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
   name: Jasmine Dumas
-  website: "jasdumas.github.io"
+  email: jasmine.dumas@gmail.com
   github: jasdumas
   twitter: jasdumas
   linkedin: jasminedumas
@@ -60,12 +60,12 @@ footer-links-active:
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "jasdumas.github.io"  # eg. "deanattali.com/beautiful-jekyll"
+url-pretty: jasdumas.github.io  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Misc --- #
 
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
-#disqus: ""
+#disqus: jasdumas
 
 # Fill in your Google Analytics ID to track your website using GA
 google_analytics: UA-74123437-1
