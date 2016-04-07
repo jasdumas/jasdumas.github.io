@@ -18,7 +18,7 @@ subtitle: Projects, Research, Data Viz
 
 * [Connecticut Real estate](http://rpubs.com/jasdumas/ct-realestate): Linear model building and analysis of Connecticut real estate sales from 2011 to 2013 from https://data.ct.gov
 
-* [Virtual Bioinformatics Notebook](https://github.com/jasdumas/DouglasFir): I spent a few great months gain informatics skills at the University of Connecticut (UCONN) working on the genomics of big trees. 
+* [Virtual Bioinformatics Notebook](https://github.com/jasdumas/DouglasFir): I spent a few great months gaining informatics skills at the University of Connecticut (UCONN) working on the genomics of big trees. 
 
 * [Feasibility of an electronic stethoscope system for monitoring neonatal bowel sounds.](http://www.ncbi.nlm.nih.gov/pubmed/24156174): A publication from my Undergraduate research in neonatal medical devices for detecting and monitoring bowel sounds in premature infants. 2013
 
