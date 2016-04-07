@@ -8,7 +8,7 @@ subtitle: ... and all that jazz!
 :information_source: I like long hikes, big data, cold craft beer, and my scottish terrier mix dog, 
 [Fiona](https://twitter.com/jasdumas/status/679480102443417600).
 
-:briefcase: Currently working as a **Data Scientist** ([The Hartford](https://www.thehartford.com/)). Previously worked in **R&D Engineering** roles ([Medtronic](http://www.medtronic.com/covidien), QDx) and a **Aerospace Manufacturing Engineer** ([AdChem](http://acmt.aero/)).
+:briefcase: Currently working as a **Data Scientist** ([The Hartford](https://www.thehartford.com/)). Previously worked in **R&D Engineering** roles ([Medtronic](http://www.medtronic.com/covidien), QDx) and as an **Aerospace Manufacturing Engineer** ([AdChem](http://acmt.aero/)).
 
 :mortar_board: Currently a graduate student in **Computer Science** at Johns Hopkins focusing in **Data Science**. Previously earned a Bachelor of **Biomedical Engineering** from the University of Hartford. My senior research project was to develop a prototype [walk-assist](http://www.tuvie.com/wp-content/uploads/ekso-bionic-suit1.jpg) device for a T4 Parapalegic client; project nicknamed "Iron man".
 
