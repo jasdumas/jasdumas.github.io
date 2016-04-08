@@ -26,7 +26,7 @@ $D_n= \sup_x |F_n(x)-F(x)|$
 
 In SAS, the Kolmogorov–Smirnov test is implemented in [PROC NPAR1WAY](https://support.sas.com/documentation/cdl/en/statug/63033/HTML/default/viewer.htm#npar1way_toc.htm). The discretized KS test is implemented in the ks.test() function in the [dgof package](https://cran.r-project.org/web/packages/dgof/dgof.pdf) of the R project for statistical computing. In Stata, the command [ksmirnov](http://www.stata.com/manuals13/rksmirnov.pdf) performs a Kolmogorov–Smirnov test. Source: <https://en.wikipedia.org/wiki/Kolmogorov%E2%80%93Smirnov_test>
 
-### PredictorCompare.sas
+### Empirical Distribution Function
 
 The empirical distribution function is the distribution function associated with the empirical measure of the sample. This cumulative distribution function is a step function that jumps up by 1/n at each of the n data points. The empirical distribution function estimates the cumulative distribution function underlying of the points in the sample and converges with probability 1 according to the Glivenko–Cantelli theorem. Source: <https://en.wikipedia.org/wiki/Empirical_distribution_function>
 
