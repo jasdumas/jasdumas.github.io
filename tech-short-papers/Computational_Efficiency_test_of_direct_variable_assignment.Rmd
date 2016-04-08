@@ -1,0 +1,83 @@
+---
+title: "Computational Efficiency: Comparing Variable Assignment vs. Direct Function Usage"
+author: "Jasmine Dumas"
+date: "February 3, 2016"
+output: html_document
+---
+
+## diamonds data set
+```{r, message=FALSE, warning=FALSE}
+library(ggplot2) # for diamnods dataset
+library(dplyr) # for aggreagte functions
+library(pryr) # for memory usage stats (not used)
+
+# make a cpoy of the dataset
+data(diamonds) # reset any previous alterations
+diamonds2 = diamonds
+
+# clean dataset, remove factors Source: http://stackoverflow.com/a/2853231
+i = sapply(diamonds2, is.factor)
+diamonds2[i] <- lapply(diamonds2[i], as.character)
+
+# Start the clock!
+start = ptm <- proc.time() 
+
+# new testing method of assigning a universal variable and have one aggregate functions
+cut_input = "Ideal"
+
+if (cut_input == "Ideal"){
+  var2 = diamonds2$x
+} else if (cut_input == "Premium") {
+  var2 = diamonds2$y
+} else if (cut_input == "Good") {
+  var2 = diamonds2$z
+}
+
+diamonds2 %>% group_by(cut) %>% 
+              summarise(m = sum(var2))  %>% 
+              mutate(new_col = m * 2) 
+# Stop the clock
+end = proc.time() - ptm
+total = start - end
+total
+
+###############################################
+
+# Start the clock!
+start2 = ptm <- proc.time()
+
+# original method of not assinging a reactive/universal variable and instead directly
+# supplying the aggreate functions in the if/else logic
+cut_input = "Ideal"
+
+if (cut_input == "Ideal"){
+  diamonds2 %>% group_by(cut) %>% 
+              summarise(m = sum(x))  %>%                       
+              mutate(new_col = m * 2) 
+} else if (cut_input == "Premium") {
+  diamonds2 %>% group_by(cut) %>% 
+              summarise(m = sum(y))  %>%                       
+              mutate(new_col = m * 2) 
+} else if (cut_input == "Good") {
+  diamonds2 %>% group_by(cut) %>% 
+              summarise(m = sum(z))  %>%                       
+              mutate(new_col = m * 2) 
+}
+
+# Stop the clock
+end2 = proc.time() - ptm
+total2 = start2 - end2
+total2
+
+# method comparision
+difference = abs(total["elapsed"] - total2["elapsed"])
+difference = unname(difference["elapsed"])
+
+if (total["elapsed"] < total2["elapsed"]) {
+  text = paste0("The new method is faster by, ", difference, " seconds.")
+  print(text)
+} else {
+  print("The original method is faster.")
+}
+```
+

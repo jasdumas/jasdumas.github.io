@@ -1,0 +1,97 @@
+---
+title: "Interactive Data Vizualization Comparison"
+author: "Jasmine Dumas"
+date: "April 7th 2016"
+output:
+  html_document:
+    self_contained: no
+---
+
+```{r}
+library(knitr)
+library(rmarkdown)
+suppressPackageStartupMessages(library(googleVis))
+
+```
+
+# base
+```{r}
+plot(iris$Sepal.Length, iris$Petal.Length,        # x variable, y variable
+     col = iris$Species,                          # colour by species
+     pch = 16,                                    # type of point to use
+     cex = 1,                                     # size of point to use
+     xlab = "Sepal Length",                       # x axis label
+     ylab = "Petal Length",                       # y axis label
+     main = "Flower Characteristics in Iris")     # plot title
+
+legend (x = 4.5, y = 7, legend = levels(iris$Species), col = c(1:3), pch = 16)
+```
+
+# ggplot2
+<http://ggplot2.org/>
+```{r}
+library(ggplot2)
+gg <- ggplot(iris) +
+      geom_point(aes(x=Sepal.Length, y=Petal.Length, color = Species)) +
+      labs(title = "Flower Characteristics in Iris", x = "Sepal Length", y = "Petal Length")
+gg
+```
+
+# ggvis
+<http://ggvis.rstudio.com/ggvis-basics.html>
+```{r, message=FALSE, warning=FALSE}
+#install.packages("ggvis", repos=c("http://rstudio.org/_packages", "http://cran.rstudio.com")) 
+library(ggvis)
+data(iris)
+p <- ggvis(iris, x = ~Sepal.Length, y = ~Petal.Length, fill = ~Species)
+layer_points(p)
+```
+
+# googleVis
+<https://github.com/mages/googleVis#googlevis>
+```{r, results = 'asis'}
+library(googleVis)
+ op <- options(gvis.plot.tag='chart')
+# 
+df=data.frame(country=c("US", "GB", "BR"),
+              val1=c(10,13,14),
+              val2=c(23,12,32))
+Line <- gvisLineChart(df)
+# # plot(Line)
+# M <- gvisMotionChart(Fruits, 'Fruit', 'Year',
+#          options=list(width=400, height=350))
+# plot(M)
+ options(op)
+
+# iris2 = iris[, c("Sepal.Length", "Petal.Length")]
+# i <- sapply(iris2, is.factor)
+# iris2[i] <- lapply(iris2[i], as.character)
+# flower <- gvisScatterChart(iris2)
+# plot(flower)
+```
+
+# rCharts
+<http://rcharts.io/>
+```{r}
+library(rCharts)
+names(iris) = gsub("\\.", "", names(iris))
+rPlot(SepalLength ~ SepalWidth , data = iris, color = 'Species', type = 'point')
+```
+
+# plotly
+<https://plot.ly/r/>
+```{r, message=FALSE, warning=FALSE}
+library(plotly)
+data(iris)
+plot_ly(iris, x = Sepal.Length, y = Sepal.Width, color = Species, mode = "markers")
+```
+
+# ggploty
+```{r, message=FALSE, warning=FALSE}
+p <- ggplot(iris) +
+      geom_point(aes(x=Sepal.Length, y=Sepal.Width, color = Species))
+
+(gg <- ggplotly(p))
+
+```
+

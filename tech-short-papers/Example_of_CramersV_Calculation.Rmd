@@ -1,0 +1,87 @@
+---
+title: "Example of Cramer's V Calculation in R"
+author: "Jasmine Dumas"
+date: "February 23, 2016"
+output: html_document
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+	echo = TRUE,
+	message = FALSE,
+	warning = FALSE
+)
+```
+
+
+## Usage and interpretation
+
+In statistics, Cramer's V (sometimes referred to as Cramer's phi and denoted as $\phi$ c) is a measure of association between two nominal variables, giving a value between 0 and +1 (inclusive). It is based on Pearson's chi-squared statistic and was published by Harald Cramer in 1946. $\phi$ c is the intercorrelation of two discrete variables. Cramer's V varies from **0** (corresponding to no association between the variables) to **1** (complete association) and can reach 1 only when the two variables are equal to each other. $\phi^2$ c is the **mean square canonical correlation** between the variables. Source: <https://en.wikipedia.org/wiki/Cram%C3%A9r%27s_V>
+
+_______
+
+# airquality dataset
+
+```{r}
+library(lsr)
+
+head(airquality)
+
+airquality <- na.omit(airquality)
+
+library(dplyr)
+
+olddat <- airquality %>%  filter(Month < 7) # split the data in two groups by month 
+
+newdat <- airquality %>% filter(Month >= 7)
+
+old_cramers <- apply(olddat, 2, cramersV) # 2 indicates apply the function over the columns
+
+new_cramers <- apply(newdat, 2, cramersV)
+
+sort(old_cramers, decreasing = TRUE) # highest values first
+
+sort(new_cramers, decreasing = TRUE)
+
+old_new <- cbind(old_cramers, new_cramers) # bind the columns
+
+```
+
+
+## Static graphics with base
+```{r}
+# http://thecoatlessprofessor.com/programming/creating-stacked-barplot-and-grouped-barplot-in-r-using-base-graphics-no-ggplot2/
+par(mar=c(5.1, 4.1, 4.1, 7.1), xpd=TRUE)
+prop = prop.table(old_new,margin=2)
+
+barplot(old_new, col=heat.colors(length(rownames(old_new))), main = "Stacked count")
+legend("topright",inset=c(-.25,0), fill=heat.colors(length(rownames(old_new))), legend=rownames(old_new))
+
+# unstacked barplot
+barplot(prop, col=heat.colors(length(rownames(prop))), width=2, beside=TRUE, main = "Unstacked count")
+legend("topright",inset=c(-.25,0), fill=heat.colors(length(rownames(prop))), legend=rownames(old_new))
+
+# stacked percentage based
+barplot(prop, col=heat.colors(length(rownames(prop))), width=2, main = "Stacked %")
+legend("topright",inset=c(-0.25,0), fill=heat.colors(length(rownames(prop))), legend=rownames(old_new))
+
+```
+
+## Dynamic grpahic with plotly
+```{r}
+library(plotly)
+library(reshape2)
+
+# suggested layout from Paul to clearly see differences
+p = melt(data = prop, 
+                    measure.vars = c("Va1", "Var2", "value"))
+as.list(p)
+
+plot_p = plot_ly(p, 
+                x = Var1, y = value, 
+                color = factor(Var2), 
+                type ="bar")
+plot_p
+
+
+```
+

@@ -1,0 +1,107 @@
+---
+title: "Reading Large Datasets"
+author: "Jasmine Dumas"
+date: "February 17, 2016"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+	echo = TRUE,
+	message = FALSE,
+	warning = FALSE
+)
+```
+
+# What is a large dataset?
+
+Concerns about data reduction are pivotal to the knowledge discovery process (KDD) and guide the tools and systems we use. R is a superior statistics enviornment but lends itself to many misconceptions about dataset size limitations. *Big Data* is the abstract idea of data that is too large to use traditional methods for reading, manipulating, and interpreting. In a survey by Hadley Wickham and reported by Nathan Stepehens of RStudio it framed the question to the #rstats twitter community about relevant issues in dataset size. in summary users reported *analyzing 1 million to 100 million records* with total data sizes of *1 GB to 25 GB*. Surely this survey provides some comfort that the volumonus data (both long and wide) in the Personal Lines Group could be adequately managed in R albeit with the appropriate package. In the following investigation I explore the usage of using different R packages to read in a large dataset. Following investigations I will explore the computational efficiency of manipulating large datasets.
+
+## the large data set
+```{r, df}
+# Source: http://archive.ics.uci.edu/ml/datasets/Online+Retail
+# Abstract: This is a transnational data set which contains all the transactions occurring between 01/12/2010 and 09/12/2011 for a UK-based and registered non-store online retail.
+# 541909 rows, 8 columns, 44513 KB
+filename = "Online-Retail.csv"
+
+```
+
+
+## base/utils
+```{r, base}
+start = ptm <- proc.time() 
+    in_file = read.csv(filename)
+    end = proc.time() - ptm
+    paste0("The method utils performance was ", start["elapsed"]-end["elapsed"], ".")
+```
+
+## readr
+```{r, readr}
+library(readr)
+    # Start the clock!
+    start = ptm <- proc.time() 
+    in_file = read_csv(filename, na = "NA")
+    # Stop the clock
+    end = proc.time() - ptm
+    paste0("The method readr performance was ", start["elapsed"]-end["elapsed"], ".")
+```
+
+
+## data.table
+```{r, dt}
+library(data.table)
+    start = ptm <- proc.time() 
+    in_file = fread(filename)
+    end = proc.time() - ptm
+    paste0("The method data.table performance was ", start["elapsed"]-end["elapsed"], ".")
+```
+
+
+## bigmemory
+```{r, bigmemory}
+# library(bigmemory)
+# library(bigmemory.sri)
+#     start = ptm <- proc.time()
+#     in_file = read.big.matrix(filename, sep = ",")
+#     end = proc.time() - ptm
+#    paste0("The method bigmemory performance was ", start["elapsed"]-end["elapsed"], ".")
+```
+
+
+## ff
+```{r, ff}
+library(ff)
+    start = ptm <- proc.time()
+    in_file = read.csv.ffdf(file = filename)
+    end = proc.time() - ptm
+    paste0("The method ff performance was ", start["elapsed"]-end["elapsed"], ".")
+```
+
+## sqldf
+```{r, sqldf}
+# library(sqldf)
+#     start = ptm <- proc.time()
+#     in_file = read.csv.sql(file = filename)
+#     end = proc.time() - ptm
+#     paste0("The method sqldf performance was ", start["elapsed"]-end["elapsed"], ".") 
+```
+
+________
+
+# Data conversion
+
+## rio
+```{r}
+
+```
+
+
+________________________
+## Sources:
+
+* <https://rpubs.com/nwstephens/RDataSizes>
+* <https://cdn.rawgit.com/rstudio/reactivity-tutorial/master/slides.html#/warm-up-side-effects>
+* <https://cran.r-project.org/web/packages/rio/vignettes/rio.html>
+* <http://www.r-bloggers.com/efficiency-of-importing-large-csv-files-in-r/>
+* <https://cran.r-project.org/web/packages/rio/vignettes/rio.html>
+* <http://www.r-bloggers.com/handling-large-datasets-in-r/>
