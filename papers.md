@@ -8,7 +8,7 @@ subtitle: technical writing, research publications, slide decks
 
 ### Short Technical Papers
 
-* [Web Scraping the Best of Rotten Tomatoes](http://rpubs.com/jasdumas/rotten-tomatoes)
+* [Automated Variable Selection Algorithms in R](https://htmlpreview.github.io/?https://github.com/jasdumas/jasdumas.github.io/blob/master/tech-short-papers/automated_variable_selection_algorithms.html)
 * [Computational Efficiency: Comparing Variable Assignment vs. Direct Function Usage](https://htmlpreview.github.io/?https://github.com/jasdumas/jasdumas.github.io/blob/master/tech-short-papers/Computational_Efficiency_test_of_direct_variable_assignment.html)
 * [Example of Cramer’s V Calculation in R](https://htmlpreview.github.io/?https://raw.githubusercontent.com/jasdumas/jasdumas.github.io/master/tech-short-papers/Example_of_CramersV_Calculation.html)
 * [Example of Kolmogorov-Smirnov test](https://htmlpreview.github.io/?https://github.com/jasdumas/jasdumas.github.io/blob/master/tech-short-papers/Example_of_Kolmogorov_Smirnov_test2.html)
