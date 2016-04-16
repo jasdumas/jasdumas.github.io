@@ -30,3 +30,4 @@ subtitle: Projects, Research, Data Viz
 
 * [GestureCare (freelance consulting)](http://www.gesturekit.com/labs/gesturecare/): First open source cross-platform tool to create gesture-driven apps.
 
+* [Hartford Towed Cars during a Snow storm](http://rpubs.com/jasdumas/hartford-snow-tows): Exploratory Data Analysis of a dataset from [https://data.ct.gov](https://data.ct.gov) which tracked cars that were towed during/after a snow snow storm in Winter 2015. 
