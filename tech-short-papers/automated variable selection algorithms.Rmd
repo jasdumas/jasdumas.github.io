@@ -1,0 +1,85 @@
+---
+title: "Automated Variable Selection Algorithms"
+author: "Jasmine Dumas"
+date: "February 1, 2016"
+output: html_document
+---
+
+# Source
+
+<http://billqualls.com/csc423/csc423_ex_06_01_r.html>
+
+# Get the data
+```{r}
+load("~/Desktop/depaul/CSC423/rdata/R/Exercises&Examples/EXEXSAL2.Rdata")
+```
+
+# Backward Elimination Selection
+
+* Starts will all variables.
+* Drops one variable at a time until dropping another variable no longer improves the model.
+* Once a variable is dropped it cannot re-enter the model.
+* With AIC criteria (which R uses here) lower is better. Note: lowest may include most negative.
+* AIC = Akaike's Information Criteria = n * ln(SSE/n) + 2 * p
+
+```{r}
+
+library(MASS)
+full.model <- lm(Y~X1+X2+X3+X4+X5+X6+X7+X8+X9+X10, data=EXEXSAL2)
+model = step(full.model, direction="backward")
+summary(model)
+```
+
+# Forward Selection
+
+* Adds one variable at a time until adding a new variable no longer improves the model.
+* Once a variable is added, it never leaves the model.
+* With AIC criteria (which R uses here) lower is better.
+
+```{r}
+min.model = lm(Y ~ 1, data=EXEXSAL2)          # aka intercept only model
+biggest = formula(lm(Y ~ ., data=EXEXSAL2))   # note dot: all variables, including ID
+model = step(min.model, direction='forward', scope=biggest)
+summary(model)
+```
+
+# Stepwise Regression Selection
+
+* Adds one variable at a time until adding a new variable no longer improves the model.
+* A variable may leave and re-enter the model many times.
+* With AIC criteria (which R uses) lower is better.
+* Note I am reusing full.model here.
+
+```{r}
+model = step(full.model, direction="both")
+summary(model)
+```
+
+# Best-N Subset aka All Possible Regressions Selection
+
+* Use leaps library.
+* nbest shows n best models for each k predictors, for at most n*(k-1)+1 models
+* For Mallow's Cp, want Cp “small and near” p (recall p = k + 1) (See slides, quote from SAS Support about Cp)
+* Can use method=“Cp” then model$Cp, or method=“adjr2” then model$adjr2
+
+## Best Subset using Cp
+
+```{r}
+library(leaps)
+yvar = c("Y")
+xvars = c("X1", "X2", "X3", "X4", "X5", "X6", "X7", "X8", "X9", "X10")
+model=leaps( x=EXEXSAL2[,xvars], y=EXEXSAL2[,yvar], names=xvars, nbest=3, method="Cp")
+model$which
+model$Cp
+```
+
+## Best Subset using adjr2
+
+```{r}
+yvar = c("Y")
+xvars = c("X1", "X2", "X3", "X4", "X5", "X6", "X7", "X8", "X9", "X10")
+model=leaps( x=EXEXSAL2[,xvars], y=EXEXSAL2[,yvar], names=xvars, nbest=3, method="adjr2")
+model$which
+model$adjr2
+```
+
