@@ -46,7 +46,7 @@ The explanatory variables with the highest relative importance scores were **fnl
 
 2. [Python Code](https://github.com/jasdumas/jasdumas.github.io/blob/master/post_data/RF_adult_income.py)
 
-3. [R code: https](https://github.com/jasdumas/jasdumas.github.io/blob/master/post_data/python_adult2_clean.R)
+3. [R code](https://github.com/jasdumas/jasdumas.github.io/blob/master/post_data/python_adult2_clean.R)
 
 4. [Final Excel csv](https://github.com/jasdumas/jasdumas.github.io/blob/master/post_data/adult2_income.csv)
 
