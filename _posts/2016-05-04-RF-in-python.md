@@ -13,7 +13,7 @@ Random forests are predictive models that allow for a data driven exploration of
 
 The 'Adult' dataset from the UCI Machine Learning Repository which predicts whether income exceeds $50K/yr based on census data was chosen for this exercise. The dataset includes 14 variables (categorical and continuous) and 48842 observations.
 
-The data was downloaded from http://archive.ics.uci.edu/ml/machine-learning-databases/adult/adult.data via excel (Data > Get External Data > From web). The column names were added and the missing values previously encoded as '?' were replaced with a blank space and saved as a csv file.
+The data was downloaded from [http://archive.ics.uci.edu/ml/machine-learning-databases/adult/adult.data](http://archive.ics.uci.edu/ml/machine-learning-databases/adult/adult.data) via excel (Data > Get External Data > From web). The column names were added and the missing values previously encoded as '?' were replaced with a blank space and saved as a csv file.
 
 The csv file was read into R using the `readr` package and the target (y) response of <=50k or >50k was made into a binary 0, 1 response. The remaining eligible factors (categorical) were transformed into a design matrix (exploded out into 0's, 1's) with the `model.matrix()` function.
 
@@ -38,7 +38,7 @@ The python methodology utilized pandas, numpy, sklearn to build the Random Fores
 
 The explanatory variables with the highest relative importance scores were **fnlwgt, age, capital_gain, education_num, raceWhite**. The accuracy of the random forest was 85%, with the subsequent growing of multiple trees rather than a single tree, adding little to the overall accuracy of the model, and suggesting that interpretation of a single decision tree may be appropriate.
 
-![]("https://raw.githubusercontent.com/jasdumas/jasdumas.github.io/master/post_data/accuracy_plot_adult2.png")
+![Accuracy plot](https://raw.githubusercontent.com/jasdumas/jasdumas.github.io/master/post_data/accuracy_plot_adult2.png)
 
 ### Additional Documents
 
