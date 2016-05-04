@@ -38,7 +38,7 @@ The python methodology utilized pandas, numpy, sklearn to build the Random Fores
 
 The explanatory variables with the highest relative importance scores were **fnlwgt, age, capital_gain, education_num, raceWhite**. The accuracy of the random forest was 85%, with the subsequent growing of multiple trees rather than a single tree, adding little to the overall accuracy of the model, and suggesting that interpretation of a single decision tree may be appropriate.
 
-![]("https://github.com/jasdumas/jasdumas.github.io/blob/master/post_data/accuracy_plot_adult2.png")
+![]("https://raw.githubusercontent.com/jasdumas/jasdumas.github.io/master/post_data/accuracy_plot_adult2.png")
 
 ### Additional Documents
 
