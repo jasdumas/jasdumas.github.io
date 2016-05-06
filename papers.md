@@ -1,14 +1,21 @@
 ---
 layout: page
 title: Papers & Slides
-subtitle: technical writing, research publications, slide decks
+subtitle: technical writing, research publications & slide decks
 ---
 
 ---------------
 
+### Tutorials
+
+* [LASSO Regression tutorial with the `glmnet` R package](https://htmlpreview.github.io/?https://github.com/jasdumas/jasdumas.github.io/blob/master/tech-short-papers/glmnet_lasso_tutorial.html)
+* [LASSO Regression tutorial with a tweedie distribution with the `HDtweedie` R package](https://htmlpreview.github.io/?https://github.com/jasdumas/jasdumas.github.io/blob/master/tech-short-papers/HDtweedie_lasso_tutorial.html)
+* [Gradient Boosting Machine (GBM) tutorial with the `xgboost` R package](https://htmlpreview.github.io/?https://github.com/jasdumas/jasdumas.github.io/blob/master/tech-short-papers/xgboost_gbm_tutorial.html)
+* [Gradient Boosting Machine (GBM) tutorial with a tweedie distribution with the `TDboost` R package](https://htmlpreview.github.io/?https://github.com/jasdumas/jasdumas.github.io/blob/master/tech-short-papers/TDboost_gbm_tutorial.html)
+* [Automated Variable Selection Algorithms in R](https://htmlpreview.github.io/?https://github.com/jasdumas/jasdumas.github.io/blob/master/tech-short-papers/automated_variable_selection_algorithms.html)
+
 ### Short Technical Papers
 
-* [Automated Variable Selection Algorithms in R](https://htmlpreview.github.io/?https://github.com/jasdumas/jasdumas.github.io/blob/master/tech-short-papers/automated_variable_selection_algorithms.html)
 * [Computational Efficiency: Comparing Variable Assignment vs. Direct Function Usage](https://htmlpreview.github.io/?https://github.com/jasdumas/jasdumas.github.io/blob/master/tech-short-papers/Computational_Efficiency_test_of_direct_variable_assignment.html)
 * [Example of Cramer’s V Calculation in R](https://htmlpreview.github.io/?https://raw.githubusercontent.com/jasdumas/jasdumas.github.io/master/tech-short-papers/Example_of_CramersV_Calculation.html)
 * [Example of Kolmogorov-Smirnov test](https://htmlpreview.github.io/?https://github.com/jasdumas/jasdumas.github.io/blob/master/tech-short-papers/Example_of_Kolmogorov_Smirnov_test2.html)
