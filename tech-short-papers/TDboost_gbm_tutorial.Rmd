@@ -1,0 +1,104 @@
+---
+title: 'TDboost: GBM tutorial'
+author: "Jasmine Dumas"
+date: "May 3, 2016"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+	echo = TRUE,
+	message = FALSE,
+	warning = FALSE
+)
+```
+
+## Introduction
+
+"Gradient boosting is one of the most successful machine learning algorithms for nonparametric **regression** and **classification**. Boosting adaptively combines a large number of relatively simple prediction models called base learners into an ensemble learner to achieve high prediction performance."
+
+"Its advantages are threefold. First, the model structure of TDboost is learned from data and not predetermined, thereby avoiding an explicit model specification. Non-linearities, discontinuities, complex and higher order interactions are naturally incorporated into the model to reduce the potential modeling bias and to produce high predictive performance, which enables TDboost to serve as a benchmark model in scoring insurance policies, guiding pricing practice, and facilitating marketing efforts. Feature selection is performed as an integral part of the procedure. In addition, TDboost handles the predictor and response variables of any
+type without the need for transformation, and it is highly robust to outliers. Missing values in the predictors are managed almost without loss of information."
+
+## `TDboost` package notes
+
+A boosted Tweedie compound Poisson model using the gradient boosting. It is capable of fitting a flexible nonlinear Tweedie compound Poisson model (or a gamma model) and capturing interactions among predictors.
+
+[Insurance Premium Prediction via Gradient Tree-Boosted Tweedie Compound Poisson Models (R package authors pre-print)](http://arxiv.org/pdf/1508.06378.pdf)
+
+CRAN: <https://cran.r-project.org/web/packages/TDboost/TDboost.pdf>
+
+### load the demo data
+```{r}
+library(TDboost)
+library(HDtweedie) # has example dataset
+data("auto")
+```
+
+### create a test and train subset
+```{r}
+library(dplyr)
+
+auto2 = tbl_df(as.data.frame(auto))
+# create a split based on the outcome of y which preserves the response distribution
+# http://topepo.github.io/caret/splitting.html
+library(caret)
+set.seed(3456)
+trainIndex <- createDataPartition(auto2$y, p = .66,
+                                  list = FALSE,
+                                  times = 1)
+head(trainIndex)
+
+train_auto <- auto2[trainIndex, ]
+dim(train_auto)
+test_auto <- auto2[-trainIndex, ]
+dim(test_auto)
+
+```
+
+### data transformations for `TDboost`
+```{r}
+train_auto <- as.data.frame(train_auto)
+test_auto <- as.data.frame(test_auto)
+
+```
+
+### model training
+```{r}
+fit <- TDboost(y ~. , data=train_auto, cv.folds=5, n.trees=300, interaction.depth = 20)
+
+```
+
+### print out the optimal iteration number M
+```{r}
+
+best.iter <- TDboost.perf(fit, method="test")
+
+```
+
+### check performance using 5-fold cross-validation
+```{r}
+best.iter <- TDboost.perf(fit,method="cv")
+
+```
+
+### plot the performance and variable influence
+```{r}
+# plot the performance
+# plot variable influence
+summary(fit,n.trees=1)         # based on the first tree
+summary(fit,n.trees=best.iter) # based on the estimated best number of trees
+
+```
+
+### model prediction / scoring
+```{r}
+f.predict <- predict.TDboost(fit, test_auto, best.iter)
+
+```
+
+### least squares error
+```{r}
+print(sum((test_auto$y - f.predict)^2))
+```
+

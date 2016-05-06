@@ -1,0 +1,113 @@
+---
+title: 'HDtweedie: lasso tutorial'
+author: "Jasmine Dumas"
+date: "May 2, 2016"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+	echo = TRUE,
+	message = FALSE,
+	warning = FALSE
+)
+```
+
+## Introduction to Tweedie
+
+The tweedie distrubutions are a family of probability ditrubutions which include continuous normal (aka Gaussian) and gamma distribution, the purely discrete scaled Poisson distribution, and the class of mixed compound Poisson-gamma distribution which have a positive maa at zero, but are otherwise continuous.
+
+$\text{var}\,(Y)$ = $a[\text{E}\,(Y)]^p$ , where a and p are positive constants. Source: <https://en.wikipedia.org/wiki/Tweedie_distribution>
+
+## Introduction to LASSO
+
+LASSO is a regression analysis method that performs both variable selection and regularization in order to enhance the prediction accuracy and interpretability of the statistical model it produces. Source: <https://en.wikipedia.org/wiki/Lasso_(statistics)>
+
+## `HDtweedie` package notes
+
+These functions are modified based on the functions from the glmnet package. The `glmnet` package was authored [by Robert Tibshirani](http://statweb.stanford.edu/~tibs/), who in 1996 introduced the Lasso method.
+
+__________
+
+### load the data
+
+This data has been previously transformed, indicated in _Qian, W., Yang, Y., Yang, Y. and Zou, H. (2013), “Tweedie's Compound Poisson Model With Grouped Elastic Net,” submitted to Journal of Computational and Graphical Statistics._
+
+* The y response value (aggregate claim loss) has been transformed to y = y / $1000               
+* The numerical values have been scaled (within each factor) to have a mean of 0 and a standard deviation of 1.
+
+```{r}
+library(HDtweedie)
+
+data("auto") # modified auto insurance dataset, where x is a matrix of 2812 policy records with 56 predictors and y is the aggreagate claim loss
+
+dim(auto)
+
+class(auto)
+
+str(auto) # two lists (where x is a matrix of the predictor variables)
+
+```
+
+### fit a tweedie distribution for lasso regression
+
+This shows nonzero coefficients (Df) and the value of lambda. The function contains many other parameters to specify: group, weights, elasticnet mixing parameter, penalty factor ...
+```{r}
+fit <- HDtweedie(x = auto$x , y = auto$y, p =1.50) 
+print(fit)
+```
+
+### actual coefficients for fitted value
+
+Computes the coefficients at the requested values for lambda (s = size; can be multiple $\lambda$ values) from a fitted HDtweedie object.
+```{r}
+coef(fit, s = 0.1)
+```
+
+
+### visualize the fit
+
+Each curve corresponds to each variable. The curve shows the path of the coefficient against the $\lambda_{1}$ -norm (regularization parameter) of the whole coefficient vector as $\lambda$ varies, so as **Lambda approaches zero**, the loss function of the model approaches the OLS (ordinary least squares which seeks to find the $\beta$ that minimizes the differences between the observed and predicted response). Therefore, when lambda is very small, the LASSO solution should be very close to the OLS solution, and all of your coefficients are in the model. As **lambda grows**, the regularization term has greater effect and you will see **fewer variables** in your model (because more and more coefficients will be zero valued).
+
+Source: <http://stats.stackexchange.com/questions/68431/interpretting-lasso-variable-trace-plots>
+```{r}
+plot(fit)
+```
+
+### n-fold cross validation
+
+This plot includes the cross-validation curve (red dotted line) and the upper and lower standard deviation curves along the $\lambda$ sequence (error bars). The vertical black dotted lines are the two selected lmbda values.           
+
+The coefficients displayed are based on the minimal $\lambda$ which gives the minimum mean cross-validated error are essetially the **variable selection** section of the analysis which shows the included variables (coef != 0) and the exluded variables (coef == 0).
+
+```{r}
+# 5-fold cross validation using the lasso (default = 5)
+cv_fit <- cv.HDtweedie(auto$x, auto$y)
+plot(cv_fit)
+
+cv_fit$lambda.min 
+
+coef(cv_fit, s = "lambda.min")
+
+# define group index (i.e. all factor levels are group with the factor regardless of individual columns)
+group1 <- c(rep(1,5),rep(2,7),rep(3,4),rep(4:14,each=3),15:21)
+
+# 5-fold cross validation using the grouped lasso (all or nothing for categorical groups)
+cv1 <- cv.HDtweedie(x=auto$x,y=auto$y,group=group1,p=1.5,nfolds=5)
+plot(cv1)
+```
+
+### model predictions / scoring
+
+Predictions can be made based on the fitted `cv.HDtweedie()` object. `newx` is the new input matrix (for this example they just score it against the first 5 observations used to contruct the model) and `s` is the value(s) of $\lambda$ at which predictions are made.
+```{r}
+predict(cv_fit, newx = auto$x[1:5, ], s = "lambda.min")
+```
+
+
+This tutorial has been abstracted based on the `glmnet`
+
+<http://web.stanford.edu/~hastie/glmnet/glmnet_alpha.html>
+
+
+fin.

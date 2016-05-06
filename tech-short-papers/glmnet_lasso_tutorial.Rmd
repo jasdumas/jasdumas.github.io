@@ -1,0 +1,63 @@
+---
+title: 'glmnet: lasso tutorial'
+author: "Jasmine Dumas"
+date: "April 28, 2016"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+#### <https://web.stanford.edu/~hastie/glmnet/glmnet_alpha.html>
+
+### load the data
+```{r, message=FALSE, warning=FALSE}
+library(glmnet)
+load("C:/Users/JD87417/Documents/R/R-3.2.5/library/glmnet/data/QuickStartExample.RData") # Gaussian linear model
+
+class(x) # x and y are two matricies
+class(y)
+```
+
+### fit the model
+```{r}
+fit = glmnet(x, y) 
+```
+
+### visualize the coefficients
+
+Each curve corresponds to each variable. The curve shows the path of the coefficient against the $\lambda_{1}$ -norm (regularization parameter) of the whole coefficient vector as $\lambda$ varies, so as Lambda approaches zero, the loss function of the model approaches the OLS (ordinary least squares) Therefore, when lambda is very small, the LASSO solution should be very close to the OLS solution, and all of your coefficients are in the model. As lambda grows, the regularization term has greater effect and you will see fewer variables in your model (because more and more coefficients will be zero valued).
+
+<http://stats.stackexchange.com/questions/68431/interpretting-lasso-variable-trace-plots>
+```{r}
+plot(fit, label = TRUE)
+```
+
+### view a summary of fit model
+
+This shows the number of non-zero coefficients (Df), the percent (of null) deviance explained (%Dev), and the value of $\lambda$
+```{r}
+print(fit)
+summary(fit)
+```
+
+### actual coefficients
+```{r}
+coef(fit, s=0.1)
+```
+
+### generate a new dataset and score
+```{r}
+nx = matrix(rnorm(10*20), 10, 20)
+predict(fit, newx = nx, s = c(0.1, 0.05))
+
+```
+
+### cross validation
+
+```{r}
+cvfit = cv.glmnet(x, y)
+plot(cvfit)
+```
+
+
