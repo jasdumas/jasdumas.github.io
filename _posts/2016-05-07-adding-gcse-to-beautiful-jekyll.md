@@ -28,13 +28,10 @@ The author and developer of the beautiful-jekyll template, [Dean Attali](http://
     
     
     </div>
-    
     ```
-
 5. Add this line to your **_config.yml**: `nav-search: search` underneath the **# List of links in the navigation bar section**
 
-6. Add this section of code to your **nav.html** file which is located in your *_includes/* folder after the `{% endif %}
-        {% endfor %}` on line 32. (i.e. before the  `</ul> </div>` lines in the `collapse navbar-collapse` section)
+6. Add this section of code to your **nav.html** file which is located in your *_includes/* folder after the `{% endif %}{% endfor %}` on line 32. (i.e. before the  `</ul> </div>` lines in the `collapse navbar-collapse` section)
 
     ```
     {% if site.nav-search %}
