@@ -33,7 +33,7 @@ navbar-links:
     - Data Resources: ds-resources
     - Papers & Slides: papers
   About me: aboutme
-  nav-search: search
+nav-search: search
 
 
 # --- Footer options --- #
