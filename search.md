@@ -7,6 +7,7 @@ css: "/css/search.css"
 ## Search jasdumas.github.io with Google!
 
 <div id="google-custom-search">
+
 <script>
   (function() {
     var cx = '003150387213296374474:nzyrzx7dbdk';
@@ -19,4 +20,5 @@ css: "/css/search.css"
   })();
 </script>
 <gcse:search></gcse:search>
+
 </div>
