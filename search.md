@@ -4,6 +4,8 @@ title: "Search jasdumas.github.io"
 css: "/css/search.css"
 ---
 
+## Search jasdumas.github.io with Google!
+
 <div id="google-custom-search">
 <script>
   (function() {
