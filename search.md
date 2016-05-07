@@ -1,8 +1,8 @@
 ---
-2	layout: default
-3	title: "Search jasdumas.github.io"
-4	css: "/css/search.css"
-5	---
+layout: default
+title: "Search jasdumas.github.io"
+css: "/css/search.css"
+---
 
 <div id="google-custom-search">
 <script>
