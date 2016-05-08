@@ -22,7 +22,9 @@ subtitle: technical writing, research publications & slide decks
 * [Interactive Data Vizualization Comparison](https://htmlpreview.github.io/?https://github.com/jasdumas/jasdumas.github.io/blob/master/tech-short-papers/Interactive_data_viz_comparison.html)
 * [Reading Large Datasets](https://htmlpreview.github.io/?https://github.com/jasdumas/jasdumas.github.io/blob/master/tech-short-papers/Reading_large_datasets.html)
 
-### Paper
+### Peer-Reviewed Papers
+
+* [**Dumas, J.**, Gargano, M.A., Dancik, G.M., "shinyGEO: a web-based application for analyzing Gene Expression Omnibus datasets". Bioinformatics Journal. (Application Notes BIOINF-2016-0662)](https://github.com/jasdumas/jasdumas.github.io/blob/oldsite/shinyGEO_useR_2016.docx)    *Pending Publication*
 
 * [**Dumas, J.**, Hill, K.M., Adrezin, R.S., Alba, J., Curry, R., Campagna, E., Fernandes, C., Lamba, V., Eisenfeld, L., " Feasibility of an electronic stethoscope system for monitoring neonatal bowel sounds." Connecticut Medicine, Volume 77, Number 8, pp. 467-471, 2013.](http://www.ncbi.nlm.nih.gov/pubmed/24156174)
 
