@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Data Resources
-subtitle: tools, R & python links
+subtitle: R & python learning material
 ---
 
 ----------
@@ -36,6 +36,14 @@ _Dynamic Data Vizualization:_
 * [googleVis library](https://cran.r-project.org/web/packages/googleVis/vignettes/googleVis_examples.html)
 * [rCharts library](http://rcharts.io/)
 
+### Python Documents
+
+* [Python 3 Documentation](https://docs.python.org/3/)
+* [Introduction to Python for Econometrics, Statistics and Data Analysis (PDF)](https://www.kevinsheppard.com/images/0/09/Python_introduction.pdf)
+* [Django web framework](https://docs.djangoproject.com/en/1.9/intro/tutorial01/)
+* [Python Machine Learning Book (Repository)](https://github.com/rasbt/python-machine-learning-book)
+* [scikit-learn machine learning map guide](http://scikit-learn.org/stable/tutorial/machine_learning_map/index.html)
+
 ### Datasets
 
 * [Awesome Public Dataset (fork)](https://github.com/jasdumas/awesome-public-datasets)
@@ -59,7 +67,7 @@ _Dynamic Data Vizualization:_
 * [yHat Blog](http://blog.yhat.com/)
 * [DataTau](http://www.datatau.com/)
 
-### Coursework & Online material
+### Coursework, MOOCS & Online material
 
 * [Johns Hopkins Engineering For Professionals CS Program](https://ep.jhu.edu/programs-and-courses/programs/computer-science)
 * [Datacamp.com: Data Analysis in your browser](https://www.datacamp.com/)
@@ -71,12 +79,6 @@ _Dynamic Data Vizualization:_
 * [Udacity Exploratory Data Analysis](https://www.udacity.com/course/ud651)
 * [Stanford University StatLearning: Statistical Learning](https://class.stanford.edu/courses/HumanitiesScience/StatLearning/Winter2014/about)
 * [R for Cats](http://rforcats.net/)
-
-### Python Documents
-
-* [Python](https://www.python.org/)
-* [Python 3 Documentation](https://docs.python.org/3/)
-* [Introduction to Python for Econometrics, Statistics and Data Analysis (PDF)](https://www.kevinsheppard.com/images/0/09/Python_introduction.pdf)
 
 ### General Computing & Reproducible Research Documents
 
