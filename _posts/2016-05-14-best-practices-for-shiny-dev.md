@@ -44,14 +44,16 @@ The Statistical community revels in big data and analytics and are now skilled i
 
 Here are some quick tips that will be 'easy' wins that can transform a statistical tool into a software tool.
 
-* Always include [progress bars](http://shiny.rstudio.com/articles/progress.html): Imagine waiting up to a minute for a Twitter to load without any prompt - I would probably leave the application and tell everyone that Twitter sucks (obviously this is just an example and Twitter is fabulous!). With Shiny potentially loading large datasets, its critical to inform the user of background processes so that they don't leave the application with a negative experience.
+* Always include [progress bars](http://shiny.rstudio.com/articles/progress.html): Imagine waiting up to a minute for a page on Twitter to load without any prompt - I would probably leave the application and tell everyone that Twitter sucks (obviously this is just an example and Twitter is fabulous!). With Shiny potentially loading large datasets, its critical to inform the user of background processes so that they don't leave the application with a negative experience.
 
 * Always include a landing or home page: Inform your users to the usage of the application (i.e. an explanation of the equation or method be used) & details on data quality (i.e. last data refresh date), legal or proprietary messages. The page will be the first impression the user will get and it should exude professionalism, and hospitality. I'm personally make great use of the `HTML()` function to include additional [Bootstrap components](http://getbootstrap.com/components/) such as the [Jumbotron](http://getbootstrap.com/components/#jumbotron) to include a bold welcome message and in the 'Learn More' button, a link to a instructional video (that feature works only on Google Chrome once the application has been deployed).
 
-* Appearance: If you didn't know that Shiny uses the Bootstrap Framework for its UI, here is your message: **SHINY uses Bootstrap for its UI**. So feel free to get creative with color by using setting the `theme = 'http://bootswatch.com/readable/bootstrap.css'` or any of the templates from <http://bootswatch.com/> in the `shinyUI()` function. For the true front-end nerds, you can also set up your own **CSS** file and mock up any theme you like just as long as its include in the /www folder of your application.
+* Appearance: If you didn't know that Shiny uses the Bootstrap Framework (from the above bullet point) for its UI, here is your message: **SHINY uses Bootstrap for its underlying UI**. So feel free to get creative with color by using setting the `theme = 'http://bootswatch.com/readable/bootstrap.css'` or any of the templates from <http://bootswatch.com/> in the `shinyUI()` function. For the true front-end nerds, you can also set up your own **CSS** file and mock up any theme you like, just as long as its included in the /www folder of your application.
 
 ![](http://i.giphy.com/yYSSBtDgbbRzq.gif)
 
 * Always include an about page: Be proud of your work and include a small biography of the application developers and also a way for users to contact (or blame) the application maintainers with an email address.
 
 * ...and I recommend reading this article [Signifiers, not affordances](http://jnd.org/dn.mss/signifiers_not_affordances.html) and this book [The Design of Everyday Things](http://jnd.org/books.html#doet) from Don Norman, if you want to better equip yourself with the tools and thought-process to design things for people. Also there is a [udacity course](https://www.udacity.com/course/intro-to-the-design-of-everyday-things--design101) for it as well
+
+Happy Coding!
