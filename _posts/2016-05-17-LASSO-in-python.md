@@ -20,7 +20,7 @@ _[Cortez and Morais, 2007] P. Cortez and A. Morais. A Data Mining Approach to Pr
 
 **R code:**
 
-```
+```r
 library(RCurl)
 url = getURL("http://archive.ics.uci.edu/ml/machine-learning-databases/forest-fires/forestfires.csv")
 forest_fires <- read.csv(text = url)
@@ -59,8 +59,7 @@ The 3 most important predictors have non-zero coefficients and therefore can be 
 4. Final Excel csv: [https://github.com/jasdumas/jasdumas.github.io/blob/master/post_data/forest_fires.csv](https://github.com/jasdumas/jasdumas.github.io/blob/master/post_data/forest_fires.csv)
 
 ### Python code
-```
-
+```python
 #from pandas import Series, DataFrame
 import pandas as pd
 import numpy as np
