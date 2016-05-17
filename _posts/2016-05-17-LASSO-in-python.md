@@ -43,7 +43,7 @@ dput(pystr_upper(cols))
 
 A lasso regression was completed for the forest fires dataset to identify a subset of variables from a set of 12 categorical and numerical pr3edictor variables that best predicted a quantitative response variable measuring the area burning by forest fires in the northeast region of Portugal. The data were randomly split into a train and test dataset that included 70% of the observations and test set that included 30%. The least angle regression algorithm with folds equal to 10 (5 or 10 are optimal number of folds) for cross validation was used to estimate the lasso regression model in the training set and the model was validated using the test set, to prevent over fitting the model. The change in the cross validation average (MSE) at each step was used to identify the best subset of predictor variables which were:
 
-![]("https://raw.githubusercontent.com/jasdumas/jasdumas.github.io/master/post_data/lasso_mse.png")
+![]("https://github.com/jasdumas/jasdumas.github.io/blob/master/post_data/lasso_mse.png")
 
 * **DAYSAT**: Day of the week, Saturday
 * **TEMP**: temperature in Celsius degrees: 2.2 to 33.30
@@ -54,7 +54,7 @@ The 3 most important predictors have non-zero coefficients and therefore can be 
 ### Additional Documents
 
 1. Jupyter Notebook: https://github.com/jasdumas/jasdumas.github.io/blob/master/post_data/Lasso_regression_forestfires.ipynb
-2. Python Code: https://github.com/jasdumas/jasdumas.github.io/blob/master/post_data/lasso_forest_fires.py
+2. Python Code: https://github.com/jasdumas/jasdumas.github.io/blob/master/post_data/lasso_forerst_fires.py
 3. R code: https://github.com/jasdumas/jasdumas.github.io/blob/master/post_data/python_forestfire_clean.R
 4. Final Excel csv: https://github.com/jasdumas/jasdumas.github.io/blob/master/post_data/forest_fires.csv
 
