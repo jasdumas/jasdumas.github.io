@@ -53,10 +53,10 @@ The 3 most important predictors have non-zero coefficients and therefore can be 
 
 ### Additional Documents
 
-1. Jupyter Notebook: https://github.com/jasdumas/jasdumas.github.io/blob/master/post_data/Lasso_regression_forestfires.ipynb
-2. Python Code: https://github.com/jasdumas/jasdumas.github.io/blob/master/post_data/lasso_forerst_fires.py
-3. R code: https://github.com/jasdumas/jasdumas.github.io/blob/master/post_data/python_forestfire_clean.R
-4. Final Excel csv: https://github.com/jasdumas/jasdumas.github.io/blob/master/post_data/forest_fires.csv
+1. Jupyter Notebook: [https://github.com/jasdumas/jasdumas.github.io/blob/master/post_data/Lasso_regression_forestfires.ipynb](https://github.com/jasdumas/jasdumas.github.io/blob/master/post_data/Lasso_regression_forestfires.ipynb)
+2. Python Code: [https://github.com/jasdumas/jasdumas.github.io/blob/master/post_data/lasso_forerst_fires.py](https://github.com/jasdumas/jasdumas.github.io/blob/master/post_data/lasso_forerst_fires.py)
+3. R code: [https://github.com/jasdumas/jasdumas.github.io/blob/master/post_data/python_forestfire_clean.R](https://github.com/jasdumas/jasdumas.github.io/blob/master/post_data/python_forestfire_clean.R)
+4. Final Excel csv: [https://github.com/jasdumas/jasdumas.github.io/blob/master/post_data/forest_fires.csv](https://github.com/jasdumas/jasdumas.github.io/blob/master/post_data/forest_fires.csv)
 
 ### Python code
 ```
