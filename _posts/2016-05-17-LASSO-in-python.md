@@ -41,7 +41,7 @@ dput(pystr_upper(cols))
 
 ### Results
 
-A lasso regression was completed for the forest fires dataset to identify a subset of variables from a set of 12 categorical and numerical pr3edictor variables that best predicted a quantitative response variable measuring the area burning by forest fires in the northeast region of Portugal. The data were randomly split into a train and test dataset that included 70% of the observations and test set that included 30%. The least angle regression algorithm with folds equal to 10 (5 or 10 are optimal number of folds) for cross validation was used to estimate the lasso regression model in the training set and the model was validated using the test set, to prevent over fitting the model. The change in the cross validation average (MSE) at each step was used to identify the best subset of predictor variables which were:
+A lasso regression was completed for the forest fires dataset to identify a subset of variables from a set of 12 categorical and numerical predictor variables that best predicted a quantitative response variable measuring the area burning by forest fires in the northeast region of Portugal. The data were randomly split into a train and test dataset that included 70% of the observations and test set that included 30%. The least angle regression algorithm with folds equal to 10 (5 or 10 are optimal number of folds) for cross validation was used to estimate the lasso regression model in the training set and the model was validated using the test set, to prevent over fitting the model. The change in the cross validation average (MSE) at each step was used to identify the best subset of predictor variables which were:
 
 ![Change in the validation mean square error at each step](https://raw.githubusercontent.com/jasdumas/jasdumas.github.io/master/post_data/lasso_mse.png)
 
@@ -49,7 +49,7 @@ A lasso regression was completed for the forest fires dataset to identify a subs
 * **TEMP**: temperature in Celsius degrees: 2.2 to 33.30
 * **X**: x-axis spatial coordinate within the Montesinho park map: 1 to 9
 
-The 3 most important predictors have non-zero coefficients and therefore can be the best subset to predict the amount of area burned by forest fires. These variables make sense when evaluating the highest probable chance for forest fire would be high **TEMP**, and **DAYSAT** equating to poplus park attendance on the weekend which could be started by camping activity. The **X** variable is a bit tricky to interpret but I'm going to infer that the spatial coordinate is related to forest fire frequency and occurrence. This analysis reduces the variables needed to predict the area burned by forest fires in Portugal and therefore reduces the model complexity for a parsimonious model.
+The 3 most important predictors have non-zero coefficients and therefore can be the best subset to predict the amount of area burned by forest fires. These variables make sense when evaluating the highest probable chance for forest fire would be high **TEMP**, and **DAYSAT** equating to populous park attendance on the weekend which could be started by camping activity. The **X** variable is a bit tricky to interpret but I'm going to infer that the spatial coordinate is related to forest fire frequency and occurrence. This analysis reduces the variables needed to predict the area burned by forest fires in Portugal and therefore reduces the model complexity for a parsimonious model.
 
 ### Additional Documents
 
