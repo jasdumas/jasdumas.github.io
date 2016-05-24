@@ -8,11 +8,8 @@ subtitle: R & python learning material
 
 ### R Documents
 
-_Statistics:_
 * [GLMs from Quick-R](http://www.statmethods.net/advstats/glm.html)
 * [Model Validation: Interpreting Residual Plots](http://www.r-bloggers.com/model-validation-interpreting-residual-plots/)
-
-_Programming:_
 * [Beginner's guide to R from ComputerWorld](http://www.computerworld.com/article/2497143/business-intelligence/business-intelligence-beginner-s-guide-to-r-introduction.html)        
 * [Quick-R](http://www.statmethods.net/)
 * [Advanced R by Hadley Wickham](http://adv-r.had.co.nz/)       
@@ -20,13 +17,9 @@ _Programming:_
 * [Stackoverflow tagged R questions](http://stackoverflow.com/questions/tagged/r)
 * [RStudio Keyboard Shortcuts](https://support.rstudio.com/hc/en-us/articles/200711853-Keyboard-Shortcuts)
 * [Non-Standard Evaluation](https://cran.r-project.org/web/packages/dplyr/vignettes/nse.html)
-
-_Data Visualization:_
 * [R Graphics Cookbook by Winston Chang](http://www.cookbook-r.com/Graphs/)        
 * [ggplot2 Documentation](http://docs.ggplot2.org/current/index.html)
 * [ggplot2 book](http://ggplot2.org/book/)
-
-_Dynamic Data Vizualization:_
 * [Shiny Documentation & Tutorial](http://shiny.rstudio.com/)
 * [plotly R library](https://plot.ly/r/)
 * [googleVis library](https://cran.r-project.org/web/packages/googleVis/vignettes/googleVis_examples.html)
