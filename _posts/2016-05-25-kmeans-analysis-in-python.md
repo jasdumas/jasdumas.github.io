@@ -75,7 +75,7 @@ Here are the probabilities of getting a certain hand:
 
 ### Additional Documents
 
-1. [Jupyter Notebook](https://raw.githubusercontent.com/jasdumas/jasdumas.github.io/master/post_data/KMEANS-POKER-ANALYSIS.ipynb)
+1. [Jupyter Notebook](https://github.com/jasdumas/jasdumas.github.io/blob/master/post_data/KMEANS-POKER-ANALYSIS.ipynb)
 2. [Python script](https://raw.githubusercontent.com/jasdumas/jasdumas.github.io/master/post_data/kmeans-cluster-poker-hands.py)
 3. Excel csv files: [train](https://raw.githubusercontent.com/jasdumas/jasdumas.github.io/master/post_data/poker_train.csv), [test](https://raw.githubusercontent.com/jasdumas/jasdumas.github.io/master/post_data/poker_test.csv)
 
