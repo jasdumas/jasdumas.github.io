@@ -45,7 +45,7 @@ k-means clustering is iterative rather than hierarchical, clustering algorithm w
 
 * Calculate clustering variables (Suit and Rank) means by cluster. From viewing the means for each variable you can examine and compare each cluster and how its members are similar to the group.
 
-* Validate clusters in training data by examining cluster differences in CLASS using ANOVA and Diagnostic tests: _Tukey test of significance_ (find means that are significantly different from each other), _Durbin-Watson_ (used to detect the presence of autocorrelation), $R_{2}$ (proportion of the variance).
+* Validate clusters in training data by examining cluster differences in CLASS using ANOVA and Diagnostic tests: _Tukey test of significance_ (find means that are significantly different from each other), _Durbin-Watson_ (used to detect the presence of autocorrelation), R-squard (proportion of the variance).
 
 ### Results
 
