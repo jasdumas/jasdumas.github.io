@@ -20,6 +20,7 @@ k-means clustering is iterative rather than hierarchical, clustering algorithm w
 **Limitations of k-means clustering**: need to specify the number of clusters upfront by subjective guessing, results can changed depending on the location of the initial centroids and this analysis method is not recommended if there are a lot of categorical variables. K-means assumes that clusters are spherical, distinct and approximately equal in size.
 
 **Alternatives to k-means:**
+
 * [DBSCAN](https://en.wikipedia.org/wiki/DBSCAN) for non-spherical shapes, and uneven sizes
 * Agglomerative clustering for many clusters, non-eucledian distances
 * [Additional methods](http://scikit-learn.org/stable/modules/clustering.html)
