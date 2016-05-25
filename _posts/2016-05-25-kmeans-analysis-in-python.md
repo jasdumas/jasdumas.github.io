@@ -266,9 +266,3 @@ mc1 = multi.MultiComparison(sub1['CLASS'], sub1['cluster'])
 res1 = mc1.tukeyhsd()
 print(res1.summary())
 ```
-
-### Additional Documents
-
-1. [Jupyter Notebook](https://raw.githubusercontent.com/jasdumas/jasdumas.github.io/master/post_data/KMEANS-POKER-ANALYSIS.ipynb)
-2. [Python script](https://raw.githubusercontent.com/jasdumas/jasdumas.github.io/master/post_data/kmeans-cluster-poker-hands.py)
-3. Excel csv files: [train](https://raw.githubusercontent.com/jasdumas/jasdumas.github.io/master/post_data/poker_train.csv), [test](https://raw.githubusercontent.com/jasdumas/jasdumas.github.io/master/post_data/poker_test.csv)
