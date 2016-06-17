@@ -31,20 +31,26 @@ Skills
 Education
 ---------
 [Johns Hopkins University, Engineering For Professionals](https://ep.jhu.edu/programs-and-courses/programs/computer-science) |			(Expected Graduation 2018)     
-**Master of Science in Computer Science** |  Data Science & Cloud Computing Track	   
+
+**Master of Science in Computer Science** |  Data Science & Cloud Computing Track	  
+
 * Coursework: Data Structures, Computer Organization		  
 * Additional Graduate Coursework at [DePaul University](https://www.cdm.depaul.edu/academics/Pages/MS-in-Predictive-Analytics.aspx): Intro to Programming, Data Analytics & Regression, Database Processing for Large-scale Analytics, Advanced Data Analysis, Knowledge Discovery Technologies
 
 ___________
 
 [University of California, Irvine Extension](http://unex.uci.edu/areas/life_sciences/medical_products/)  | (2013 - 2013)   
+
 **Professional Certificate in Medical Product Development**    
+
 * Coursework: Medical Product Life-Cycle Management, Regulatory Requirements for Medical Devices, Medical Product Quality Systems, Medical Device Design and Evaluation, Fundamentals of Clinical Trials
 
 ___________
 
-[University of Hartford](http://www.hartford.edu/ceta/undergraduate/engineering/BM/) (West Hartford, CT) |   (2008 - 2012)  
-**Bachelor of Science in Biomedical Engineering**	   					          						
+[University of Hartford](http://www.hartford.edu/ceta/undergraduate/engineering/BM/) (West Hartford, CT) |   (2008 - 2012)
+
+**Bachelor of Science in Biomedical Engineering**	   					        
+
 * Coursework: Engineering Computer Applications, Calculus (1-2, Multivariable), Differential Equations, Research  
 
 
