@@ -33,6 +33,7 @@ navbar-links:
     - Data Resources: ds-resources
     - Papers & Slides: papers
   About me: aboutme
+    - resume: resume
 nav-search: search
 
 
