@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Data Resources
-subtitle: R & python learning material
+title: Data Science Resources
+subtitle: R & python learning resource materials
 ---
 
 ----------
