@@ -5,7 +5,7 @@ subtitle: Data Scientist
 ---
 
 -------------
-                    jasmine.dumas[at]gmail.com | jasdumas.github.io | Connecticut, USA
+                jasmine.dumas[at]gmail.com | jasdumas.github.io | Connecticut, USA
 
 
 About
@@ -38,57 +38,58 @@ Education
 ___________
 
 [University of California, Irvine Extension](http://unex.uci.edu/areas/life_sciences/medical_products/)  | (2013 - 2013)   
-**Professional Certificate in Medical Product Development**
+**Professional Certificate in Medical Product Development**    
 * Coursework: Medical Product Life-Cycle Management, Regulatory Requirements for Medical Devices, Medical Product Quality Systems, Medical Device Design and Evaluation, Fundamentals of Clinical Trials
 
 ___________
 
 [University of Hartford](http://www.hartford.edu/ceta/undergraduate/engineering/BM/) (West Hartford, CT) |   (2008 - 2012)  
-**Bachelor of Science in Biomedical Engineering**						          						
+**Bachelor of Science in Biomedical Engineering**	   					          						
 * Coursework: Engineering Computer Applications, Calculus (1-2, Multivariable), Differential Equations, Research  
 
 
 Data Science Experience
 ---------
 **The Hartford Financial Services (NYSE: HIG)**    	   
+
 * Associate Data Scientist, Predictive Analytics & Research - Auto Team |	(April 2016 - Present)	    
   - Research & Implementation of machine learning techniques in variable reduction and selection to create predictive 
 models for auto insurance class plans that improve loss ratio estimates and drive strategic pricing changes.
-  - Lead R/Shiny application development for model monitoring and diagnostic business intelligence tools.
+  - Lead R/Shiny application development for model monitoring and diagnostic business intelligence tools.    
 * Data Science Intern |  (Nov. 2015  - March 2016)
   - Developing a model monitoring web application with R/Shiny for auto insurance predictive model monitoring
 Diagnostic residual analysis modeling to evaluate loss ratio in adverse risk segments.
 
 ___________
 
-**University of Connecticut Institute for Systems Genomics (UCONN)**  | (Sept. 2015 - January 2016)      
-* Bioinformatics Intern
+**University of Connecticut Institute for Systems Genomics (UCONN)**  | (Sept. 2015 - January 2016)        
+* Bioinformatics Intern   
   - Computational Programming and Unix scripting to contribute to the annotation of the Douglas-fir & Walnut genome
 
 ___________
 
-**Google Summer of Code**  |  (May 2015 - Aug. 2015)      
-* Student Developer for the R Project for Statistical Computing
+**Google Summer of Code**  |  (May 2015 - Aug. 2015)        
+* Student Developer for the R Project for Statistical Computing    
   - Developed an web application with R & Shiny to automate differential expression and survival analysis of microarray gene expression datasets from the NIH Gene Expression Omnibus [github.com/jasdumas/shinyGEO]
 
 Engineering Experience
 ---------
-**Medtronic (NYSE: MDT)**  | (May 2014 - Sept. 2015)   
-* R&D Engineering Technician III
+**Medtronic (NYSE: MDT)**  | (May 2014 - Sept. 2015)     
+* R&D Engineering Technician III    
   - Statistical analysis & visualization of mechanical product testing data of surgical instruments to provide insight into product performance and evaluation for FDA submissions
   - **Major Accomplishment**: Technical Forum Analytics member uncovering insights in meeting attendance with R scripts
 
 ___________
 
-**QDx, Inc. / Abbott Point-of-Care (NYSE: ABT)**  | (June 2013 - Jan. 2014)
-* R&D Engineering Intern  
+**QDx, Inc. / Abbott Point-of-Care (NYSE: ABT)**  | (June 2013 - Jan. 2014)     
+* R&D Engineering Intern     
   - Data Collection, Statistical analysis, and Data Mining of animal & human specimens CBC (complete blood count) results of an image based, reagent-free hematology analyzer in preparation for clinical trials at a start-up	   
   - **Major Accomplishment**: Designed an experiment leading to a novel feature enhancement for anticoagulants 
 
 ___________
 
-**AdChem Manufacturing Technologies, Inc.**   | (May 2012 - May 2013)
-* Manufacturing Engineer 
+**AdChem Manufacturing Technologies, Inc.**   | (May 2012 - May 2013)    
+* Manufacturing Engineer     
   - Developed over 250 manufacturing process methods for complex commercial and military jet engine sheet metal brackets for Pratt & Whitney, using CNC Metrology Software, 3D printing & Solidworks CAD
   - **Major Accomplishment**: Developed a new manufacturing method & CAD Model for part identification
 
