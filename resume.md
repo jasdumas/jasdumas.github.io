@@ -52,7 +52,8 @@ Data Science Experience
   * Associate Data Scientist, Predictive Analytics & Research - Auto Team, (April 2016 - Present)	    
     - Research & Implementation of machine learning techniques in variable reduction and selection to create predictive 
 models for auto insurance class plans that improve loss ratio estimates and drive strategic pricing changes.
-    - Lead R/Shiny application development for model monitoring and diagnostic business intelligence tools.    
+    - Lead R/Shiny application development for model monitoring and diagnostic business intelligence tools.  
+
   * Data Science Intern |  (Nov. 2015  - March 2016)     
     - Developing a model monitoring web application with R/Shiny for auto insurance predictive model monitoring
 Diagnostic residual analysis modeling to evaluate loss ratio in adverse risk segments.
