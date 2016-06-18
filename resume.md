@@ -14,9 +14,10 @@ I'm seeking to utilize my computational programming & data analysis skills in a 
 
 **Featured Projects**:     
 I have experience using my data science toolkit in several projects which include:   
-* [web scraping for craft brewery ratings from Beer Advocate](http://trendct.org/2016/03/18/tutorial-web-scraping-and-mapping-breweries-with-import-io-and-r/)
-* [developing a gene expression analysis web application for bioinformaticians](http://gdancik.github.io/shinyGEO/)
-* [exploratory data analysis on insurance company complaints from the CT open data portal](http://rpubs.com/jasdumas/eda-ct-insurance).
+
+* [web scraping for craft brewery ratings from Beer Advocate](http://trendct.org/2016/03/18/tutorial-web-scraping-and-mapping-breweries-with-import-io-and-r/)     
+* [developing a gene expression analysis web application for bioinformaticians](http://gdancik.github.io/shinyGEO/)     
+* [exploratory data analysis on insurance company complaints from the CT open data portal](http://rpubs.com/jasdumas/eda-ct-insurance)     
 
 Skills
 ---------
