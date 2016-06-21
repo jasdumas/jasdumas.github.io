@@ -57,7 +57,7 @@ models for auto insurance class plans that improve loss ratio estimates and driv
     - Lead R/Shiny application development for model monitoring and diagnostic business intelligence tools.    
   * **Data Science Intern**, (Nov. 2015  - March 2016)     
     - Developing a model monitoring web application with R/Shiny for auto insurance predictive model monitoring
-Diagnostic residual analysis modeling to evaluate loss ratio in adverse risk segments.
+    - Diagnostic residual analysis modeling to evaluate loss ratio in adverse risk segments.
 
 ___________
 
@@ -126,7 +126,7 @@ Honors & Awards
 
 Community Involvement
 -----------
-* Co-host of R Talk: A podcast about the R Programming language [rtalk.org](http://rtalk.org/) (Aug. 2016 - Present)
+* Co-host of **R Talk**: A podcast about the R Programming language [rtalk.org](http://rtalk.org/) (Aug. 2016 - Present)
 * NumFOCUS, Community Member
 * Bioinformatics Organization, Associate Member
 * Python Software Foundation, Basic Member
