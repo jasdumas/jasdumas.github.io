@@ -69,7 +69,7 @@ ___________
 
 * **Google Summer of Code**, (May 2015 - Aug. 2015)        
   * **Student Developer** for the R Project for Statistical Computing     
-  - Developed an web application with R & Shiny to automate differential expression and survival analysis of microarray gene expression datasets from the NIH Gene Expression Omnibus [github.com/jasdumas/shinyGEO](github.com/jasdumas/shinyGEO)
+  - Developed an web application with R & Shiny to automate differential expression and survival analysis of microarray gene expression datasets from the NIH Gene Expression Omnibus [github.com/jasdumas/shinyGEO](http://jasdumas.github.io/shinyGEO/)
 
 Engineering Experience
 ---------
