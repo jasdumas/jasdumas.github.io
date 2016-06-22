@@ -32,8 +32,9 @@ navbar-links:
   Resources:
     - Data Science Resources: ds-resources
     - Papers & Slides: papers
-  About me: aboutme
-  resume: resume
+  About me: 
+    - aboutme
+    - resume
 nav-search: search
 
 
