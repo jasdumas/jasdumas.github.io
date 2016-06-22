@@ -32,10 +32,10 @@ navbar-links:
   Resources:
     - Data Science Resources: ds-resources
     - Papers & Slides: papers
-  About me: 
-    - aboutme
-    - resume
-nav-search: search
+  About: 
+    - About Me: aboutme
+    - Resume: resume
+  nav-search: search
 
 
 # --- Footer options --- #
