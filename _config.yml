@@ -35,7 +35,7 @@ navbar-links:
   About: 
     - About Me: aboutme
     - Resume: resume
-  nav-search: search
+nav-search: search
 
 
 # --- Footer options --- #
