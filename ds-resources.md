@@ -71,7 +71,6 @@ subtitle: R & python learning resource materials
 * [Datacamp.com: Data Analysis in your browser](https://www.datacamp.com/)
 * [Stat545: Data wrangling, exploration, and analysis with R](https://stat545-ubc.github.io/) - From the University of British Columbia     
 * [Rstudio resources](https://www.rstudio.com/resources/training/online-learning/)
-
 * [The Johns Hopkins Data Science Specialization on Coursera](https://www.coursera.org/specialization/jhudatascience/1)
 * [Udacity Exploratory Data Analysis](https://www.udacity.com/course/ud651)
 * [Stanford University StatLearning: Statistical Learning](https://class.stanford.edu/courses/HumanitiesScience/StatLearning/Winter2014/about)
