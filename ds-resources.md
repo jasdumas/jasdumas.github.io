@@ -24,6 +24,9 @@ subtitle: R & python learning resource materials
 * [plotly R library](https://plot.ly/r/)
 * [googleVis library](https://cran.r-project.org/web/packages/googleVis/vignettes/googleVis_examples.html)
 * [rCharts library](http://rcharts.io/)
+* [R Packages book](http://r-pkgs.had.co.nz/)
+* [R for Data Science book](http://r4ds.had.co.nz/)
+* [xgboost R package](https://github.com/dmlc/xgboost/tree/master/R-package)
 
 ### Python Documents
 * [Python 3 Documentation](https://docs.python.org/3/)
@@ -47,27 +50,28 @@ subtitle: R & python learning resource materials
 * [Rodeo IDE](https://www.yhat.com/products/rodeo)
 * [Tor Browser](https://www.torproject.org/projects/torbrowser.html.en)
 * [HTML Github Preview](https://htmlpreview.github.io/)
+* [RSeek.org Search Engine](http://rseek.org/)
 
 ### Reading material & Blogs
 * [Rstudio Blog](http://blog.rstudio.org/)
 * [yHat Blog](http://blog.yhat.com/)
 * [DataTau](http://www.datatau.com/)
 * [Simply Statistics](http://simplystatistics.org/)
-* [Adeventures in Data by Oliver Keyes](https://ironholds.org/blog/)
+* [Adventures in Data by Oliver Keyes](https://ironholds.org/blog/)
 * [Data Science 101](http://101.datascience.community/)
+* [Rbloggers](http://www.r-bloggers.com/)
+* [FiveThirtyEight](http://fivethirtyeight.com/)
 
 ### Books
 * [The Signal & the Noise by Nate Silver](http://www.amazon.com/Signal-Noise-Many-Predictions-Fail-but/dp/0143125087)
 * [Big Data](http://www.big-data-book.com/)
 
-### Coursework, MOOCS & Online material
-
+### Coursework, MOOCS & Online material   
 * [Johns Hopkins Engineering For Professionals CS Program](https://ep.jhu.edu/programs-and-courses/programs/computer-science)
 * [Datacamp.com: Data Analysis in your browser](https://www.datacamp.com/)
 * [Stat545: Data wrangling, exploration, and analysis with R](https://stat545-ubc.github.io/) - From the University of British Columbia     
 * [Rstudio resources](https://www.rstudio.com/resources/training/online-learning/)
-* [Rbloggers](http://www.r-bloggers.com/) 
-* [RSeek.org Search Engine](http://rseek.org/)
+
 * [The Johns Hopkins Data Science Specialization on Coursera](https://www.coursera.org/specialization/jhudatascience/1)
 * [Udacity Exploratory Data Analysis](https://www.udacity.com/course/ud651)
 * [Stanford University StatLearning: Statistical Learning](https://class.stanford.edu/courses/HumanitiesScience/StatLearning/Winter2014/about)
