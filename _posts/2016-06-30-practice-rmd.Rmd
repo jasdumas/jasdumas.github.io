@@ -1,0 +1,16 @@
+---
+layout: post
+title: practice .Rmd file
+---
+
+```{r}
+sumsq = 0
+count = 0
+for (i in 1:100){
+ sumsq[i] = i^2
+ count = count + 1
+}
+print(sum(sumsq))
+
+```
+
