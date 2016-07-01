@@ -3,6 +3,8 @@ layout: post
 title: Tracking my Work Hours with IFTTT and R
 subtitle: An ongoing effort to work more efficiently and smarter
 bigimg: /post_data/working-hours-static.png
+tags:
+- rstats
 ---
 
 
