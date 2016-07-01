@@ -23,7 +23,7 @@ Here is the resulting visualization:
 <iframe width="900" height="800" frameborder="0" scrolling="no" src="https://plot.ly/~jasdumas/54.embed"></iframe>
 
 
-From the graph above, it is pretty clear when I switched from being a part-time intern to a full-time data scientist in early April. Also its interesting to see when I started to work a compressed work week in early June. I unfortunately sometimes walk to lunch events that inadvertently exit my location services out out of the original perimeter and also when traveling through Hartford to visit family in New York.
+From the graph above, it is pretty clear when I switched from being a part-time intern to a full-time data scientist in early April. Also its interesting to see when I started to work a compressed work week in early June. I unfortunately sometimes walk to lunch events that inadvertently exit my location services out of the original perimeter and also when traveling through Hartford to visit family in New York.
 
 In conclusion, IFTTT was a bit irregular and not completely accurate for logging the location coordinates but overall this is a good start to generating more data and providing insight to about my working hours!
 
