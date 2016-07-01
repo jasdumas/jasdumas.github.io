@@ -2,7 +2,7 @@
 layout: post
 title: Tracking my Work Hours with IFTTT and R
 subtitle: An ongoing effort to work more efficiently and smarter
-bigimg: post_data/working-hours-static.png
+bigimg: /post_data/working-hours-static.png
 ---
 
 
@@ -21,6 +21,8 @@ For this project analysis I used the [`googlesheets`](https://github.com/jennybc
 Here is the resulting visualization:
 
 ![](https://plot.ly/~jasdumas/54.embed)
+
+
 
 From the graph above, it is pretty clear when I switched from being a part-time intern to a full-time data scientist in early April. Also its interesting to see when I started to work a compressed work week in early June. I unfortunately sometimes walk to lunch events that inadvertently exit my location services out out of the original perimeter and also when traveling through Hartford to visit family in New York.
 
