@@ -8,7 +8,7 @@ tags:
 ---
 
 
-TD;DR: For the forgetful, IFTTT can be a great way to track your work hours and provide insight about trends.
+TL;DR: For the forgetful, IFTTT can be a great way to track your work hours and provide insight about trends through visualization.
 
 Manually entering your own timesheet and logging your specific project time hours for work (and contracting) can cause inconsistencies, namely forgetting how may hours to submit. In November 2015 I began a new role as a Data Science Intern at The Hartford Insurance Group headquartered in Hartford, CT and I was responsible for logging my working hours in both the contractor database as well as The Hartford's database so that I can be *promptly* paid each week. After the first few days, I made an honest assessment about how likely I was to screw up my actual work hours for entry and decided if I wanted to not be scolded, I should think of a automated way of recording hours.
 
@@ -16,13 +16,13 @@ It has been said that:
 
 >  “When you can measure what you are speaking about, and express it in numbers, you know something about it, when you cannot express it in numbers, your knowledge is of a meager and unsatisfactory kind; it may be the beginning of knowledge, but you have scarely, in your thoughts advanced to the stage of science.” - [William Thomson, 1st Baron Kelvin](http://www.goodreads.com/quotes/166961-when-you-can-measure-what-you-are-speaking-about-and)
 
-So with previous exposure to [IFTTT](https://en.wikipedia.org/wiki/IFTTT), which is a free web-based service which creates recipes that connect the digital and physical world in the realm of IoT (Internet of Things), I set out the create a recipe that would use my iPhone's location services and a google spreadsheet for tracking timestamps to and from work. I established a perimeter around my work location in the IFTTT application and specified that I wanted the arrival and departure time from that area. Back in November I only intended for this recipe to be a plan b if I had forgot how many hours I had worked for my timesheets. In the interest of becoming more informed about the entirety of my work hours and after accumulating approximately 258 check-ins over the last 7 months on the google spreadsheet, I set out to extract some meaning and tangible statistics to understand how often I was working.
+So with previous exposure to [IFTTT](https://en.wikipedia.org/wiki/IFTTT), which is a free web-based service which creates recipes that connect the digital and physical world in the realm of IoT (Internet of Things), I set out the create a recipe that would use my iPhone's location services and a google spreadsheet for tracking timestamps to and from work. I established a perimeter around my work location in the IFTTT application and specified that I wanted the arrival and departure time from that area. Back in November I only intended for this recipe to be a plan b if I had forgot how many hours I had worked for my time sheets. In the interest of becoming more informed about the entirety of my work hours and after accumulating approximately 258 check-ins over the last 7 months on the google spreadsheet, I set out to extract some meaning and tangible statistics to understand how often I was working.
 
 For this project analysis I used the [`googlesheets`](https://github.com/jennybc/googlesheets) package by Jenny Bryan which is a Google Spreadsheets R API, **dplyr** for tidy data forms and **ggplot2 and plotly** for interactive graphics.
 
 Here is the resulting visualization:
 
-<iframe width="900" height="800" frameborder="0" scrolling="no" src="https://plot.ly/~jasdumas/54.embed"></iframe>
+<iframe width="700" height="600" frameborder="0" scrolling="no" src="https://plot.ly/~jasdumas/54.embed"></iframe>
 
 
 From the graph above, it is pretty clear when I switched from being a part-time intern to a full-time data scientist in early April. Also its interesting to see when I started to work a compressed work week in early June. I unfortunately sometimes walk to lunch events that inadvertently exit my location services out of the original perimeter and also when traveling through Hartford to visit family in New York.
