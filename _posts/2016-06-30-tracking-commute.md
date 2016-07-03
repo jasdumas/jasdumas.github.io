@@ -8,7 +8,7 @@ tags:
 ---
 
 
-TL;DR: For the forgetful, IFTTT can be a great way to track your work hours and provide insight about trends through visualization.
+**TL;DR: For the forgetful, IFTTT can be a great way to track your work hours and provide insight about trends through visualization.**
 
 Manually entering your own timesheet and logging your specific project time hours for work (and contracting) can cause inconsistencies, namely forgetting how may hours to submit. In November 2015 I began a new role as a Data Science Intern at The Hartford Insurance Group headquartered in Hartford, CT and I was responsible for logging my working hours in both the contractor database as well as The Hartford's database so that I can be *promptly* paid each week. After the first few days, I made an honest assessment about how likely I was to screw up my actual work hours for entry and decided if I wanted to not be scolded, I should think of a automated way of recording hours.
 
