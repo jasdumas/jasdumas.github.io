@@ -8,7 +8,7 @@ subtitle: open source, research & weekend data science projects
 
 * [ttbbeer](https://cran.r-project.org/web/packages/ttbbeer/index.html): This is my **first** R package on [CRAN](https://cran.r-project.org/). This package provides the data for materials used at U.S. breweries as listed in the Beer Monthly Statistical Releases. The motivation behind this package was to provide an analytic-ready data set as the original data is in PDF format. :beers:
 
-* [RTalk Podcast](http://rtalk.org/): I co-hosted a "semi-infrequent" podcast on the statistical software and programming language R with some buddies in the community. 
+* [RTalk Podcast](https://twitter.com/RTalkPodcast): I co-hosted a "semi-infrequent" podcast on the statistical software and programming language R with some buddies in the community. [Old Episodes on iTunes](https://itunes.apple.com/us/podcast/r-talk/id1030819337?mt=2)
 
 * [dumas](https://github.com/jasdumas/dumas): My vanity R package filled with useful functions for analysis and R development.
 
