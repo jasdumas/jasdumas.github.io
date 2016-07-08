@@ -35,6 +35,7 @@ navbar-links:
   About: 
     - About Me: aboutme
     - Resume: resume
+    - Consulting: "https://consultr.github.io/"
 nav-search: search
 
 
