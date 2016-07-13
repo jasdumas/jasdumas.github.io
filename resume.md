@@ -5,7 +5,7 @@ subtitle: Data Scientist
 ---
 
 -------------
-                jasmine.dumas[at]gmail.com | jasdumas.github.io | Connecticut, USA
+                jasmine.dumas[at]gmail.com | [jasdumas.github.io](jasdumas.github.io) | Connecticut, USA
 
 
 About
@@ -21,7 +21,7 @@ I have experience using my data science toolkit in several projects which includ
 
 Skills
 ---------
-* R Programming (ggplot2, Shiny, dplyr, reshape2, plotly, Bioconductor, knitr)
+* R Programming (ggplot2, Shiny, dplyr, reshape2, plotly, Bioconductor, knitr, Rmarkdown)
 * Statistical Software Packages: Minitab, SPSS, Towers Watson - Emblem, SAS
 * Python (SQLite3, NumPy, pandas, scikit-learn)
 * Database Processing: SQL (SQLDeveloper, Oracle)
@@ -45,7 +45,7 @@ ___________
 
 * [University of Hartford](http://www.hartford.edu/ceta/undergraduate/engineering/BM/), (2008 - 2012)    
   * **Bachelor of Science in Biomedical Engineering**	   
-  * Coursework: Engineering Computer Applications, Calculus (1-2, Multivariable), Differential Equations, Research  
+  * Coursework: Engineering Computer Applications, Calculus (1-2, Multivariable), Differential Equations, Research, Engineering Design, Statics, Dynamics, Mechacnics of Materials, Biomaterials  
 
 
 Data Science Experience
@@ -54,7 +54,7 @@ Data Science Experience
   * **Associate Data Scientist**, Predictive Analytics & Research - Auto Team, (April 2016 - Present)	    
     - Research & Implementation of machine learning techniques in variable reduction and selection to create predictive 
       models for auto insurance class plans that improve loss ratio estimates and drive strategic pricing changes.   
-    - Lead R/Shiny application development for model monitoring and diagnostic business intelligence tools.    
+    - R/Shiny application development for model monitoring and diagnostic business intelligence tools.    
   * **Data Science Intern**, (Nov. 2015  - March 2016)     
     - Developing a model monitoring web application with R/Shiny for auto insurance predictive model monitoring
     - Diagnostic residual analysis modeling to evaluate loss ratio in adverse risk segments.
@@ -92,9 +92,16 @@ ___________
   - Developed over 250 manufacturing process methods for complex commercial and military jet engine sheet metal brackets for Pratt & Whitney, using CNC Metrology Software, 3D printing & Solidworks CAD 
   - **Major Accomplishment**: Developed a new manufacturing method & CAD Model for part identification
 
+R Packages
+----------
+
+* **ttbbeer**: R data package of beer statistics from U.S. Department of the Treasury, Alcohol and Tobacco Tax and Trade Bureau (TTB).  [CRAN](https://cran.r-project.org/web/packages/ttbbeer/), [GitHub](https://github.com/jasdumas/ttbbeer)
+* **dumas**: My personal R package filled with useful functions for data analysis. [GitHub](https://github.com/jasdumas/dumas)
+* **shinyGEO**: Gene Expression Omnibus Analysis with Shiny. [GitHub](https://github.com/jasdumas/shinyGEO) [web application](http://bioinformatics.easternct.edu/shinyGEO/)
+
 Research
 ---------
-*Research Interests*: Medical Devices, Bioinformatics software, Reproducible research, Civic Data, Computational programming
+*Research Interests*: Bioinformatics software, Reproducible research and analysis, Open Government Data, Computational programming, Beer analytics, webscraping
 
 Peer-Reviewed Research Papers
 ---------
@@ -107,7 +114,7 @@ expression datasets“ [Pending Publication in the [Bioinformatics Journal](http
 Posters & Presentations
 ----------
 * [useR! 2016 Conference International Annual Meeting (Stanford, CA)](http://user2016.org/)  
-  * [*An online tool for biomarker analysis in Gene Expression Omnibus (GEO) datasets*](https://github.com/jasdumas/jasdumas.github.io/blob/master/post_data/jasmine_dumas_user2016_poster_update.pdf)
+  * [*shinyGEO: An online tool for biomarker analysis in Gene Expression Omnibus (GEO) datasets*](https://github.com/jasdumas/jasdumas.github.io/blob/master/post_data/jasmine_dumas_user2016_poster_update.pdf)
 
 * [American Association for Cancer Research Annual Meeting (New Orleans, LA) 2016](http://www.aacr.org/Meetings/Pages/MeetingDetail.aspx?EventItemID=63#.V2V7TeYrLoA)    
   * [*An online tool for biomarker analysis in Gene Expression Omnibus (GEO) datasets*](http://www.abstractsonline.com/Plan/ViewAbstract.aspx?mID=4017&sKey=b710c4a6-fafb-4546-a4ef-94ef72d93639&cKey=0243e952-bd00-4008-84b0-53222a594ee9&mKey=1d10d749-4b6a-4ab3-bcd4-f80fb1922267)
