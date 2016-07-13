@@ -5,7 +5,7 @@ subtitle: Data Scientist
 ---
 
 -------------
-                jasmine.dumas[at]gmail.com | [jasdumas.github.io](jasdumas.github.io) | Connecticut, USA
+                jasmine.dumas[at]gmail.com | jasdumas.github.io | Connecticut, USA
 
 
 About
@@ -17,7 +17,15 @@ I have experience using my data science toolkit in several projects which includ
 
 * [web scraping for craft brewery ratings from Beer Advocate](http://trendct.org/2016/03/18/tutorial-web-scraping-and-mapping-breweries-with-import-io-and-r/)     
 * [developing a gene expression analysis web application for bioinformaticians](http://gdancik.github.io/shinyGEO/)     
-* [exploratory data analysis on insurance company complaints from the CT open data portal](http://rpubs.com/jasdumas/eda-ct-insurance)     
+* [exploratory data analysis on insurance company complaints from the CT open data portal](http://rpubs.com/jasdumas/eda-ct-insurance)
+
+R Packages
+----------
+
+* **ttbbeer**: R data package of beer statistics from U.S. Department of the Treasury, Alcohol and Tobacco Tax and Trade Bureau (TTB).  [CRAN](https://cran.r-project.org/web/packages/ttbbeer/), [GitHub](https://github.com/jasdumas/ttbbeer)
+* **dumas**: My personal R package filled with useful functions for data analysis. [GitHub](https://github.com/jasdumas/dumas)
+* **shinyGEO**: Gene Expression Omnibus Analysis with Shiny. [GitHub](https://github.com/jasdumas/shinyGEO) [web application](http://bioinformatics.easternct.edu/shinyGEO/)
+
 
 Skills
 ---------
@@ -26,14 +34,13 @@ Skills
 * Python (SQLite3, NumPy, pandas, scikit-learn)
 * Database Processing: SQL (SQLDeveloper, Oracle)
 * Web Development: HTML, Bootstrap
-* General Computing: GitHub, Git, version control, Markdown, Mac, Windows, Unix/Command line Scripting
+* General Computing: GitHub, Git, version control, Markdown, Mac, Windows, Unix/Command line scripting
 
 Education
 ---------
-* [Johns Hopkins University, Engineering For Professionals](https://ep.jhu.edu/programs-and-courses/programs/computer-science), (Expected Graduation 2018)     
-  * **Master of Science in Computer Science**, Data Science & Cloud Computing Track	       
-  * Coursework: Data Structures, Computer Organization		  
-  * Additional Graduate Coursework at [DePaul University](https://www.cdm.depaul.edu/academics/Pages/MS-in-Predictive-Analytics.aspx): Intro to Programming, Data Analytics & Regression, Database Processing for Large-scale Analytics, Advanced Data Analysis, Knowledge Discovery Technologies
+* Graduate Coursework: [Johns Hopkins University, Engineering For Professionals](https://ep.jhu.edu/programs-and-courses/programs/computer-science): Data Structures, Computer Organization (Summer 2016)
+	  
+* Graduate Coursework at [DePaul University](https://www.cdm.depaul.edu/academics/Pages/MS-in-Predictive-Analytics.aspx) as an M.S. Candidate: Intro to Programming, Data Analytics & Regression, Database Processing for Large-scale Analytics, Advanced Data Analysis, Knowledge Discovery Technologies (2014 - Present)
 
 ___________
 
@@ -92,16 +99,10 @@ ___________
   - Developed over 250 manufacturing process methods for complex commercial and military jet engine sheet metal brackets for Pratt & Whitney, using CNC Metrology Software, 3D printing & Solidworks CAD 
   - **Major Accomplishment**: Developed a new manufacturing method & CAD Model for part identification
 
-R Packages
-----------
-
-* **ttbbeer**: R data package of beer statistics from U.S. Department of the Treasury, Alcohol and Tobacco Tax and Trade Bureau (TTB).  [CRAN](https://cran.r-project.org/web/packages/ttbbeer/), [GitHub](https://github.com/jasdumas/ttbbeer)
-* **dumas**: My personal R package filled with useful functions for data analysis. [GitHub](https://github.com/jasdumas/dumas)
-* **shinyGEO**: Gene Expression Omnibus Analysis with Shiny. [GitHub](https://github.com/jasdumas/shinyGEO) [web application](http://bioinformatics.easternct.edu/shinyGEO/)
 
 Research
 ---------
-*Research Interests*: Bioinformatics software, Reproducible research and analysis, Open Government Data, Computational programming, Beer analytics, webscraping
+*Research Interests*: Bioinformatics software, Reproducible research and analysis, Open Government Data, Computational programming, Beer analytics, Webscraping
 
 Peer-Reviewed Research Papers
 ---------
@@ -133,7 +134,7 @@ Honors & Awards
 
 Community Involvement
 -----------
-* Co-host of **R Talk**: A podcast about the R Programming language [rtalk.org](http://rtalk.org/) (Aug. 2016 - Present)
+* Co-host of **R Talk**: A podcast about the R Programming language [rtalk.org](http://rtalk.org/)
 * NumFOCUS, Community Member
 * Bioinformatics Organization, Associate Member
 * Python Software Foundation, Basic Member
