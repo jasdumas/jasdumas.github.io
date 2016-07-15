@@ -13,7 +13,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ### load the data
 ```{r, message=FALSE, warning=FALSE}
 library(glmnet)
-load("C:/Users/JD87417/Documents/R/R-3.2.5/library/glmnet/data/QuickStartExample.RData") # Gaussian linear model
+load("QuickStartExample.RData") # Gaussian linear model
 
 class(x) # x and y are two matricies
 class(y)
