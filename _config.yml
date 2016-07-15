@@ -30,12 +30,12 @@ navbar-links:
   Home: ""
   Projects: projects
   Resources:
-    - Data Science Resources: ds-resources
-    - Papers & Slides: papers
+    - Data Science Links: ds-resources
+    - Tutorials: papers
   About: 
     - About Me: aboutme
     - Resume: resume
-    - consultR: "https://consultr.github.io/"
+    - Consulting: "https://consultr.github.io/"
 nav-search: search
 
 
