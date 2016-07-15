@@ -5,8 +5,10 @@ subtitle: Data Scientist
 ---
 
 -------------
-                jasmine.dumas[at]gmail.com | jasdumas.github.io | Connecticut, USA
 
+	         jasmine.dumas[at]gmail.com | jasdumas.github.io | Connecticut, USA
+
+[PDF Version](https://github.com/jasdumas/jasdumas.github.io/blob/master/jasmine_dumas_resume.pdf)
 
 About
 ---------
