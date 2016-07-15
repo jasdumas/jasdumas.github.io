@@ -1,25 +1,35 @@
 ---
 layout: page
-title: Papers & Slides
-subtitle: technical writing, tutorials & slide decks
+title: Tutorials & Slides
+subtitle: technical writing in R
 ---
 
 ---------------
 
-### R Tutorials
+### Machine Learning
 
 * [LASSO Regression tutorial with the `glmnet` R package](https://htmlpreview.github.io/?https://github.com/jasdumas/jasdumas.github.io/blob/master/tech-short-papers/glmnet_lasso_tutorial.html)
 * [LASSO Regression tutorial with a tweedie distribution with the `HDtweedie` R package](https://htmlpreview.github.io/?https://github.com/jasdumas/jasdumas.github.io/blob/master/tech-short-papers/HDtweedie_lasso_tutorial.html)
 * [Gradient Boosting Machine (GBM) tutorial with the `xgboost` R package](https://htmlpreview.github.io/?https://github.com/jasdumas/jasdumas.github.io/blob/master/tech-short-papers/xgboost_gbm_tutorial.html)
 * [Gradient Boosting Machine (GBM) tutorial with a tweedie distribution with the `TDboost` R package](https://htmlpreview.github.io/?https://github.com/jasdumas/jasdumas.github.io/blob/master/tech-short-papers/TDboost_gbm_tutorial.html)
+
+### Regression Analysis
+
 * [Automated Variable Selection Algorithms in R](https://htmlpreview.github.io/?https://github.com/jasdumas/jasdumas.github.io/blob/master/tech-short-papers/automated_variable_selection_algorithms.html)
 
-### Short Technical Papers
 
-* [Computational Efficiency: Comparing Variable Assignment vs. Direct Function Usage](https://htmlpreview.github.io/?https://github.com/jasdumas/jasdumas.github.io/blob/master/tech-short-papers/Computational_Efficiency_test_of_direct_variable_assignment.html)
+### Data Visualization
+
+* [Interactive Data Vizualization Comparison](https://htmlpreview.github.io/?https://github.com/jasdumas/jasdumas.github.io/blob/master/tech-short-papers/Interactive_data_viz_comparison.html)
+
+### Statisics
+
 * [Example of Cramer’s V Calculation in R](https://htmlpreview.github.io/?https://raw.githubusercontent.com/jasdumas/jasdumas.github.io/master/tech-short-papers/Example_of_CramersV_Calculation.html)
 * [Example of Kolmogorov-Smirnov test](https://htmlpreview.github.io/?https://github.com/jasdumas/jasdumas.github.io/blob/master/tech-short-papers/Example_of_Kolmogorov_Smirnov_test2.html)
-* [Interactive Data Vizualization Comparison](https://htmlpreview.github.io/?https://github.com/jasdumas/jasdumas.github.io/blob/master/tech-short-papers/Interactive_data_viz_comparison.html)
+
+### Data Exploration & Analysis
+
+* [Computational Efficiency: Comparing Variable Assignment vs. Direct Function Usage](https://htmlpreview.github.io/?https://github.com/jasdumas/jasdumas.github.io/blob/master/tech-short-papers/Computational_Efficiency_test_of_direct_variable_assignment.html)
 * [Reading Large Datasets](https://htmlpreview.github.io/?https://github.com/jasdumas/jasdumas.github.io/blob/master/tech-short-papers/Reading_large_datasets.html)
 
 
