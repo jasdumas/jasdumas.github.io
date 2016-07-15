@@ -23,7 +23,6 @@ I have experience using my data science toolkit in several projects which includ
 
 R Packages
 ----------
-
 * **ttbbeer**: R data package of beer statistics from U.S. Department of the Treasury, Alcohol and Tobacco Tax and Trade Bureau (TTB).  [CRAN](https://cran.r-project.org/web/packages/ttbbeer/), [GitHub](https://github.com/jasdumas/ttbbeer)
 * **dumas**: My personal R package filled with useful functions for data analysis. [GitHub](https://github.com/jasdumas/dumas)
 * **shinyGEO**: Gene Expression Omnibus Analysis with Shiny. [GitHub](https://github.com/jasdumas/shinyGEO) [web application](http://bioinformatics.easternct.edu/shinyGEO/)
@@ -31,18 +30,24 @@ R Packages
 
 Skills
 ---------
-* R Programming (ggplot2, Shiny, dplyr, reshape2, plotly, Bioconductor, knitr, Rmarkdown)
+* R Programming (ggplot2, Shiny, dplyr, reshape2, plotly, Bioconductor, knitr, Rmarkdown, package development)
 * Statistical Software Packages: Minitab, SPSS, Towers Watson - Emblem, SAS
+* Machine Learning: Regression, GLM, GBM, Clustering, Random Forest, Decision Trees, Ensemble Modeling
 * Python (SQLite3, NumPy, pandas, scikit-learn)
-* Database Processing: SQL (SQLDeveloper, Oracle)
-* Web Development: HTML, Bootstrap
+* Database Processing: SQL queries, Database Management (SQLDeveloper, Oracle)
+* Web Development: HTML, Bootstrap Web Framework
 * General Computing: GitHub, Git, version control, Markdown, Mac, Windows, Unix/Command line scripting
 
 Education
 ---------
+
+* [DePaul University](https://www.cdm.depaul.edu/academics/Pages/MS-in-Predictive-Analytics.aspx), (2015 - Present)
+  * **Master of Science Candidate in Predictive Analytics**
+  * Coursework: Intro to Programming, Data Analytics & Regression, Database Processing for Large-scale Analytics, Advanced Data Analysis, Knowledge Discovery Technologies 
+
+___________
+
 * Graduate Coursework: [Johns Hopkins University, Engineering For Professionals](https://ep.jhu.edu/programs-and-courses/programs/computer-science): Data Structures, Computer Organization (Summer 2016)
-	  
-* Graduate Coursework at [DePaul University](https://www.cdm.depaul.edu/academics/Pages/MS-in-Predictive-Analytics.aspx) as an M.S. Candidate: Intro to Programming, Data Analytics & Regression, Database Processing for Large-scale Analytics, Advanced Data Analysis, Knowledge Discovery Technologies (2014 - Present)
 
 ___________
 
@@ -108,7 +113,6 @@ Research
 
 Peer-Reviewed Research Papers
 ---------
-
 * **Dumas, J.**, Dancik, GM., “shinyGEO: a web-based tool for downloading, cleaning, & modeling of microarray gene 
 expression datasets“ [Pending Publication in the [Bioinformatics Journal](http://bioinformatics.oxfordjournals.org/)]    
 
@@ -116,14 +120,11 @@ expression datasets“ [Pending Publication in the [Bioinformatics Journal](http
 
 Posters & Presentations
 ----------
-* [useR! 2016 Conference International Annual Meeting (Stanford, CA)](http://user2016.org/)  
-  * [*shinyGEO: An online tool for biomarker analysis in Gene Expression Omnibus (GEO) datasets*](https://github.com/jasdumas/jasdumas.github.io/blob/master/post_data/jasmine_dumas_user2016_poster_update.pdf)
+* [useR! 2016 Conference International Annual Meeting (Stanford, CA)](http://user2016.org/): [*shinyGEO: An online tool for biomarker analysis in Gene Expression Omnibus (GEO) datasets*](https://github.com/jasdumas/jasdumas.github.io/blob/master/post_data/jasmine_dumas_user2016_poster_update.pdf)
 
-* [American Association for Cancer Research Annual Meeting (New Orleans, LA) 2016](http://www.aacr.org/Meetings/Pages/MeetingDetail.aspx?EventItemID=63#.V2V7TeYrLoA)    
-  * [*An online tool for biomarker analysis in Gene Expression Omnibus (GEO) datasets*](http://www.abstractsonline.com/Plan/ViewAbstract.aspx?mID=4017&sKey=b710c4a6-fafb-4546-a4ef-94ef72d93639&cKey=0243e952-bd00-4008-84b0-53222a594ee9&mKey=1d10d749-4b6a-4ab3-bcd4-f80fb1922267)
+* [American Association for Cancer Research Annual Meeting (New Orleans, LA) 2016](http://www.aacr.org/Meetings/Pages/MeetingDetail.aspx?EventItemID=63#.V2V7TeYrLoA): [*An online tool for biomarker analysis in Gene Expression Omnibus (GEO) datasets*](http://www.abstractsonline.com/Plan/ViewAbstract.aspx?mID=4017&sKey=b710c4a6-fafb-4546-a4ef-94ef72d93639&cKey=0243e952-bd00-4008-84b0-53222a594ee9&mKey=1d10d749-4b6a-4ab3-bcd4-f80fb1922267)
 
-* Northeast American Society of Engineering Education Conference (Lowell, MA) 2012     
-  * Dual Presenter - [bit.ly/JMD-asee1](bit.ly/JMD-asee1), [bit.ly/JMD-asee2](bit.ly/JMD-asee2)
+* Northeast American Society of Engineering Education Conference (Lowell, MA) 2012: [bit.ly/JMD-asee1](bit.ly/JMD-asee1), [bit.ly/JMD-asee2](bit.ly/JMD-asee2)
 
 * Neonatal/Perinatal Research Symposium at Connecticut Children's Medical Center, (Hartford, CT) 2012
 
