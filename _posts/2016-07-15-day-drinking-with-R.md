@@ -17,11 +17,9 @@ My first submission for review, I made a silly mistake and did not upload my pac
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">My first <a href="https://twitter.com/hashtag/rstats?src=hash">#rstats</a> package is now on CRAN - a data set on US Beer Statistics from <a href="https://twitter.com/usdatagov">@usdatagov</a> ! <a href="https://t.co/AnNKqNXYRz">https://t.co/AnNKqNXYRz</a> 😎</p>&mdash; Jasmine Dumas (@jasdumas) <a href="https://twitter.com/jasdumas/status/749636903217995776">July 3, 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-=======
+______
 
 Here is my first package available on CRAN: [`ttbbeer`](http://cran.us.r-project.org/web/packages/ttbbeer/index.html), which I will continue to update with new "liberated" datasets and use this as an opportunity to increase education and advocate for analysis-ready datasets on open government data portals. Here is the [wiki](https://github.com/jasdumas/ttbbeer/wiki) to follow along on the journey to more Open Beer Data. Cheers :beers:
-
-
 
 To install the package type the following:
 
@@ -31,6 +29,7 @@ library("ttbbeer")
 ```
 
 Or you can install the development version from Github:
+
 ```r
 library(devtools)
 install_github("jasdumas/ttbbeer")
