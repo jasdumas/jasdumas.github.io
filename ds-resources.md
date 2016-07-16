@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Data Science Resources
-subtitle: R & python learning resource materials
+title: Data Science Links
+subtitle: R & python resource materials
 ---
 
 ----------
@@ -52,7 +52,7 @@ subtitle: R & python learning resource materials
 * [HTML Github Preview](https://htmlpreview.github.io/)
 * [RSeek.org Search Engine](http://rseek.org/)
 
-### Reading material & Blogs
+### Blogs
 * [Rstudio Blog](http://blog.rstudio.org/)
 * [yHat Blog](http://blog.yhat.com/)
 * [DataTau](http://www.datatau.com/)
@@ -65,11 +65,12 @@ subtitle: R & python learning resource materials
 ### Books
 * [The Signal & the Noise by Nate Silver](http://www.amazon.com/Signal-Noise-Many-Predictions-Fail-but/dp/0143125087)
 * [Big Data](http://www.big-data-book.com/)
+* Python for Data Analysis
 
 ### Coursework, MOOCS & Online material   
 * [Johns Hopkins Engineering For Professionals CS Program](https://ep.jhu.edu/programs-and-courses/programs/computer-science)
 * [Datacamp.com: Data Analysis in your browser](https://www.datacamp.com/)
-* [Stat545: Data wrangling, exploration, and analysis with R](https://stat545-ubc.github.io/) - From the University of British Columbia     
+* [Stat545: Data wrangling, exploration, and analysis with R](https://stat545-ubc.github.io/)   
 * [Rstudio resources](https://www.rstudio.com/resources/training/online-learning/)
 * [The Johns Hopkins Data Science Specialization on Coursera](https://www.coursera.org/specialization/jhudatascience/1)
 * [Udacity Exploratory Data Analysis](https://www.udacity.com/course/ud651)
