@@ -22,7 +22,7 @@ subtitle: technical writing in R
 
 * [Interactive Data Vizualization Comparison](https://htmlpreview.github.io/?https://github.com/jasdumas/jasdumas.github.io/blob/master/tech-short-papers/Interactive_data_viz_comparison.html)
 
-### Statisics
+### Statistics
 
 * [Example of Cramer’s V Calculation in R](https://htmlpreview.github.io/?https://raw.githubusercontent.com/jasdumas/jasdumas.github.io/master/tech-short-papers/Example_of_CramersV_Calculation.html)
 * [Example of Kolmogorov-Smirnov test](https://htmlpreview.github.io/?https://github.com/jasdumas/jasdumas.github.io/blob/master/tech-short-papers/Example_of_Kolmogorov_Smirnov_test2.html)
@@ -33,7 +33,7 @@ subtitle: technical writing in R
 * [Reading Large Datasets](https://htmlpreview.github.io/?https://github.com/jasdumas/jasdumas.github.io/blob/master/tech-short-papers/Reading_large_datasets.html)
 
 
-### Slide Decks
+### Slides & Presentations
 
 * [to err is human: decoding error messages in R](http://rpubs.com/jasdumas/to-err): A re-useable presentation deck for new R programmers on decoding confusing error messages and gaining confidence in programming.
 
