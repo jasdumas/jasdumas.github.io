@@ -1,12 +1,13 @@
 ---
 layout: post
 title: Master of Data Science - fears, regrets and general thoughts
-img: "http://i.giphy.com/12HGnwUnJEgjra.gif"
+subtitle: From DePaul to JHU back to DePaul
 ---
 
-* **UPDATE on 7/16/16:** I'm heading back to **DePaul University** to finish what I started! Johns Hopkins is/was extremely chalenging all while working full-time and taking two courses that I found out were very time-demanding and mostly theoretical and not taught from an application-driven approach. I still stand by my original comments in this post but the best use of my time and new found appreciation of machine learning and predicitive modeling (mostly gained from work over the past 3 months) is to return to DePaul's MSPA program as a part-time student and resume my studies. I'm hopeful that the remainder of my coursework is interesting and engaging and I hope to continue documenting my progress and thoughts on the program for those that interested in Predictive and Data Analytics.
+* **UPDATE on 7/16/16:** I'm heading back to **DePaul University** to finish what I started! Johns Hopkins is/was extremely chalenging all while working full-time and taking two courses that I found out were very time-consuming and mostly theoretical and not taught from an application-driven approach. I love to program but the shear amount of effort to switch to Java and learning MIPS Assembly langauge as completly put me off taking any additional course in the MSCS program at JHU. I was hasty in my original plan to leave but I also was navigating uncharted territory in my new career as a Data Scientist. I still stand by my original comments in this post (below) but the best use of my time and my new found appreciation of machine learning and predicitive modeling (mostly gained from work over the past 3 months) is to return to DePaul's MSPA program as a part-time student and resume my studies. I'm hopeful that the remainder of my coursework is interesting and engaging and I hope to continue documenting my progress and thoughts on the program for those that are interested in Predictive and Data Analytics.
 
-![](http://i.giphy.com/12HGnwUnJEgjra.gif)
+![Thanks for taking me back](http://i.giphy.com/12HGnwUnJEgjra.gif)
+
 _____
 
 * **UPDATE on 4/4/16:** This post helped me hash out my "feelings" and angst about the specifics of the MSPA program however I still value the structure and knowledge from another Master's Degree program which has prompted me to officially withdraw from DePaul University and enroll (as a MS provisional Student until my pre-reqs are complete) in the MS in Computer Science program at **[Johns Hopkins University Engineering for Professionals](https://ep.jhu.edu/programs-and-courses/programs/computer-science)**. I beleive that this program will emphazise some different pedalogical features that will prepare me to be the best Data Scientist I can be, as well as offer more comprehensive course tracks in Data Science, Bioinformatics, and Cybersecurity. I'm excited by this new adventure! 
