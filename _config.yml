@@ -31,8 +31,8 @@ navbar-links:
   Projects: projects
   Resources:
     - Data Science Links: ds-resources
-    - Tutorials: papers
-  About: 
+    - Tutorials & Slides: papers
+  About / Contact: 
     - About Me: aboutme
     - Resume: resume
     - Consulting: "https://consultr.github.io/"
