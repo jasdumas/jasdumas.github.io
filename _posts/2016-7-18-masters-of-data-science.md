@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Master of Data Science - fears, regrets and general thoughts
+title: Master's of Data Science
 subtitle: From DePaul to JHU back to DePaul
 ---
 
@@ -13,6 +13,10 @@ _____
 * **UPDATE on 4/4/16:** This post helped me hash out my "feelings" and angst about the specifics of the MSPA program however I still value the structure and knowledge from another Master's Degree program which has prompted me to officially withdraw from DePaul University and enroll (as a MS provisional Student until my pre-reqs are complete) in the MS in Computer Science program at **[Johns Hopkins University Engineering for Professionals](https://ep.jhu.edu/programs-and-courses/programs/computer-science)**. I beleive that this program will emphazise some different pedalogical features that will prepare me to be the best Data Scientist I can be, as well as offer more comprehensive course tracks in Data Science, Bioinformatics, and Cybersecurity. I'm excited by this new adventure! 
 
 _____
+
+## Master of Data Science - fears, regrets and general thoughts 
+
+*Originally Posted March 28, 2016*
 
 **TL;DR : I really don't need to continue my Data Science MS program, since I can confidently learn the material and build my portfolio independently.**
 
