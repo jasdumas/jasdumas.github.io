@@ -10,7 +10,7 @@ subtitle: ... and all that jazz!
 
 :briefcase: Currently working as a **Data Scientist** ([The Hartford](https://www.thehartford.com/)). Previously worked in **R&D Engineering** roles ([Medtronic](http://www.medtronic.com/covidien), QDx) and as an **Aerospace Manufacturing Engineer** ([AdChem](http://acmt.aero/)).
 
-:mortar_board: Currently a graduate student in **Computer Science** at Johns Hopkins focusing in **Data Science & Cloud Computing**. Previously earned a Bachelor of **Biomedical Engineering** from the University of Hartford. My senior research project was to develop a prototype [walk-assist](http://www.tuvie.com/wp-content/uploads/ekso-bionic-suit1.jpg) device for a T4 Paraplegic client; project nicknamed "Iron man".
+:mortar_board: Currently a M.S. graduate student in **Predictive Analytics** at DePaul University focusing in **Data Science & Computational Methods**. Previously earned a Bachelor of **Biomedical Engineering** from the University of Hartford. My senior research project was to develop a prototype [walk-assist](http://www.tuvie.com/wp-content/uploads/ekso-bionic-suit1.jpg) device for a T4 Paraplegic client; project nicknamed "Iron man".
 
 :floppy_disk: I enjoy developing software tools to help assist technical novices complete their data analysis work! I like coding in R & Python!
 
