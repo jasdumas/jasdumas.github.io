@@ -16,8 +16,27 @@ summary(cars)
 
 You can also embed plots, for example:
 
-```{r pressure, echo=FALSE}
-plot(pressure)
+```{r ggcars, echo=TRUE}
+library(ggplot2)
+g <- ggplot(cars, aes(x=speed, y=dist)) +
+     geom_point(color="dodgerblue") +
+     theme_minimal() +
+     labs(title = "Cars Dataset")
+print(g)
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+_____
+
+
+## Directions for writing Rmd to Md files for Jekyll blogs
+
+1. Launch RStudio, Start project in _drafts folder of your jekyll page repo
+2. File > New File > R Markdown file
+3. Edit yaml header to mimic jekyll with title and layout parameters and save file
+    a. make sure to include the figure path in the knitr chuck options: *knitr::opts_chunk$set(fig.path='/post_data/exploring-the-cars-dataset-')* with your desired folder outputs
+4. First time only: create *r2jekyll.R* file which creates the .md file and does some house keeping about figures
+5. Go to Terminal and change directory to the drafts folder `cd /Users/jasminedumas/Desktop/GitHub\ Clone\ Repos/jasdumas.github.io/_drafts/`
+6. Change permission of *r2jekyll.R* file with: `chmod +x r2jekyll.R`
+7. Execute `./r2jekyll.R demo.Rmd` changing the .Rmd file name
+
+[Source](https://nicolewhite.github.io/2015/02/07/r-blogging-with-rmarkdown-knitr-jekyll.html)
