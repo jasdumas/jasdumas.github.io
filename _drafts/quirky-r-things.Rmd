@@ -1,0 +1,29 @@
+---
+title: "Quirky R things"
+subtitle: "Keep R Weird"
+layout: page
+---
+  
+
+```{r setup, include=FALSE}
+# to be rendered as html for papers.md section
+
+knitr::opts_chunk$set(fig.path='{{ site.url }}/post_data/quirky-r-')
+```
+
+## Partial Matching
+```{r, pm}
+df = data.frame("a"= letters[1:10], "abc" = 1:10)
+
+head(df)
+
+df$ab # returns the column named "abc"
+```
+
+## Ploting
+
+How did the plot function know about the x and y variables to be ploted and labeled?
+```{r, quirkyplot}
+plot(pressure)
+```
+

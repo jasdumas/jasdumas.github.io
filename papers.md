@@ -33,6 +33,11 @@ subtitle: technical writing in R
 * [Reading Large Datasets](https://htmlpreview.github.io/?https://github.com/jasdumas/jasdumas.github.io/blob/master/tech-short-papers/Reading_large_datasets.html)
 
 
+### Quirky R things
+
+* [QuirkyR](http://jasdumas.github.io/post_data/quirky-r-things.md): An on going post about the subtle nuances that make R weird and great
+
+
 ### Slides & Presentations
 
 * [*IPA & Data frames*: Open governemnt data and beer analytics](https://github.com/jasdumas/talks/tree/master/caRdiff-uk-open-gov-beer): Lightening talk about the state of analysis-ready data from open data portals from the U.S. Governemnt and beyond in relation to beer statisitcs.
