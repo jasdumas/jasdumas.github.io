@@ -35,7 +35,7 @@ subtitle: technical writing in R
 
 ### Quirky R things
 
-* [QuirkyR](http://jasdumas.github.io/post_data/2016-07-24-quirky-r-things.md): An on going post about the subtle nuances that make R weird and great
+* [QuirkyR](http://jasdumas.github.io/2016-07-24-quirky-r-things/): An on going post about the subtle nuances that make R weird and great
 
 
 ### Slides & Presentations
