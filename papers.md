@@ -20,7 +20,7 @@ subtitle: technical writing in R
 
 ### Data Visualization
 
-* [Interactive Data Vizualization Comparison](https://htmlpreview.github.io/?https://github.com/jasdumas/jasdumas.github.io/blob/master/tech-short-papers/Interactive_data_viz_comparison.html)
+* [Interactive Data Visualization Comparison](https://htmlpreview.github.io/?https://github.com/jasdumas/jasdumas.github.io/blob/master/tech-short-papers/Interactive_data_viz_comparison.html)
 
 ### Statistics
 
@@ -34,6 +34,8 @@ subtitle: technical writing in R
 
 
 ### Slides & Presentations
+
+* [*IPA & Data frame*: Open governemnt data and beer analytics](https://github.com/jasdumas/talks/tree/master/caRdiff-uk-open-gov-beer): Lightening talk about the state of analysis-ready data from open data portals from the U.S. Governemnt and beyond in relation to beer statisitcs.
 
 * [to err is human: decoding error messages in R](http://rpubs.com/jasdumas/to-err): A re-useable presentation deck for new R programmers on decoding confusing error messages and gaining confidence in programming.
 
