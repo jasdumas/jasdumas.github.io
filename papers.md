@@ -35,7 +35,7 @@ subtitle: technical writing in R
 
 ### Slides & Presentations
 
-* [*IPA & Data frame*: Open governemnt data and beer analytics](https://github.com/jasdumas/talks/tree/master/caRdiff-uk-open-gov-beer): Lightening talk about the state of analysis-ready data from open data portals from the U.S. Governemnt and beyond in relation to beer statisitcs.
+* [*IPA & Data frames*: Open governemnt data and beer analytics](https://github.com/jasdumas/talks/tree/master/caRdiff-uk-open-gov-beer): Lightening talk about the state of analysis-ready data from open data portals from the U.S. Governemnt and beyond in relation to beer statisitcs.
 
 * [to err is human: decoding error messages in R](http://rpubs.com/jasdumas/to-err): A re-useable presentation deck for new R programmers on decoding confusing error messages and gaining confidence in programming.
 
