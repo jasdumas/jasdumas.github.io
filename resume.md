@@ -8,7 +8,7 @@ subtitle: Data Scientist
 
 	         jasmine.dumas[at]gmail.com | jasdumas.github.io | Connecticut, USA
 
-[PDF Version](https://github.com/jasdumas/jasdumas.github.io/blob/master/jasmine_dumas_resume.pdf)
+### [PDF Version](https://github.com/jasdumas/jasdumas.github.io/blob/master/jasmine_dumas_resume.pdf)
 
 About
 ---------
@@ -31,12 +31,13 @@ R Packages
 Skills
 ---------
 * R Programming (ggplot2, Shiny, dplyr, reshape2, plotly, Bioconductor, knitr, Rmarkdown, package development)
-* Statistical Software Packages: Minitab, SPSS, Towers Watson - Emblem, SAS
-* Machine Learning: Regression, GLM, GBM, Clustering, Random Forest, Decision Trees, Ensemble Modeling
+* Statistical Software Packages: Minitab, SPSS, SAS
+* Machine Learning: Regression Analysis, GLM, GBM, xgboost, Clustering, Random Forest, Decision Trees, Ensemble Modeling
 * Python (SQLite3, NumPy, pandas, scikit-learn)
 * Database Processing: SQL queries, Database Management (SQLDeveloper, Oracle)
 * Web Development: HTML, Bootstrap Web Framework
 * General Computing: GitHub, Git, version control, Markdown, Mac, Windows, Unix/Command line scripting
+
 
 Education
 ---------
@@ -138,6 +139,7 @@ Honors & Awards
 Community Involvement
 -----------
 * Co-host of **R Talk**: A podcast about the R Programming language [rtalk.org](http://rtalk.org/)
+* [rweekly.org](https://rweekly.org/) - GitHub organization member
 * NumFOCUS, Community Member
 * Bioinformatics Organization, Associate Member
 * Python Software Foundation, Basic Member
