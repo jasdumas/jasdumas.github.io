@@ -20,7 +20,7 @@ subtitle: technical writing in R
 
 ### Data Visualization
 
-* [Interactive Data Visualization Comparison](https://htmlpreview.github.io/?https://github.com/jasdumas/jasdumas.github.io/blob/master/tech-short-papers/Interactive_data_viz_comparison.html)
+* [Interactive Data Visualization Comparison](http://jasdumas.github.io/Interactive_data_viz_comparison)
 
 ### Statistics
 
