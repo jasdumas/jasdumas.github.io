@@ -11,7 +11,7 @@ if(!grepl(".Rmd", filename)) {
 }
 
 # Knit and place in _posts.
-dir = paste0("../", Sys.Date(), "-")
+dir = paste0("../")
 output = paste0(dir, sub('.Rmd', '.md', filename))
 knit(filename, output)
 
