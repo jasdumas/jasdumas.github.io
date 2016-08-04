@@ -1,5 +1,5 @@
 ---
-title: "Interactive Data Vizualization Comparison"
+title: "Data Viz Comparison"
 subtitle: "base vs ggplot2 vs ggvis vs googleVis vs rCharts vs plotly vs ggplotly"
 layout: page
 output:
@@ -7,12 +7,9 @@ output:
     self_contained: no
 ---
 
-```{r}
-library(knitr)
-library(rmarkdown)
-suppressPackageStartupMessages(library(googleVis))
-
-knitr::opts_chunk$set( message=FALSE, 
+```{r, setup, include=FALSE}
+knitr::opts_chunk$set( fig.path='{{ site.url }}/post_data/data-viz-compare-', 
+                       message=FALSE, 
                        warning=FALSE)
 
 ```
@@ -66,7 +63,7 @@ layer_points(p)
 ## googleVis
 <https://github.com/mages/googleVis#googlevis>
 ```{r, results = 'asis', tidy=TRUE}
-library(googleVis)
+suppressPackageStartupMessages(library(googleVis))
  op <- options(gvis.plot.tag='chart')
  options(op)
 
