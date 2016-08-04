@@ -40,8 +40,7 @@ subtitle: technical writing in R
 
 ### Slides & Presentations
 
-* [*IPA & Data frames*: Open governemnt data and beer analytics](https://github.com/jasdumas/talks/tree/master/caRdiff-uk-open-gov-beer): Lightening talk about the state of analysis-ready data from open data portals from the U.S. Governemnt and beyond in relation to beer statisitcs.
+* [*IPA & Data frames*: Open governemnt data and beer analytics](http://rpubs.com/jasdumas/caRdiff-uk-open-gov-beer): Lightening talk about the state of analysis-ready data from open data portals from the U.S. Governemnt and beyond in relation to beer statisitcs given to the **Cardiff, UK R User Group  August 2, 2016**.
 
-* [to err is human: decoding error messages in R](http://rpubs.com/jasdumas/to-err): A re-useable presentation deck for new R programmers on decoding confusing error messages and gaining confidence in programming.
+* [to err is human: decoding error messages in R](http://rpubs.com/jasdumas/to-err): A re-useable presentation deck for new R programmers on decoding confusing error messages and gaining confidence in programming. *In-development*
 
-* UCI Extension Presentations: [Medical Device Design &amp; Evaluation (EECS X445.23) - Final](http://prezi.com/6bkt7iwwci41/?utm_campaign=share&utm_medium=copy&rc=ex0share), [BME-X408-project 1](http://prezi.com/sy11bqnub5np/?utm_campaign=share&utm_medium=copy&rc=ex0share), [BME-X408-project 2](http://prezi.com/cqe2z4mmxvnp/?utm_campaign=share&utm_medium=copy&rc=ex0share), [BME-X408-project 3](http://prezi.com/6k7v4vwj1qco/?utm_campaign=share&utm_medium=copy&rc=ex0share)
