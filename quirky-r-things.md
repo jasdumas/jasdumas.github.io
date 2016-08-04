@@ -1,7 +1,7 @@
 ---
 title: "Quirky R things"
 subtitle: "Keep R Weird"
-layout: minimal
+layout: page
 ---
   
 
