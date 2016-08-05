@@ -1,7 +1,7 @@
 ---
 title: "Quirky R things"
 subtitle: "Keep R Weird"
-layout: page
+layout: post
 ---
   
 
@@ -42,4 +42,51 @@ plot(pressure)
 ```
 
 ![plot of chunk quirkyplot]({{ site.url }}/post_data/quirky-r-quirkyplot-1.png)
+
+## Sub-setting
+
+When you subset with brackets by 1 column, the resultant is a numeric vector not a data.frame of length 1. You can then change it back into a data.frame if necessary.
+
+
+```r
+i = iris[, 1]
+class(i)
+```
+
+```
+## [1] "numeric"
+```
+
+```r
+length(i)
+```
+
+```
+## [1] 150
+```
+
+```r
+i2 = iris[, 1:2]
+class(i2)
+```
+
+```
+## [1] "data.frame"
+```
+
+```r
+length(i2)
+```
+
+```
+## [1] 2
+```
+
+```r
+nrow(i2)
+```
+
+```
+## [1] 150
+```
 
