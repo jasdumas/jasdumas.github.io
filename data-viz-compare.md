@@ -61,27 +61,27 @@ p <- ggvis(iris, x = ~Sepal.Length, y = ~Petal.Length, fill = ~Species) %>% add_
 layer_points(p)
 ```
 
-<!--html_preserve--><div id="plot_id891767252-container" class="ggvis-output-container">
-<div id="plot_id891767252" class="ggvis-output"></div>
+<!--html_preserve--><div id="plot_id731364669-container" class="ggvis-output-container">
+<div id="plot_id731364669" class="ggvis-output"></div>
 <div class="plot-gear-icon">
 <nav class="ggvis-control">
 <a class="ggvis-dropdown-toggle" title="Controls" onclick="return false;"></a>
 <ul class="ggvis-dropdown">
 <li>
 Renderer: 
-<a id="plot_id891767252_renderer_svg" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id891767252" data-renderer="svg">SVG</a>
+<a id="plot_id731364669_renderer_svg" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id731364669" data-renderer="svg">SVG</a>
  | 
-<a id="plot_id891767252_renderer_canvas" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id891767252" data-renderer="canvas">Canvas</a>
+<a id="plot_id731364669_renderer_canvas" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id731364669" data-renderer="canvas">Canvas</a>
 </li>
 <li>
-<a id="plot_id891767252_download" class="ggvis-download" data-plot-id="plot_id891767252">Download</a>
+<a id="plot_id731364669_download" class="ggvis-download" data-plot-id="plot_id731364669">Download</a>
 </li>
 </ul>
 </nav>
 </div>
 </div>
 <script type="text/javascript">
-var plot_id891767252_spec = {
+var plot_id731364669_spec = {
   "data": [
     {
       "name": "iris0",
@@ -249,7 +249,7 @@ var plot_id891767252_spec = {
   },
   "handlers": null
 };
-ggvis.getPlot("plot_id891767252").parseSpec(plot_id891767252_spec);
+ggvis.getPlot("plot_id731364669").parseSpec(plot_id731364669_spec);
 </script><!--/html_preserve-->
 
 ## googleVis
@@ -269,14 +269,14 @@ print(flower, "chart")
 ```
 
 <!-- ScatterChart generated in R 3.3.1 by googleVis 0.6.0 package -->
-<!-- Thu Aug  4 10:54:30 2016 -->
+<!-- Thu Aug  4 10:59:16 2016 -->
 
 
 <!-- jsHeader -->
 <script type="text/javascript">
  
 // jsData 
-function gvisDataScatterChartID111c45b36d6b () {
+function gvisDataScatterChartID116e13813ab4 () {
 var data = new google.visualization.DataTable();
 var datajson =
 [
@@ -888,14 +888,14 @@ return(data);
 }
  
 // jsDrawChart
-function drawChartScatterChartID111c45b36d6b() {
-var data = gvisDataScatterChartID111c45b36d6b();
+function drawChartScatterChartID116e13813ab4() {
+var data = gvisDataScatterChartID116e13813ab4();
 var options = {};
 options["allowHtml"] = [true];
 options["title"] = ["Flower Characteristics in Iris"];
 
     var chart = new google.visualization.ScatterChart(
-    document.getElementById('ScatterChartID111c45b36d6b')
+    document.getElementById('ScatterChartID116e13813ab4')
     );
     chart.draw(data,options);
     
@@ -919,9 +919,9 @@ if (newPackage)
   pkgs.push(chartid);
   
 // Add the drawChart function to the global list of callbacks
-callbacks.push(drawChartScatterChartID111c45b36d6b);
+callbacks.push(drawChartScatterChartID116e13813ab4);
 })();
-function displayChartScatterChartID111c45b36d6b() {
+function displayChartScatterChartID116e13813ab4() {
   var pkgs = window.__gvisPackages = window.__gvisPackages || [];
   var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
   window.clearTimeout(window.__gvisLoad);
@@ -945,11 +945,11 @@ callbacks.shift()();
 </script>
  
 <!-- jsChart -->  
-<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartScatterChartID111c45b36d6b"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartScatterChartID116e13813ab4"></script>
  
 <!-- divChart -->
   
-<div id="ScatterChartID111c45b36d6b" 
+<div id="ScatterChartID116e13813ab4" 
   style="width: 500; height: automatic;">
 </div>
 

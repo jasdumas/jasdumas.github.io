@@ -9,7 +9,7 @@ output:
 
 ```{r, setup, include=FALSE}
 library(knitr)
-#library(webshot)
+library(webshot)
 knitr::opts_chunk$set( message=FALSE, 
                        warning=FALSE)
 
@@ -43,7 +43,7 @@ gg
 
 ## ggvis
 <http://ggvis.rstudio.com/>
-```{r, ggvis, fig.path='{{ site.url }}/data-viz-compare_files/figure-html/gvis.html'}
+```{r, ggvis, fig.path='{{ site.url }}/post_data/data-viz-compare-'}
 library(ggvis)
 data(iris)
 
@@ -80,7 +80,7 @@ print(flower, 'chart')
 
 ## rCharts
 <http://rcharts.io/>
-```{r, rCharts, fig.path='{{ site.url }}/post_data/data-viz-compare-'}
+```{r, rCharts}
 library(rCharts)
 names(iris) = gsub("\\.", "", names(iris))
 rPlot(PetalLength ~ SepalLength , data = iris, color = 'Species', type = 'point')
@@ -89,7 +89,7 @@ rPlot(PetalLength ~ SepalLength , data = iris, color = 'Species', type = 'point'
 
 ## plotly
 <https://plot.ly/r/>
-```{r, plotly, fig.path='{{ site.url }}/post_data/data-viz-compare-'}
+```{r, plotly}
 library(plotly)
 data(iris)
 plot_ly(iris, x = Sepal.Length, y = Petal.Length, color = Species, mode = "markers") %>% 
@@ -98,7 +98,7 @@ plot_ly(iris, x = Sepal.Length, y = Petal.Length, color = Species, mode = "marke
 
 ## ggplotly
 <https://plot.ly/ggplot2/>
-```{r, ggplotly, fig.path='{{ site.url }}/post_data/data-viz-compare-'}
+```{r, ggplotly}
 p <- ggplot(iris) +
       geom_point(aes(x=Sepal.Length, y=Petal.Length, color = Species)) +
       labs(title = "Flower Characteristics in Iris")
