@@ -27,16 +27,17 @@ R Packages
 * **dumas**: My personal R package filled with useful functions for data analysis. [GitHub](https://github.com/jasdumas/dumas)
 * **shinyGEO**: Gene Expression Omnibus Analysis with Shiny. [GitHub](https://github.com/jasdumas/shinyGEO) [web application](http://bioinformatics.easternct.edu/shinyGEO/)
 
+*More R packages and Shiny apps available at: [https://github.com/jasdumas](https://github.com/jasdumas)*
 
 Skills
 ---------
-* R Programming (ggplot2, Shiny, dplyr, reshape2, plotly, Bioconductor, knitr, Rmarkdown, package development)
-* Statistical Software Packages: Minitab, SPSS, SAS
-* Machine Learning: Regression Analysis, GLM, GBM, xgboost, Clustering, Random Forest, Decision Trees, Ensemble Modeling
-* Python (SQLite3, NumPy, pandas, scikit-learn)
-* Database Processing: SQL queries, Database Management (SQLDeveloper, Oracle)
-* Web Development: HTML, Bootstrap Web Framework
-* General Computing: GitHub, Git, version control, Markdown, Mac, Windows, Unix/Command line scripting
+* **R Programming**: ggplot2, Shiny, dplyr, reshape2, plotly, Bioconductor, knitr, Rmarkdown, package development
+* **Statistical Software Packages**: Minitab, SPSS, SAS
+* **Machine Learning**: Regression Analysis, GLM, GBM, xgboost, Clustering, Random Forest, Decision Trees, Ensemble Modeling
+* **Python**: SQLite3, NumPy, pandas, scikit-learn
+* **Database Processing**: SQL queries, Database Management (SQLDeveloper, Oracle)
+* **Web Development**: HTML, Bootstrap Web Framework
+* **General Computing**: GitHub, Git, version control, Markdown, Unix/Command line scripting
 
 
 Education
@@ -67,45 +68,45 @@ Data Science Experience
 ---------
 * **The Hartford Financial Services (NYSE: HIG)**   
   * **Associate Data Scientist**, Predictive Analytics & Research - Auto Team, (April 2016 - Present)	    
-    - Research & Implementation of machine learning techniques in variable reduction and selection to create predictive 
+    * Research & Implementation of machine learning techniques in variable reduction and selection to create predictive 
       models for auto insurance class plans that improve loss ratio estimates and drive strategic pricing changes.   
-    - R/Shiny application development for model monitoring and diagnostic business intelligence tools.    
+    * R/Shiny application development for model monitoring and diagnostic business intelligence tools.    
   * **Data Science Intern**, (Nov. 2015  - March 2016)     
-    - Developing a model monitoring web application with R/Shiny for auto insurance predictive model monitoring
-    - Diagnostic residual analysis modeling to evaluate loss ratio in adverse risk segments.
+    * Developing a model monitoring web application with R/Shiny for auto insurance predictive model monitoring
+    * Diagnostic residual analysis modeling to evaluate loss ratio in adverse risk segments.
 
 ___________
 
 * **University of Connecticut Institute for Systems Genomics (UCONN)**, (Sept. 2015 - January 2016)      
   * **Bioinformatics Intern**     
-  - Computational Programming and Unix scripting to contribute to the annotation of the Douglas-fir & Walnut genome
+  * Computational Programming and Unix scripting to contribute to the annotation of the Douglas-fir & Walnut genome
 
 ___________
 
 * **Google Summer of Code**, (May 2015 - Aug. 2015)        
   * **Student Developer** for the R Project for Statistical Computing     
-  - Developed an web application with R & Shiny to automate differential expression and survival analysis of microarray gene expression datasets from the NIH Gene Expression Omnibus [github.com/jasdumas/shinyGEO](http://jasdumas.github.io/shinyGEO/)
+  * Developed an web application with R & Shiny to automate differential expression and survival analysis of microarray gene expression datasets from the NIH Gene Expression Omnibus [github.com/jasdumas/shinyGEO](http://jasdumas.github.io/shinyGEO/)
 
 Engineering Experience
 ---------
 * **Medtronic (NYSE: MDT)**, (May 2014 - Sept. 2015)     
   * **R&D Engineering Technician III**      
-  - Statistical analysis & visualization of mechanical product testing data of surgical instruments to provide insight into product performance and evaluation for FDA submissions   
-  - **Major Accomplishment**: Technical Forum Analytics member uncovering insights in meeting attendance with R scripts
+  * Statistical analysis & visualization of mechanical product testing data of surgical instruments to provide insight into product performance and evaluation for FDA submissions   
+  * **Major Accomplishment**: Technical Forum Analytics member uncovering insights in meeting attendance with R scripts
 
 ___________
 
 * **QDx, Inc. / Abbott Point-of-Care (NYSE: ABT)**, (June 2013 - Jan. 2014)      
   * **R&D Engineering Intern**     
-  - Data Collection, Statistical analysis, and Data Mining of animal & human specimens CBC (complete blood count) results of an image based, reagent-free hematology analyzer in preparation for clinical trials at a start-up	   
-  - **Major Accomplishment**: Designed an experiment leading to a novel feature enhancement for anticoagulants 
+  * Data Collection, Statistical analysis, and Data Mining of animal & human specimens CBC (complete blood count) results of an image based, reagent-free hematology analyzer in preparation for clinical trials at a start-up	   
+  * **Major Accomplishment**: Designed an experiment leading to a novel feature enhancement for anticoagulants 
 
 ___________
 
 * **AdChem Manufacturing Technologies, Inc.**, (May 2012 - May 2013)     
   * **Manufacturing Engineer**     
-  - Developed over 250 manufacturing process methods for complex commercial and military jet engine sheet metal brackets for Pratt & Whitney, using CNC Metrology Software, 3D printing & Solidworks CAD 
-  - **Major Accomplishment**: Developed a new manufacturing method & CAD Model for part identification
+  * Developed over 250 manufacturing process methods for complex commercial and military jet engine sheet metal brackets for Pratt & Whitney, using CNC Metrology Software, 3D printing & Solidworks CAD 
+  * **Major Accomplishment**: Developed a new manufacturing method & CAD Model for part identification
 
 
 Research
@@ -114,8 +115,7 @@ Research
 
 Peer-Reviewed Research Papers
 ---------
-* **Dumas, J.**, Dancik, GM., “shinyGEO: a web-based tool for downloading, cleaning, & modeling of microarray gene 
-expression datasets“ [Pending Publication in the [Bioinformatics Journal](http://bioinformatics.oxfordjournals.org/)]    
+* **Dumas, J.**, Dancik, GM., Garagano, M. "shinyGEO: a web-based application for analyzing Gene Expression Omnibus datasets". August 2016. [Bioinformatics Journal](http://bioinformatics.oxfordjournals.org/)  
 
 * **Dumas, J.**, et.al., “Feasibility of an electronic stethoscope system for monitoring neonatal bowel sounds.” Connecticut Medicine, Volume 77, Number 8, pp. 467-471, September 2013. [bit.ly/JMD-connmed](bit.ly/JMD-connmed)                       
 

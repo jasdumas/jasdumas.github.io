@@ -6,7 +6,7 @@ subtitle: open source, research & weekend data science projects
 
 ---------------
 
-* [ttbbeer](https://cran.r-project.org/web/packages/ttbbeer/index.html): This is my **first** R package on [CRAN](https://cran.r-project.org/). This package provides the data for materials used at U.S. breweries as listed in the Beer Monthly Statistical Releases. The motivation behind this package was to provide an analytic-ready data set as the original data is in PDF format. :beers:
+* [ttbbeer](https://cran.r-project.org/web/packages/ttbbeer/index.html): This is my **first** R package on [CRAN](https://cran.r-project.org/). This package provides the data for materials used at U.S. breweries as listed in the Beer Monthly Statistical Releases. The motivation behind this package was to provide an analysis-ready data set as the original data is in PDF format. :beers:
 
 * [RTalk Podcast](https://twitter.com/RTalkPodcast): I co-hosted a "semi-infrequent" podcast on the statistical software and programming language R with some buddies in the community. [Old Episodes on iTunes](https://itunes.apple.com/us/podcast/r-talk/id1030819337?mt=2)
 
@@ -16,7 +16,7 @@ subtitle: open source, research & weekend data science projects
 
 * [Tutorial: Web scraping and mapping breweries with import.io and R](http://trendct.org/2016/03/18/tutorial-web-scraping-and-mapping-breweries-with-import-io-and-r/): Getting information on Breweries can be a difficult process with data from multiple sources or sources that have limited access to developers. Import.io instantly turns webpages into data with minimal or no set-up involved. I used this to extract meta information on Connecticut-based breweries. :beer:
 
-* [Web Scraping the Best of Rotten Tomatoes](http://rpubs.com/jasdumas/rotten-tomatoes): Using the rvest package I web scraped several "best of" film genres lists into a a data table and provided a plotly data vizualization.
+* [Web Scraping the Best of Rotten Tomatoes](http://rpubs.com/jasdumas/rotten-tomatoes): Using the rvest package I web scraped several "best of" film genres lists into a a data table and provided a plotly data vizualization. :tomato:
 
 * [Insurance Claim Complaints](http://rpubs.com/jasdumas/eda-ct-insurance): Exploratory Data Analysis of CT Insurance Company Complaints, Resolutions, Status, and Recoveries from an open dataset from [https://data.ct.gov](https://data.ct.gov)
 

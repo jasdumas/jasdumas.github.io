@@ -6,7 +6,9 @@ subtitle: R & python resource materials
 
 ----------
 
-### R Documents  :snake:
+### R Documents  :cat2:
+R is a programming language and software environment for statistical computing and graphics supported by the R Foundation for Statistical Computing. The R language is widely used among statisticians and data miners for developing statistical software and data analysis. [ [Source](https://en.wikipedia.org/wiki/R_(programming_language)) ]
+
 * [GLMs from Quick-R](http://www.statmethods.net/advstats/glm.html)
 * [Model Validation: Interpreting Residual Plots](http://www.r-bloggers.com/model-validation-interpreting-residual-plots/)
 * [Beginner's guide to R from ComputerWorld](http://www.computerworld.com/article/2497143/business-intelligence/business-intelligence-beginner-s-guide-to-r-introduction.html)        
@@ -24,8 +26,11 @@ subtitle: R & python resource materials
 * [R Packages book](http://r-pkgs.had.co.nz/)
 * [R for Data Science book](http://r4ds.had.co.nz/)
 * [xgboost R package](https://github.com/dmlc/xgboost/tree/master/R-package)
+* [R for Cats](http://rforcats.net/)
 
 ### Python Documents  :snake:
+Python is a widely used high-level, general-purpose, interpreted, dynamic programming language. Its design philosophy emphasizes code readability, and its syntax allows programmers to express concepts in fewer lines of code than possible in languages such as C++ or Java. [ [Source](https://en.wikipedia.org/wiki/Python_(programming_language)) ]
+
 * [Python 3 Documentation](https://docs.python.org/3/)
 * [Introduction to Python for Econometrics, Statistics and Data Analysis (PDF)](https://www.kevinsheppard.com/images/0/09/Python_introduction.pdf)
 * [Django web framework](https://docs.djangoproject.com/en/1.9/intro/tutorial01/)
@@ -59,6 +64,7 @@ subtitle: R & python resource materials
 * [Data Science 101](http://101.datascience.community/)
 * [Rbloggers](http://www.r-bloggers.com/)
 * [FiveThirtyEight](http://fivethirtyeight.com/)
+* [Data Elixer](http://dataelixir.com/)
 
 ### Books :book:
 * [The Signal & the Noise by Nate Silver](http://www.amazon.com/Signal-Noise-Many-Predictions-Fail-but/dp/0143125087) 
@@ -77,9 +83,8 @@ subtitle: R & python resource materials
 * [The Johns Hopkins Data Science Specialization on Coursera](https://www.coursera.org/specialization/jhudatascience/1)
 * [Udacity Exploratory Data Analysis](https://www.udacity.com/course/ud651)
 * [Stanford University StatLearning: Statistical Learning](https://class.stanford.edu/courses/HumanitiesScience/StatLearning/Winter2014/about)
-* [R for Cats](http://rforcats.net/)
 
-### General Computing & Reproducible Research Documents  :microscope:
+### General Computing Documents  :microscope:
 * [Version Control](https://git-scm.com/doc)   
 * [Git Cheat sheet (PDF)](https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf)
 * [Ten Simple Rules for Reproducible Computational Research](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003285)
