@@ -2,7 +2,7 @@
 title: "Quirky R things"
 subtitle: "Keep R Weird"
 date: "August 05, 2016"
-layout: post
+layout: page
 ---
   
 

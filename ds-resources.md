@@ -6,14 +6,11 @@ subtitle: R & python resource materials
 
 ----------
 
-### R Documents
-
+### R Documents  :snake:
 * [GLMs from Quick-R](http://www.statmethods.net/advstats/glm.html)
 * [Model Validation: Interpreting Residual Plots](http://www.r-bloggers.com/model-validation-interpreting-residual-plots/)
 * [Beginner's guide to R from ComputerWorld](http://www.computerworld.com/article/2497143/business-intelligence/business-intelligence-beginner-s-guide-to-r-introduction.html)        
 * [Quick-R](http://www.statmethods.net/)
-* [Advanced R by Hadley Wickham](http://adv-r.had.co.nz/)       
-  * Chapters of Interest: [Data Structures](http://adv-r.had.co.nz/Data-structures.html), [Object-Orientated Field Guide](http://adv-r.had.co.nz/OO-essentials.html), [Style Guide](http://adv-r.had.co.nz/Style.html)
 * [Stackoverflow tagged R questions](http://stackoverflow.com/questions/tagged/r)
 * [RStudio Keyboard Shortcuts](https://support.rstudio.com/hc/en-us/articles/200711853-Keyboard-Shortcuts)
 * [Non-Standard Evaluation](https://cran.r-project.org/web/packages/dplyr/vignettes/nse.html)
@@ -28,14 +25,14 @@ subtitle: R & python resource materials
 * [R for Data Science book](http://r4ds.had.co.nz/)
 * [xgboost R package](https://github.com/dmlc/xgboost/tree/master/R-package)
 
-### Python Documents
+### Python Documents  :snake:
 * [Python 3 Documentation](https://docs.python.org/3/)
 * [Introduction to Python for Econometrics, Statistics and Data Analysis (PDF)](https://www.kevinsheppard.com/images/0/09/Python_introduction.pdf)
 * [Django web framework](https://docs.djangoproject.com/en/1.9/intro/tutorial01/)
 * [Python Machine Learning Book (Repository)](https://github.com/rasbt/python-machine-learning-book)
 * [scikit-learn machine learning map guide](http://scikit-learn.org/stable/tutorial/machine_learning_map/index.html)
 
-### Datasets
+### Datasets  :minidisc:
 * [Awesome Public Dataset (fork)](https://github.com/jasdumas/awesome-public-datasets)
 * [SF Open Data Portal](https://data.sfgov.org/)
 * [CDC: Chronic Disease and Health Promotion Open Data](https://chronicdata.cdc.gov/)
@@ -43,7 +40,8 @@ subtitle: R & python resource materials
 * [Open Data Network](http://www.opendatanetwork.com/)
 * [UCI Machine Learning Repository](http://archive.ics.uci.edu/ml/index.html)
 
-### Tools
+### Tools  :wrench:
+* [RStudio](https://www.rstudio.com/products/rstudio/download2/)
 * [Atom Text Editor](https://atom.io/)
 * [Import.io](https://www.import.io/)
 * [Jupyter](http://jupyter.org/)
@@ -52,7 +50,7 @@ subtitle: R & python resource materials
 * [HTML Github Preview](https://htmlpreview.github.io/)
 * [RSeek.org Search Engine](http://rseek.org/)
 
-### Blogs
+### Blogs :pencil2:
 * [Rstudio Blog](http://blog.rstudio.org/)
 * [yHat Blog](http://blog.yhat.com/)
 * [DataTau](http://www.datatau.com/)
@@ -62,12 +60,16 @@ subtitle: R & python resource materials
 * [Rbloggers](http://www.r-bloggers.com/)
 * [FiveThirtyEight](http://fivethirtyeight.com/)
 
-### Books
-* [The Signal & the Noise by Nate Silver](http://www.amazon.com/Signal-Noise-Many-Predictions-Fail-but/dp/0143125087)
+### Books :book:
+* [The Signal & the Noise by Nate Silver](http://www.amazon.com/Signal-Noise-Many-Predictions-Fail-but/dp/0143125087) 
 * [Big Data](http://www.big-data-book.com/)
-* Python for Data Analysis
+* [Python for Data Analysis](https://www.amazon.com/Python-Data-Analysis-Wrangling-IPython/dp/1449319793)
+* [R for Data Science](http://r4ds.had.co.nz/)
+* [R Packages ](http://r-pkgs.had.co.nz/)
+* [Advanced R](http://adv-r.had.co.nz/)       
+  * Chapters of Interest: [Data Structures](http://adv-r.had.co.nz/Data-structures.html), [Object-Orientated Field Guide](http://adv-r.had.co.nz/OO-essentials.html), [Style Guide](http://adv-r.had.co.nz/Style.html)
 
-### Coursework, MOOCS & Online material   
+### Coursework, MOOCS & Online material  :school_satchel: 
 * [Johns Hopkins Engineering For Professionals CS Program](https://ep.jhu.edu/programs-and-courses/programs/computer-science)
 * [Datacamp.com: Data Analysis in your browser](https://www.datacamp.com/)
 * [Stat545: Data wrangling, exploration, and analysis with R](https://stat545-ubc.github.io/)   
@@ -77,7 +79,7 @@ subtitle: R & python resource materials
 * [Stanford University StatLearning: Statistical Learning](https://class.stanford.edu/courses/HumanitiesScience/StatLearning/Winter2014/about)
 * [R for Cats](http://rforcats.net/)
 
-### General Computing & Reproducible Research Documents
+### General Computing & Reproducible Research Documents  :microscope:
 * [Version Control](https://git-scm.com/doc)   
 * [Git Cheat sheet (PDF)](https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf)
 * [Ten Simple Rules for Reproducible Computational Research](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003285)
