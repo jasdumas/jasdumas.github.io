@@ -12,7 +12,7 @@ subtitle: open source, research & weekend data science projects
 
 * [dumas](https://github.com/jasdumas/dumas): My vanity R package filled with useful functions for analysis and R development.
 
-* [shinyGEO](http://jasdumas.github.io/shinyGEO/): The Gene Expression Omnibus Analysis with Shiny (Project Name: GEO-AWS) is a web application to download gene expression datasets from the GEO Repository and perform differential expression and survival analyses. This project was partially developed as part of the [2015 Google Summer of Code program](http://www.google-melange.com/gsoc/project/details/google/gsoc2015/jasdumas/5668600916475904). 
+* [shinyGEO](http://jasdumas.github.io/shinyGEO/): The Gene Expression Omnibus Analysis with Shiny (Project Name: GEO-AWS) is a web application to download gene expression datasets from the GEO Repository and perform differential expression and survival analyses. This project was partially developed as part of the [2015 Google Summer of Code program](http://www.google-melange.com/gsoc/project/details/google/gsoc2015/jasdumas/5668600916475904), [Manuscript Publication](http://bioinformatics.oxfordjournals.org/content/early/2016/08/07/bioinformatics.btw519.full.pdf?keytype=ref&ijkey=R1zz4cjrdze0PAC). 
 
 * [Tutorial: Web scraping and mapping breweries with import.io and R](http://trendct.org/2016/03/18/tutorial-web-scraping-and-mapping-breweries-with-import-io-and-r/): Getting information on Breweries can be a difficult process with data from multiple sources or sources that have limited access to developers. Import.io instantly turns webpages into data with minimal or no set-up involved. I used this to extract meta information on Connecticut-based breweries. :beer:
 
