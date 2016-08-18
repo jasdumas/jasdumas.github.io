@@ -1,0 +1,108 @@
+---
+title: "SQL in R: SQLDF Tutorial"
+author: "Jasmine Dumas"
+date: "August 18, 2016"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    code_folding: show
+    code_download: true
+    fig_width: 9
+    fig_height: 6
+    theme: flatly
+    highlight: tango
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message=FALSE, warning=FALSE)
+
+```
+
+
+## Example Data
+```{r, data}
+# libraries
+library(sqldf)
+library(RH2)
+
+data("UCBAdmissions")
+
+# must be a data frame
+ucb <- as.data.frame(UCBAdmissions)
+
+majors <- data.frame(major = c(rep("math", 12), rep("biology", 10), rep("engineering", 2)))
+
+majors$Dept <- c(rep("A", 6), rep("B", 6), rep("C", 6), rep("C", 6))
+majors$Faculty <- round(runif(24, min = 5, max = 30))
+
+majors
+
+```
+
+## General Queries
+```{r, general}
+# Return Female student admission result
+sqldf("select * from ucb where Gender = 'Female'")
+# Return the admitted students
+sqldf("select * from ucb where Admit = 'Admitted'")
+# order admissions per department
+sqldf("select * from ucb where Admit = 'Admitted' order by Freq DESC")
+# how many departments are in this table
+sqldf("select distinct Dept from ucb")
+
+```
+
+## Aggregate Queries
+```{r, agg}
+# total admitted studets
+sqldf("select sum(Freq) from ucb where Admit = 'Admitted'")
+# total rejected students
+sqldf("select sum(Freq) from ucb where Admit = 'Rejected'")
+# return total admitted males
+sqldf("select sum(Freq) as total_dudes from ucb where Admit = 'Admitted' AND Gender = 'Male'")
+# return total reject females
+sqldf("select sum(Freq) as total_ladies from ucb where Admit = 'Rejected' AND Gender = 'Female'")
+# average number of admitted student by department (usually mean)
+sqldf("select Dept, avg(Freq) as average_admitted from ucb where Admit = 'Admitted' group by Dept")
+
+```
+
+## Wild card match Queries
+
+```{r, wild}
+sqldf("select * from ucb where Freq between 20 AND 100")
+sqldf("select * from ucb where Gender Like 'Fe%'")
+sqldf("select * from ucb where Gender Like '%male%'")
+sqldf("select * from ucb where Gender Like 'Ma%'")
+sqldf("select * from ucb where Gender = 'Female' AND Freq >= 100 ")
+```
+
+
+## Manipulation & Nested Queries
+```{r, nest}
+# Which department had the most admitted students = A
+sqldf("select Dept from ucb where Freq = (select max(Freq) from ucb where Admit = 'Admitted')")
+
+# which department had the most admitted Female student = C
+sqldf("select Dept from ucb where Freq = (select max(Freq) from ucb where Gender = 'Female')")
+
+```
+
+
+## Join Queries
+```{r, join}
+# join the two tables together by the common key
+sqldf("select * from ucb 
+      inner join majors on ucb.Dept = majors.Dept")
+
+```
+
+## Resources
+
+* [https://cran.r-project.org/web/packages/sqldf/sqldf.pdf](https://cran.r-project.org/web/packages/sqldf/sqldf.pdf)
+* [https://github.com/ggrothendieck/sqldf](https://github.com/ggrothendieck/sqldf)
+
+
+
+fin.
