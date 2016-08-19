@@ -11,7 +11,7 @@
 
 <meta name="author" content="Jasmine Dumas" />
 
-<meta name="date" content="2016-08-18" />
+<meta name="date" content="2016-08-19" />
 
 <title>SQL in R: SQLDF Tutorial</title>
 
@@ -268,7 +268,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">SQL in R: SQLDF Tutorial</h1>
 <h4 class="author"><em>Jasmine Dumas</em></h4>
-<h4 class="date"><em>August 18, 2016</em></h4>
+<h4 class="date"><em>August 19, 2016</em></h4>
 
 </div>
 
@@ -284,37 +284,42 @@ div.tocify {
 <span class="co"># must be a data frame</span>
 ucb &lt;-<span class="st"> </span><span class="kw">as.data.frame</span>(UCBAdmissions)
 
-majors &lt;-<span class="st"> </span><span class="kw">data.frame</span>(<span class="dt">major =</span> <span class="kw">c</span>(<span class="kw">rep</span>(<span class="st">&quot;math&quot;</span>, <span class="dv">12</span>), <span class="kw">rep</span>(<span class="st">&quot;biology&quot;</span>, <span class="dv">10</span>), <span class="kw">rep</span>(<span class="st">&quot;engineering&quot;</span>, <span class="dv">2</span>)))
+<span class="kw">sqldf</span>(<span class="st">&quot;select * from ucb&quot;</span>)</code></pre></div>
+<pre><code>##       Admit Gender Dept Freq
+## 1  Admitted   Male    A  512
+## 2  Rejected   Male    A  313
+## 3  Admitted Female    A   89
+## 4  Rejected Female    A   19
+## 5  Admitted   Male    B  353
+## 6  Rejected   Male    B  207
+## 7  Admitted Female    B   17
+## 8  Rejected Female    B    8
+## 9  Admitted   Male    C  120
+## 10 Rejected   Male    C  205
+## 11 Admitted Female    C  202
+## 12 Rejected Female    C  391
+## 13 Admitted   Male    D  138
+## 14 Rejected   Male    D  279
+## 15 Admitted Female    D  131
+## 16 Rejected Female    D  244
+## 17 Admitted   Male    E   53
+## 18 Rejected   Male    E  138
+## 19 Admitted Female    E   94
+## 20 Rejected Female    E  299
+## 21 Admitted   Male    F   22
+## 22 Rejected   Male    F  351
+## 23 Admitted Female    F   24
+## 24 Rejected Female    F  317</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">majors &lt;-<span class="st"> </span><span class="kw">data.frame</span>(<span class="dt">major =</span> <span class="kw">c</span>(<span class="st">&quot;math&quot;</span>, <span class="st">&quot;biology&quot;</span>, <span class="st">&quot;engineering&quot;</span>, <span class="st">&quot;computer science&quot;</span>, <span class="st">&quot;history&quot;</span>, <span class="st">&quot;architecture&quot;</span>), <span class="dt">Dept =</span> <span class="kw">c</span>(LETTERS[<span class="dv">1</span>:<span class="dv">5</span>], <span class="st">&quot;Other&quot;</span>), <span class="dt">Faculty =</span> <span class="kw">round</span>(<span class="kw">runif</span>(<span class="dv">6</span>, <span class="dt">min =</span> <span class="dv">10</span>, <span class="dt">max =</span> <span class="dv">30</span>)))
 
-majors$Dept &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="kw">rep</span>(<span class="st">&quot;A&quot;</span>, <span class="dv">6</span>), <span class="kw">rep</span>(<span class="st">&quot;B&quot;</span>, <span class="dv">6</span>), <span class="kw">rep</span>(<span class="st">&quot;C&quot;</span>, <span class="dv">6</span>), <span class="kw">rep</span>(<span class="st">&quot;C&quot;</span>, <span class="dv">6</span>))
-majors$Faculty &lt;-<span class="st"> </span><span class="kw">round</span>(<span class="kw">runif</span>(<span class="dv">24</span>, <span class="dt">min =</span> <span class="dv">5</span>, <span class="dt">max =</span> <span class="dv">30</span>))
-
-majors</code></pre></div>
-<pre><code>##          major Dept Faculty
-## 1         math    A      10
-## 2         math    A      11
-## 3         math    A      23
-## 4         math    A      30
-## 5         math    A      22
-## 6         math    A      27
-## 7         math    B      29
-## 8         math    B      22
-## 9         math    B      17
-## 10        math    B       7
-## 11        math    B      22
-## 12        math    B      18
-## 13     biology    C      18
-## 14     biology    C      22
-## 15     biology    C      28
-## 16     biology    C      17
-## 17     biology    C      17
-## 18     biology    C      27
-## 19     biology    C      27
-## 20     biology    C       7
-## 21     biology    C      11
-## 22     biology    C      19
-## 23 engineering    C      20
-## 24 engineering    C      16</code></pre>
+<span class="kw">sqldf</span>(<span class="st">&quot;select * from majors&quot;</span>)</code></pre></div>
+<pre><code>##              major  Dept Faculty
+## 1             math     A      18
+## 2          biology     B      29
+## 3      engineering     C      17
+## 4 computer science     D      20
+## 5          history     E      21
+## 6     architecture Other      12</code></pre>
 </div>
 <div id="general-queries" class="section level2">
 <h2>General Queries</h2>
@@ -400,6 +405,14 @@ majors</code></pre></div>
 ## 4    D            134.5
 ## 5    E             73.5
 ## 6    F             23.0</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># how many majors are there</span>
+<span class="kw">sqldf</span>(<span class="st">&quot;select count(major) from majors&quot;</span>)</code></pre></div>
+<pre><code>##   COUNT(&quot;major&quot;)
+## 1              6</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># minimum amount of studets rejected</span>
+<span class="kw">sqldf</span>(<span class="st">&quot;select min(Freq) from ucb where Admit = 'Rejected'&quot;</span>)</code></pre></div>
+<pre><code>##   MIN(&quot;Freq&quot;)
+## 1           8</code></pre>
 </div>
 <div id="wild-card-match-queries" class="section level2">
 <h2>Wild card match Queries</h2>
@@ -460,6 +473,34 @@ majors</code></pre></div>
 ## 4 Rejected Female    D  244
 ## 5 Rejected Female    E  299
 ## 6 Rejected Female    F  317</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">sqldf</span>(<span class="st">&quot;select * from ucb where Gender Like '_ale'&quot;</span>)</code></pre></div>
+<pre><code>##       Admit Gender Dept Freq
+## 1  Admitted   Male    A  512
+## 2  Rejected   Male    A  313
+## 3  Admitted   Male    B  353
+## 4  Rejected   Male    B  207
+## 5  Admitted   Male    C  120
+## 6  Rejected   Male    C  205
+## 7  Admitted   Male    D  138
+## 8  Rejected   Male    D  279
+## 9  Admitted   Male    E   53
+## 10 Rejected   Male    E  138
+## 11 Admitted   Male    F   22
+## 12 Rejected   Male    F  351</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">sqldf</span>(<span class="st">&quot;select * from ucb where Gender NOT Like 'M_l_'&quot;</span>)</code></pre></div>
+<pre><code>##       Admit Gender Dept Freq
+## 1  Admitted Female    A   89
+## 2  Rejected Female    A   19
+## 3  Admitted Female    B   17
+## 4  Rejected Female    B    8
+## 5  Admitted Female    C  202
+## 6  Rejected Female    C  391
+## 7  Admitted Female    D  131
+## 8  Rejected Female    D  244
+## 9  Admitted Female    E   94
+## 10 Rejected Female    E  299
+## 11 Admitted Female    F   24
+## 12 Rejected Female    F  317</code></pre>
 </div>
 <div id="manipulation-nested-queries" class="section level2">
 <h2>Manipulation &amp; Nested Queries</h2>
@@ -471,120 +512,100 @@ majors</code></pre></div>
 <span class="kw">sqldf</span>(<span class="st">&quot;select Dept from ucb where Freq = (select max(Freq) from ucb where Gender = 'Female')&quot;</span>)</code></pre></div>
 <pre><code>##   Dept
 ## 1    C</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># department with most faculty </span>
+<span class="kw">sqldf</span>(<span class="st">&quot;select Dept from majors where Faculty = (select max(Faculty) from majors)&quot;</span>)</code></pre></div>
+<pre><code>##   Dept
+## 1    B</code></pre>
 </div>
 <div id="join-queries" class="section level2">
 <h2>Join Queries</h2>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># join the two tables together by the common key</span>
 <span class="kw">sqldf</span>(<span class="st">&quot;select * from ucb </span>
 <span class="st">      inner join majors on ucb.Dept = majors.Dept&quot;</span>)</code></pre></div>
-<pre><code>##       Admit Gender Dept Freq       major Dept Faculty
-## 1  Admitted   Male    A  512        math    A      10
-## 2  Rejected   Male    A  313        math    A      10
-## 3  Admitted Female    A   89        math    A      10
-## 4  Rejected Female    A   19        math    A      10
-## 5  Admitted   Male    A  512        math    A      11
-## 6  Rejected   Male    A  313        math    A      11
-## 7  Admitted Female    A   89        math    A      11
-## 8  Rejected Female    A   19        math    A      11
-## 9  Admitted   Male    A  512        math    A      23
-## 10 Rejected   Male    A  313        math    A      23
-## 11 Admitted Female    A   89        math    A      23
-## 12 Rejected Female    A   19        math    A      23
-## 13 Admitted   Male    A  512        math    A      30
-## 14 Rejected   Male    A  313        math    A      30
-## 15 Admitted Female    A   89        math    A      30
-## 16 Rejected Female    A   19        math    A      30
-## 17 Admitted   Male    A  512        math    A      22
-## 18 Rejected   Male    A  313        math    A      22
-## 19 Admitted Female    A   89        math    A      22
-## 20 Rejected Female    A   19        math    A      22
-## 21 Admitted   Male    A  512        math    A      27
-## 22 Rejected   Male    A  313        math    A      27
-## 23 Admitted Female    A   89        math    A      27
-## 24 Rejected Female    A   19        math    A      27
-## 25 Admitted   Male    B  353        math    B      29
-## 26 Rejected   Male    B  207        math    B      29
-## 27 Admitted Female    B   17        math    B      29
-## 28 Rejected Female    B    8        math    B      29
-## 29 Admitted   Male    B  353        math    B      22
-## 30 Rejected   Male    B  207        math    B      22
-## 31 Admitted Female    B   17        math    B      22
-## 32 Rejected Female    B    8        math    B      22
-## 33 Admitted   Male    B  353        math    B      17
-## 34 Rejected   Male    B  207        math    B      17
-## 35 Admitted Female    B   17        math    B      17
-## 36 Rejected Female    B    8        math    B      17
-## 37 Admitted   Male    B  353        math    B       7
-## 38 Rejected   Male    B  207        math    B       7
-## 39 Admitted Female    B   17        math    B       7
-## 40 Rejected Female    B    8        math    B       7
-## 41 Admitted   Male    B  353        math    B      22
-## 42 Rejected   Male    B  207        math    B      22
-## 43 Admitted Female    B   17        math    B      22
-## 44 Rejected Female    B    8        math    B      22
-## 45 Admitted   Male    B  353        math    B      18
-## 46 Rejected   Male    B  207        math    B      18
-## 47 Admitted Female    B   17        math    B      18
-## 48 Rejected Female    B    8        math    B      18
-## 49 Admitted   Male    C  120     biology    C      18
-## 50 Rejected   Male    C  205     biology    C      18
-## 51 Admitted Female    C  202     biology    C      18
-## 52 Rejected Female    C  391     biology    C      18
-## 53 Admitted   Male    C  120     biology    C      22
-## 54 Rejected   Male    C  205     biology    C      22
-## 55 Admitted Female    C  202     biology    C      22
-## 56 Rejected Female    C  391     biology    C      22
-## 57 Admitted   Male    C  120     biology    C      28
-## 58 Rejected   Male    C  205     biology    C      28
-## 59 Admitted Female    C  202     biology    C      28
-## 60 Rejected Female    C  391     biology    C      28
-## 61 Admitted   Male    C  120     biology    C      17
-## 62 Rejected   Male    C  205     biology    C      17
-## 63 Admitted Female    C  202     biology    C      17
-## 64 Rejected Female    C  391     biology    C      17
-## 65 Admitted   Male    C  120     biology    C      17
-## 66 Rejected   Male    C  205     biology    C      17
-## 67 Admitted Female    C  202     biology    C      17
-## 68 Rejected Female    C  391     biology    C      17
-## 69 Admitted   Male    C  120     biology    C      27
-## 70 Rejected   Male    C  205     biology    C      27
-## 71 Admitted Female    C  202     biology    C      27
-## 72 Rejected Female    C  391     biology    C      27
-## 73 Admitted   Male    C  120     biology    C      27
-## 74 Rejected   Male    C  205     biology    C      27
-## 75 Admitted Female    C  202     biology    C      27
-## 76 Rejected Female    C  391     biology    C      27
-## 77 Admitted   Male    C  120     biology    C       7
-## 78 Rejected   Male    C  205     biology    C       7
-## 79 Admitted Female    C  202     biology    C       7
-## 80 Rejected Female    C  391     biology    C       7
-## 81 Admitted   Male    C  120     biology    C      11
-## 82 Rejected   Male    C  205     biology    C      11
-## 83 Admitted Female    C  202     biology    C      11
-## 84 Rejected Female    C  391     biology    C      11
-## 85 Admitted   Male    C  120     biology    C      19
-## 86 Rejected   Male    C  205     biology    C      19
-## 87 Admitted Female    C  202     biology    C      19
-## 88 Rejected Female    C  391     biology    C      19
-## 89 Admitted   Male    C  120 engineering    C      20
-## 90 Rejected   Male    C  205 engineering    C      20
-## 91 Admitted Female    C  202 engineering    C      20
-## 92 Rejected Female    C  391 engineering    C      20
-## 93 Admitted   Male    C  120 engineering    C      16
-## 94 Rejected   Male    C  205 engineering    C      16
-## 95 Admitted Female    C  202 engineering    C      16
-## 96 Rejected Female    C  391 engineering    C      16</code></pre>
+<pre><code>##       Admit Gender Dept Freq            major Dept Faculty
+## 1  Admitted   Male    A  512             math    A      18
+## 2  Rejected   Male    A  313             math    A      18
+## 3  Admitted Female    A   89             math    A      18
+## 4  Rejected Female    A   19             math    A      18
+## 5  Admitted   Male    B  353          biology    B      29
+## 6  Rejected   Male    B  207          biology    B      29
+## 7  Admitted Female    B   17          biology    B      29
+## 8  Rejected Female    B    8          biology    B      29
+## 9  Admitted   Male    C  120      engineering    C      17
+## 10 Rejected   Male    C  205      engineering    C      17
+## 11 Admitted Female    C  202      engineering    C      17
+## 12 Rejected Female    C  391      engineering    C      17
+## 13 Admitted   Male    D  138 computer science    D      20
+## 14 Rejected   Male    D  279 computer science    D      20
+## 15 Admitted Female    D  131 computer science    D      20
+## 16 Rejected Female    D  244 computer science    D      20
+## 17 Admitted   Male    E   53          history    E      21
+## 18 Rejected   Male    E  138          history    E      21
+## 19 Admitted Female    E   94          history    E      21
+## 20 Rejected Female    E  299          history    E      21</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># join the table on the left with resultant nulls's on the right table</span>
+<span class="kw">sqldf</span>(<span class="st">&quot;select * from ucb left join majors on ucb.Dept = majors.Dept&quot;</span>)</code></pre></div>
+<pre><code>##       Admit Gender Dept Freq            major Dept Faculty
+## 1  Admitted   Male    A  512             math    A      18
+## 2  Rejected   Male    A  313             math    A      18
+## 3  Admitted Female    A   89             math    A      18
+## 4  Rejected Female    A   19             math    A      18
+## 5  Admitted   Male    B  353          biology    B      29
+## 6  Rejected   Male    B  207          biology    B      29
+## 7  Admitted Female    B   17          biology    B      29
+## 8  Rejected Female    B    8          biology    B      29
+## 9  Admitted   Male    C  120      engineering    C      17
+## 10 Rejected   Male    C  205      engineering    C      17
+## 11 Admitted Female    C  202      engineering    C      17
+## 12 Rejected Female    C  391      engineering    C      17
+## 13 Admitted   Male    D  138 computer science    D      20
+## 14 Rejected   Male    D  279 computer science    D      20
+## 15 Admitted Female    D  131 computer science    D      20
+## 16 Rejected Female    D  244 computer science    D      20
+## 17 Admitted   Male    E   53          history    E      21
+## 18 Rejected   Male    E  138          history    E      21
+## 19 Admitted Female    E   94          history    E      21
+## 20 Rejected Female    E  299          history    E      21
+## 21 Admitted   Male    F   22             &lt;NA&gt; &lt;NA&gt;      NA
+## 22 Rejected   Male    F  351             &lt;NA&gt; &lt;NA&gt;      NA
+## 23 Admitted Female    F   24             &lt;NA&gt; &lt;NA&gt;      NA
+## 24 Rejected Female    F  317             &lt;NA&gt; &lt;NA&gt;      NA</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># join the table on the right with the left</span>
+<span class="kw">sqldf</span>(<span class="st">&quot;select * from ucb right join majors on ucb.Dept = majors.Dept&quot;</span>)</code></pre></div>
+<pre><code>##               major  Dept Faculty    Admit Gender Dept Freq
+## 1              math     A      18 Admitted   Male    A  512
+## 2              math     A      18 Rejected   Male    A  313
+## 3              math     A      18 Admitted Female    A   89
+## 4              math     A      18 Rejected Female    A   19
+## 5           biology     B      29 Admitted   Male    B  353
+## 6           biology     B      29 Rejected   Male    B  207
+## 7           biology     B      29 Admitted Female    B   17
+## 8           biology     B      29 Rejected Female    B    8
+## 9       engineering     C      17 Admitted   Male    C  120
+## 10      engineering     C      17 Rejected   Male    C  205
+## 11      engineering     C      17 Admitted Female    C  202
+## 12      engineering     C      17 Rejected Female    C  391
+## 13 computer science     D      20 Admitted   Male    D  138
+## 14 computer science     D      20 Rejected   Male    D  279
+## 15 computer science     D      20 Admitted Female    D  131
+## 16 computer science     D      20 Rejected Female    D  244
+## 17          history     E      21 Admitted   Male    E   53
+## 18          history     E      21 Rejected   Male    E  138
+## 19          history     E      21 Admitted Female    E   94
+## 20          history     E      21 Rejected Female    E  299
+## 21     architecture Other      12     &lt;NA&gt;   &lt;NA&gt; &lt;NA&gt;   NA</code></pre>
 </div>
 <div id="resources" class="section level2">
 <h2>Resources</h2>
 <ul>
 <li><a href="https://cran.r-project.org/web/packages/sqldf/sqldf.pdf" class="uri">https://cran.r-project.org/web/packages/sqldf/sqldf.pdf</a></li>
 <li><a href="https://github.com/ggrothendieck/sqldf" class="uri">https://github.com/ggrothendieck/sqldf</a></li>
+<li><a href="http://www.w3schools.com/sql/default.asp" class="uri">http://www.w3schools.com/sql/default.asp</a></li>
 </ul>
 <p>fin.</p>
 </div>
 
-<div id="rmd-source-code">LS0tDQp0aXRsZTogIlNRTCBpbiBSOiBTUUxERiBUdXRvcmlhbCINCmF1dGhvcjogIkphc21pbmUgRHVtYXMiDQpkYXRlOiAiQXVndXN0IDE4LCAyMDE2Ig0Kb3V0cHV0OiANCiAgaHRtbF9kb2N1bWVudDoNCiAgICB0b2M6IHRydWUNCiAgICB0b2NfZmxvYXQ6IHRydWUNCiAgICBjb2RlX2ZvbGRpbmc6IHNob3cNCiAgICBjb2RlX2Rvd25sb2FkOiB0cnVlDQogICAgZmlnX3dpZHRoOiA5DQogICAgZmlnX2hlaWdodDogNg0KICAgIHRoZW1lOiBmbGF0bHkNCiAgICBoaWdobGlnaHQ6IHRhbmdvDQotLS0NCg0KYGBge3Igc2V0dXAsIGluY2x1ZGU9RkFMU0V9DQprbml0cjo6b3B0c19jaHVuayRzZXQoZWNobyA9IFRSVUUsIG1lc3NhZ2U9RkFMU0UsIHdhcm5pbmc9RkFMU0UpDQoNCmBgYA0KDQoNCiMjIEV4YW1wbGUgRGF0YQ0KYGBge3IsIGRhdGF9DQojIGxpYnJhcmllcw0KbGlicmFyeShzcWxkZikNCmxpYnJhcnkoUkgyKQ0KDQpkYXRhKCJVQ0JBZG1pc3Npb25zIikNCg0KIyBtdXN0IGJlIGEgZGF0YSBmcmFtZQ0KdWNiIDwtIGFzLmRhdGEuZnJhbWUoVUNCQWRtaXNzaW9ucykNCg0KbWFqb3JzIDwtIGRhdGEuZnJhbWUobWFqb3IgPSBjKHJlcCgibWF0aCIsIDEyKSwgcmVwKCJiaW9sb2d5IiwgMTApLCByZXAoImVuZ2luZWVyaW5nIiwgMikpKQ0KDQptYWpvcnMkRGVwdCA8LSBjKHJlcCgiQSIsIDYpLCByZXAoIkIiLCA2KSwgcmVwKCJDIiwgNiksIHJlcCgiQyIsIDYpKQ0KbWFqb3JzJEZhY3VsdHkgPC0gcm91bmQocnVuaWYoMjQsIG1pbiA9IDUsIG1heCA9IDMwKSkNCg0KbWFqb3JzDQoNCmBgYA0KDQojIyBHZW5lcmFsIFF1ZXJpZXMNCmBgYHtyLCBnZW5lcmFsfQ0KIyBSZXR1cm4gRmVtYWxlIHN0dWRlbnQgYWRtaXNzaW9uIHJlc3VsdA0Kc3FsZGYoInNlbGVjdCAqIGZyb20gdWNiIHdoZXJlIEdlbmRlciA9ICdGZW1hbGUnIikNCiMgUmV0dXJuIHRoZSBhZG1pdHRlZCBzdHVkZW50cw0Kc3FsZGYoInNlbGVjdCAqIGZyb20gdWNiIHdoZXJlIEFkbWl0ID0gJ0FkbWl0dGVkJyIpDQojIG9yZGVyIGFkbWlzc2lvbnMgcGVyIGRlcGFydG1lbnQNCnNxbGRmKCJzZWxlY3QgKiBmcm9tIHVjYiB3aGVyZSBBZG1pdCA9ICdBZG1pdHRlZCcgb3JkZXIgYnkgRnJlcSBERVNDIikNCiMgaG93IG1hbnkgZGVwYXJ0bWVudHMgYXJlIGluIHRoaXMgdGFibGUNCnNxbGRmKCJzZWxlY3QgZGlzdGluY3QgRGVwdCBmcm9tIHVjYiIpDQoNCmBgYA0KDQojIyBBZ2dyZWdhdGUgUXVlcmllcw0KYGBge3IsIGFnZ30NCiMgdG90YWwgYWRtaXR0ZWQgc3R1ZGV0cw0Kc3FsZGYoInNlbGVjdCBzdW0oRnJlcSkgZnJvbSB1Y2Igd2hlcmUgQWRtaXQgPSAnQWRtaXR0ZWQnIikNCiMgdG90YWwgcmVqZWN0ZWQgc3R1ZGVudHMNCnNxbGRmKCJzZWxlY3Qgc3VtKEZyZXEpIGZyb20gdWNiIHdoZXJlIEFkbWl0ID0gJ1JlamVjdGVkJyIpDQojIHJldHVybiB0b3RhbCBhZG1pdHRlZCBtYWxlcw0Kc3FsZGYoInNlbGVjdCBzdW0oRnJlcSkgYXMgdG90YWxfZHVkZXMgZnJvbSB1Y2Igd2hlcmUgQWRtaXQgPSAnQWRtaXR0ZWQnIEFORCBHZW5kZXIgPSAnTWFsZSciKQ0KIyByZXR1cm4gdG90YWwgcmVqZWN0IGZlbWFsZXMNCnNxbGRmKCJzZWxlY3Qgc3VtKEZyZXEpIGFzIHRvdGFsX2xhZGllcyBmcm9tIHVjYiB3aGVyZSBBZG1pdCA9ICdSZWplY3RlZCcgQU5EIEdlbmRlciA9ICdGZW1hbGUnIikNCiMgYXZlcmFnZSBudW1iZXIgb2YgYWRtaXR0ZWQgc3R1ZGVudCBieSBkZXBhcnRtZW50ICh1c3VhbGx5IG1lYW4pDQpzcWxkZigic2VsZWN0IERlcHQsIGF2ZyhGcmVxKSBhcyBhdmVyYWdlX2FkbWl0dGVkIGZyb20gdWNiIHdoZXJlIEFkbWl0ID0gJ0FkbWl0dGVkJyBncm91cCBieSBEZXB0IikNCg0KYGBgDQoNCiMjIFdpbGQgY2FyZCBtYXRjaCBRdWVyaWVzDQoNCmBgYHtyLCB3aWxkfQ0Kc3FsZGYoInNlbGVjdCAqIGZyb20gdWNiIHdoZXJlIEZyZXEgYmV0d2VlbiAyMCBBTkQgMTAwIikNCnNxbGRmKCJzZWxlY3QgKiBmcm9tIHVjYiB3aGVyZSBHZW5kZXIgTGlrZSAnRmUlJyIpDQpzcWxkZigic2VsZWN0ICogZnJvbSB1Y2Igd2hlcmUgR2VuZGVyIExpa2UgJyVtYWxlJSciKQ0Kc3FsZGYoInNlbGVjdCAqIGZyb20gdWNiIHdoZXJlIEdlbmRlciBMaWtlICdNYSUnIikNCnNxbGRmKCJzZWxlY3QgKiBmcm9tIHVjYiB3aGVyZSBHZW5kZXIgPSAnRmVtYWxlJyBBTkQgRnJlcSA+PSAxMDAgIikNCmBgYA0KDQoNCiMjIE1hbmlwdWxhdGlvbiAmIE5lc3RlZCBRdWVyaWVzDQpgYGB7ciwgbmVzdH0NCiMgV2hpY2ggZGVwYXJ0bWVudCBoYWQgdGhlIG1vc3QgYWRtaXR0ZWQgc3R1ZGVudHMgPSBBDQpzcWxkZigic2VsZWN0IERlcHQgZnJvbSB1Y2Igd2hlcmUgRnJlcSA9IChzZWxlY3QgbWF4KEZyZXEpIGZyb20gdWNiIHdoZXJlIEFkbWl0ID0gJ0FkbWl0dGVkJykiKQ0KDQojIHdoaWNoIGRlcGFydG1lbnQgaGFkIHRoZSBtb3N0IGFkbWl0dGVkIEZlbWFsZSBzdHVkZW50ID0gQw0Kc3FsZGYoInNlbGVjdCBEZXB0IGZyb20gdWNiIHdoZXJlIEZyZXEgPSAoc2VsZWN0IG1heChGcmVxKSBmcm9tIHVjYiB3aGVyZSBHZW5kZXIgPSAnRmVtYWxlJykiKQ0KDQpgYGANCg0KDQojIyBKb2luIFF1ZXJpZXMNCmBgYHtyLCBqb2lufQ0KIyBqb2luIHRoZSB0d28gdGFibGVzIHRvZ2V0aGVyIGJ5IHRoZSBjb21tb24ga2V5DQpzcWxkZigic2VsZWN0ICogZnJvbSB1Y2IgDQogICAgICBpbm5lciBqb2luIG1ham9ycyBvbiB1Y2IuRGVwdCA9IG1ham9ycy5EZXB0IikNCg0KYGBgDQoNCiMjIFJlc291cmNlcw0KDQoqIFtodHRwczovL2NyYW4uci1wcm9qZWN0Lm9yZy93ZWIvcGFja2FnZXMvc3FsZGYvc3FsZGYucGRmXShodHRwczovL2NyYW4uci1wcm9qZWN0Lm9yZy93ZWIvcGFja2FnZXMvc3FsZGYvc3FsZGYucGRmKQ0KKiBbaHR0cHM6Ly9naXRodWIuY29tL2dncm90aGVuZGllY2svc3FsZGZdKGh0dHBzOi8vZ2l0aHViLmNvbS9nZ3JvdGhlbmRpZWNrL3NxbGRmKQ0KDQoNCg0KZmluLg0K</div>
+<div id="rmd-source-code">LS0tDQp0aXRsZTogIlNRTCBpbiBSOiBTUUxERiBUdXRvcmlhbCINCmF1dGhvcjogIkphc21pbmUgRHVtYXMiDQpkYXRlOiAiQXVndXN0IDE5LCAyMDE2Ig0Kb3V0cHV0OiANCiAgaHRtbF9kb2N1bWVudDoNCiAgICB0b2M6IHRydWUNCiAgICB0b2NfZmxvYXQ6IHRydWUNCiAgICBjb2RlX2ZvbGRpbmc6IHNob3cNCiAgICBjb2RlX2Rvd25sb2FkOiB0cnVlDQogICAgZmlnX3dpZHRoOiA5DQogICAgZmlnX2hlaWdodDogNg0KICAgIHRoZW1lOiBmbGF0bHkNCiAgICBoaWdobGlnaHQ6IHRhbmdvDQotLS0NCg0KYGBge3Igc2V0dXAsIGluY2x1ZGU9RkFMU0V9DQprbml0cjo6b3B0c19jaHVuayRzZXQoZWNobyA9IFRSVUUsIG1lc3NhZ2U9RkFMU0UsIHdhcm5pbmc9RkFMU0UpDQoNCmBgYA0KDQoNCiMjIEV4YW1wbGUgRGF0YQ0KYGBge3IsIGRhdGF9DQojIGxpYnJhcmllcw0KbGlicmFyeShzcWxkZikNCmxpYnJhcnkoUkgyKQ0KDQpkYXRhKCJVQ0JBZG1pc3Npb25zIikNCg0KIyBtdXN0IGJlIGEgZGF0YSBmcmFtZQ0KdWNiIDwtIGFzLmRhdGEuZnJhbWUoVUNCQWRtaXNzaW9ucykNCg0Kc3FsZGYoInNlbGVjdCAqIGZyb20gdWNiIikNCg0KbWFqb3JzIDwtIGRhdGEuZnJhbWUobWFqb3IgPSBjKCJtYXRoIiwgImJpb2xvZ3kiLCAiZW5naW5lZXJpbmciLCAiY29tcHV0ZXIgc2NpZW5jZSIsICJoaXN0b3J5IiwgImFyY2hpdGVjdHVyZSIpLCBEZXB0ID0gYyhMRVRURVJTWzE6NV0sICJPdGhlciIpLCBGYWN1bHR5ID0gcm91bmQocnVuaWYoNiwgbWluID0gMTAsIG1heCA9IDMwKSkpDQoNCnNxbGRmKCJzZWxlY3QgKiBmcm9tIG1ham9ycyIpDQoNCmBgYA0KDQojIyBHZW5lcmFsIFF1ZXJpZXMNCmBgYHtyLCBnZW5lcmFsfQ0KIyBSZXR1cm4gRmVtYWxlIHN0dWRlbnQgYWRtaXNzaW9uIHJlc3VsdA0Kc3FsZGYoInNlbGVjdCAqIGZyb20gdWNiIHdoZXJlIEdlbmRlciA9ICdGZW1hbGUnIikNCiMgUmV0dXJuIHRoZSBhZG1pdHRlZCBzdHVkZW50cw0Kc3FsZGYoInNlbGVjdCAqIGZyb20gdWNiIHdoZXJlIEFkbWl0ID0gJ0FkbWl0dGVkJyIpDQojIG9yZGVyIGFkbWlzc2lvbnMgcGVyIGRlcGFydG1lbnQNCnNxbGRmKCJzZWxlY3QgKiBmcm9tIHVjYiB3aGVyZSBBZG1pdCA9ICdBZG1pdHRlZCcgb3JkZXIgYnkgRnJlcSBERVNDIikNCiMgaG93IG1hbnkgZGVwYXJ0bWVudHMgYXJlIGluIHRoaXMgdGFibGUNCnNxbGRmKCJzZWxlY3QgZGlzdGluY3QgRGVwdCBmcm9tIHVjYiIpDQoNCmBgYA0KDQojIyBBZ2dyZWdhdGUgUXVlcmllcw0KYGBge3IsIGFnZ30NCiMgdG90YWwgYWRtaXR0ZWQgc3R1ZGV0cw0Kc3FsZGYoInNlbGVjdCBzdW0oRnJlcSkgZnJvbSB1Y2Igd2hlcmUgQWRtaXQgPSAnQWRtaXR0ZWQnIikNCiMgdG90YWwgcmVqZWN0ZWQgc3R1ZGVudHMNCnNxbGRmKCJzZWxlY3Qgc3VtKEZyZXEpIGZyb20gdWNiIHdoZXJlIEFkbWl0ID0gJ1JlamVjdGVkJyIpDQojIHJldHVybiB0b3RhbCBhZG1pdHRlZCBtYWxlcw0Kc3FsZGYoInNlbGVjdCBzdW0oRnJlcSkgYXMgdG90YWxfZHVkZXMgZnJvbSB1Y2Igd2hlcmUgQWRtaXQgPSAnQWRtaXR0ZWQnIEFORCBHZW5kZXIgPSAnTWFsZSciKQ0KIyByZXR1cm4gdG90YWwgcmVqZWN0IGZlbWFsZXMNCnNxbGRmKCJzZWxlY3Qgc3VtKEZyZXEpIGFzIHRvdGFsX2xhZGllcyBmcm9tIHVjYiB3aGVyZSBBZG1pdCA9ICdSZWplY3RlZCcgQU5EIEdlbmRlciA9ICdGZW1hbGUnIikNCiMgYXZlcmFnZSBudW1iZXIgb2YgYWRtaXR0ZWQgc3R1ZGVudCBieSBkZXBhcnRtZW50ICh1c3VhbGx5IG1lYW4pDQpzcWxkZigic2VsZWN0IERlcHQsIGF2ZyhGcmVxKSBhcyBhdmVyYWdlX2FkbWl0dGVkIGZyb20gdWNiIHdoZXJlIEFkbWl0ID0gJ0FkbWl0dGVkJyBncm91cCBieSBEZXB0IikNCiMgaG93IG1hbnkgbWFqb3JzIGFyZSB0aGVyZQ0Kc3FsZGYoInNlbGVjdCBjb3VudChtYWpvcikgZnJvbSBtYWpvcnMiKQ0KIyBtaW5pbXVtIGFtb3VudCBvZiBzdHVkZXRzIHJlamVjdGVkDQpzcWxkZigic2VsZWN0IG1pbihGcmVxKSBmcm9tIHVjYiB3aGVyZSBBZG1pdCA9ICdSZWplY3RlZCciKQ0KDQpgYGANCg0KIyMgV2lsZCBjYXJkIG1hdGNoIFF1ZXJpZXMNCmBgYHtyLCB3aWxkfQ0Kc3FsZGYoInNlbGVjdCAqIGZyb20gdWNiIHdoZXJlIEZyZXEgYmV0d2VlbiAyMCBBTkQgMTAwIikNCnNxbGRmKCJzZWxlY3QgKiBmcm9tIHVjYiB3aGVyZSBHZW5kZXIgTGlrZSAnRmUlJyIpDQpzcWxkZigic2VsZWN0ICogZnJvbSB1Y2Igd2hlcmUgR2VuZGVyIExpa2UgJyVtYWxlJSciKQ0Kc3FsZGYoInNlbGVjdCAqIGZyb20gdWNiIHdoZXJlIEdlbmRlciBMaWtlICdNYSUnIikNCnNxbGRmKCJzZWxlY3QgKiBmcm9tIHVjYiB3aGVyZSBHZW5kZXIgPSAnRmVtYWxlJyBBTkQgRnJlcSA+PSAxMDAgIikNCnNxbGRmKCJzZWxlY3QgKiBmcm9tIHVjYiB3aGVyZSBHZW5kZXIgTGlrZSAnX2FsZSciKQ0Kc3FsZGYoInNlbGVjdCAqIGZyb20gdWNiIHdoZXJlIEdlbmRlciBOT1QgTGlrZSAnTV9sXyciKQ0KYGBgDQoNCg0KIyMgTWFuaXB1bGF0aW9uICYgTmVzdGVkIFF1ZXJpZXMNCmBgYHtyLCBuZXN0fQ0KIyBXaGljaCBkZXBhcnRtZW50IGhhZCB0aGUgbW9zdCBhZG1pdHRlZCBzdHVkZW50cyA9IEENCnNxbGRmKCJzZWxlY3QgRGVwdCBmcm9tIHVjYiB3aGVyZSBGcmVxID0gKHNlbGVjdCBtYXgoRnJlcSkgZnJvbSB1Y2Igd2hlcmUgQWRtaXQgPSAnQWRtaXR0ZWQnKSIpDQoNCiMgd2hpY2ggZGVwYXJ0bWVudCBoYWQgdGhlIG1vc3QgYWRtaXR0ZWQgRmVtYWxlIHN0dWRlbnQgPSBDDQpzcWxkZigic2VsZWN0IERlcHQgZnJvbSB1Y2Igd2hlcmUgRnJlcSA9IChzZWxlY3QgbWF4KEZyZXEpIGZyb20gdWNiIHdoZXJlIEdlbmRlciA9ICdGZW1hbGUnKSIpDQoNCiMgZGVwYXJ0bWVudCB3aXRoIG1vc3QgZmFjdWx0eSANCnNxbGRmKCJzZWxlY3QgRGVwdCBmcm9tIG1ham9ycyB3aGVyZSBGYWN1bHR5ID0gKHNlbGVjdCBtYXgoRmFjdWx0eSkgZnJvbSBtYWpvcnMpIikNCg0KYGBgDQoNCg0KIyMgSm9pbiBRdWVyaWVzDQpgYGB7ciwgam9pbn0NCiMgam9pbiB0aGUgdHdvIHRhYmxlcyB0b2dldGhlciBieSB0aGUgY29tbW9uIGtleQ0Kc3FsZGYoInNlbGVjdCAqIGZyb20gdWNiIA0KICAgICAgaW5uZXIgam9pbiBtYWpvcnMgb24gdWNiLkRlcHQgPSBtYWpvcnMuRGVwdCIpDQojIGpvaW4gdGhlIHRhYmxlIG9uIHRoZSBsZWZ0IHdpdGggcmVzdWx0YW50IG51bGxzJ3Mgb24gdGhlIHJpZ2h0IHRhYmxlDQpzcWxkZigic2VsZWN0ICogZnJvbSB1Y2IgbGVmdCBqb2luIG1ham9ycyBvbiB1Y2IuRGVwdCA9IG1ham9ycy5EZXB0IikNCiMgam9pbiB0aGUgdGFibGUgb24gdGhlIHJpZ2h0IHdpdGggdGhlIGxlZnQNCnNxbGRmKCJzZWxlY3QgKiBmcm9tIHVjYiByaWdodCBqb2luIG1ham9ycyBvbiB1Y2IuRGVwdCA9IG1ham9ycy5EZXB0IikNCg0KYGBgDQoNCiMjIFJlc291cmNlcw0KDQoqIFtodHRwczovL2NyYW4uci1wcm9qZWN0Lm9yZy93ZWIvcGFja2FnZXMvc3FsZGYvc3FsZGYucGRmXShodHRwczovL2NyYW4uci1wcm9qZWN0Lm9yZy93ZWIvcGFja2FnZXMvc3FsZGYvc3FsZGYucGRmKQ0KKiBbaHR0cHM6Ly9naXRodWIuY29tL2dncm90aGVuZGllY2svc3FsZGZdKGh0dHBzOi8vZ2l0aHViLmNvbS9nZ3JvdGhlbmRpZWNrL3NxbGRmKQ0KKiBbaHR0cDovL3d3dy53M3NjaG9vbHMuY29tL3NxbC9kZWZhdWx0LmFzcF0oaHR0cDovL3d3dy53M3NjaG9vbHMuY29tL3NxbC9kZWZhdWx0LmFzcCkNCg0KDQoNCmZpbi4NCg==</div>
 
 
 </div>

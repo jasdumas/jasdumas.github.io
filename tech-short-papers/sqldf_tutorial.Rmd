@@ -1,7 +1,7 @@
 ---
 title: "SQL in R: SQLDF Tutorial"
 author: "Jasmine Dumas"
-date: "August 18, 2016"
+date: "August 19, 2016"
 output: 
   html_document:
     toc: true
@@ -31,12 +31,11 @@ data("UCBAdmissions")
 # must be a data frame
 ucb <- as.data.frame(UCBAdmissions)
 
-majors <- data.frame(major = c(rep("math", 12), rep("biology", 10), rep("engineering", 2)))
+sqldf("select * from ucb")
 
-majors$Dept <- c(rep("A", 6), rep("B", 6), rep("C", 6), rep("C", 6))
-majors$Faculty <- round(runif(24, min = 5, max = 30))
+majors <- data.frame(major = c("math", "biology", "engineering", "computer science", "history", "architecture"), Dept = c(LETTERS[1:5], "Other"), Faculty = round(runif(6, min = 10, max = 30)))
 
-majors
+sqldf("select * from majors")
 
 ```
 
@@ -65,17 +64,22 @@ sqldf("select sum(Freq) as total_dudes from ucb where Admit = 'Admitted' AND Gen
 sqldf("select sum(Freq) as total_ladies from ucb where Admit = 'Rejected' AND Gender = 'Female'")
 # average number of admitted student by department (usually mean)
 sqldf("select Dept, avg(Freq) as average_admitted from ucb where Admit = 'Admitted' group by Dept")
+# how many majors are there
+sqldf("select count(major) from majors")
+# minimum amount of studets rejected
+sqldf("select min(Freq) from ucb where Admit = 'Rejected'")
 
 ```
 
 ## Wild card match Queries
-
 ```{r, wild}
 sqldf("select * from ucb where Freq between 20 AND 100")
 sqldf("select * from ucb where Gender Like 'Fe%'")
 sqldf("select * from ucb where Gender Like '%male%'")
 sqldf("select * from ucb where Gender Like 'Ma%'")
 sqldf("select * from ucb where Gender = 'Female' AND Freq >= 100 ")
+sqldf("select * from ucb where Gender Like '_ale'")
+sqldf("select * from ucb where Gender NOT Like 'M_l_'")
 ```
 
 
@@ -87,6 +91,9 @@ sqldf("select Dept from ucb where Freq = (select max(Freq) from ucb where Admit 
 # which department had the most admitted Female student = C
 sqldf("select Dept from ucb where Freq = (select max(Freq) from ucb where Gender = 'Female')")
 
+# department with most faculty 
+sqldf("select Dept from majors where Faculty = (select max(Faculty) from majors)")
+
 ```
 
 
@@ -95,6 +102,10 @@ sqldf("select Dept from ucb where Freq = (select max(Freq) from ucb where Gender
 # join the two tables together by the common key
 sqldf("select * from ucb 
       inner join majors on ucb.Dept = majors.Dept")
+# join the table on the left with resultant nulls's on the right table
+sqldf("select * from ucb left join majors on ucb.Dept = majors.Dept")
+# join the table on the right with the left
+sqldf("select * from ucb right join majors on ucb.Dept = majors.Dept")
 
 ```
 
@@ -102,6 +113,7 @@ sqldf("select * from ucb
 
 * [https://cran.r-project.org/web/packages/sqldf/sqldf.pdf](https://cran.r-project.org/web/packages/sqldf/sqldf.pdf)
 * [https://github.com/ggrothendieck/sqldf](https://github.com/ggrothendieck/sqldf)
+* [http://www.w3schools.com/sql/default.asp](http://www.w3schools.com/sql/default.asp)
 
 
 
