@@ -50,7 +50,7 @@ Python is a widely used high-level, general-purpose, interpreted, dynamic progra
 * [Atom Text Editor](https://atom.io/)
 * [Import.io](https://www.import.io/)
 * [Jupyter](http://jupyter.org/)
-* [Rodeo IDE](https://www.yhat.com/products/rodeo)
+* [Rodeo IDE for Python](https://www.yhat.com/products/rodeo)
 * [Tor Browser](https://www.torproject.org/projects/torbrowser.html.en)
 * [HTML Github Preview](https://htmlpreview.github.io/)
 * [RSeek.org Search Engine](http://rseek.org/)
@@ -67,17 +67,18 @@ Python is a widely used high-level, general-purpose, interpreted, dynamic progra
 * [Data Elixer](http://dataelixir.com/)
 
 ### Books :book:
-* [The Signal & the Noise by Nate Silver](http://www.amazon.com/Signal-Noise-Many-Predictions-Fail-but/dp/0143125087) 
+* [The Signal & the Noise by Nate Silver](http://www.amazon.com/Signal-Noise-Many-Predictions-Fail-but/dp/0143125087)
 * [Big Data](http://www.big-data-book.com/)
 * [Python for Data Analysis](https://www.amazon.com/Python-Data-Analysis-Wrangling-IPython/dp/1449319793)
 * [R for Data Science](http://r4ds.had.co.nz/)
-* [R Packages ](http://r-pkgs.had.co.nz/)
+* [R Packages](http://r-pkgs.had.co.nz/)
 * [Advanced R](http://adv-r.had.co.nz/)       
   * Chapters of Interest: [Data Structures](http://adv-r.had.co.nz/Data-structures.html), [Object-Orientated Field Guide](http://adv-r.had.co.nz/OO-essentials.html), [Style Guide](http://adv-r.had.co.nz/Style.html)
+* [An Introduction to Statistical Learning with Applications in R](http://www-bcf.usc.edu/~gareth/ISL/ISLR%20Sixth%20Printing.pdf)
 
-### Coursework, MOOCS & Online material  :school_satchel: 
-* [Johns Hopkins Engineering For Professionals CS Program](https://ep.jhu.edu/programs-and-courses/programs/computer-science)
+### Coursework, MOOCS & Online material  :school_satchel:
 * [Datacamp.com: Data Analysis in your browser](https://www.datacamp.com/)
+* [Datacamp.com: Machine Learning in R](https://www.datacamp.com/community/tutorials/machine-learning-in-r#gs.wRaIUbc)
 * [Stat545: Data wrangling, exploration, and analysis with R](https://stat545-ubc.github.io/)   
 * [Rstudio resources](https://www.rstudio.com/resources/training/online-learning/)
 * [The Johns Hopkins Data Science Specialization on Coursera](https://www.coursera.org/specialization/jhudatascience/1)
@@ -88,10 +89,9 @@ Python is a widely used high-level, general-purpose, interpreted, dynamic progra
 * [Version Control](https://git-scm.com/doc)   
 * [Git Cheat sheet (PDF)](https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf)
 * [Ten Simple Rules for Reproducible Computational Research](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003285)
+* [Emoji Cheat Sheet for Markdown](http://www.webpagefx.com/tools/emoji-cheat-sheet/)
 
 
 ![](http://i.giphy.com/V3xGLO2kAzPxe.gif)
 
 *Ron Weasley is also mystified by the length of this resource list*  :smile:
-
-

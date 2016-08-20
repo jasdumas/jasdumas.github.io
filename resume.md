@@ -12,7 +12,7 @@ subtitle: Data Scientist
 
 About
 ---------
-I'm seeking to utilize my computational programming & data analysis skills in a position that focuses in developing innovative open source software tools. I value hard work, creativity and openness. 
+I'm seeking to utilize my computational programming & data analysis skills in a position that focuses in developing innovative open source software tools. I value hard work, creativity and openness.
 
 **Featured Projects**: I have experience using my data science toolkit in several projects which include:   
 
@@ -44,7 +44,7 @@ Education
 
 * [DePaul University](https://www.cdm.depaul.edu/academics/Pages/MS-in-Predictive-Analytics.aspx), (2015 - Present)
   * **Master of Science Candidate in Predictive Analytics**
-  * Coursework: Intro to Programming, Data Analytics & Regression, Database Processing for Large-scale Analytics, Advanced Data Analysis, Knowledge Discovery Technologies 
+  * Coursework: Intro to Programming, Data Analytics & Regression, Database Processing for Large-scale Analytics, Advanced Data Analysis, Knowledge Discovery Technologies
 
 ___________
 
@@ -67,7 +67,7 @@ Data Science Experience
 ---------
 * **The Hartford Financial Services (NYSE: HIG)**   
   * **Associate Data Scientist**, Predictive Analytics & Research - Auto Team, (April 2016 - Present)	    
-  * Research & Implementation of machine learning techniques in variable reduction and selection to create predictive 
+  * Research & Implementation of machine learning techniques in variable reduction and selection to create predictive
     models for auto insurance class plans that improve loss ratio estimates and drive strategic pricing changes.   
   * R/Shiny application development for model monitoring and diagnostic business intelligence tools.    
   * **Data Science Intern**, (Nov. 2015  - March 2016)     
@@ -98,13 +98,13 @@ ___________
 * **QDx, Inc. / Abbott Point-of-Care (NYSE: ABT)**, (June 2013 - Jan. 2014)      
   * **R&D Engineering Intern**     
   * Data Collection, Statistical analysis, and Data Mining of animal & human specimens CBC (complete blood count) results of an image based, reagent-free hematology analyzer in preparation for clinical trials at a start-up	   
-  * **Major Accomplishment**: Designed an experiment leading to a novel feature enhancement for anticoagulants 
+  * **Major Accomplishment**: Designed an experiment leading to a novel feature enhancement for anticoagulants
 
 ___________
 
 * **AdChem Manufacturing Technologies, Inc.**, (May 2012 - May 2013)     
   * **Manufacturing Engineer**     
-  * Developed over 250 manufacturing process methods for complex commercial and military jet engine sheet metal brackets for Pratt & Whitney, using CNC Metrology Software, 3D printing & Solidworks CAD 
+  * Developed over 250 manufacturing process methods for complex commercial and military jet engine sheet metal brackets for Pratt & Whitney, using CNC Metrology Software, 3D printing & Solidworks CAD
   * **Major Accomplishment**: Developed a new manufacturing method & CAD Model for part identification
 
 
@@ -115,7 +115,7 @@ Research
 Peer-Reviewed Research Papers
 ---------
 
-* shinyGEO: a web-based application for analyzing Gene Expression Omnibus datasets. **Jasmine Dumas**; Michael A. Gargano; Garrett M. Dancik. Bioinformatics 2016; doi: 10.1093/bioinformatics/btw519. [Manuscript Link](http://bioinformatics.oxfordjournals.org/content/early/2016/08/07/bioinformatics.btw519.full.pdf?keytype=ref&ijkey=R1zz4cjrdze0PAC)
+* shinyGEO: a web-based application for analyzing Gene Expression Omnibus datasets. **Jasmine Dumas**; Michael A. Gargano; Garrett M. Dancik. Bioinformatics 2016; doi: 10.1093/bioinformatics/btw519. [Online Manuscript Link](http://bioinformatics.oxfordjournals.org/content/early/2016/08/07/bioinformatics.btw519.full.pdf?keytype=ref&ijkey=R1zz4cjrdze0PAC)
 
 
 * **Dumas, J.**, et.al., “Feasibility of an electronic stethoscope system for monitoring neonatal bowel sounds.” Connecticut Medicine, Volume 77, Number 8, pp. 467-471, September 2013. [bit.ly/JMD-connmed](bit.ly/JMD-connmed)                       
@@ -146,5 +146,3 @@ Community Involvement
 * Python Software Foundation, Basic Member
 * Connecticut Predictive Analytics, Meetup.com Group Member
 * Epsilon Pi Tau, Honor Society, General Member Inducted in 2012          
-
-
