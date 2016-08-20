@@ -1,0 +1,260 @@
+---
+title: "Connecticut Real Estate Sales from 2011-2013"
+author: "Jasmine Dumas"
+output: 
+  flexdashboard::flex_dashboard:
+    source_code: embed
+    theme: flatly
+    social: [ "twitter", "facebook", "menu" ]
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(warning = FALSE, message = FALSE)
+library(flexdashboard)
+library(RSocrata)
+library(DT)
+library(ggplot2)
+library(plotly)
+library(dplyr)
+library(lubridate)
+```
+
+
+Dashboard
+========================================
+
+
+```{r, initial_data, include=FALSE}
+url = "https://data.ct.gov/Housing-and-Development/Real-Estate-Sales-By-Town-for-2011-2012-2013/8udc-aepg"
+real_estate <- read.socrata(url)
+
+# get some small results for dashboard boxes
+tbl = as.data.frame(table(real_estate$Name))
+
+tbl$Freq <- as.numeric(tbl$Freq)
+
+mx <- as.character(tbl$Var1[which(tbl$Freq == max(tbl$Freq))])
+
+# pre-processing - remove $ punctuation
+real_estate$AssessedValue <- gsub("^[[:punct:]]", "", real_estate$AssessedValue)
+real_estate$SalePrice <- gsub("^[[:punct:]]", "", real_estate$SalePrice)
+# change columns AssessedValue and SalePrice from chr to numeric
+real_estate$AssessedValue2 <- as.numeric(real_estate$AssessedValue)
+real_estate$SalePrice2 <- as.numeric(real_estate$SalePrice)
+# summary numbers of reponse
+summary(real_estate$SalePrice2)
+# correlations
+cor(real_estate$SalePrice2, real_estate$AssessedValue2) # moderate-high value
+
+### feature engineering
+# create our new column
+real_estate$county <- NA
+
+fairfield <- c("Bethel","Bridgeport","Brookfield","Danbury","Darien",
+"Easton","Fairfield","Greenwich","Monroe","New Canaan","New Fairfield",
+"Newtown","Norwalk","Redding","Ridgefield","Shelton","Sherman","Stamford",
+"Stratford","Trumbull","Weston","Westport","Wilton")
+
+real_estate$county[which(real_estate$Name %in% fairfield)] <- "Fairfield"
+
+hartford <- c("Avon","Berlin","Bloomfield","Bristol","Burlington",
+"Canton","East Granby","East Hartford","East Windsor","Enfield",
+"Farmington","Glastonbury","Granby","Hartford","Hartland",
+"Manchester","Marlborough","New Britain","Newington","Plainville",
+"Rocky Hill","Simsbury","South Windsor","Southington","Suffield",
+"West Hartford","Wethersfield","Windsor","Windsor Locks")
+
+real_estate$county[which(real_estate$Name %in% hartford)] <- "Hartford"
+
+litchfield <- c("Barkhamsted","Bethlehem","Bridgewater","Canaan",
+"Colebrook","Cornwall","Goshen","Harwinton","Kent","Litchfield",
+"Morris","New Hartford","New Milford","Norfolk","North Canaan",
+"Plymouth","Roxbury","Salisbury","Sharon","Thomaston","Torrington","Warren",
+"Washington","Watertown","Winchester","Woodbury")
+
+real_estate$county[which(real_estate$Name %in% litchfield)] <- "Litchfield"
+
+middlesex <- c("Chester","Clinton","Cromwell","Deep River",
+"Durham","East Haddam","East Hampton","Essex","Haddam",
+"Killingworth","Middlefield","Middletown","Old Saybrook","Portland","Westbrook")
+
+real_estate$county[which(real_estate$Name %in% middlesex)] <- "Middlesex"
+
+newhaven <- c("Ansonia","Beacon Falls","Bethany","Branford",
+"Cheshire","Derby","East Haven","Guilford","Hamden","Madison","Meriden",
+"Middlebury","Milford","Naugatuck","New Haven","North Branford",
+"North Haven","Orange","Oxford","Prospect","Seymour","Southbury",
+"Wallingford","Waterbury","West Haven","Wolcott","Woodbridge")
+
+real_estate$county[which(real_estate$Name %in% newhaven)] <- "New Haven"
+
+newlondon <- c("Bozrah", "Colchester","East Lyme","Franklin",
+"Griswold","Groton","Lebanon","Ledyard","Lisbon","Lyme",
+"Montville","New London","North Stonington","Norwich",
+"Old Lyme","Preston","Salem","Sprague","Stonington","Voluntown","Waterford")
+
+real_estate$county[which(real_estate$Name %in% newlondon)] <- "New London"
+
+tolland <- c("Andover","Bolton","Columbia","Coventry","Ellington",
+"Hebron","Mansfield","Somers","Stafford","Tolland",
+"Union","Vernon","Willington")
+
+real_estate$county[which(real_estate$Name %in% tolland)] <- "Tolland"
+
+windham <- c("Ashford","Brooklyn","Canterbury","Chaplin","Eastford",
+"Hampton","Killingly","Plainfield","Pomfret","Putnam","Scotland",
+"Sterling","Thompson","Windham","Woodstock")
+
+real_estate$county[which(real_estate$Name %in% windham)] <- "Windham"
+
+## seasons extractions
+real_estate$month <- month(real_estate$DateRecorded)
+real_estate$season <- NA
+
+fall <- c(9, 10, 11)
+winter <- c(12, 1, 2)
+spring <- c(3, 4, 5)
+summer <- c(6, 7, 8)
+
+real_estate$season[which(real_estate$month %in% fall)] <- "Fall"
+real_estate$season[which(real_estate$month %in% winter)] <- "Winter"
+real_estate$season[which(real_estate$month %in% spring)] <- "Spring"
+real_estate$season[which(real_estate$month %in% summer)] <- "Summer"
+
+```
+
+
+The Office of Policy and Management maintains a listing of all real estate sales with a sales price of $2,000 or greater that occur between October 1 and September 30 of each year. For each sale record, the file includes: town, property address, date of sale, property type (residential, apartment, commercial, industrial or vacant land), sales price, and property assessment. The data is from historical records from the [data.ct.gov](data.ct.gov) open data portal.
+
+
+
+### Number of Sold Properties
+
+```{r, vb1}
+nums <- nrow(real_estate)
+valueBox(nums, icon = "fa-home", color = "info")
+```
+
+### Median of Sale Price
+```{r, vb2}
+med <- median(real_estate$SalePrice)
+valueBox(med, icon = "fa-usd", color = "success")
+```
+
+### Town with Most Sold Properties
+```{r, vb3}
+valueBox(mx, icon = "fa-road")
+```
+
+
+Visualizations {.storyboard}
+=========================================
+
+
+### **Seasons for Sales:** Summer was the most popular season for Real Estate sales, with July the most popular Month.
+
+
+```{r, eval=FALSE, include=FALSE}
+
+seas <- ggplot(real_estate, aes(x = season, fill = season)) +
+              geom_bar() +
+              theme_bw() +
+              labs(title = "Seasons for Real Estate Sales", 
+              y = "", x = "")
+
+ggplotly(seas)
+
+```
+
+```{r}
+mon <- ggplot(real_estate, aes(x = month, fill = season)) +
+              geom_bar() +
+              scale_x_discrete() +
+              theme_bw() +
+              labs(title = "Months for Real Estate Sales", 
+              y = "", x = "")
+
+ggplotly(mon)
+
+
+```
+
+
+
+
+
+### **Residential Types:** Most Properties sold during 2011 and 2013 were single family homes, followed by condos.
+```{r}
+typ =  c("Commercial", "Condo Family", "Four Family", "Industrial", 
+"Single Family", "Three Family", "Two Family", "Vacant Land", 
+"Apartments", "Public Utility")
+
+t_real_estate <- real_estate[which(real_estate$ResidentialType %in% typ),]
+  
+t <- ggplot(t_real_estate, aes(x= ResidentialType, fill = ResidentialType)) +
+          geom_bar() +
+          theme_bw() +
+          labs(title = "Residential Types of Real Estate Sales", 
+           y = "", x = "") +
+          coord_flip()
+
+ggplotly(t)
+
+```
+
+
+### **Counties with the Most Real Estate Sales**: Fairfield County has had the most Real Estate sales from 2011 to 2013.
+
+```{r}
+m <- ggplot(real_estate, aes(x = county, fill = factor(county))) +
+      geom_bar() +
+      theme_bw() +
+      labs(title = "Counties with Most Real Estate Sales", 
+           y = "", x = "")
+ggplotly(m)
+
+```
+
+
+### **Distribution of Listing Year**: 2013 had more listings purchased than 2011, 2012.
+
+```{r, echo=FALSE}
+b <- ggplot(real_estate, aes(x = ListYear, fill = factor(ListYear ))) +
+      geom_bar() +
+      theme_bw() +
+      labs(title = "Real Estate List Year Distribution", 
+           y = "", x = "")
+
+ggplotly(b)
+
+```
+
+### **Assessed Value vs. Sale Price**:  Assessed Value is what the city or town says the property is worth after applying their own formula.
+
+```{r, eda, echo=FALSE}
+# scatterplot 
+b_real_estate <- real_estate[, - 3] # create background data for plot
+
+s <- ggplot(real_estate, aes(x = AssessedValue2, y = SalePrice2, fill=factor(ListYear))) + 
+            geom_point(data=b_real_estate, fill = "grey", alpha=0.3) +
+            geom_point() +
+            facet_wrap(~ ListYear) +
+            theme_bw() +
+            labs(title = "Real Estate Prices by Listing Year", 
+                 x = "Assesed Value ($)", y = "Sale Price ($)") +
+            guides(fill = FALSE)
+
+ggplotly(s)
+
+```
+
+
+Details
+=========================================
+
+**Modeling Reflections:** It is favorable to see a moderately high correlation between the independent and dependent variables of interest. My assumption is that the assessed value will be a good predictor of sale price within this data-set. There is also an assumption that towns, `Name` variable will have a great indication of assessed & sale price which is due to the varying amounts of affluence in Connecticut. A seen in the `fit` model some of the _significant_ `Name` dummy variables are some of the most wealthy towns in [Connecticut](https://en.wikipedia.org/wiki/List_of_Connecticut_locations_by_per_capita_income) and the [US](http://time.com/100987/richest-towns/) - So its not specifically associated with town name but with the makeup of the town residents (and assets) that really affect real estate prices in Connecticut. This also goes to underscore the housing market and its revival from the recent recession. [Further Modeling Work]()
+
+**Summary of Data Source:** The Office of Policy and Management maintains a listing of all real estate sales with a sales price of $2,000 or greater that occur between October 1 and September 30 of each year. For each sale record, the file includes: town, property address, date of sale, property type (residential, apartment, commercial, industrial or vacant land), sales price, and property assessment.
+
+**Source**: [https://data.ct.gov/Housing-and-Development/Real-Estate-Sales-By-Town-for-2011-2012-2013/8udc-aepg](https://data.ct.gov/Housing-and-Development/Real-Estate-Sales-By-Town-for-2011-2012-2013/8udc-aepg)
+
