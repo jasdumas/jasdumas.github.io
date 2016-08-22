@@ -2,7 +2,7 @@
 layout: post
 title: Exploring Reported Crime Incidents in Hartford, CT
 subtitle: A shiny flexdashboard project
-bigimg: /post_data/crime-hartford.jpeg
+bigimg: /post_data/hartford-skyline.jpg
 tags:
 - rstats
 ---
