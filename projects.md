@@ -6,6 +6,8 @@ subtitle: open source, research & weekend data science projects
 
 ---------------
 
+* [shinyLP: Landing Home Pages for Shiny Applications using Bootstrap Components](https://github.com/jasdumas/shinyLP): This R package provides templates and functions for landing home pages for your shiny application - leading to a better UX for your users and writing less HTML for the developer. :globe_with_meridians:
+
 * [*Flexdashboard* of Reported Crimes in Hartford Connecticut](https://jasminedumas.shinyapps.io/hartford-crime/): Exploratory Data Analysis and data visualizations (including a `leaflet` map) surrounding public safety questions on data from 2005 to Current from [https://data.ct.gov](https://data.ct.gov).  [blog post](http://jasdumas.github.io/2016-08-22-crime-incidents-hartford/) :police_car:
 
 * [ttbbeer](https://cran.r-project.org/web/packages/ttbbeer/index.html): This is my **first** R package on [CRAN](https://cran.r-project.org/). This package provides the data for materials used at U.S. breweries as listed in the Beer Monthly Statistical Releases. The motivation behind this package was to provide an analysis-ready data set as the original data is in PDF format. :beers:
