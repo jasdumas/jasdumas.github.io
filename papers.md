@@ -15,6 +15,7 @@ subtitle: technical writing in R
 
 ### Regression Analysis
 
+* [Assumptions of Linear Regression](http://jasdumas.github.io/tech-short-papers/assumptions_of_linear_reg.html)
 * [Automated Variable Selection Algorithms in R](http://jasdumas.github.io/tech-short-papers/automated_variable_selection_algorithms.html)
 
 
