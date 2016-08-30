@@ -1,0 +1,111 @@
+---
+title: "Assumptions of Linear Regression"
+author: "Jasmine Dumas"
+date: "August 30, 2016"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    code_folding: show
+    code_download: true
+    fig_width: 9
+    fig_height: 6
+    theme: flatly
+    highlight: tango
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message=FALSE, warning=FALSE)
+
+```
+
+
+### Requirements
+
+* Linear Regression needs at least two variables
+* The amount of samples is preferred to be at minimum 20 observations per variable to have confidence in the model
+
+### 1. Linear Relationship
+
+* The relationship between the independent variable (response) and the dependent variable(s) (predictors) needs to be linear
+* Limit the amount of outliers as Linear Regression is sensitive to outliers - test with scatter plots
+
+* R methods: scatter plots
+```{r}
+plot(cars)
+```
+
+
+### 2. Multivariate Normality
+
+* The distribution of each of the variables is [normal (or Gaussian)](https://en.wikipedia.org/wiki/Normal_distribution) - the averages of each **random, independent** observations converge (tend towards) a central mean.
+
+* R methods: Histograms, [Shapiro-Wilk Test](https://en.wikipedia.org/wiki/Shapiro%E2%80%93Wilk_test), Q-Q plot, Kolmogorov-Smirnof test
+```{r}
+hist(cars$speed)
+hist(cars$dist)
+
+shapiro.test(cars$speed)
+shapiro.test(cars$dist)
+
+qqplot(cars$speed, cars$dist)
+
+ks.test(cars$speed, cars$dist)
+
+```
+
+### 3. No or little multicollinearity
+
+* [Multicollinearity](https://en.wikipedia.org/wiki/Multicollinearity) occurs when the independent variables are not independent from each other - One variable can be a predictor of the other
+* A second important independence assumption is that the error of the mean has to be independent from the independent variables.
+
+* R methods: correlation, tolerance, variance inflation factor (VIF)
+```{r}
+cor(cars)
+
+# example of correlated variables
+cars2 <- cars
+cars2$speed2 <- cars2$speed
+cor(cars2) # if there is a 1.0 in any other position than the diagonal there is perfect correlation
+
+```
+
+
+### 4. No auto-correlation
+
+* Autocorrelation occurs when the residuals are not independent from each other
+* correlation of a signal with itself at different points in time - common in *time series analysis*
+
+* R methods: [Durbin-Watson Test](https://en.wikipedia.org/wiki/Durbin%E2%80%93Watson_statistic)
+```{r}
+library(car)
+
+fit <- lm(dist ~ speed, data=cars)
+summary(fit)
+
+durbinWatsonTest(fit)
+
+```
+
+### 5. Homoscedasticity
+
+*  The error terms along the regression are the **same** and not heteroscedastic.
+
+* R methods: Residual plot, [Goldfeld-Quandt Test](https://en.wikipedia.org/wiki/Goldfeld%E2%80%93Quandt_test)
+```{r}
+library(car)
+residualPlot(fit)
+
+# or in base
+plot(fit$fitted.values, fit$residuals)
+```
+
+
+### Resources
+
+* [Statistics Solutions](http://www.statisticssolutions.com/assumptions-of-linear-regression/)
+
+* [Quick R: Diagnostics](http://www.statmethods.net/stats/rdiagnostics.html)
+
+* [Quick R: Probability](http://www.statmethods.net/advgraphs/probability.html)
