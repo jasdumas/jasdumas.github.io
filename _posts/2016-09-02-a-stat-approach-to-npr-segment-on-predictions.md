@@ -1,0 +1,17 @@
+---
+layout: post
+title: A Statistical Approach To Understanding Why Humans Are Bad at Predictions
+subtitle: Statisticians are Humans too
+---
+
+
+I recently heard a short [NPR](http://www.npr.org/) segment that spoke of why, [Humans are bad a making predictions, however Statisticians can do better](http://www.npr.org/2016/09/01/492203116/want-to-make-better-predictions-researchers-explore-where-we-go-wrong). One reason for the poor predictions were that people tended to only focus on the details of a problem and derive there prediction afterwards. For example, the speakers proposed that to predict the outcome of a baseball game, non-statisticians would examine factors in pitcher speed, weather, runs, batting average, starting line-ups, and other subtle details with almost no regard to historical game match-ups. This concentration on the small details makes for poor predictions due to the lack of understanding how all of those details were worked on each other, or how they were correlated (and further more, were those details correlated with the outcome prediction). It was proposed that relying on fewer details and historical baseball game match-up would lead to more favorable predictions and statisticians plagued with the numerous details could still construct better predictions.
+
+After this NPR segment I wondered what the statistical underpinnings that were keeping non-statisticians from making better predictions and could this have all the difference in predicting the winning game.The seemingly important "details" that should be a indicator of prediction outcome, when added together are in fact a article of over fitting a statistical model. [Over fitting](https://en.wikipedia.org/wiki/Overfitting) means that we are fitting a model to random noise and not correctly describing our underlying relationship. If over fitting has occurred the model can't be generalized to fit on new data. In the context of machine learning we would fit a model with an algorithm on 99% of our data sample we would get great training accuracy metrics, but once we tried to test the model on a hold-out sample, the testing accuracy would be poor as we have gone to specific for the model to work well with other data. Over fitting stems from adding many more predictors there by increasing the complexity of the model without improving predictive power.
+
+![](https://en.wikipedia.org/wiki/Overfitting#/media/File:Overfitted_Data.png)
+*"Noisy (roughly linear) data is fitted to both linear and polynomial functions. Although the polynomial function is a perfect fit, the linear version can be expected to generalize better. In other words, if the two functions were used to extrapolate the data beyond the fit data, the linear function would make better predictions."* -  Source: [Wikipedia](https://en.wikipedia.org/wiki/Overfitting)
+
+As Data scientists with experience with building statistical models we have an advantage in assessing our data and performing **feature engineering and variable selection** so that we can describe all of the "details" which can best explain all of the variance in the data. Our predictions can be better through understanding statistical importance and aiming for a parsimonious model rather than an overly complicated one.
+
+<iframe src="https://www.npr.org/player/embed/492203116/492203117" width="100%" height="290" frameborder="0" scrolling="no" title="NPR embedded audio player"></iframe>
