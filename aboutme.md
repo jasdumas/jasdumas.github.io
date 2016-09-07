@@ -12,9 +12,9 @@ subtitle: ... and all that jazz!
 
 :mortar_board: Currently a M.S. graduate student in **Predictive Analytics** at DePaul University focusing in **Data Science & Computational Methods**. Previously earned a Bachelor of **Biomedical Engineering** from the University of Hartford. My senior research project was to develop a prototype [walk-assist](http://www.tuvie.com/wp-content/uploads/ekso-bionic-suit1.jpg) device for a T4 Paraplegic client; project nicknamed "Iron man".
 
-:floppy_disk: I enjoy developing software tools to help assist technical novices complete their data analysis work! I like coding in R & Python!
+:floppy_disk: I enjoy developing software tools to help assist technical novices complete their data analysis work! I like programming in R & Python!
 
-:earth_americas: I grew up in the *Lower Hudson Valley, NY* and stayed around *Connecticut* after undergrad. I'm currently available for *remote* or *consulting* opportunities.
+:earth_americas: I grew up in the *Lower Hudson Valley, NY* and stayed around *Connecticut* after undergrad. I'm currently available for *remote* or *consulting* opportunities on **diverse** teams.
 
 
 Here are links to my other pages on the interwebs: [keybase.io/jasdumas](keybase.io/jasdumas), [medium](https://medium.com/@jasdumas), [soundcloud](https://soundcloud.com/jasmine-dumas), [about.me](https://about.me/jasminedumas), [wordpress](https://jasdumas.wordpress.com/), [Arduino project videos on vine](https://vine.co/Jasmine.Dumas), [Google Scholar](https://scholar.google.com/citations?user=Yt3WKXsAAAAJ&hl=en), [codecademy](https://www.codecademy.com/jmdumas), [Kaggle](https://www.kaggle.com/jasdumas), [Quora](https://www.quora.com/profile/Jasmine-Dumas), [GrabCAD](https://grabcad.com/jasmine.dumas-1/projects), [angel.co](https://angel.co/jasmine-dumas). *Any other sites, probably aren't related to me*
