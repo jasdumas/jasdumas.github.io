@@ -110,7 +110,7 @@ img::-moz-selection {
 .navbar-custom .navbar-brand:focus ,
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
-  color: #0085a1;
+  color: #3cb371;
 }
 
 @media only screen and (min-width: 768px) {
@@ -305,7 +305,7 @@ footer .theme-by {
 .post-preview a:focus,
 .post-preview a:hover {
   text-decoration: none;
-  color: #0085a1;
+  color: #3cb371;
 }
 
 .post-preview .post-title {
