@@ -26,7 +26,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: #0085a1;
+  color: #3cb371;
 }
 blockquote {
   color: #808080;
@@ -70,12 +70,12 @@ hr.small {
 ::-moz-selection {
   color: white;
   text-shadow: none;
-  background: #0085a1;
+  background: #3cb371;
 }
 ::selection {
   color: white;
   text-shadow: none;
-  background: #0085a1;
+  background: #3cb371;
 }
 img::selection {
   color: white;
