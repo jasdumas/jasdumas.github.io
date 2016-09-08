@@ -41,7 +41,7 @@ _terminal(unix & MacOS)_
 
 _cmd (windows)_
 
-* `get-content`: Gets the content of the item at the specified location. (get-content somefile.txt | where { $_ -match "expression"}) [Source on stackoverflow answer](http://stackoverflow.com/a/6028937/4143444)
+* `get-content`: Gets the content of the item at the specified location. (`get-content somefile.txt | where { $_ -match "expression"}`) [Source on stackoverflow answer](http://stackoverflow.com/a/6028937/4143444)
 
 
 #### 3. Explore:
