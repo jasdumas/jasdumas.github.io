@@ -47,3 +47,6 @@ subtitle: technical writing in R
 
 * [to err is human: decoding error messages in R](http://rpubs.com/jasdumas/to-err): A re-useable presentation deck for new R programmers on decoding confusing error messages and gaining confidence in programming. *In-development*
 
+### Features & Mentions
+
+* [Revolution Analytics Blog: "New 'R Talk' podcast with news from R Consortium"](http://blog.revolutionanalytics.com/2015/08/r-talk.html)
