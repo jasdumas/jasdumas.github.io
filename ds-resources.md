@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Data Science Links
-subtitle: R & python resource materials
+subtitle: These are a few of my favorite links...
 ---
 
 ----------
