@@ -49,6 +49,7 @@ author:
   twitter: jasdumas
   linkedin: jasminedumas
   stackoverflow: users/4143444/jasmine-dumas
+  instagram: jasdumas
 
  
 # Select which links to show in the footer
@@ -60,6 +61,7 @@ footer-links-active:
   github: true
   linkedin: true
   stackoverflow: true
+  instagram: true
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
