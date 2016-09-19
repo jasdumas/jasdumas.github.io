@@ -90,6 +90,13 @@ Python is a widely used high-level, general-purpose, interpreted, dynamic progra
 * [Git Cheat sheet (PDF)](https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf)
 * [Ten Simple Rules for Reproducible Computational Research](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003285)
 * [Emoji Cheat Sheet for Markdown](http://www.webpagefx.com/tools/emoji-cheat-sheet/)
+* [Github for Cats](https://gist.github.com/remixz/4651245) 
+* [GitHub, Hello World](https://guides.github.com/activities/hello-world/) 
+* [GitHub for Everyone](https://training.github.com/kit/courses/github-for-everyone.html) 
+* [Git, the simple guide](http://rogerdudler.github.io/git-guide/ )
+* [Try Git, interactive browser lessons](https://try.github.io/levels/1/challenges/1) 
+* [git documentation](http://git-scm.com/doc)
+* [Git Cheat sheet](https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf)
 
 
 ![](http://i.giphy.com/V3xGLO2kAzPxe.gif)
