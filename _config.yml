@@ -31,11 +31,12 @@ navbar-links:
   Projects: projects
   Resources:
     - Data Science Links: ds-resources
-    - Tutorials & Slides: papers
+    - R Tutorials: r-papers
   About / Contact: 
     - About Me: aboutme
     - Resume: resume
     - Consulting: consulting
+    - Speaking: speaking
 nav-search: search
 
 
@@ -50,6 +51,7 @@ author:
   linkedin: jasminedumas
   stackoverflow: users/4143444/jasmine-dumas
   instagram: jasdumas
+  email: jasmine.dumas@gmail.com
 
  
 # Select which links to show in the footer
