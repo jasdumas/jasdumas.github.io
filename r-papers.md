@@ -40,6 +40,3 @@ subtitle: technical writing in R
 * [QuirkyR](http://jasdumas.github.io/quirky-r-things/): An on going post about the subtle nuances that make R weird and great!
 
 
-### Features & Mentions
-
-* [Revolution Analytics Blog: "New 'R Talk' podcast with news from R Consortium"](http://blog.revolutionanalytics.com/2015/08/r-talk.html)
