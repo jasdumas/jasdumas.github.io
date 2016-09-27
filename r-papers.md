@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Tutorials & Slides
+title: Tutorials 
 subtitle: technical writing in R
 ---
 
@@ -30,7 +30,6 @@ subtitle: technical writing in R
 
 ### Data Exploration & Analysis
 
-
 * [Computational Efficiency: Comparing Variable Assignment vs. Direct Function Usage](http://jasdumas.github.io/tech-short-papers/Computational_Efficiency_test_of_direct_variable_assignment.html)
 * [Reading Large Datasets](http://jasdumas.github.io/tech-short-papers/Reading_large_datasets.html)
 * [SQL in R with Demo Data](http://jasdumas.github.io/tech-short-papers/sqldf_tutorial.html)
@@ -40,12 +39,6 @@ subtitle: technical writing in R
 
 * [QuirkyR](http://jasdumas.github.io/quirky-r-things/): An on going post about the subtle nuances that make R weird and great!
 
-
-### Slides & Presentations
-
-* [*IPA & Data frames*: Open governemnt data and beer analytics](http://rpubs.com/jasdumas/caRdiff-uk-open-gov-beer): Lightening talk about the state of analysis-ready data from open data portals from the U.S. Governemnt and beyond in relation to beer statisitcs given to the **Cardiff, UK R User Group  August 2, 2016**.
-
-* [to err is human: decoding error messages in R](http://rpubs.com/jasdumas/to-err): A re-useable presentation deck for new R programmers on decoding confusing error messages and gaining confidence in programming. *In-development*
 
 ### Features & Mentions
 
