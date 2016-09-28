@@ -20,7 +20,7 @@ The csv file was read into R using the `readr` package and the target (y) respon
 
 **R Code:**
 
-```
+```r
 # data has been modified in excel initially to remove NA's as ? to '' and colnames have been added
 library(readr)
 adult <- read_csv("C:/Users/JD87417/Desktop/python work/Coursera/adult_income.csv")
@@ -44,16 +44,13 @@ The explanatory variables with the highest relative importance scores were **fnl
 ### Additional Documents
 
 1. [Jupyter Notebook](https://github.com/jasdumas/jasdumas.github.io/blob/master/post_data/RF_adult_income_notebook.ipynb)
-
 2. [Python Code](https://github.com/jasdumas/jasdumas.github.io/blob/master/post_data/RF_adult_income.py)
-
 3. [R code](https://github.com/jasdumas/jasdumas.github.io/blob/master/post_data/python_adult2_clean.R)
-
 4. [Final Excel csv](https://github.com/jasdumas/jasdumas.github.io/blob/master/post_data/adult2_income.csv)
 
 ### Python code
 
-```
+```python
 # import libraries: dataframe manipulation, machine learning, os tools
 from pandas import Series, DataFrame
 import pandas as pd
