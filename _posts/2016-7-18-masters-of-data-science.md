@@ -2,6 +2,7 @@
 layout: post
 title: Master's of Data Science
 subtitle: From DePaul to JHU back to DePaul
+tags: [professional, grad-school, depaul, data-science]
 ---
 
 * **UPDATE on 7/16/16:** I'm heading back to **DePaul University** to finish what I started! Johns Hopkins is/was extremely chalenging all while working full-time and taking two courses that I found out were very time-consuming and mostly theoretical and not taught from an application-driven approach. I love to program but the shear amount of effort to switch to Java and learning MIPS Assembly langauge as completly put me off taking any additional course in the MSCS program at JHU. I was hasty in my original plan to leave but I also was navigating uncharted territory in my new career as a Data Scientist. I still stand by my original comments in this post (below) but the best use of my time and my new found appreciation of machine learning and predicitive modeling (mostly gained from work over the past 3 months) is to return to DePaul's MSPA program as a part-time student and resume my studies. I'm hopeful that the remainder of my coursework is interesting and engaging and I hope to continue documenting my progress and thoughts on the program for those that are interested in Predictive and Data Analytics.
