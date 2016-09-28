@@ -2,6 +2,7 @@
 layout: post
 title: Day Drinking with R
 subtitle: My first R package on CRAN, ttbbeer
+tags: [rstats, r, r-bloggers, r-package]
 ---
 
 After attending the [useR! 2016 R Conference](http://user2016.org/), I felt supercharged and armed with new insights and ideas about how to further contribute to the R community. I met wonderful people in real life (IRL) from twitter and heard interesting case studies about using R for large data analysis. I already have two R packages on Github but wanted to expereince the detailed (yet rewarding) process of submitting a package to CRAN (**C**omprehensive **R** **A**rchive **N**etwork). For my first package, I had looked to what my interests were and what was needed in the community, which turns out to be *more* analysis-ready datasets about beer. 
