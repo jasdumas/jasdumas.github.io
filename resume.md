@@ -59,7 +59,6 @@ Data Science Experience
   * Research & Implementation of **machine learning techniques** in **variable reduction, selection** to create predictive models for auto insurance class plans that improve loss ratio estimates, drive strategic pricing changes and insights on competitive position.
   * Enhancing the data science architecture by developing and maintaining an internal R package and writing technical documentation and tutorials.
   * R/Shiny application development for model monitoring and diagnostic business intelligence tools
-
   * **Data Science Intern**, (Nov. 2015 - March 2016)
   * Developing a model monitoring web application with **R/Shiny** for auto insurance predictive model monitoring
   * Diagnostic residual analysis modeling to evaluate loss ratio in adverse risk segments for class plan changes
@@ -115,13 +114,13 @@ Research
 Peer-Reviewed Research Papers
 ---------
 
-* **Dumas J**, Gargano MA, Dancik GM. shinyGEO: a web-based application for analyzing Gene Expression Omnibus datasets. Bioinformatics. 2016 Aug 8. doi:10.1093/bioinformatics/btw519 | [Paper link](http://bioinformatics.oxfordjournals.org/content/early/2016/08/20/bioinformatics.btw519)
+* **Dumas J**, Gargano MA, Dancik GM. shinyGEO: a web-based application for analyzing Gene Expression Omnibus datasets. Bioinformatics. 2016 Aug 8. doi:10.1093/bioinformatics/btw519 - [Paper link](http://bioinformatics.oxfordjournals.org/content/early/2016/08/20/bioinformatics.btw519)
 
-* **Dumas J**, et.al., "Feasibility of an electronic stethoscope system for monitoring neonatal bowel sounds." Connecticut Medicine, Volume 77, Number 8, pp. 467-471, September 2013. | [Paper link](bit.ly/JMD-connmed)                      
+* **Dumas J**, et.al., "Feasibility of an electronic stethoscope system for monitoring neonatal bowel sounds." Connecticut Medicine, Volume 77, Number 8, pp. 467-471, September 2013. - [Paper link](bit.ly/JMD-connmed)                      
 
 Posters & Presentations
 ----------
-* [IPA & data frames: Open Government Data and Beer Analytics](http://rpubs.com/jasdumas/caRdiff-uk-open-gov-beer) | Presented Virtually to Cardiff, UK R User group, August 2016.
+* [IPA & data frames: Open Government Data and Beer Analytics](http://rpubs.com/jasdumas/caRdiff-uk-open-gov-beer) - Presented Virtually to Cardiff, UK R User group, August 2016.
 * [useR! 2016](http://user2016.org/) Conference International Annual Meeting (Stanford, CA): [shinyGEO: An online tool for biomarker analysis in Gene Expression Omnibus (GEO) datasets](https://github.com/jasdumas/jasdumas.github.io/blob/master/post_data/jasmine_dumas_user2016_poster_update.pdf)
 * American Association for Cancer Research Annual Meeting (New Orleans, LA) 2016: [*An online tool for biomarker analysis in Gene Expression Omnibus (GEO) datasets*](http://www.abstractsonline.com/Plan/ViewAbstract.aspx?mID=4017&sKey=b710c4a6-fafb-4546-a4ef-94ef72d93639&cKey=0243e952-bd00-4008-84b0-53222a594ee9&mKey=1d10d749-4b6a-4ab3-bcd4-f80fb1922267)
 * Northeast American Society of Engineering Education Conference (Lowell, MA) 2012: Dual Presenter - [bit.ly/JMD-asee1](bit.ly/JMD-asee1), [bit.ly/JMD-asee2](bit.ly/JMD-asee2)
