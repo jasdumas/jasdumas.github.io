@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Random Forest Analysis in Python (and a little R & Excel)
+tags: [coursera, mooc, python, data-analysis]
 ---
 
 [Machine Learning for Data Analysis (Coursera)](https://www.coursera.org/learn/machine-learning-data-analysis)
