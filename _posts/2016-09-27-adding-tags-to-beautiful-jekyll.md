@@ -15,6 +15,6 @@ There are a lot of [inquires](http://pavdmyt.com/how-to-implement-tags-at-jekyll
 
 * Create a file called [**r-bloggers-feed.xml**](https://github.com/jasdumas/jasdumas.github.io/commit/e87046a8b50ce06850b44ecf7273fa5d8b95d9cd) in the root folder of the GitHub repo:
 
-* Edit your [**exiting posts**](https://github.com/jasdumas/jasdumas.github.io/commit/a5f94ab9118b3af1bde8d01fc331b9445c2ce08a) and add the tags line in the **yaml** header:
+* Edit your [**existing posts**](https://github.com/jasdumas/jasdumas.github.io/commit/a5f94ab9118b3af1bde8d01fc331b9445c2ce08a) and add the tags line in the **yaml** header:
 
 * Congrats! - check out your newly rendered blog posts with the social share buttons at the bottom and the new tags created. Visit your new XML feed by going to the page, for example: [jasdumas.github.io/r-bloggers-feed.xml](http://jasdumas.github.io/r-bloggers-feed.xml) - it will have a collection of your tagged post ready to submit to a blog roll.
