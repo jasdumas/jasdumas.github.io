@@ -3,8 +3,7 @@ layout: post
 title: Exploring Reported Crime Incidents in Hartford, CT
 subtitle: A shiny flexdashboard project
 bigimg: /post_data/hartford-skyline.jpg
-tags:
-- rstats
+tags: [rstats, r, r-bloggers, dashboard]
 ---
 
 Open government data portals are essential to transparency and civic education for citizens, and supports the work for data researchers and academics especially in smaller cities such as Hartford, CT. These portals provide data from a number of different government agencies spanning education, financial, housing and public safety sectors. For an Data Scientist living in Connecticut I frequently explore the [Hartford Data Portal](https://data.hartford.gov/) as well as the [Connecticut Data Portal](https://data.ct.gov/) to support my interests in civic data and technology and for the ease of access to analysis-ready data sets. My previous projects with open government portal data include: [`ttbbeer`: R data package of beer statistics from the US Treasury](https://cran.r-project.org/web/packages/ttbbeer/index.html), [historical Connecticut real estate sales](http://jasdumas.github.io/tech-short-papers/flex-realestate.html), and [Hartford snowstorm towing](http://rpubs.com/jasdumas/hartford-snow-tows).
