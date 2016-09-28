@@ -9,7 +9,7 @@ There are a lot of [inquires](http://pavdmyt.com/how-to-implement-tags-at-jekyll
 
 * Create a file called **share-section.html** in the "includes" folder:
 
-```html
+
 {% if page.show-share or page.show-subscribe %}
   <div class="share-section">
     <h1 class="share-title">Liked what you read?</h1>
@@ -48,7 +48,7 @@ There are a lot of [inquires](http://pavdmyt.com/how-to-implement-tags-at-jekyll
     {% endif %}
   </div>
 {% endif %}
-```
+
 
 * Edit the css file **main.css** with the following code above the /*--- Pager ---*/ section label:
 
@@ -63,7 +63,7 @@ blog-tags {
 
 * Edit the existing **feed.xml** file which lives in the root folder of the GitHub repo:
 
-```html
+
 {% if post.tags %}
   {% for tag in post.tags %}
   <category>{{ tag | xml_escape }}</category>
@@ -75,11 +75,10 @@ blog-tags {
  {% endfor %}
  {% endif %}
  
-```
+
 
 * Create a file called **r-bloggers-feed.xml** in the root folder of the GitHub repo:
 
-```xml
 ---
 layout: null
 sitemap:
@@ -118,7 +117,7 @@ sitemap:
     {% endfor %}
   </channel>
 </rss>
-```
+
 
 * Edit your **exiting posts** and add the tags line in the **yaml** header:
 
