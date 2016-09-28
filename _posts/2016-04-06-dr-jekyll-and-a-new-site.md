@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Dr. Jekyll and a New Site
+tags: [website, design, blogging]
 ---
 
 > everything is so difficult in life, why should my website be? 
