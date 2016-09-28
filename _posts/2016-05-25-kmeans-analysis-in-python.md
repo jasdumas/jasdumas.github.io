@@ -2,6 +2,7 @@
 layout: post
 title: K-Means Cluster Analysis of Poker Hands in Python
 subtitle: winner winner, chicken dinner!
+tags: [coursera, mooc, python, data-analysis]
 ---
 
 
