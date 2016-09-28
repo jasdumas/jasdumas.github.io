@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Why I quit my job!
+tags: [professional, career]
 ---
 
 > "I'm leaving"
