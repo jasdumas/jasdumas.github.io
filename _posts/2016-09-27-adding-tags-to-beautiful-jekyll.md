@@ -5,7 +5,7 @@ tags: [website, design, beautiful-jekyll]
 ---
 
 
-There are a lot of [inquires](http://pavdmyt.com/how-to-implement-tags-at-jekyll-website/) and [posts](http://charliepark.org/tags-in-jekyll/) to add tags to jekyll-powered blogs on GitHub. Here is a step-by-side guide on how to add a tag in order to creates a designated XML feed, necessary if you want to list your blog aggregators and sites such as [R-bloggers](https://www.r-bloggers.com/). Some features are extra to add social share buttons the the bottom of the page.
+There are a lot of [inquires](http://pavdmyt.com/how-to-implement-tags-at-jekyll-website/) and [posts](http://charliepark.org/tags-in-jekyll/) to add tags to jekyll-powered blogs on GitHub. Here is a step-by-side guide on how to add a tag in order to creates a designated XML feed, necessary if you want to list your blog on aggregators and sites such as [R-bloggers](https://www.r-bloggers.com/). Some features are extra to add social share buttons the the bottom of the page.
 
 * Create a file called [**share-section.html**](https://github.com/jasdumas/jasdumas.github.io/commit/ed3a57afefade4f4f9cb3b5a07131d7c242115ab) in the "includes" folder.
 
