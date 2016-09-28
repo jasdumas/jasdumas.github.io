@@ -2,7 +2,7 @@
 layout: post
 title: Command Line Programming for Data Scientists
 subtitle: Navigating the cmd and terminal
-tags: [data-analyis, data-science, command-line]
+tags: [data-analysis, data-science, command-line]
 ---
 
 ### Why command line programming is essential to the Data Science Toolkit
