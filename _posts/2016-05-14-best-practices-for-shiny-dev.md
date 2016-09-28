@@ -2,6 +2,7 @@
 layout: post
 title: Best Practices for Shiny Development
 subtitle: debugging, reactivity, and designing for the user
+tags: [rstats, r, r-bloggers, shiny]
 ---
 
 ### Introduction
