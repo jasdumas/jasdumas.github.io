@@ -8,6 +8,6 @@ subtitle: technical writing in Python
 
 ### Code Snippets
 
-+ [](http://jasdumas.github.io/tech-short-papers/ones_zeros_str.py)
-+ [](http://jasdumas.github.io/tech-short-paperssort.py/)
-+ [](http://jasdumas.github.io/tech-short-papers/system_info.py)
++ [Convert a Given String into Numbers](http://jasdumas.github.io/tech-short-papers/ones_zeros_str.py)
++ [Quick Sort Algorithm](http://jasdumas.github.io/tech-short-papers/sort.py)
++ [Get sytem info](http://jasdumas.github.io/tech-short-papers/system_info.py)
