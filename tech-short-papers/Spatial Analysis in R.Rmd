@@ -1,0 +1,66 @@
+---
+title: "Spatial Analysis in R"
+author: "Jasmine Dumas"
+date: "September 20, 2016"
+output: word_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+	echo = TRUE,
+	message = FALSE,
+	warning = FALSE
+)
+```
+
+
+## Tips & Methodology
+
++ Spatial analysis or spatial statistics includes any of the formal techniques which study entities using their topological, geometric, or geographic properties. In an Insurance setting, spatial analysis can consist of tools to examine differences in pricing territory factors against a zip code level. 
++ R has some robust tools and some of which are dynamic and incorporate web-based tech. 
++ Here are some of those tools:
+    + [leaflet](https://rstudio.github.io/leaflet/): open-source, interactive JavaScript-based map. Leaflet is great and makes good use of the pipe (`%>% `) by `magrittr`. Leaflet work great in RStudio and Shiny. It generates a HTML file for sharing via email! My files or leaflet are located in the following folder: [leaflet](//ad1.prod/HIG/PL/CommonShares/PL_CommonShares08/_jasmine/R Documents/code snippets/leaflet). Additional map function is here: [mitch_help](//ad1.prod/HIG/PL/CommonShares/PL_CommonShares08/_jasmine/R Documents/code snippets/mitch_help)
+    + [maps](https://cran.r-project.org/package=maps): Draw Geographical Maps based on a database collecion of data.
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+library(maps)
+    map('county', 'connecticut', col = "dodgerblue")
+    
+```
+    
+    + [ggmap](https://cran.r-project.org/package=ggmap): A collection of functions to visualize spatial data and models on top of static maps from various online sources (e.g Google Maps and Stamen Maps). It includes tools common to those tasks, including functions for geolocation and routing. This package has a great function called `geocode()` in which you supply the location (i.e. an address as the location argument) and the latitude and longitude values are returned - this can be computationally exhaustive depending on how many address are needed to be geocoded.
+    + [rMaps](http://rmaps.github.io/): rMaps is an R package to create, customize and publish interactive maps from R. It supports multiple mapping libraries, including leaflet, datamaps and crosslet.
+    + [ggplot2, geom_map](https://cran.r-project.org/web/packages/knitrBootstrap/vignettes/maps.html)
+    
+    
+    
+    
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+# Better example
+library(ggplot2)
+crimes <- data.frame(state = tolower(rownames(USArrests)), USArrests)
+crimesm <- reshape2::melt(crimes, id = 1)
+if (require(maps)) {
+  states_map <- map_data("state")
+  ggplot(crimes, aes(map_id = state)) +
+    geom_map(aes(fill = Murder), map = states_map) +
+    expand_limits(x = states_map$long, y = states_map$lat)
+
+  last_plot() + coord_map()
+  ggplot(crimesm, aes(map_id = state)) +
+    geom_map(aes(fill = value), map = states_map) +
+    expand_limits(x = states_map$long, y = states_map$lat) +
+    facet_wrap( ~ variable)
+}
+
+
+```
+
+## Further reading
+
++ [https://en.wikipedia.org/wiki/Spatial_analysis](https://en.wikipedia.org/wiki/Spatial_analysis)
++ [https://en.wikipedia.org/wiki/Choropleth_map](https://en.wikipedia.org/wiki/Choropleth_map)
++ [http://spatial.ly/r/](http://spatial.ly/r/)
++ [http://www.molecularecologist.com/2012/09/making-maps-with-r/](http://www.molecularecologist.com/2012/09/making-maps-with-r/)
+
+____
+fin. 
