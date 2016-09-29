@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Tutorials 
+title: R Tutorials 
 subtitle: technical writing in R
 ---
 
