@@ -32,6 +32,7 @@ navbar-links:
   Resources:
     - Data Science Links: ds-resources
     - R Tutorials: r-papers
+    - Python Tutorials: py-papers
   About / Contact: 
     - About Me: aboutme
     - Resume: resume
