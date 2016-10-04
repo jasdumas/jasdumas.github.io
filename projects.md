@@ -1,10 +1,12 @@
 ---
 layout: page
 title: Projects
-subtitle: open source, research & weekend data science projects
+subtitle: open source & weekend data science projects
 ---
 
 ---------------
+
+* [R for FinTech](https://jasdumas.github.io/r4fintech/): A guidebook written in [bookdown](https://bookdown.org/) for R programming with Financial Technology (FinTech) applications. :dollar:
 
 * [shinyLP](https://github.com/jasdumas/shinyLP): This is my **second** R package on CRAN and it provides templates and functions for landing home pages for your shiny application - leading to a better UX for your users and writing less HTML for the developer. :globe_with_meridians: [Now available on CRAN](https://CRAN.R-project.org/package=shinyLP)
 
