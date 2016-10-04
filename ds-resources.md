@@ -27,6 +27,7 @@ R is a programming language and software environment for statistical computing a
 * [R for Data Science book](http://r4ds.had.co.nz/)
 * [xgboost R package](https://github.com/dmlc/xgboost/tree/master/R-package)
 * [R for Cats](http://rforcats.net/)
+* [Tidy Data](http://vita.had.co.nz/papers/tidy-data.pdf)
 
 ### Python Documents  :snake:
 Python is a widely used high-level, general-purpose, interpreted, dynamic programming language. Its design philosophy emphasizes code readability, and its syntax allows programmers to express concepts in fewer lines of code than possible in languages such as C++ or Java. [ [Source](https://en.wikipedia.org/wiki/Python_(programming_language)) ]
@@ -67,14 +68,13 @@ Python is a widely used high-level, general-purpose, interpreted, dynamic progra
 * [Data Elixer](http://dataelixir.com/)
 
 ### Books :book:
-* [The Signal & the Noise by Nate Silver](http://www.amazon.com/Signal-Noise-Many-Predictions-Fail-but/dp/0143125087)
-* [Big Data](http://www.big-data-book.com/)
-* [Python for Data Analysis](https://www.amazon.com/Python-Data-Analysis-Wrangling-IPython/dp/1449319793)
-* [R for Data Science](http://r4ds.had.co.nz/)
-* [R Packages](http://r-pkgs.had.co.nz/)
-* [Advanced R](http://adv-r.had.co.nz/)       
-  * Chapters of Interest: [Data Structures](http://adv-r.had.co.nz/Data-structures.html), [Object-Orientated Field Guide](http://adv-r.had.co.nz/OO-essentials.html), [Style Guide](http://adv-r.had.co.nz/Style.html)
-* [An Introduction to Statistical Learning with Applications in R](http://www-bcf.usc.edu/~gareth/ISL/ISLR%20Sixth%20Printing.pdf)
+* [**The Signal & the Noise** by Nate Silver](http://www.amazon.com/Signal-Noise-Many-Predictions-Fail-but/dp/0143125087)
+* [**Big Data** by Viktor Mayer-Schönberger and Kenneth Cukier](http://www.big-data-book.com/)
+* [**Python for Data Analysis** by Wes McKinney](https://www.amazon.com/Python-Data-Analysis-Wrangling-IPython/dp/1449319793)
+* [**R for Data Science** by Garrett Grolemund and Hadley Wickham](http://r4ds.had.co.nz/)
+* [**R Packages** by Hadley Wickham](http://r-pkgs.had.co.nz/)
+* [**Advanced R** by Hadley Wickham](http://adv-r.had.co.nz/) - Chapters of Interest: [Data Structures](http://adv-r.had.co.nz/Data-structures.html), [Object-Orientated Field Guide](http://adv-r.had.co.nz/OO-essentials.html), [Style Guide](http://adv-r.had.co.nz/Style.html)
+* [**An Introduction to Statistical Learning with Applications in R** by Gareth James, Robert Tibshirani, and Trevor Hastie](http://www-bcf.usc.edu/~gareth/ISL/ISLR%20Sixth%20Printing.pdf)
 
 ### Coursework, MOOCS & Online material  :school_satchel:
 * [Datacamp.com: Data Analysis in your browser](https://www.datacamp.com/)
@@ -95,6 +95,7 @@ Python is a widely used high-level, general-purpose, interpreted, dynamic progra
 * [GitHub for Everyone](https://training.github.com/kit/courses/github-for-everyone.html) 
 * [Git, the simple guide](http://rogerdudler.github.io/git-guide/ )
 * [Try Git, interactive browser lessons](https://try.github.io/levels/1/challenges/1) 
+* [Literate Programming](http://www.literateprogramming.com/knuthweb.pdf)
 
 
 
