@@ -6,7 +6,7 @@ social-share: true
 
 ---------------
 
-I'm available for speaking engagements on topics of **analysis-ready data**, **beer analytics**, **civic data applications**, and **transitioning into a Data Science Career**. I'm comfortable traveling around Connecticut, Massachusetts, and Rhode Island - please get in touch for further locations and availability. 
+I'm available for speaking engagements on topics of **analysis-ready data**, **shiny development**, **beer analytics**, **civic data applications**, and **transitioning into a Data Science Career**. I'm comfortable traveling around Connecticut, Massachusetts, and Rhode Island - please get in touch for further locations and availability. 
 
 ### Talks
 
