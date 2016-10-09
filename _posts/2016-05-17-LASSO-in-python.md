@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Lasso Regression Analysis in Python
+title: Lasso Regression Analysis of Forest Fires in Python
 subtitle: Machine learning for data analysis
 tags: [coursera, mooc, python, data-analysis]
 ---
