@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Random Forest Analysis in Python (and a little R & Excel)
+title: Random Forest Analysis of Adult Income in Python 
+subtitle: ... and a little R & Excel
 tags: [coursera, mooc, python, data-analysis]
 ---
 
