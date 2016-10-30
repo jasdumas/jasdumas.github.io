@@ -1,10 +1,26 @@
 ---
 layout: page
 title: Python Tutorials 
-subtitle: technical writing in Python
+subtitle: WIP technical writing in Python
 ---
 
 ---------------
+
+### Data exploration & analysis
+
++ [Load and explore a csv]()
++ [Basic descriptive statistics]()
++ [Statistical summaries by groups]()
++ [Handle missing data]()
++ [z-score normalization]()
++ [min-max normalization]()
++ [Discretize and recoding]()
+
+### Data Visualization
++ [bar charts]()
++ [line graphs]()
++ [bokeh]()
+
 
 ### Code Snippets
 
