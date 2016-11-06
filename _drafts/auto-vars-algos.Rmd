@@ -30,6 +30,7 @@ library(MASS)
 full.model <- lm(Y~X1+X2+X3+X4+X5+X6+X7+X8+X9+X10, data=EXEXSAL2)
 model = step(full.model, direction="backward")
 summary(model)
+plot(model)
 ```
 
 # Forward Selection
@@ -43,6 +44,7 @@ min.model = lm(Y ~ 1, data=EXEXSAL2)          # aka intercept only model
 biggest = formula(lm(Y ~ ., data=EXEXSAL2))   # note dot: all variables, including ID
 model = step(min.model, direction='forward', scope=biggest)
 summary(model)
+plot(model)
 ```
 
 # Stepwise Regression Selection
@@ -55,6 +57,7 @@ summary(model)
 ```{r}
 model = step(full.model, direction="both")
 summary(model)
+plot(model)
 ```
 
 # Best-N Subset aka All Possible Regressions Selection
@@ -86,9 +89,11 @@ model$adjr2
 ```
 
 
-# Additional Recource
+# Additional Learning Resources
 
-<http://billqualls.com/csc423/csc423_ex_06_01_r.html>
++ [Variable selection using automatic methods](https://www.r-bloggers.com/variable-selection-using-automatic-methods/)
++ [Variable selection via Columbia Stats](http://www.stat.columbia.edu/~martin/W2024/R10.pdf)
++ [Original Resource](http://billqualls.com/csc423/csc423_ex_06_01_r.html)
 
 
 

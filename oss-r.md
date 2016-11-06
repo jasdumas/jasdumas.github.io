@@ -44,6 +44,3 @@ layout: page
 + [Outreachy](https://www.gnome.org/outreachy/)
 + [The Journal of Open Source Software](http://joss.theoj.org/)
 
-
-____
-fin. 

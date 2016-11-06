@@ -141,6 +141,12 @@ summary(model)
 ## F-statistic: 218.1 on 5 and 94 DF,  p-value: < 2.2e-16
 ```
 
+```r
+plot(model)
+```
+
+![plot of chunk unnamed-chunk-2]({{ site.url }}/post_data/auto-vars-algos-unnamed-chunk-2-1.png)![plot of chunk unnamed-chunk-2]({{ site.url }}/post_data/auto-vars-algos-unnamed-chunk-2-2.png)![plot of chunk unnamed-chunk-2]({{ site.url }}/post_data/auto-vars-algos-unnamed-chunk-2-3.png)![plot of chunk unnamed-chunk-2]({{ site.url }}/post_data/auto-vars-algos-unnamed-chunk-2-4.png)
+
 # Forward Selection
 
 * Adds one variable at a time until adding a new variable no longer improves the model.
@@ -271,6 +277,12 @@ summary(model)
 ## Multiple R-squared:  0.9206,	Adjusted R-squared:  0.9164 
 ## F-statistic: 218.1 on 5 and 94 DF,  p-value: < 2.2e-16
 ```
+
+```r
+plot(model)
+```
+
+![plot of chunk unnamed-chunk-3]({{ site.url }}/post_data/auto-vars-algos-unnamed-chunk-3-1.png)![plot of chunk unnamed-chunk-3]({{ site.url }}/post_data/auto-vars-algos-unnamed-chunk-3-2.png)![plot of chunk unnamed-chunk-3]({{ site.url }}/post_data/auto-vars-algos-unnamed-chunk-3-3.png)![plot of chunk unnamed-chunk-3]({{ site.url }}/post_data/auto-vars-algos-unnamed-chunk-3-4.png)
 
 # Stepwise Regression Selection
 
@@ -411,6 +423,12 @@ summary(model)
 ## F-statistic: 218.1 on 5 and 94 DF,  p-value: < 2.2e-16
 ```
 
+```r
+plot(model)
+```
+
+![plot of chunk unnamed-chunk-4]({{ site.url }}/post_data/auto-vars-algos-unnamed-chunk-4-1.png)![plot of chunk unnamed-chunk-4]({{ site.url }}/post_data/auto-vars-algos-unnamed-chunk-4-2.png)![plot of chunk unnamed-chunk-4]({{ site.url }}/post_data/auto-vars-algos-unnamed-chunk-4-3.png)![plot of chunk unnamed-chunk-4]({{ site.url }}/post_data/auto-vars-algos-unnamed-chunk-4-4.png)
+
 # Best-N Subset aka All Possible Regressions Selection
 
 * Use leaps library.
@@ -423,28 +441,42 @@ summary(model)
 
 ```r
 library(leaps)
-```
-
-```
-## Error in library(leaps): there is no package called 'leaps'
-```
-
-```r
 yvar = c("Y")
 xvars = c("X1", "X2", "X3", "X4", "X5", "X6", "X7", "X8", "X9", "X10")
 model=leaps( x=EXEXSAL2[,xvars], y=EXEXSAL2[,yvar], names=xvars, nbest=3, method="Cp")
-```
-
-```
-## Error in eval(expr, envir, enclos): could not find function "leaps"
-```
-
-```r
 model$which
 ```
 
 ```
-## NULL
+##       X1    X2    X3    X4    X5    X6    X7    X8    X9   X10
+## 1   TRUE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
+## 1  FALSE FALSE FALSE FALSE FALSE FALSE  TRUE FALSE FALSE FALSE
+## 1  FALSE FALSE  TRUE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
+## 2   TRUE FALSE  TRUE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
+## 2   TRUE  TRUE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
+## 2   TRUE FALSE FALSE  TRUE FALSE FALSE FALSE FALSE FALSE FALSE
+## 3   TRUE FALSE  TRUE  TRUE FALSE FALSE FALSE FALSE FALSE FALSE
+## 3   TRUE  TRUE  TRUE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
+## 3   TRUE FALSE  TRUE FALSE  TRUE FALSE FALSE FALSE FALSE FALSE
+## 4   TRUE  TRUE  TRUE  TRUE FALSE FALSE FALSE FALSE FALSE FALSE
+## 4   TRUE FALSE  TRUE  TRUE  TRUE FALSE FALSE FALSE FALSE FALSE
+## 4   TRUE FALSE  TRUE  TRUE FALSE  TRUE FALSE FALSE FALSE FALSE
+## 5   TRUE  TRUE  TRUE  TRUE  TRUE FALSE FALSE FALSE FALSE FALSE
+## 5   TRUE  TRUE  TRUE  TRUE FALSE  TRUE FALSE FALSE FALSE FALSE
+## 5   TRUE  TRUE  TRUE  TRUE FALSE FALSE FALSE FALSE  TRUE FALSE
+## 6   TRUE  TRUE  TRUE  TRUE  TRUE FALSE FALSE FALSE  TRUE FALSE
+## 6   TRUE  TRUE  TRUE  TRUE  TRUE  TRUE FALSE FALSE FALSE FALSE
+## 6   TRUE  TRUE  TRUE  TRUE  TRUE FALSE FALSE FALSE FALSE  TRUE
+## 7   TRUE  TRUE  TRUE  TRUE  TRUE  TRUE FALSE FALSE  TRUE FALSE
+## 7   TRUE  TRUE  TRUE  TRUE  TRUE FALSE FALSE  TRUE  TRUE FALSE
+## 7   TRUE  TRUE  TRUE  TRUE  TRUE FALSE FALSE FALSE  TRUE  TRUE
+## 8   TRUE  TRUE  TRUE  TRUE  TRUE  TRUE FALSE  TRUE  TRUE FALSE
+## 8   TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE FALSE  TRUE FALSE
+## 8   TRUE  TRUE  TRUE  TRUE  TRUE  TRUE FALSE FALSE  TRUE  TRUE
+## 9   TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE FALSE
+## 9   TRUE  TRUE  TRUE  TRUE  TRUE  TRUE FALSE  TRUE  TRUE  TRUE
+## 9   TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE FALSE  TRUE  TRUE
+## 10  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE
 ```
 
 ```r
@@ -452,7 +484,11 @@ model$Cp
 ```
 
 ```
-## NULL
+##  [1] 343.856582 600.834586 877.170522 195.519164 289.674910 291.866952
+##  [7]  93.753768 148.889945 164.360626  16.812839  75.726709  90.845632
+## [13]   3.627915  17.139335  18.389402   4.023513   4.978942   5.565934
+## [19]   5.449923   5.885472   5.979924   7.195556   7.365877   7.384948
+## [25]   9.109093   9.125678   9.263650  11.000000
 ```
 
 ## Best Subset using adjr2
@@ -462,18 +498,39 @@ model$Cp
 yvar = c("Y")
 xvars = c("X1", "X2", "X3", "X4", "X5", "X6", "X7", "X8", "X9", "X10")
 model=leaps( x=EXEXSAL2[,xvars], y=EXEXSAL2[,yvar], names=xvars, nbest=3, method="adjr2")
-```
-
-```
-## Error in eval(expr, envir, enclos): could not find function "leaps"
-```
-
-```r
 model$which
 ```
 
 ```
-## NULL
+##       X1    X2    X3    X4    X5    X6    X7    X8    X9   X10
+## 1   TRUE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
+## 1  FALSE FALSE FALSE FALSE FALSE FALSE  TRUE FALSE FALSE FALSE
+## 1  FALSE FALSE  TRUE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
+## 2   TRUE FALSE  TRUE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
+## 2   TRUE  TRUE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
+## 2   TRUE FALSE FALSE  TRUE FALSE FALSE FALSE FALSE FALSE FALSE
+## 3   TRUE FALSE  TRUE  TRUE FALSE FALSE FALSE FALSE FALSE FALSE
+## 3   TRUE  TRUE  TRUE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
+## 3   TRUE FALSE  TRUE FALSE  TRUE FALSE FALSE FALSE FALSE FALSE
+## 4   TRUE  TRUE  TRUE  TRUE FALSE FALSE FALSE FALSE FALSE FALSE
+## 4   TRUE FALSE  TRUE  TRUE  TRUE FALSE FALSE FALSE FALSE FALSE
+## 4   TRUE FALSE  TRUE  TRUE FALSE  TRUE FALSE FALSE FALSE FALSE
+## 5   TRUE  TRUE  TRUE  TRUE  TRUE FALSE FALSE FALSE FALSE FALSE
+## 5   TRUE  TRUE  TRUE  TRUE FALSE  TRUE FALSE FALSE FALSE FALSE
+## 5   TRUE  TRUE  TRUE  TRUE FALSE FALSE FALSE FALSE  TRUE FALSE
+## 6   TRUE  TRUE  TRUE  TRUE  TRUE FALSE FALSE FALSE  TRUE FALSE
+## 6   TRUE  TRUE  TRUE  TRUE  TRUE  TRUE FALSE FALSE FALSE FALSE
+## 6   TRUE  TRUE  TRUE  TRUE  TRUE FALSE FALSE FALSE FALSE  TRUE
+## 7   TRUE  TRUE  TRUE  TRUE  TRUE  TRUE FALSE FALSE  TRUE FALSE
+## 7   TRUE  TRUE  TRUE  TRUE  TRUE FALSE FALSE  TRUE  TRUE FALSE
+## 7   TRUE  TRUE  TRUE  TRUE  TRUE FALSE FALSE FALSE  TRUE  TRUE
+## 8   TRUE  TRUE  TRUE  TRUE  TRUE  TRUE FALSE  TRUE  TRUE FALSE
+## 8   TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE FALSE  TRUE FALSE
+## 8   TRUE  TRUE  TRUE  TRUE  TRUE  TRUE FALSE FALSE  TRUE  TRUE
+## 9   TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE FALSE
+## 9   TRUE  TRUE  TRUE  TRUE  TRUE  TRUE FALSE  TRUE  TRUE  TRUE
+## 9   TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE FALSE  TRUE  TRUE
+## 10  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE
 ```
 
 ```r
@@ -481,13 +538,18 @@ model$adjr2
 ```
 
 ```
-## NULL
+##  [1] 0.6150915 0.3902159 0.1484006 0.7440365 0.6607935 0.6588555 0.8340647
+##  [8] 0.7848111 0.7709910 0.9035788 0.8503966 0.8367486 0.9164065 0.9040798
+## [15] 0.9029394 0.9169871 0.9161061 0.9155648 0.9166195 0.9162135 0.9161254
+## [22] 0.9159429 0.9157824 0.9157644 0.9150913 0.9150755 0.9149441 0.9142424
 ```
 
 
-# Additional Recource
+# Additional Learning Resources
 
-<http://billqualls.com/csc423/csc423_ex_06_01_r.html>
++ [Variable selection using automatic methods](https://www.r-bloggers.com/variable-selection-using-automatic-methods/)
++ [Variable selection via Columbia Stats](http://www.stat.columbia.edu/~martin/W2024/R10.pdf)
++ [Original Resource](http://billqualls.com/csc423/csc423_ex_06_01_r.html)
 
 
 
