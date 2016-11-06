@@ -16,14 +16,15 @@ I'm seeking to utilize my computational programming & data analysis skills in a 
 
 **Featured Projects**: I have experience using my data science toolkit in several projects which include:   
 
+* [A guidebook on R intro topics for FinTech applications](https://jasdumas.github.io/r4fintech/)
 * [Tutorial on Web scraping craft brewery ratings from Beer Advocate with R and import.io](http://trendct.org/2016/03/18/tutorial-web-scraping-and-mapping-breweries-with-import-io-and-r/)
 * [Shiny app for gene expression analysis for bioinformaticians](http://gdancik.github.io/shinyGEO/)
 * [Dashboard app of Reported Crimes in Hartford Connecticut](https://jasminedumas.shinyapps.io/hartford-crime/)
 
 R Packages
 ----------
-* **[`ttbbeer`](https://CRAN.R-project.org/package=ttbbeer)**: R data package of beer statistics from U.S. Department of the Treasury (TTB)
-* **[`shinyLP`](https://CRAN.R-project.org/package=shinyLP)**: A R package for Bootstrap Components to make Landing Home Pages for Shiny
+* **[`ttbbeer`](https://CRAN.R-project.org/package=ttbbeer)**: Data package of beer statistics from U.S. Department of the Treasury (TTB)
+* **[`shinyLP`](https://CRAN.R-project.org/package=shinyLP)**: Bootstrap Components to make landing home pages for Shiny
 * **[`shinyGEO`](http://bioinformatics.easternct.edu/shinyGEO/)**: A Shiny app to analyze gene expression data
 
 *More R packages and Shiny apps available at: [https://github.com/jasdumas](https://github.com/jasdumas)*
@@ -54,6 +55,13 @@ ___________
 
 Data Science Experience
 ---------
+* **Simple Finance**
+    * **Data Scientist**, (October 2016 - Present)
+    * Machine learning, data science, predictive modeling, product development
+    
+___________
+
+
 * **The Hartford Financial Services (NYSE: HIG)**   
   * **Associate Data Scientist**, (April 2016 - Oct. 2016)
   * Research & Implementation of **machine learning techniques** in **variable reduction, selection** to create predictive models for auto insurance class plans that improve loss ratio estimates, drive strategic pricing changes and insights on competitive position.
