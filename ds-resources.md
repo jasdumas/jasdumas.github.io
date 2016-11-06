@@ -38,6 +38,13 @@ Python is a widely used high-level, general-purpose, interpreted, dynamic progra
 * [Python Machine Learning Book (Repository)](https://github.com/rasbt/python-machine-learning-book)
 * [scikit-learn machine learning map guide](http://scikit-learn.org/stable/tutorial/machine_learning_map/index.html)
 
+### SQL :guitar:
+SQL or Structured Query Language is a special-purpose programming language designed for managing data held in a relational database management system (RDBMS), or for stream processing in a relational data stream management system (RDSMS). [ [Source](https://en.wikipedia.org/wiki/SQL) ]
+
+* [SQL school](http://www.w3schools.com/sql/)
+* [SQL tutorial for Data Analysis from Mode Analytics](https://community.modeanalytics.com/sql/tutorial/introduction-to-sql/)
+* [Try SQL from Code School](https://www.codeschool.com/courses/try-sql)
+
 ### Datasets  :minidisc:
 * [Awesome Public Dataset (fork)](https://github.com/jasdumas/awesome-public-datasets)
 * [SF Open Data Portal](https://data.sfgov.org/)
