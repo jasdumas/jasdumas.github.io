@@ -42,6 +42,6 @@ subtitle: technical writing in R
 
 ### The R community
 
-* [Debugging R]()
-* [Interacting with a Open Source Community]()
+* [Debugging R](http://jasdumas.github.io/debugging-r/)
+* [Interacting with a Open Source Community](http://jasdumas.github.io/oss-r/)
 
