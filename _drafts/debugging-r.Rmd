@@ -7,7 +7,7 @@ layout: page
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, 
-                      fig.path='{{ site.url }}/post_data/debug-r-')
+                      fig.path='{{ site.url }}/post_data/debugging-r-')
 ```
 
 ## Tips & Methodology

@@ -1,13 +1,16 @@
 ---
 title: "Automated Variable Selection Algorithms"
-author: "Jasmine Dumas"
-date: "February 1, 2016"
-output: html_document
+date: "`r format(Sys.Date(), '%B %d, %Y')`"
+layout: page
 ---
 
-# Source
 
-<http://billqualls.com/csc423/csc423_ex_06_01_r.html>
+```{r setup, include=FALSE}
+# to be rendered as html for papers.md section
+
+knitr::opts_chunk$set(fig.path='{{ site.url }}/post_data/auto-vars-algos-')
+```
+
 
 # Get the data
 ```{r}
@@ -23,7 +26,6 @@ load("~/Desktop/depaul/CSC423/rdata/R/Exercises&Examples/EXEXSAL2.Rdata")
 * AIC = Akaike's Information Criteria = n * ln(SSE/n) + 2 * p
 
 ```{r}
-
 library(MASS)
 full.model <- lm(Y~X1+X2+X3+X4+X5+X6+X7+X8+X9+X10, data=EXEXSAL2)
 model = step(full.model, direction="backward")
@@ -82,4 +84,11 @@ model=leaps( x=EXEXSAL2[,xvars], y=EXEXSAL2[,yvar], names=xvars, nbest=3, method
 model$which
 model$adjr2
 ```
+
+
+# Additional Recource
+
+<http://billqualls.com/csc423/csc423_ex_06_01_r.html>
+
+
 
