@@ -21,8 +21,8 @@ subtitle: technical writing in R
 
 ### Data Visualization
 
-* [Data Viz Comparison](http://jasdumas.github.io/data-viz-compare)
-* [Spatial Analysis in R]()
+* [Data Viz Comparison](http://jasdumas.github.io/data-viz-compare/)
+* [Spatial Analysis in R](http://jasdumas.github.io/maps-r/)
 
 ### Statistics
 
