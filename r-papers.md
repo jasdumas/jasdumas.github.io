@@ -22,6 +22,7 @@ subtitle: technical writing in R
 ### Data Visualization
 
 * [Data Viz Comparison](http://jasdumas.github.io/data-viz-compare)
+* [Spatial Analysis in R]()
 
 ### Statistics
 
@@ -39,4 +40,8 @@ subtitle: technical writing in R
 
 * [QuirkyR](http://jasdumas.github.io/quirky-r-things/): An on going post about the subtle nuances that make R weird and great!
 
+### The R community
+
+* [Debugging R]()
+* [Interacting with a Open Source Community]()
 
