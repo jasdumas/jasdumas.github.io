@@ -28,6 +28,7 @@ R is a programming language and software environment for statistical computing a
 * [xgboost R package](https://github.com/dmlc/xgboost/tree/master/R-package)
 * [R for Cats](http://rforcats.net/)
 * [Tidy Data](http://vita.had.co.nz/papers/tidy-data.pdf)
+* [LASSO v Ridge v Elastic Net with glmnet](http://www4.stat.ncsu.edu/~post/josh/LASSO_Ridge_Elastic_Net_-_Examples.html)
 
 ### Python Documents  :snake:
 Python is a widely used high-level, general-purpose, interpreted, dynamic programming language. Its design philosophy emphasizes code readability, and its syntax allows programmers to express concepts in fewer lines of code than possible in languages such as C++ or Java. [ [Source](https://en.wikipedia.org/wiki/Python_(programming_language)) ]
@@ -64,6 +65,7 @@ SQL or Structured Query Language is a special-purpose programming language desig
 * [RSeek.org Search Engine](http://rseek.org/)
 
 ### Blogs :pencil2:
+* [Civis Analytics Data Science](https://civisanalytics.com/blog/category/data-science/)
 * [Rstudio Blog](http://blog.rstudio.org/)
 * [yHat Blog](http://blog.yhat.com/)
 * [DataTau](http://www.datatau.com/)
@@ -73,6 +75,7 @@ SQL or Structured Query Language is a special-purpose programming language desig
 * [Rbloggers](http://www.r-bloggers.com/)
 * [FiveThirtyEight](http://fivethirtyeight.com/)
 * [Data Elixer](http://dataelixir.com/)
+* [An aggregate of more data science blogs on github](https://github.com/rushter/data-science-blogs)
 
 ### Books :book:
 * [**The Signal & the Noise** by Nate Silver](http://www.amazon.com/Signal-Noise-Many-Predictions-Fail-but/dp/0143125087)
@@ -95,7 +98,8 @@ SQL or Structured Query Language is a special-purpose programming language desig
 ### General Computing Documents  :microscope:
 * [Ten Simple Rules for Reproducible Computational Research](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003285)
 * [Emoji Cheat Sheet for Markdown](http://www.webpagefx.com/tools/emoji-cheat-sheet/)
-* [Version Control](https://git-scm.com/doc)   
+* [Version Control](https://git-scm.com/doc) 
+* [Happy Git and GitHub for the useR](http://happygitwithr.com/) by Jenny Bryan!
 * [Git Cheat sheet (PDF)](https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf)
 * [Github for Cats](https://gist.github.com/remixz/4651245) 
 * [GitHub, Hello World](https://guides.github.com/activities/hello-world/) 
