@@ -10,7 +10,9 @@ I'm available for speaking engagements on topics of **analysis-ready data**, **s
 
 ### Talks
 
-* [*IPA & Data frames*: Open governemnt data and beer analytics](http://rpubs.com/jasdumas/caRdiff-uk-open-gov-beer): Lightening talk about the state of analysis-ready data from open data portals from the U.S. Governemnt and beyond in relation to beer statisitcs presented to the **Cardiff, UK R User Group on August 2, 2016**.
+#### [Materials for Talks on GitHub](https://github.com/jasdumas/talks)
+
+* [*IPA & Data frames*: Open governemnt data and beer analytics](http://rpubs.com/jasdumas/caRdiff-uk-open-gov-beer): Lightening talk about the state of analysis-ready data from open data portals from the U.S. Government and beyond in relation to beer statistics presented to the **Cardiff, UK R User Group on August 2, 2016**.
 
 * [*To Err is Human*: Understanding Error Messages in R](http://rpubs.com/jasdumas/to-err2): A re-useable presentation deck for new R programmers on decoding confusing error messages and gaining confidence in programming. **Not presented yet**
 
