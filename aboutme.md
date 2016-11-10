@@ -5,12 +5,12 @@ subtitle: ... and all that jazz!
 ---
 
 -------------
-:information_source: I like long hikes, big data, and cold craft beer. I currently live in [Central Connecticut](https://en.wikipedia.org/wiki/Glastonbury,_Connecticut) with my partner and our Scottish Terrier mix dog,
+:information_source: I like long hikes, big data, and cold craft beer. I currently live in Connecticut with my partner and our Scottish Terrier mix dog,
 [Fiona](https://twitter.com/jasdumas/status/679480102443417600).
 
 :briefcase: Currently working as a **Data Scientist** ([Simple](https://www.simple.com/)). Previously worked as a Data Scientist ([The Hartford](https://www.thehartford.com/)), also in **R&D Engineering** roles ([Medtronic](http://www.medtronic.com/covidien), QDx) and as an **Aerospace Manufacturing Engineer** ([AdChem](http://acmt.aero/)).
 
-:mortar_board: Currently a M.S. Candidate in **Predictive Analytics** at [DePaul University](http://www.cdm.depaul.edu/academics/Pages/Current/Requirements-MS-In-Predictive-Analytics-Computational.aspx) focusing in **Data Science & Computational Methods**. Previously earned a Professional Certificate in **Medical Product Development** at [University of California, Irvine Extension](http://ce.uci.edu/areas/life_sciences/medical_products/). Previously earned a Bachelor of **Biomedical Engineering** from the [University of Hartford](http://www.hartford.edu/ceta/undergraduate/engineering/BM/). My senior research project was to develop a prototype [walk-assist](http://www.tuvie.com/wp-content/uploads/ekso-bionic-suit1.jpg) device for a T4 Paraplegic client; project nicknamed "Iron man". I also enjoy learning topics in machine learning idenpendently through MOOCs and completing passion projects. 
+:mortar_board: Currently a M.S. Candidate in **Predictive Analytics** at [DePaul University](http://www.cdm.depaul.edu/academics/Pages/Current/Requirements-MS-In-Predictive-Analytics-Computational.aspx) focusing in **Data Science & Computational Methods**. Previously earned a Professional Certificate in **Medical Product Development** at [University of California, Irvine Extension](http://ce.uci.edu/areas/life_sciences/medical_products/). Previously earned a Bachelor of **Biomedical Engineering** from the [University of Hartford](http://www.hartford.edu/ceta/undergraduate/engineering/BM/). My senior research project was to develop a prototype [walk-assist](http://www.tuvie.com/wp-content/uploads/ekso-bionic-suit1.jpg) device for a T4 Paraplegic client; project nicknamed "Iron man". I also enjoy learning topics in machine learning independently through MOOCs and contributing to open source projects. 
 
 :floppy_disk: I enjoy developing open source software tools to help assist others complete their data analysis work! I like programming in R & Python and interested in learning about cloud computing!
 
