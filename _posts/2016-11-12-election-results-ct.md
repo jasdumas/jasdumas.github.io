@@ -123,7 +123,7 @@ ct_shp <- readOGR(dsn = tmp2,
 
 ```
 ## OGR data source with driver: ESRI Shapefile 
-## Source: "/var/folders/nv/c92g05zj4tnbkwp_x6y9ly6w0000gn/T//Rtmpt7EE4u", layer: "cb_2015_us_county_500k"
+## Source: "/var/folders/nv/c92g05zj4tnbkwp_x6y9ly6w0000gn/T//Rtmp2yilKS", layer: "cb_2015_us_county_500k"
 ## with 3233 features
 ## It has 9 fields
 ```
@@ -141,7 +141,7 @@ dim(ct_shp)
 ct_shp@data$fips <- paste0(ct_shp@data$GEOID)
 ```
 
-This election was fueled by discontent and ignorance of the "silent majority" around social and economic policies, so I thought it was worthwhile to gather some socio-economic data from https://datausa.io/ to enhance the election data. *Data USA* is a data viz tool that uses open public data from https://www.data.gov/ to share insights on occupations, industries and education. This data was web-scraped using `rvest` as the aggregated statistics by county are nestled in a web page.
+This election was fueled by discontent and ignorance of the "silent majority" around social and economic policies, so I thought it was worthwhile to gather some socio-economic data from [https://datausa.io/](https://datausa.io/) to enhance the election data. *Data USA* is a data viz tool that uses open public data from [https://www.data.gov/](https://www.data.gov/) to share insights on occupations, industries and education. This data was web-scraped using `rvest` as the aggregated statistics by county are nestled in a web page.
 
 ```r
 # create a empty df
@@ -297,4 +297,12 @@ jt_map <- leaflet(data = ct_shp2) %>%
 print(jt_map)
 ```
 
-Here is the GitHub repo for this work: https://github.com/jasdumas/ct-election-2016
+<iframe src="http://rpubs.com/jasdumas/hrc_map"></iframe>
+
+<iframe src="http://rpubs.com/jasdumas/dt_map"></iframe>
+
+<iframe src="http://rpubs.com/jasdumas/gj_map"></iframe>
+
+<iframe src="http://rpubs.com/jasdumas/jt_map"></iframe>
+
+Here is the GitHub repo for this work: [https://github.com/jasdumas/ct-election-2016](https://github.com/jasdumas/ct-election-2016)
