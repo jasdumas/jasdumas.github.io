@@ -4,6 +4,7 @@ title: "Mapping & Web-scraping the 2016 Presidential Election Results in Connect
 subtitle: "Understanding my Neighbors with R and Leaflet"
 tags: [rstats, r, election-2016, data-analysis]
 maps: true
+share-img: "https://github.com/jasdumas/ct-election-2016/blob/master/hrc-plot.jpeg"
 output: 
   html_document: 
     self_contained: no
@@ -19,7 +20,7 @@ I, like many others across the country have been in total shock and mental disar
 
 *This was in response to David Smith's original [tweet](https://twitter.com/revodavid/status/796340848896147460) about election forecasting* 
 
-From the initial announcement of Donald Trump gaining the *magic* 270 electoral votes, I have been curious about the election data and eager to explore how my home state fared at the county level. I found a great visualization blog post from fellow useR, [Julia Silge](http://juliasilge.com/blog/Election-Mapping/) of her home state Utah which gave me ideas and starter code and county-level election data from [Mike Kearny](https://github.com/mkearney/presidential_election_county_results_2016)!
+From the initial announcement of Donald Drumpf gaining the *magic* 270 electoral votes, I have been curious about the election data and eager to explore how my home state fared at the county level. I found a great visualization blog post from fellow useR, [Julia Silge](http://juliasilge.com/blog/Election-Mapping/) of her home state Utah which gave me ideas and starter code and county-level election data from [Mike Kearny](https://github.com/mkearney/presidential_election_county_results_2016)!
 
 Here is the analysis and approaches that I took:
 
@@ -41,7 +42,7 @@ head(all_results)
 ## # A tibble: 6 × 8
 ##      X1 cand_id       cand_name    votes     total state  fips         pct
 ##   <int>   <chr>           <chr>    <int>     <int> <chr> <chr>       <dbl>
-## 1     1  US8639    Donald Trump 59821874 126061003    US    US 0.474547025
+## 1     1  US8639    Donald Drumpf 59821874 126061003    US    US 0.474547025
 ## 2     2  US1746 Hillary Clinton 60122876 126061003    US    US 0.476934774
 ## 3     3 US31708    Gary Johnson  4087972 126061003    US    US 0.032428522
 ## 4     4   US895      Jill Stein  1223828 126061003    US    US 0.009708220
@@ -68,11 +69,11 @@ head(ct_results)
 ##      X1 cand_id       cand_name  votes  total state  fips        pct
 ##   <int>   <chr>           <chr>  <int>  <int> <chr> <chr>      <dbl>
 ## 1  2718 CT20519 Hillary Clinton  38767  77380    CT 09013 0.50099509
-## 2  2719 CT20520    Donald Trump  33983  77380    CT 09013 0.43917033
+## 2  2719 CT20520    Donald Drumpf  33983  77380    CT 09013 0.43917033
 ## 3  2720 CT20553    Gary Johnson   3179  77380    CT 09013 0.04108297
 ## 4  2721 CT20552      Jill Stein   1451  77380    CT 09013 0.01875162
 ## 5  2722 CT20519 Hillary Clinton 201578 372277    CT 09009 0.54147315
-## 6  2723 CT20520    Donald Trump 157067 372277    CT 09009 0.42190895
+## 6  2723 CT20520    Donald Drumpf 157067 372277    CT 09009 0.42190895
 ```
 To make things more readable, I added the county names to the data.frame and since Connecticut only has 8 counties, I can complete this step in an iterative approach by matching up the fips numbers.
 
@@ -214,8 +215,8 @@ hrc_shp <- sp::merge(x = ct_shp, y = hrc_join,
                      by = "fips", all.x = F, 
                      duplicateGeoms=F)
 
-## Donald Trump shape file
-ct_clean_dt <- ct_clean[which(ct_clean$cand_name == "Donald Trump"),]
+## Donald Drumpf shape file
+ct_clean_dt <- ct_clean[which(ct_clean$cand_name == "Donald Drumpf"),]
 ct_clean_dt_join <- dplyr::full_join(ct_shp@data, ct_clean_dt)
 dt_join <- na.omit(ct_clean_dt_join)
 dt_shp <- sp::merge(x = ct_shp, y = dt_join, 
@@ -347,7 +348,7 @@ dt_map <- leaflet(data = dt_shp) %>%
   addLegend("bottomright", 
             pal = pal2, 
             values = ~votes,
-            title = "Total Votes for Donald Trump: ",
+            title = "Total Votes for Donald Drumpf: ",
             opacity = 1) 
 print(dt_map)
 
