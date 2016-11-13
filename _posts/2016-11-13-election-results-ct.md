@@ -123,7 +123,7 @@ ct_shp <- readOGR(dsn = tmp2,
 
 ```
 ## OGR data source with driver: ESRI Shapefile 
-## Source: "/var/folders/nv/c92g05zj4tnbkwp_x6y9ly6w0000gn/T//Rtmp7vDGjM", layer: "cb_2015_us_county_500k"
+## Source: "/var/folders/nv/c92g05zj4tnbkwp_x6y9ly6w0000gn/T//RtmpDG6lwP", layer: "cb_2015_us_county_500k"
 ## with 3233 features
 ## It has 9 fields
 ```
@@ -182,7 +182,7 @@ ct_econ$county <- c("Fairfield", "Hartford", "Litchfield", "Middlesex",
                     "New Haven", "New London", "Tolland", "Windham")
 ```
 
-At this point, I merged the election data with the socio-economic data after picking which stats I wanted to capture.
+At this point, I merged the election data with the socio-economic data after picking which stats I wanted to capture and created seperate shapefiles for each candidate.
 
 ```r
 # merge this with the ct_results with the economic data
@@ -205,93 +205,178 @@ plot(ct_shp2)
 
 ![plot of chunk unnamed-chunk-7]({{ site.url }}/post_data/election-results-ct-unnamed-chunk-7-1.png)
 
+```r
+## let's try a specific candidates for creating shape files - Hillary Clinton!!!
+ct_clean_hrc <- ct_clean[which(ct_clean$cand_name == "Hillary Clinton"),]
+ct_clean_hrc_join <- dplyr::full_join(ct_shp@data, ct_clean_hrc)
+hrc_join <- na.omit(ct_clean_hrc_join)
+hrc_shp <- sp::merge(x = ct_shp, y = hrc_join, 
+                     by = "fips", all.x = F, 
+                     duplicateGeoms=F)
+
+## Donald Trump shape file
+ct_clean_dt <- ct_clean[which(ct_clean$cand_name == "Donald Trump"),]
+ct_clean_dt_join <- dplyr::full_join(ct_shp@data, ct_clean_dt)
+dt_join <- na.omit(ct_clean_dt_join)
+dt_shp <- sp::merge(x = ct_shp, y = dt_join, 
+                     by = "fips", all.x = F, 
+                     duplicateGeoms=F)
+
+## Gary Johnson shape file
+ct_clean_gj <- ct_clean[which(ct_clean$cand_name == "Gary Johnson"),]
+ct_clean_gj_join <- dplyr::full_join(ct_shp@data, ct_clean_gj)
+gj_join <- na.omit(ct_clean_gj_join)
+gj_shp <- sp::merge(x = ct_shp, y = gj_join, 
+                    by = "fips", all.x = F, 
+                    duplicateGeoms=F)
+
+## Jill Stein shape file
+ct_clean_jt <- ct_clean[which(ct_clean$cand_name == "Jill Stein"),]
+ct_clean_jt_join <- dplyr::full_join(ct_shp@data, ct_clean_jt)
+jt_join <- na.omit(ct_clean_jt_join)
+jt_shp <- sp::merge(x = ct_shp, y = jt_join, 
+                    by = "fips", all.x = F, 
+                    duplicateGeoms=F)
+```
+
 Spatial Analysis and mapping are a great way to visualize and understand this type of data, so I used `leaflet` for its interactivity to compare candidates and how many votes they received. This is the ground work for defining the color, popup info, and creating partitions for each candidate as their own base group on the map.
 
 ```r
-# create seperate color patterns for each candidate for layers
-HRC <- ct_results[which(ct_results$cand_name == "Hillary Clinton"),] 
-DT <- ct_results[which(ct_results$cand_name == "Donald Trump"),]
-GJ <- ct_results[which(ct_results$cand_name == "Gary Johnson"),]
-JT <- ct_results[which(ct_results$cand_name == "Jill Stein"),]
+# create seperate color patterns for each candidate 
+pal1 <- colorBin(palette = "Blues", domain = hrc_shp$votes, bins = 8)
+pal2 <- colorBin(palette = "Reds", domain = dt_shp$votes, bins = 8)
+pal3 <- colorBin(palette = "YlOrRd", domain = gj_shp$votes, bins = 8)
+pal4 <- colorBin(palette = "Greens", domain = jt_shp$votes, bins = 8)
 
-pal1 <- colorBin(palette = "Blues", domain = HRC$votes, bins = 8)
-pal2 <- colorBin(palette = "Reds", domain = DT$votes, bins = 8)
-pal3 <- colorBin(palette = "YlOrRd", domain = GJ$votes, bins = 8)
-pal4 <- colorBin(palette = "Greens", domain = JT$votes, bins = 8)
-
-# pop values statewide regardless of candidate
-state_popup <- paste0("<strong>County: </strong>", 
-                      ct_shp2$county, 
+# Populate statewide socio-economic values for popup!
+state_popup1 <- paste0("<strong>County: </strong>", 
+                      hrc_shp$county, 
                       "<br><strong>Total Amount of 2016 Voters: </strong>", 
-                      ct_shp2$total,
+                      hrc_shp$total,
+                      "<br><strong>Percentage of Earned Votes: </strong>", 
+                      round(hrc_shp$pct, 3)* 100, "%",
                       "<br><strong>Median Household Income: </strong>", 
-                      ct_shp2$med_house_income14, 
+                      hrc_shp$med_house_income14, 
                       "<br><strong>Average Female Income: </strong>",
-                      ct_shp2$avg_female_income, 
+                      hrc_shp$avg_female_income, 
+                      "<br><strong>Average Male Income: </strong>",
+                      hrc_shp$avg_male_income, 
                       "<br><strong>Wage Equality Index: </strong>", 
-                      ct_shp2$wage_gini, 
+                      hrc_shp$wage_gini, 
                       "<br><strong>Largest Demographic in Poverty: </strong>", 
-                      ct_shp2$largest_demo_poverty)
+                      hrc_shp$largest_demo_poverty)
+
+state_popup2 <- paste0("<strong>County: </strong>", 
+                       dt_shp$county, 
+                       "<br><strong>Total Amount of 2016 Voters: </strong>", 
+                       dt_shp$total,
+                       "<br><strong>Percentage of Earned Votes: </strong>", 
+                       round(dt_shp$pct, 3) * 100, "%",
+                       "<br><strong>Median Household Income: </strong>", 
+                       dt_shp$med_house_income14, 
+                       "<br><strong>Average Female Income: </strong>",
+                       dt_shp$avg_female_income, 
+                       "<br><strong>Average Male Income: </strong>",
+                       dt_shp$avg_male_income, 
+                       "<br><strong>Wage Equality Index: </strong>", 
+                       dt_shp$wage_gini, 
+                       "<br><strong>Largest Demographic in Poverty: </strong>", 
+                       dt_shp$largest_demo_poverty)
+
+state_popup3 <- paste0("<strong>County: </strong>", 
+                       gj_shp$county, 
+                       "<br><strong>Total Amount of 2016 Voters: </strong>", 
+                       gj_shp$total,
+                       "<br><strong>Percentage of Earned Votes: </strong>", 
+                       round(gj_shp$pct, 3)* 100, "%",
+                       "<br><strong>Median Household Income: </strong>", 
+                       gj_shp$med_house_income14, 
+                       "<br><strong>Average Female Income: </strong>",
+                       gj_shp$avg_female_income, 
+                       "<br><strong>Average Male Income: </strong>",
+                       gj_shp$avg_male_income, 
+                       "<br><strong>Wage Equality Index: </strong>", 
+                       gj_shp$wage_gini, 
+                       "<br><strong>Largest Demographic in Poverty: </strong>", 
+                       gj_shp$largest_demo_poverty)
+
+
+state_popup4 <- paste0("<strong>County: </strong>", 
+                       jt_shp$county, 
+                       "<br><strong>Total Amount of 2016 Voters: </strong>", 
+                       jt_shp$total,
+                       "<br><strong>Percentage of Earned Votes: </strong>", 
+                       round(jt_shp$pct, 3)* 100, "%",
+                       "<br><strong>Median Household Income: </strong>", 
+                       jt_shp$med_house_income14, 
+                       "<br><strong>Average Female Income: </strong>",
+                       jt_shp$avg_female_income, 
+                       "<br><strong>Average Male Income: </strong>",
+                       jt_shp$avg_male_income, 
+                       "<br><strong>Wage Equality Index: </strong>", 
+                       jt_shp$wage_gini, 
+                       "<br><strong>Largest Demographic in Poverty: </strong>", 
+                       jt_shp$largest_demo_poverty)
 ```
 
 Here is our map widgets! Feel free to explore and adapt this code for your analysis of a given state!
 
 ```r
 # plot the map(s)
-hrc_map <- leaflet(data = ct_shp2) %>%
+hrc_map <- leaflet(data = hrc_shp) %>%
   addProviderTiles("CartoDB.Positron") %>%
-  addPolygons(fillColor = ~pal1(HRC$votes), 
-              fillOpacity = 0.7, 
+  addPolygons(fillColor = ~pal1(votes), 
+              fillOpacity = 1, 
               color = "#BDBDC3", 
               weight = 1, 
-              popup = state_popup) %>%
+              popup = state_popup1) %>%
   addLegend("bottomright", 
             pal = pal1, 
-            values = ~HRC$votes,
+            values = ~votes,
             title = "Total Votes for Hillary Clinton: ",
             opacity = 1)
 print(hrc_map)
 
-dt_map <- leaflet(data = ct_shp2) %>%
+dt_map <- leaflet(data = dt_shp) %>%
   addProviderTiles("CartoDB.Positron") %>%
-  addPolygons(fillColor = ~pal2(DT$votes), 
-              fillOpacity = 0.7, 
+  addPolygons(fillColor = ~pal2(votes), 
+              fillOpacity = 1, 
               color = "#BDBDC3", 
               weight = 1, 
-              popup = state_popup) %>%
+              popup = state_popup2) %>%
   addLegend("bottomright", 
             pal = pal2, 
-            values = ~DT$votes,
+            values = ~votes,
             title = "Total Votes for Donald Trump: ",
             opacity = 1) 
 print(dt_map)
 
 
-gj_map <- leaflet(data = ct_shp2) %>%
+gj_map <- leaflet(data = gj_shp) %>%
   addProviderTiles("CartoDB.Positron") %>%
-  addPolygons(fillColor = ~pal3(GJ$votes), 
-              fillOpacity = 0.7, 
+  addPolygons(fillColor = ~pal3(votes), 
+              fillOpacity = 1, 
               color = "#BDBDC3", 
               weight = 1, 
-              popup = state_popup) %>%
+              popup = state_popup3) %>%
   addLegend("bottomleft", 
             pal = pal3, 
-            values = ~GJ$votes,
+            values = ~votes,
             title = "Total Votes for Gary Johnson: ",
             opacity = 1) 
 print(gj_map)
 
 
-jt_map <- leaflet(data = ct_shp2) %>%
+jt_map <- leaflet(data = jt_shp) %>%
   addProviderTiles("CartoDB.Positron") %>%
-  addPolygons(fillColor = ~pal4(JT$votes), 
-              fillOpacity = 0.7, 
+  addPolygons(fillColor = ~pal4(votes), 
+              fillOpacity = 1, 
               color = "#BDBDC3", 
               weight = 1, 
-              popup = state_popup) %>%
+              popup = state_popup4) %>%
   addLegend("bottomleft", 
             pal = pal4, 
-            values = ~JT$votes,
+            values = ~votes,
             title = "Total Votes for Jill Stein: ",
             opacity = 1) 
 print(jt_map)
