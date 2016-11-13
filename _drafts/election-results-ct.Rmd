@@ -4,6 +4,7 @@ title: "Mapping & Web-scraping the 2016 Presidential Election Results in Connect
 subtitle: "Understanding my Neighbors with R and Leaflet"
 tags: [rstats, r, election-2016, data-analysis]
 maps: true
+share-img: "https://github.com/jasdumas/ct-election-2016/blob/master/hrc-plot.jpeg"
 output: 
   html_document: 
     self_contained: no
@@ -26,7 +27,7 @@ I, like many others across the country have been in total shock and mental disar
 
 *This was in response to David Smith's original [tweet](https://twitter.com/revodavid/status/796340848896147460) about election forecasting* 
 
-From the initial announcement of Donald Trump gaining the *magic* 270 electoral votes, I have been curious about the election data and eager to explore how my home state fared at the county level. I found a great visualization blog post from fellow useR, [Julia Silge](http://juliasilge.com/blog/Election-Mapping/) of her home state Utah which gave me ideas and starter code and county-level election data from [Mike Kearny](https://github.com/mkearney/presidential_election_county_results_2016)!
+From the initial announcement of Donald Drumpf gaining the *magic* 270 electoral votes, I have been curious about the election data and eager to explore how my home state fared at the county level. I found a great visualization blog post from fellow useR, [Julia Silge](http://juliasilge.com/blog/Election-Mapping/) of her home state Utah which gave me ideas and starter code and county-level election data from [Mike Kearny](https://github.com/mkearney/presidential_election_county_results_2016)!
 
 Here is the analysis and approaches that I took:
 ```{r}
@@ -160,8 +161,8 @@ hrc_shp <- sp::merge(x = ct_shp, y = hrc_join,
                      by = "fips", all.x = F, 
                      duplicateGeoms=F)
 
-## Donald Trump shape file
-ct_clean_dt <- ct_clean[which(ct_clean$cand_name == "Donald Trump"),]
+## Donald Drumpf shape file
+ct_clean_dt <- ct_clean[which(ct_clean$cand_name == "Donald Drumpf"),]
 ct_clean_dt_join <- dplyr::full_join(ct_shp@data, ct_clean_dt)
 dt_join <- na.omit(ct_clean_dt_join)
 dt_shp <- sp::merge(x = ct_shp, y = dt_join, 
@@ -293,7 +294,7 @@ dt_map <- leaflet(data = dt_shp) %>%
   addLegend("bottomright", 
             pal = pal2, 
             values = ~votes,
-            title = "Total Votes for Donald Trump: ",
+            title = "Total Votes for Donald Drumpf: ",
             opacity = 1) 
 print(dt_map)
 
