@@ -7,7 +7,7 @@ tags: [coursera, mooc, python, data-analysis]
 
 _Blog post for Week 2 of [Machine Learning for Data Analysis (Coursera)](https://www.coursera.org/learn/machine-learning-data-analysis)_
 
-### Introduction
+### What is Random Forest?
 
 Random forests are predictive models that allow for a data driven exploration of many explanatory variables in predicting a response or target variable. Random forests provide importance scores for each explanatory variable and also allow you to evaluate any increases in correct classification with the growing of smaller and larger number of trees.
 
