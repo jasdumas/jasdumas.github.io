@@ -5,7 +5,7 @@ subtitle: ... and a little R & Excel
 tags: [coursera, mooc, python, data-analysis]
 ---
 
-[Machine Learning for Data Analysis (Coursera)](https://www.coursera.org/learn/machine-learning-data-analysis)
+_Blog post for Week 4 of [Machine Learning for Data Analysis (Coursera)](https://www.coursera.org/learn/machine-learning-data-analysis)_
 
 ### Introduction
 
