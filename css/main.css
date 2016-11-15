@@ -86,6 +86,14 @@ img::-moz-selection {
   background: transparent;
 }
 
+
+/* --- Read-time -- */
+
+.read-time {
+    color: #3cb371;
+  }
+}
+
 /* --- Navbar --- */
 
 .navbar-custom {
