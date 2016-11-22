@@ -6,7 +6,7 @@ subtitle: These are a few of my favorite links...
 
 ----------
 
-### R Documents  :cat2:
+### R Programming :cat2:
 R is a programming language and software environment for statistical computing and graphics supported by the R Foundation for Statistical Computing. The R language is widely used among statisticians and data miners for developing statistical software and data analysis. [ [Source](https://en.wikipedia.org/wiki/R_(programming_language)) ]
 
 * [GLMs from Quick-R](http://www.statmethods.net/advstats/glm.html)
@@ -30,7 +30,7 @@ R is a programming language and software environment for statistical computing a
 * [Tidy Data](http://vita.had.co.nz/papers/tidy-data.pdf)
 * [LASSO v Ridge v Elastic Net with glmnet](http://www4.stat.ncsu.edu/~post/josh/LASSO_Ridge_Elastic_Net_-_Examples.html)
 
-### Python Documents  :snake:
+### Python :snake:
 Python is a widely used high-level, general-purpose, interpreted, dynamic programming language. Its design philosophy emphasizes code readability, and its syntax allows programmers to express concepts in fewer lines of code than possible in languages such as C++ or Java. [ [Source](https://en.wikipedia.org/wiki/Python_(programming_language)) ]
 
 * [Python 3 Documentation](https://docs.python.org/3/)
@@ -38,6 +38,8 @@ Python is a widely used high-level, general-purpose, interpreted, dynamic progra
 * [Django web framework](https://docs.djangoproject.com/en/1.9/intro/tutorial01/)
 * [Python Machine Learning Book (Repository)](https://github.com/rasbt/python-machine-learning-book)
 * [scikit-learn machine learning map guide](http://scikit-learn.org/stable/tutorial/machine_learning_map/index.html)
+* [pydata conference series](http://pydata.org/)
+* [pycon 2017 conference](https://us.pycon.org/2017/)
 
 ### SQL :guitar:
 SQL or Structured Query Language is a special-purpose programming language designed for managing data held in a relational database management system (RDBMS), or for stream processing in a relational data stream management system (RDSMS). [ [Source](https://en.wikipedia.org/wiki/SQL) ]
@@ -86,7 +88,7 @@ SQL or Structured Query Language is a special-purpose programming language desig
 * [**Advanced R** by Hadley Wickham](http://adv-r.had.co.nz/) - Chapters of Interest: [Data Structures](http://adv-r.had.co.nz/Data-structures.html), [Object-Orientated Field Guide](http://adv-r.had.co.nz/OO-essentials.html), [Style Guide](http://adv-r.had.co.nz/Style.html)
 * [**An Introduction to Statistical Learning with Applications in R** by Gareth James, Robert Tibshirani, and Trevor Hastie](http://www-bcf.usc.edu/~gareth/ISL/ISLR%20Sixth%20Printing.pdf)
 
-### Coursework, MOOCS & Online material  :school_satchel:
+### Online Coursework (MOOCs)  :school_satchel:
 * [Datacamp.com: Data Analysis in your browser](https://www.datacamp.com/)
 * [Datacamp.com: Machine Learning in R](https://www.datacamp.com/community/tutorials/machine-learning-in-r#gs.wRaIUbc)
 * [Stat545: Data wrangling, exploration, and analysis with R](https://stat545-ubc.github.io/)   
@@ -95,7 +97,7 @@ SQL or Structured Query Language is a special-purpose programming language desig
 * [Udacity Exploratory Data Analysis](https://www.udacity.com/course/ud651)
 * [Stanford University StatLearning: Statistical Learning](https://class.stanford.edu/courses/HumanitiesScience/StatLearning/Winter2014/about)
 
-### General Computing Documents  :microscope:
+### General Computing :microscope:
 * [Ten Simple Rules for Reproducible Computational Research](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003285)
 * [Emoji Cheat Sheet for Markdown](http://www.webpagefx.com/tools/emoji-cheat-sheet/)
 * [Version Control](https://git-scm.com/doc) 
