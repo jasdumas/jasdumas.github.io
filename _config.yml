@@ -17,7 +17,7 @@ baseurl: ""
 title: Jasmine Dumas
 
 # Short description of your site
-description: Data Scientist
+description: Data Scientist & R Programmer
 
 # --- Navigation bar options --- #
 
@@ -33,6 +33,7 @@ navbar-links:
     - Data Science Links: ds-resources
     - R Tutorials: r-papers
     - Python Tutorials: py-papers
+    - Course Notes: course-notes
   About / Contact: 
     - About Me: aboutme
     - Resume: resume
