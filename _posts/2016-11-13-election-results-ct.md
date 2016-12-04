@@ -383,12 +383,12 @@ jt_map <- leaflet(data = jt_shp) %>%
 print(jt_map)
 ```
 
-<iframe src="http://rpubs.com/jasdumas/hrc_map" style="border: none; width: 900px; height: 600px"></iframe>
+<iframe src="https://rpubs.com/jasdumas/hrc_map" style="border: none; width: 900px; height: 600px"></iframe>
 
-<iframe src="http://rpubs.com/jasdumas/dt_map" style="border: none; width: 900px; height: 600px"></iframe>
+<iframe src="https://rpubs.com/jasdumas/dt_map" style="border: none; width: 900px; height: 600px"></iframe>
 
-<iframe src="http://rpubs.com/jasdumas/gj_map" style="border: none; width: 900px; height: 600px"></iframe>
+<iframe src="https://rpubs.com/jasdumas/gj_map" style="border: none; width: 900px; height: 600px"></iframe>
 
-<iframe src="http://rpubs.com/jasdumas/jt_map" style="border: none; width: 900px; height: 600px"></iframe>
+<iframe src="https://rpubs.com/jasdumas/jt_map" style="border: none; width: 900px; height: 600px"></iframe>
 
 Here is the GitHub repo for this work: [https://github.com/jasdumas/ct-election-2016](https://github.com/jasdumas/ct-election-2016)
