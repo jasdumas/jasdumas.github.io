@@ -36,7 +36,9 @@ production
 # ipa     19180 14607 18113
 
 ```
+
 Results:
+
 ```r
 chisq.test(production)
 
@@ -71,7 +73,9 @@ head(tours)
 # 5                7 Saturday
 # 6               11   Sunday
 ```
+
 Results:
+
 ```r
 t.test(attendance_count ~ day, data = tours, var.equal = TRUE)
 #       Two Sample t-test
@@ -113,7 +117,9 @@ head(ratings)
 # 6      21-25      2
 
 ```
+
 Results:
+
 ```r
 fit_anova <- aov(rating ~ age_group, data = ratings)
 summary(fit_anova)
@@ -132,6 +138,7 @@ I hope this post is helpful to those interested in selecting the right statistic
 
 ![](http://i.giphy.com/RqbkeCZGgipSo.gif)
 
+----
 
 ### Additional Resources
 
