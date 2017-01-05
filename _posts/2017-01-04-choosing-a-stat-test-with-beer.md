@@ -48,7 +48,7 @@ chisq.test(production)
 # X-squared = 3267.2, df = 6, p-value < 2.2e-16
 ```
 
-As the p-value is less than our significance level of 0.05 at 2.2e-16 (*there is a really low probability that this occurred just by chance*), we fail to reject the null hypothesis that there is no difference in beer style and production volume by year and can state that the alternative hypothesis that there is a difference between beer style and production volume fro year to year. As the values were randomly generated, this analysis can be furthered by exploring the potential popularity of certain styles increasing or decreasing the demand for production over the years.
+As the p-value is less than our significance level of 0.05 at 2.2e-16 (*there is a really low probability that this occurred just by chance*), we reject the null hypothesis that there is no difference in beer style and production volume by year and can state that the alternative hypothesis that there is a statistical difference between beer style and production volume from year to year. As the values were randomly generated, this analysis can be furthered by exploring the potential popularity of certain styles increasing or decreasing the demand for production over the years.
 
 
 ## [t-Test](https://en.wikipedia.org/wiki/Student's_t-test)
@@ -90,7 +90,7 @@ t.test(attendance_count ~ day, data = tours, var.equal = TRUE)
 # 19                     19
 ```
 
-As the p-value is larger than our 0.05 significance level, we can fail to reject the null hypothesis that there is no difference in the attendance count for each weekend day. Tis type of statistical test could be useful for breweries to determine if having tours on either day of the weekend resulted in a statistical difference in attendance.
+As the p-value is larger than our 0.05 significance level, we can fail to reject the null hypothesis and there is no statistical difference in the attendance count for each weekend day. This type of statistical test could be useful for breweries to determine if having tours on either day of the weekend resulted in a statistical difference in attendance.
 
 
 ## [ANOVA (Analysis of Variance)](https://en.wikipedia.org/wiki/Analysis_of_variance)
@@ -130,7 +130,7 @@ summary(fit_anova)
 # Residuals   24  36.44  1.5185    
 ```
 
-As the p-value is higher than our significance level, we can fail to reject the hypothesis that beer ratings are no different between age groups. We can accept the alternative hypothesis that different age groups rate beer differently. In a real world analysis, you can determine beer ratings by gathering more data between age groups or ratings from a given platform, such as [**untapped**](https://untappd.com/) or [**Beer Advocate**](https://www.beeradvocate.com/).
+As the p-value is higher than our significance level, we can fail to reject the null hypothesis and beer ratings have no statistical difference between age groups. In a real world analysis, you can determine beer ratings by gathering more data between age groups or ratings from a given platform, such as [**untapped**](https://untappd.com/) or [**Beer Advocate**](https://www.beeradvocate.com/).
 
 ----
 
