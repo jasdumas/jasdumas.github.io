@@ -14,4 +14,4 @@
 10. Analysis of Martin Luther King (Dr, Blvds) throughout the country
 11. Are you more likely to win the lottery if purchasing an out of state ticket?
 12. :white_check_mark: [K-Nearest Neighbor post from CSC478 Final project](https://jasdumas.github.io/2016-11-26-knn-loans/)
-13. Choosing a Statistical Test as explained with Beer Examples
+13. :white_check_mark: [Choosing a Statistical Test as explained with Beer Examples](https://jasdumas.github.io/2017-01-04-choosing-a-stat-test-with-beer/)
