@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "Explaining Statistical Goodness of fit Tests with Beer"
+title: "Explaining Statistical Goodness of fit Tests with Beer (Statistics)"
 subtitle: "Statistics + Beer = Comprehension"
 tags: [rstats, r, statistics, r-bloggers]
 ---
 
 A [goodness of fit test](https://en.wikipedia.org/wiki/Goodness_of_fit) are a collection of statistical techniques used to summarize the differences between observed values and expected values. These tests can be used be used for hypothesis testing, testing residual normality, distribution comparisons, and outcome frequency distribution comparisons.
 
-It can be difficult to know which statistical test to select given a problem domain and *often* the results won't point you to any mistakes if the wrong assumptions are made. In this post, I have detailed three common goodness of fit tests, the `R` code to perform the tests, interpretation of the results while using beer (analytics) in the examples.
+It can be difficult to know which statistical test to select given a problem domain and *often* the results won't point you to any mistakes if the wrong assumptions are made. In this post, I have detailed three common goodness of fit tests, the `R` code to perform the tests, interpretation of the results while using beer (Statistics + Analytics) in the examples.
 
 ## [Chi-squared test or χ2 test](https://en.wikipedia.org/wiki/Chi-squared_test)
 
