@@ -16,10 +16,11 @@ subtitle: ... and all that jazz!
 
 :earth_americas: I grew up in the *Lower Hudson Valley, NY* and stayed around *Connecticut* after undergrad. I'm *sometimes* available for *remote consulting* opportunities working on [**diverse** teams](http://www.forbes.com/sites/bonniemarcus/2015/08/12/the-lack-of-diversity-in-tech-is-a-cultural-issue/#7170290c3577) to solve interesting challenges with data. Feel free to get in touch with me!
 
-:trollface: Here are links to my other pages on the interwebs: [keybase.io/jasdumas](https://keybase.io/jasdumas), [medium](https://medium.com/@jasdumas), [soundcloud](https://soundcloud.com/jasmine-dumas), [about.me](https://about.me/jasminedumas), [wordpress](https://jasdumas.wordpress.com/), [Arduino project videos on vine](https://vine.co/Jasmine.Dumas), [Google Scholar](https://scholar.google.com/citations?user=Yt3WKXsAAAAJ&hl=en), [codecademy](https://www.codecademy.com/jmdumas), [Kaggle](https://www.kaggle.com/jasdumas), [Quora](https://www.quora.com/profile/Jasmine-Dumas), [GrabCAD](https://grabcad.com/jasmine.dumas-1/projects), [angel.co](https://angel.co/jasmine-dumas). *Any other sites, probably aren't related to me*
+:trollface: Here are links to my other pages on the interwebs: [keybase.io/jasdumas](https://keybase.io/jasdumas), [medium](https://medium.com/@jasdumas), [soundcloud](https://soundcloud.com/jasmine-dumas), [about.me](https://about.me/jasminedumas), [old blog on wordpress](https://jasdumas.wordpress.com/), [Arduino project videos on vine](https://vine.co/Jasmine.Dumas), [Google Scholar](https://scholar.google.com/citations?user=Yt3WKXsAAAAJ&hl=en), [codecademy](https://www.codecademy.com/jmdumas), [Kaggle](https://www.kaggle.com/jasdumas), [Quora](https://www.quora.com/profile/Jasmine-Dumas), [GrabCAD](https://grabcad.com/jasmine.dumas-1/projects), [angel.co](https://angel.co/jasmine-dumas). *Any other sites, probably aren't related to me*
 
 ### Features & mentions
 
+* [Becoming a Data Scientist Podcast, Season 2, Episode 1 Interview](http://www.becomingadatascientist.com/2017/01/10/becoming-a-data-scientist-podcast-episode-14-jasmine-dumas/)
 * [Revolution Analytics Blog: "New 'R Talk' podcast with news from R Consortium"](http://blog.revolutionanalytics.com/2015/08/r-talk.html)
 * [Data Elixr: ttbbeer highlight on Facebook](https://www.facebook.com/dataelixir/posts/1575904476046887) and [Newsletter issue 91](http://dataelixir.com/issues/91)
 
