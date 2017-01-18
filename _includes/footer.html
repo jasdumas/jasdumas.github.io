@@ -72,6 +72,19 @@
               </span>
             </a>
           </li>
+		
+	{% endif %}
+		  {% if site.author.squarecashme and site.footer-links-active.squarecashme %}
+          <li>
+            <a href="https://cash.me/{{ site.author.squarecashme }}" title="Square Cash Me">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-usd fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+		
+		
           {% endif %}
 		  {% if site.footer-links-active.rss %}
 		  <li>
