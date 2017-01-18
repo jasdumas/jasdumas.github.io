@@ -54,6 +54,7 @@ author:
   stackoverflow: users/4143444/jasmine-dumas
   instagram: jasdumas
   email: jasmine.dumas@gmail.com
+  squarecashme: $jasdumas
 
  
 # Select which links to show in the footer
@@ -71,6 +72,7 @@ footer-links-active:
   instagram: true
   youtube: false
   spotify: false
+  squarecashme: true
   
 # Select which share links to show in posts
 share-links-active:
