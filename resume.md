@@ -32,7 +32,7 @@ R Packages
 Education
 ---------
 
-* [DePaul University](https://www.cdm.depaul.edu/academics/Pages/MS-in-Predictive-Analytics.aspx), (2015 - Present)
+* [DePaul University](https://www.cdm.depaul.edu/academics/Pages/MS-in-Predictive-Analytics.aspx), (2015 - on-leave until Fall 2017)
   * **Master of Science Candidate in Predictive Analytics**
   * Coursework: Intro to Programming, Data Analytics & Regression, Database Processing for Large-scale Analytics, Advanced Data Analysis, Knowledge Discovery Technologies, Programming Machine Learning Applications. 
 
@@ -57,7 +57,7 @@ Data Science Experience
 ---------
 * **Simple Finance**
     * **Data Scientist**, (October 2016 - Present)
-    * Machine learning, data science, predictive modeling, product development
+    * Changing how people think about their finances with data science
     
 ___________
 
@@ -136,7 +136,7 @@ Posters & Presentations
 
 Honors & Awards
 ---------
-* rstudio::conf 2017 Conference Diversity Scholarship
+* rstudio::conf 2017 Conference Diversity Scholarship (awarded, but not in attendance)
 * useR! 2016 Conference Diversity Scholarship
 * 2015 Google Summer of Code Program Stipend for the R Project for Statistical Computing
 * 2012 NASA - Connecticut Space Grant Award: Senior Design Project Funding
