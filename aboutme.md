@@ -20,6 +20,7 @@ subtitle: ... and all that jazz!
 
 ### Features & mentions
 
+* [Open NASA Blog: Welcome Datanauts 2017 Spring Class!](https://open.nasa.gov/blog/welcome-datanauts-2017-spring-class/)
 * [Becoming a Data Scientist Podcast, Season 2, Episode 1 Interview](http://www.becomingadatascientist.com/2017/01/10/becoming-a-data-scientist-podcast-episode-14-jasmine-dumas/)
 * [Revolution Analytics Blog: "New 'R Talk' podcast with news from R Consortium"](http://blog.revolutionanalytics.com/2015/08/r-talk.html)
 * [Data Elixr: ttbbeer highlight on Facebook](https://www.facebook.com/dataelixir/posts/1575904476046887) and [Newsletter issue 91](http://dataelixir.com/issues/91)
