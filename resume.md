@@ -108,13 +108,17 @@ Research Interests
 ---------
 financial technology, Bioinformatics software, Reproducible research and analysis, Open Government Data, Computational programming, Beer analytics, Webscraping
 
+
 Peer-Reviewed Research Papers
 ---------
 
 * **Dumas J**, Gargano MA, Dancik GM. shinyGEO: a web-based application for analyzing Gene Expression Omnibus datasets. Bioinformatics. 2016 Aug 8. doi:10.1093/bioinformatics/btw519 - [Paper link](http://bioinformatics.oxfordjournals.org/content/early/2016/08/20/bioinformatics.btw519)
-* **Dumas J**, et.al., "Feasibility of an electronic stethoscope system for monitoring neonatal bowel sounds." Connecticut Medicine, Volume 77, Number 8, pp. 467-471, September 2013. - [Paper link](http://connmed.csms.org/i/157293-sept-2013/21)            
+* **Dumas J**, et.al., "Feasibility of an electronic stethoscope system for monitoring neonatal bowel sounds." Connecticut Medicine, Volume 77, Number 8, pp. 467-471, September 2013. - [Paper link](http://connmed.csms.org/i/157293-sept-2013/21)     
+
+
 Talks
 ----------
+
 * [IPA & data frames: Open Government Data and Beer Analytics](http://rpubs.com/jasdumas/caRdiff-uk-open-gov-beer) - Presented Virtually to Cardiff, UK R User group, August 2016.
 
 Posters
