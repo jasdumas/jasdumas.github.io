@@ -6,7 +6,8 @@ subtitle: open source & weekend data science projects
 
 ---------------
 
-<a href="https://jasdumas.github.io/open-source/" class="btn btn-success">Open Source Contributions</a>
+<a href="https://jasdumas.github.io/open-source/" class="btn btn-success">Open Source Contributions</a> 
+<a href="http://rpubs.com/jasdumas/" class="btn btn-info">Web Publishing with R</a>
 
 * [R for FinTech](https://jasdumas.github.io/r4fintech/): A guidebook written in [bookdown](https://bookdown.org/) for R programming with Financial Technology (FinTech) applications. :dollar:
 
