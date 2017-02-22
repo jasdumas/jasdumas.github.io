@@ -12,11 +12,13 @@ I'm available for speaking engagements on topics of **analysis-ready data**, **s
 
 #### [Materials for Talks on GitHub](https://github.com/jasdumas/talks)
 
-* [*IPA & Data frames*: Open governemnt data and beer analytics](http://rpubs.com/jasdumas/caRdiff-uk-open-gov-beer): Lightening talk about the state of analysis-ready data from open data portals from the U.S. Government and beyond in relation to beer statistics presented to the **Cardiff, UK R User Group on August 2, 2016**.
+| Talk Title                                                      | Event                                                                                                                      | Slides                                             |
+|-----------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------|
+| **Adventures in Crafting a Data Science Career**                  | University of Rhode Island (URI) Coastal Institute and RhodyRStats on Thursday, March 30th,  “Careers in R” speaker series |                                                    |
+| **Extending `Shiny` by Enhancing User Experience with `shinyLP`** | Portland, OR R User Group on January 12th, 2017 (Postponed until April 2017)                                               | http://rpubs.com/jasdumas/pdx-shinylp              |
+| **IPA & Data frames: Open government data and beer analytics**    | Cardiff, UK R User Group on August 2, 2016                                                                                 | http://rpubs.com/jasdumas/caRdiff-uk-open-gov-beer |
 
-* [*To Err is Human*: Understanding Error Messages in R](http://rpubs.com/jasdumas/to-err2): A re-useable presentation deck for new R programmers on decoding confusing error messages and gaining confidence in programming. **Not presented yet**
 
-* [Extending Shiny by Enhancing User Experience with shinyLP](): *Shiny* has become a popular tool for sharing R code and has sparked the development of additional packages to enhance the functionality for advanced applications. *shinyLP* was developed to provide functions that wrap HTML Bootstrap components, to enable the design and layout of informative landing home pages for 'shiny' applications. The user experience and interface are important aspects to consider when developing robust applications in order to direct, especially non-technical users, how to use the application efficiently. This talk will highlight popular packages for enhancing *shiny* (*shinyjs, shinyBS, shinydashboard, and shinythemes*) and will introduce *shinyLP* as an effective method for *shiny* developers to utlize web development concepts and tools. **Not presented yet**
 
 
 
