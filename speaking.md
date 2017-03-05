@@ -12,11 +12,11 @@ I'm available for speaking engagements on topics of **analysis-ready data**, **s
 
 #### [Materials for Talks on GitHub](https://github.com/jasdumas/talks)
 
-| Talk Title                                                      | Event                                                                                                                      | Slides                                             |
+| Title                                                      | Event                                                                                                                      | Slides                                             |
 |-----------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------|
-| **Adventures in Crafting a Data Science Career**                  | University of Rhode Island (URI) Coastal Institute and RhodyRStats on Thursday, March 30th,  “Careers in R” speaker series |                                                    |
-| **Extending `Shiny` by Enhancing User Experience with `shinyLP`** | Portland, OR R User Group on January 12th, 2017 (Postponed until April 2017)                                               | http://rpubs.com/jasdumas/pdx-shinylp              |
-| **IPA & Data frames: Open government data and beer analytics**    | Cardiff, UK R User Group on August 2, 2016                                                                                 | http://rpubs.com/jasdumas/caRdiff-uk-open-gov-beer |
+| **Adventures in Crafting a Data Science Career**                  | University of Rhode Island (URI) Coastal Institute and RhodyRStats on Thursday, March 30, 2017  “Careers in R” speaker series |                                                    |
+| **Extending `Shiny` by Enhancing User Experience with `shinyLP`** | Portland, OR R User Group on Thursday, April 6, 2017                                               | [http://rpubs.com/jasdumas/pdx-shinylp](http://rpubs.com/jasdumas/pdx-shinylp)              |
+| **IPA & Data frames: Open government data and beer analytics**    | Cardiff, UK R User Group on August 2, 2016                                                                                 | [http://rpubs.com/jasdumas/caRdiff-uk-open-gov-beer](http://rpubs.com/jasdumas/caRdiff-uk-open-gov-beer) |
 
 
 
