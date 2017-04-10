@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Speaking
+bigimg: /post_data/speaking-uri.jpg-small
 social-share: true
 ---
 
