@@ -28,6 +28,8 @@ subtitle: open source & weekend data science projects
 
 * [*Flexdashboard* of Connecticut Real Estate Sales](http://jasdumas.github.io/tech-short-papers/flex-realestate.html): Exploratory Data Analysis of Connecticut real estate sales from 2011 to 2013 from [https://data.ct.gov](https://data.ct.gov)  - [Additional RPubs modeling work](http://rpubs.com/jasdumas/ct-realestate) :house_with_garden:
 
+* [*Flexdashboard* of Estimate Population by Zipcode Choropleth map](https://jasminedumas.shinyapps.io/Choropleth_Zipcodes/): a leaflet map showing the estimated population at a state-level by zipcode. :earth_africa:
+
 ## Media
 
 * [R for FinTech](https://jasdumas.github.io/r4fintech/): A in-progress guidebook written in [bookdown](https://bookdown.org/) for R programming with Financial Technology (FinTech) applications. :dollar:
