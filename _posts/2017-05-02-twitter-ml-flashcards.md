@@ -14,7 +14,7 @@ I'm a fan of [Chris Albon](https://chrisalbon.com/)'s recent project [#machinele
 I leveraged [Maëlle Salmon](https://github.com/maelle)'s recent blog post on the [*Faces of #rstats Twitter*](http://www.masalmon.eu/2017/03/19/facesofr/) heavily as a tutorial for this attempt at extracting data from Twitter to download the #Machinelearningflashcards.
 
 Source Repo for this work: [jasdumas/ml-flashcards](https://github.com/jasdumas/ml-flashcards)
-___
+
 
 ## Directions
 
