@@ -20,7 +20,7 @@ subtitle: ... and all that jazz!
 
 ### Features & mentions
 
-* [Open Data Science Conference 2017 | East](https://www.odsc.com/training/portfolio/open-government-data-beer-analytics)
+* [Open Data Science Conference 2017 - East, Abstract](https://www.odsc.com/training/portfolio/open-government-data-beer-analytics)
 * [Adventures in Crafting a Data Science Career Poster](http://rhodyrstats.org/files/dumas_event.pdf)
 * [Open NASA Blog: Welcome Datanauts 2017 Spring Class!](https://open.nasa.gov/blog/welcome-datanauts-2017-spring-class/)
 * [Becoming a Data Scientist Podcast, Season 2, Episode 1 Interview](http://www.becomingadatascientist.com/2017/01/10/becoming-a-data-scientist-podcast-episode-14-jasmine-dumas/)
