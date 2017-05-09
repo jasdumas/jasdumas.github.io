@@ -1,8 +1,10 @@
 ---
 layout: page
 title: Speaking
-bigimg: /post_data/speaking-uri.jpg-small
 social-share: true
+bigimg:
+  - "/post_data/speaking-uri.jpg-small": "Speaking at URI Coastal Insitute (2017)"
+  - "/post_data/beer-audience.jpg": "Speaking at Open Data Science Conference, Boston, MA (2017)"
 ---
 
 ---------------
