@@ -25,7 +25,7 @@ ___
 
 ## Directions
 
-- Load libraries:
+1. Load libraries:
 
 For this project I used `rtweet` to connect the Twitter API to search for relevant tweets by the hash tag, `dplyr` to filter and pipe things, `stringr` to clean up the tweet description, and `magick` to process the images. 
 
@@ -35,18 +35,24 @@ library(rtweet)
 library(dplyr)
 library(magick)
 library(stringr)
+library(kableExtra)
+library(knitr)
 ```
 
-- Get tweets for the hash tag and only curated tweets for Chris Albon's work: 
+2. Get tweets for the hash tag and only curated tweets for Chris Albon's work: 
 ```{r}
 ml_tweets <- search_tweets("#machinelearningflashcards", n = 500, include_rts = FALSE) %>% filter(screen_name == 'chrisalbon')
 ```
 
 ```{r}
-head(ml_tweets)
+mt <- ml_tweets[1:3,]
+
+kable(mt, format = "html") %>%
+  kable_styling(bootstrap_options = "striped", 
+                full_width = F) 
 ```
 
-- Get text within the tweet to add to the file name by removing the hash tag and URL link: 
+3. Get text within the tweet to add to the file name by removing the hash tag and URL link: 
 ```{r}
 ml_tweets$clean_text <- ml_tweets$text
 ml_tweets$clean_text <- str_replace(ml_tweets$clean_text,"#[a-zA-Z0-9]{1,}", "") # remove the hashtag
@@ -54,7 +60,7 @@ ml_tweets$clean_text <- str_replace(ml_tweets$clean_text, " ?(f|ht)(tp)(s?)(://)
 ml_tweets$clean_text <- str_replace(ml_tweets$clean_text, "[[:punct:]]", "") # remove punctuation
 ```
 
-- Download images of the flashcards from the `media_url` column and append the file name from the cleaned tweet text description and save into a folder:
+4. Download images of the flashcards from the `media_url` column and append the file name from the cleaned tweet text description and save into a folder:
 ```{r}
 save_image <- function(df){
   for (i in c(1:nrow(df))){
@@ -70,7 +76,7 @@ save_image <- function(df){
 }
 ```
 
-- Apply the function:
+5. Apply the function:
 ```{r}
 save_image(ml_tweets)
 ```
