@@ -1,28 +1,31 @@
 ---
 title: 'Extracting data from Twitter for #machinelearningflashcards'
+subtitle: 'A tutorial for machine learning - learning'
 layout: post
-tags: [rstats, r, image-processing, machine-learning]
+tags: [rstats, r, image-processing, machine-learning, tutorial]
 output: 
   html_document: 
     self_contained: no
+bigimg: "https://raw.githubusercontent.com/jasdumas/ml-flashcards/master/data/Confusion%20Matrix%20.jpg"
 ---
 
 
 
 I'm a fan of [Chris Albon](https://chrisalbon.com/)'s recent project [#machinelearningflashcards](https://twitter.com/hashtag/machinelearningflashcards?src=hash) on Twitter where generalized topics and methodologies are drawn out with key takeaways. It's a great approach to sharing concepts about machine learning for everyone and a timely refresher for those of us who frequently forget algorithm basics.
 
-I leveraged [Maëlle Salmon](https://github.com/maelle)'s recent blog post on the [*Faces of #rstats Twitter*](http://www.masalmon.eu/2017/03/19/facesofr/) heavily as a tutorial for this attempt at extracting data from Twitter to download the #Machinelearningflashcards.
+I leveraged [Maëlle Salmon](https://github.com/maelle)'s recent blog post on the [*Faces of #rstats Twitter*](http://www.masalmon.eu/2017/03/19/facesofr/) heavily as a tutorial for this attempt at extracting data from Twitter to download the #machinelearningflashcards.
 
 Source Repo for this work: [jasdumas/ml-flashcards](https://github.com/jasdumas/ml-flashcards)
+
 ___
 
 ## Directions
 
-1. Load libraries:
+#### 1. Load libraries:
 
 For this project I used `rtweet` to connect the Twitter API to search for relevant tweets by the hash tag, `dplyr` to filter and pipe things, `stringr` to clean up the tweet description, and `magick` to process the images. 
 
-Note: I previously ran into trouble when downloading [*ImageMagick*](https://www.imagemagick.org/script/index.php) and detailed the errors and approaches, if you fall into the same trap I did: [https://gist.github.com/jasdumas/29caf5a9ce0104aa6bf14183ee1e3cd8](https://gist.github.com/jasdumas/29caf5a9ce0104aa6bf14183ee1e3cd8)
+*Note*: I previously ran into trouble when downloading [*ImageMagick*](https://www.imagemagick.org/script/index.php) and detailed the errors and approaches, if you fall into the same trap I did: [How to install imagemagick on MacOS](https://gist.github.com/jasdumas/29caf5a9ce0104aa6bf14183ee1e3cd8)
 
 ```r
 library(rtweet)
@@ -33,7 +36,7 @@ library(kableExtra)
 library(knitr)
 ```
 
-2. Get tweets for the hash tag and only curated tweets for Chris Albon's work: 
+#### 2. Get tweets for the hash tag and only curated tweets for Chris Albon's work: 
 
 ```r
 ml_tweets <- search_tweets("#machinelearningflashcards", n = 500, include_rts = FALSE) %>% filter(screen_name == 'chrisalbon')
@@ -41,7 +44,7 @@ ml_tweets <- search_tweets("#machinelearningflashcards", n = 500, include_rts = 
 
 
 ```r
-mt <- ml_tweets[1:3,]
+mt <- ml_tweets[1:3, 1:5]
 
 kable(mt, format = "html") %>%
   kable_styling(bootstrap_options = "striped", 
@@ -57,154 +60,34 @@ kable(mt, format = "html") %>%
    <th style="text-align:left;"> created_at </th>
    <th style="text-align:left;"> status_id </th>
    <th style="text-align:left;"> text </th>
-   <th style="text-align:right;"> retweet_count </th>
-   <th style="text-align:right;"> favorite_count </th>
-   <th style="text-align:left;"> is_quote_status </th>
-   <th style="text-align:left;"> quote_status_id </th>
-   <th style="text-align:left;"> is_retweet </th>
-   <th style="text-align:left;"> retweet_status_id </th>
-   <th style="text-align:left;"> in_reply_to_status_status_id </th>
-   <th style="text-align:left;"> in_reply_to_status_user_id </th>
-   <th style="text-align:left;"> in_reply_to_status_screen_name </th>
-   <th style="text-align:left;"> lang </th>
-   <th style="text-align:left;"> source </th>
-   <th style="text-align:left;"> media_id </th>
-   <th style="text-align:left;"> media_url </th>
-   <th style="text-align:left;"> media_url_expanded </th>
-   <th style="text-align:left;"> urls </th>
-   <th style="text-align:left;"> urls_display </th>
-   <th style="text-align:left;"> urls_expanded </th>
-   <th style="text-align:left;"> mentions_screen_name </th>
-   <th style="text-align:left;"> mentions_user_id </th>
-   <th style="text-align:left;"> symbols </th>
-   <th style="text-align:left;"> hashtags </th>
-   <th style="text-align:left;"> coordinates </th>
-   <th style="text-align:left;"> place_id </th>
-   <th style="text-align:left;"> place_type </th>
-   <th style="text-align:left;"> place_name </th>
-   <th style="text-align:left;"> place_full_name </th>
-   <th style="text-align:left;"> country_code </th>
-   <th style="text-align:left;"> country </th>
-   <th style="text-align:left;"> bounding_box_coordinates </th>
-   <th style="text-align:left;"> bounding_box_type </th>
   </tr>
  </thead>
 <tbody>
   <tr>
    <td style="text-align:left;"> chrisalbon </td>
    <td style="text-align:left;"> 11518572 </td>
-   <td style="text-align:left;"> 2017-05-08 22:16:26 </td>
-   <td style="text-align:left;"> 861706382877147136 </td>
-   <td style="text-align:left;"> Ridge Regression #machinelearningflashcards https://t.co/yEuyM7TkaT </td>
-   <td style="text-align:right;"> 2 </td>
-   <td style="text-align:right;"> 5 </td>
-   <td style="text-align:left;"> FALSE </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> FALSE </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> en </td>
-   <td style="text-align:left;"> Machine Learning Flashcards </td>
-   <td style="text-align:left;"> 861706380352249857 </td>
-   <td style="text-align:left;"> http://pbs.twimg.com/media/C_VlYy2VYAEctP6.jpg </td>
-   <td style="text-align:left;"> https://twitter.com/chrisalbon/status/861706382877147136/photo/1 </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> machinelearningflashcards </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> 2017-05-09 22:51:43 </td>
+   <td style="text-align:left;"> 862077650772164608 </td>
+   <td style="text-align:left;"> Mean Squared Error #machinelearningflashcards https://t.co/K1iDqLV5DD </td>
   </tr>
   <tr>
    <td style="text-align:left;"> chrisalbon </td>
    <td style="text-align:left;"> 11518572 </td>
-   <td style="text-align:left;"> 2017-05-08 18:36:52 </td>
-   <td style="text-align:left;"> 861651129251135488 </td>
-   <td style="text-align:left;"> Euclidean Norm #machinelearningflashcards https://t.co/gCCCw9ZswA </td>
-   <td style="text-align:right;"> 1 </td>
-   <td style="text-align:right;"> 6 </td>
-   <td style="text-align:left;"> FALSE </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> FALSE </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> en </td>
-   <td style="text-align:left;"> Machine Learning Flashcards </td>
-   <td style="text-align:left;"> 861651127187554304 </td>
-   <td style="text-align:left;"> http://pbs.twimg.com/media/C_UzIoxUQAA2VHH.jpg </td>
-   <td style="text-align:left;"> https://twitter.com/chrisalbon/status/861651129251135488/photo/1 </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> machinelearningflashcards </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> 2017-05-09 18:15:39 </td>
+   <td style="text-align:left;"> 862008178527031296 </td>
+   <td style="text-align:left;"> R-Squared #machinelearningflashcards https://t.co/73gR8tb5PA </td>
   </tr>
   <tr>
    <td style="text-align:left;"> chrisalbon </td>
    <td style="text-align:left;"> 11518572 </td>
-   <td style="text-align:left;"> 2017-05-08 16:35:43 </td>
-   <td style="text-align:left;"> 861620640297631744 </td>
-   <td style="text-align:left;"> What Are Principal Components #machinelearningflashcards https://t.co/bpagWQb7ev </td>
-   <td style="text-align:right;"> 5 </td>
-   <td style="text-align:right;"> 18 </td>
-   <td style="text-align:left;"> FALSE </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> FALSE </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> en </td>
-   <td style="text-align:left;"> Machine Learning Flashcards </td>
-   <td style="text-align:left;"> 861620637982314496 </td>
-   <td style="text-align:left;"> http://pbs.twimg.com/media/C_UXZ7oU0AAHKfS.jpg </td>
-   <td style="text-align:left;"> https://twitter.com/chrisalbon/status/861620640297631744/photo/1 </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> machinelearningflashcards </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> 2017-05-09 16:23:04 </td>
+   <td style="text-align:left;"> 861979845563105280 </td>
+   <td style="text-align:left;"> Motivation For Kernel PCA #machinelearningflashcards https://t.co/AhLB91gHBh </td>
   </tr>
 </tbody>
 </table>
 
-3. Get text within the tweet to add to the file name by removing the hash tag and URL link: 
+#### 3. Get the text within the tweet to add to the file name by removing the hash tag and URL link with some light [regex]()https://en.wikipedia.org/wiki/Regular_expression: 
 
 ```r
 ml_tweets$clean_text <- ml_tweets$text
@@ -213,7 +96,7 @@ ml_tweets$clean_text <- str_replace(ml_tweets$clean_text, " ?(f|ht)(tp)(s?)(://)
 ml_tweets$clean_text <- str_replace(ml_tweets$clean_text, "[[:punct:]]", "") # remove punctuation
 ```
 
-4. Download images of the flashcards from the `media_url` column and append the file name from the cleaned tweet text description and save into a folder:
+#### 4. Write a function to download images of the flashcards from the media_url column and append the file name from the cleaned tweet text description and save into a folder:
 
 ```r
 save_image <- function(df){
@@ -230,13 +113,12 @@ save_image <- function(df){
 }
 ```
 
-5. Apply the function:
+#### 5. Apply the function:
 
 ```r
 save_image(ml_tweets)
 ```
 
-
-At the end of this process you can view all of the #machinelearningflashcards in one place! Thanks to Chris Albon for his work on this, and I'm looking forward to re-running this script to gain additional knowledge from new #machinelearningflashcards that are developed in the future! 
+At the end of this process you can view all of the **#machinelearningflashcards** in one [location](https://github.com/jasdumas/ml-flashcards/tree/master/data)! Thanks to Chris Albon for his work on this, and I'm looking forward to re-running this script to gain additional knowledge from new **#machinelearningflashcards** that are developed in the future! 
 
 
