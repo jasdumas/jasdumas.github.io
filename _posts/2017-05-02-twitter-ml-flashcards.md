@@ -6,7 +6,7 @@ tags: [rstats, r, image-processing, machine-learning, tutorial]
 output: 
   html_document: 
     self_contained: no
-bigimg: /post_data/data/Confusion Matrix .jpg
+bigimg: /post_data/data/ConfusionMatrix.jpg
 ---
 
 
