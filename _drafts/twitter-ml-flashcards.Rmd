@@ -6,7 +6,7 @@ tags: [rstats, r, image-processing, machine-learning, tutorial]
 output: 
   html_document: 
     self_contained: no
-bigimg: "https://raw.githubusercontent.com/jasdumas/ml-flashcards/master/data/Confusion%20Matrix%20.jpg"
+bigimg: /post_data/data/Confusion Matrix .jpg
 ---
 
 ```{r setup, include=FALSE}
@@ -55,7 +55,7 @@ kable(mt, format = "html") %>%
                 full_width = F) 
 ```
 
-#### 3. Get the text within the tweet to add to the file name by removing the hash tag and URL link with some light [regex]()https://en.wikipedia.org/wiki/Regular_expression: 
+#### 3. Get the text within the tweet to add to the file name by removing the hash tag and URL link with some light [regex](https://en.wikipedia.org/wiki/Regular_expression): 
 ```{r}
 ml_tweets$clean_text <- ml_tweets$text
 ml_tweets$clean_text <- str_replace(ml_tweets$clean_text,"#[a-zA-Z0-9]{1,}", "") # remove the hashtag
@@ -64,7 +64,8 @@ ml_tweets$clean_text <- str_replace(ml_tweets$clean_text, "[[:punct:]]", "") # r
 ```
 
 #### 4. Write a function to download images of the flashcards from the media_url column and append the file name from the cleaned tweet text description and save into a folder:
-```{r}
+
+```{r, eval=FALSE, include=TRUE}
 save_image <- function(df){
   for (i in c(1:nrow(df))){
     image <- try(image_read(df$media_url[i]), silent = F)
@@ -72,6 +73,22 @@ save_image <- function(df){
     image %>%
       image_scale("1200x700") %>%
       image_write(paste0("data/", ml_tweets$clean_text[i],".jpg"))
+  }
+ 
+  }
+   cat("Function complete...\n")
+}
+```
+
+```{r, include=FALSE}
+# post publishing version of function
+save_image <- function(df){
+  for (i in c(1:nrow(df))){
+    image <- try(image_read(df$media_url[i]), silent = F)
+  if(class(image)[1] != "try-error"){
+    image %>%
+      image_scale("1200x700") %>%
+      image_write(paste0("../post_data/data/", ml_tweets$clean_text[i],".jpg"))
   }
  
   }

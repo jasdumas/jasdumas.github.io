@@ -6,7 +6,7 @@ tags: [rstats, r, image-processing, machine-learning, tutorial]
 output: 
   html_document: 
     self_contained: no
-bigimg: "https://raw.githubusercontent.com/jasdumas/ml-flashcards/master/data/Confusion%20Matrix%20.jpg"
+bigimg: /post_data/data/Confusion Matrix .jpg
 ---
 
 
@@ -87,7 +87,7 @@ kable(mt, format = "html") %>%
 </tbody>
 </table>
 
-#### 3. Get the text within the tweet to add to the file name by removing the hash tag and URL link with some light [regex]()https://en.wikipedia.org/wiki/Regular_expression: 
+#### 3. Get the text within the tweet to add to the file name by removing the hash tag and URL link with some light [regex](https://en.wikipedia.org/wiki/Regular_expression): 
 
 ```r
 ml_tweets$clean_text <- ml_tweets$text
@@ -97,6 +97,7 @@ ml_tweets$clean_text <- str_replace(ml_tweets$clean_text, "[[:punct:]]", "") # r
 ```
 
 #### 4. Write a function to download images of the flashcards from the media_url column and append the file name from the cleaned tweet text description and save into a folder:
+
 
 ```r
 save_image <- function(df){
@@ -113,10 +114,16 @@ save_image <- function(df){
 }
 ```
 
+
+
 #### 5. Apply the function:
 
 ```r
 save_image(ml_tweets)
+```
+
+```
+## Function complete...
 ```
 
 At the end of this process you can view all of the **#machinelearningflashcards** in one [location](https://github.com/jasdumas/ml-flashcards/tree/master/data)! Thanks to Chris Albon for his work on this, and I'm looking forward to re-running this script to gain additional knowledge from new **#machinelearningflashcards** that are developed in the future! 
