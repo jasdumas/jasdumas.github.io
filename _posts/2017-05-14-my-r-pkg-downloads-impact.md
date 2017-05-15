@@ -85,7 +85,7 @@ c %>% slice(73:nrow(c)) %>% # shinyLP was not available until 9/13/17
         scale_x_date(date_breaks = "2 month", date_labels =  "%b %Y")
 ```
 
-![plot of chunk tb1](figure/tb1-1.png)
+![plot of chunk tb1](https://raw.githubusercontent.com/jasdumas/jasdumas.github.io/master/post_data/tb1-1.png)
 
 
 
@@ -109,7 +109,7 @@ c %>% slice(73:nrow(c)) %>% # shinyLP was not available until 9/13/17
         scale_x_date(date_breaks = "2 month", date_labels =  "%b %Y")
 ```
 
-![plot of chunk sl1](figure/sl1-1.png)
+![plot of chunk sl1](https://raw.githubusercontent.com/jasdumas/jasdumas.github.io/master/post_data/sl1-1.png)
 
 There are some interesting trends in downloads following my invited talk at Coastal Institute (URI), which kicked of 2 additional talks within a nearly 5 week span and a spike in `shinyLP` downloads the day after the second release to CRAN 🎉. 
 
@@ -140,7 +140,7 @@ impact <- CausalImpact(df_ttbbeer, pre_period, post_period)
 plot(impact)
 ```
 
-![plot of chunk tb2](figure/tb2-1.png)
+![plot of chunk tb2](https://raw.githubusercontent.com/jasdumas/jasdumas.github.io/master/post_data/tb2-1.png)
 
 
 ```r
@@ -178,7 +178,7 @@ impact2 <- CausalImpact(df_shinylp, pre_period2, post_period2)
 plot(impact2)
 ```
 
-![plot of chunk sl2](figure/sl2-1.png)
+![plot of chunk sl2](https://raw.githubusercontent.com/jasdumas/jasdumas.github.io/master/post_data/sl2-1.png)
 
 
 ```r
@@ -296,28 +296,28 @@ tail(forecast_shinylp[c('ds', 'yhat', 'yhat_lower', 'yhat_upper')])
 plot(m_ttbbeer_fit, forecast_ttbbeer)
 ```
 
-![plot of chunk tb3](figure/tb3-1.png)
+![plot of chunk tb3](https://raw.githubusercontent.com/jasdumas/jasdumas.github.io/master/post_data/tb3-1.png)
 
 
 ```r
 plot(m_shinylp_fit, forecast_shinylp)
 ```
 
-![plot of chunk sl3](figure/sl3-1.png)
+![plot of chunk sl3](https://raw.githubusercontent.com/jasdumas/jasdumas.github.io/master/post_data/sl3-1.png)
 
 
 ```r
 prophet_plot_components(m_ttbbeer_fit, forecast_ttbbeer)
 ```
 
-![plot of chunk tb4](figure/tb4-1.png)
+![plot of chunk tb4](https://raw.githubusercontent.com/jasdumas/jasdumas.github.io/master/post_data/tb4-1.png)
 
 
 ```r
 prophet_plot_components(m_shinylp_fit, forecast_shinylp)
 ```
 
-![plot of chunk sl4](figure/sl4-1.png)
+![plot of chunk sl4](https://raw.githubusercontent.com/jasdumas/jasdumas.github.io/master/post_data/sl4-1.png)
 
 ---
 <a name="note"></a>Last year, after attending the annual R conference in Stanford, CA I began to aggregating all of my loose functions and code into R packages to submit to [CRAN](https://cran.r-project.org/). I've spent the last year developing two packages: one for beer statistics, called [ttbbeer](https://cran.r-project.org/package=ttbbeer) and another for creating landing pages for shiny applications, called [shinyLP](https://cran.r-project.org/package=shinyLP) thereby transitioning from an R user to an R package developer. [*shinyGEO*](http://jasdumas.github.io/shinyGEO/) is an entirely separate adventure that has been ongoing since Summer 2014, and which will hopefully conclude soon as a package submitted to [rOpenSci](https://ropensci.org/) for review. 
