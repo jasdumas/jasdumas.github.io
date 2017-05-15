@@ -1,7 +1,8 @@
 ---
-title: "Measuring Impact from Giving Talks on R Package Downloads"
+title: "Measuring Impact from Giving Talks on My R Package Downloads"
+subtitle: "ggplot2, CausalImpact, & prophet oh my!"
 layout: post
-tags: [r, forecasting, talks, communication, conferences]
+tags: [rstats, r, forecasting, talks, communication, conferences]
 output: 
   html_document: 
   self_contained: no
@@ -12,7 +13,7 @@ social-share: true
 
 It has been a longstanding goal of mine to gain confidence in public speaking, give a technical talk at a conference and [develop R packages](#note). I've noticed a trend (and a quality I'd like to inherit) amongst other *productive* R programmers which was a greater ability to communicate results through sharing methodologies and best practices, so I've been signing up to speak on projects, packages and development paradigms in the R and data science community. 
 
-After accomplishing one of my goals, the first two seemed to be achievable in tandem as I sought out out opportunities to share my work with others while learning how to communicate technical topics in a receptive way. I have not always been a confident public speaker and had little exposure in presenting from poster sessions, so in 2017 I signed up (and was [asked](https://ci.uri.edu/2017/04/19/jasmine-dumas-kicked-off-careers-r-speaker-series-adventures-crafting-data-science-career/)!) to give [talks](https://jasdumas.github.io/speaking/) at three different venues:
+After accomplishing one of my goals, the first two seemed to be achievable in tandem as I sought out opportunities to share my work with others while learning how to communicate technical topics in a receptive way. I have not always been a confident public speaker and had little exposure in presenting from poster sessions, so in 2017 I signed up (and was [asked](https://ci.uri.edu/2017/04/19/jasmine-dumas-kicked-off-careers-r-speaker-series-adventures-crafting-data-science-career/)!) to give [talks](https://jasdumas.github.io/speaking/) at three different venues:
 
 1. RhodyRstats user group and Coastal Institute at the University of Rhode Island invited me to kickoff their [*Careers in R*](https://ci.uri.edu/2017/02/15/adventures-in-crafting-a-data-science-career/) seminar about my transition from Biomedical Engineering to [Data Science with R](https://jasdumas.github.io/talks/rhodyrstats-R-user-group/rhodyrstats-r-user-group-slides.html).
 
