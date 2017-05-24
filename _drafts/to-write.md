@@ -15,6 +15,6 @@
 11. Are you more likely to win the lottery if purchasing an out of state ticket?
 12. :white_check_mark: [K-Nearest Neighbor post from CSC478 Final project](https://jasdumas.github.io/2016-11-26-knn-loans/)
 13. :white_check_mark: [Choosing a Statistical Test as explained with Beer Examples](https://jasdumas.github.io/2017-01-04-choosing-a-stat-test-with-beer/)
-14. Measuring impact of speaking engagements on CRAN package downloads (maybe use CausalImpact package by Google or prophet package by facebook)
+14. [Measuring impact of speaking engagements on CRAN package downloads (maybe use CausalImpact package by Google or prophet package by facebook)](https://jasdumas.github.io/2017-05-14-my-r-pkg-downloads-impact/)
 15. Game of thrones analysis
 16. House of cards analysis
