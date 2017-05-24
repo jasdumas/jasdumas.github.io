@@ -18,3 +18,4 @@
 14. [Measuring impact of speaking engagements on CRAN package downloads (maybe use CausalImpact package by Google or prophet package by facebook)](https://jasdumas.github.io/2017-05-14-my-r-pkg-downloads-impact/)
 15. Game of thrones analysis
 16. House of cards analysis
+17. rOpenSci #unconf17 (what I learned post)
