@@ -12,7 +12,6 @@ bigimg:
   - "/post_data/runconf17-3.jpg": "Fizz Buzz"
   - "/post_data/runconf17-4.jpg": "R Themed Drink List"
   - "/post_data/runconf17-5.jpg": "Voting for projects"
-  - "/post_data/runconf17-6.jpg": "Toki!"
   - "/post_data/runconf17-7.jpg": "Chelsea, Reka & I taking a break in the park!"
   - "/post_data/runconf17-10.jpg": "Telescope with rocks :)"
   - "/post_data/runconf17-11.jpg": "Berlinerish Boysenberry"
@@ -26,9 +25,9 @@ social-share: true
 
 ### Networking & Connecting
 
-This was my first time at the annual rOpenSci Unconference event held in Los Angeles, CA and incidentally my first time in the city. I was excited at the onset, from getting the invite email, to closely watching the project proposals pitched during the lead up to the event. I had felt slightly anxious to meet so many useRs that I had only really engaged with on Twitter, but a far cry from the how nervous I felt when attending the international useR conference in Stanford, CA last Summer. My nerves were calmed after the interesting icebreaker on the first day where I got to group up with the attendees based on animal preference ([#rdogladies](https://twitter.com/search?q=%23rdogladies) & [#Rpuppies](https://twitter.com/jasdumas/status/644555140507258880) obviously!), learning styles, and thoughts on my personal role within R community (**tl;dr: I'm [one of many folks](https://twitter.com/kopshtik/status/867786243911819264) suffering from imposter syndrome regardless of my participation as Co-organizer of R-Ladies CT, and Core Member & Survey Lead of [Forwards](http://forwards.github.io/)**). 
+This was my first time at the annual [rOpenSci Unconference](http://unconf17.ropensci.org/) event held in Los Angeles, CA and incidentally my first time in the city. I was excited at the onset, from getting the invite email, to closely watching the project proposals pitched during the lead up to the event. I had felt slightly anxious to meet so many useRs that I had only really engaged with on Twitter, but a far cry from the how nervous I felt when attending the international useR conference in Stanford, CA last Summer. My nerves were calmed after the interesting icebreaker on the first day where I got to group up with the attendees based on animal preference ([#rdogladies](https://twitter.com/search?q=%23rdogladies) & [#Rpuppies](https://twitter.com/jasdumas/status/644555140507258880) obviously!), learning styles, and thoughts on my personal role within R community (**tl;dr: I'm [one of many folks](https://twitter.com/kopshtik/status/867786243911819264) suffering from imposter syndrome regardless of my participation as Co-organizer of R-Ladies CT, and Core Member & Survey Lead of [Forwards](http://forwards.github.io/)**). 
 
-In the beginning, I did not feel as productive and was really bogged down with the notion of other groups bountiful commits and producing a full-fledged R package in less than 20 hours. I got some sage advice form the community manager, Stephanie Butland about taking mental breaks and developing a smaller my project scope. I also appreciated the breaks to de-stress from the social interaction during dinner on the first night which enabled me to achieve some progress on my project in a secluded setting that I was familiar with 🎧.
+In the beginning, I did not feel as productive and was really bogged down with the notion of other groups bountiful commits and producing a full-fledged R package in less than 20 hours. I got some sage advice from the community manager, [Stefanie Butland](https://twitter.com/stefaniebutland) about taking mental breaks and developing a smaller my project scope. I also appreciated the breaks to de-stress from the social interaction during dinner on the first night which enabled me to achieve some progress on my project in a secluded setting that I was familiar with 🎧.
 
 Overall, I had a fantastic time getting out of my comfort zone and meeting new people and felt really connected by the end of the event, which culminated in **rounds of hugs, handshakes and beers!** 🍺.
 
@@ -55,4 +54,10 @@ I worked with two **awesome** remote participants [Ben Marwick](https://twitter.
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 **More about the development process and function usage can be read in this in-progress** [**Blog** post](https://ropenscilabs.github.io/gramr/BLOG.Rmd)
+
+
+----
+
+
+**The other projects can be found here**: [https://ropenscilabs.github.io/runconf17-projects/](https://ropenscilabs.github.io/runconf17-projects/)
 
