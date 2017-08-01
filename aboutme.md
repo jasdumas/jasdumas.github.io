@@ -14,7 +14,7 @@ subtitle: ... and all that jazz!
 
 :floppy_disk: I like developing open source software tools to help assist others complete their data analysis work! I like programming in R & Python and interested in learning about cloud computing! 
 
-:pencil: I enjoy technical writing and have co-authored two manuscripts, in [*Connecticut Medicine*](https://www.ncbi.nlm.nih.gov/pubmed/24156174) and [*Bioinformatics](https://www.ncbi.nlm.nih.gov/pubmed/27503226). [My Erdos number is 6](https://www.csauthors.net/distance/paul-erdos/jasmine-dumas).
+:pencil: I enjoy technical writing and have co-authored two manuscripts, in [*Connecticut Medicine*](https://www.ncbi.nlm.nih.gov/pubmed/24156174) and [*Bioinformatics*](https://www.ncbi.nlm.nih.gov/pubmed/27503226). [My Erdos number is 6](https://www.csauthors.net/distance/paul-erdos/jasmine-dumas).
 
 :earth_americas: I grew up in the *Lower Hudson Valley, NY* and stayed around *Connecticut* after undergrad. I'm *sometimes* available for *remote consulting* opportunities working on [**diverse** teams](http://www.forbes.com/sites/bonniemarcus/2015/08/12/the-lack-of-diversity-in-tech-is-a-cultural-issue/#7170290c3577) to solve interesting challenges with data. Feel free to get in touch with me!
 
