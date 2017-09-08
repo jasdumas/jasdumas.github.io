@@ -15,10 +15,11 @@ I’m a Data Scientist & R Programmer with industry experience in Financial Tech
 I'm searching for a remote-friendly company that values creativity, diversity and openness as a **lead/Sr. Data Scientist** developing data products & predictive models with R & Python while mentoring Jr. team members.
 
 ### Technical Skills 
-- Computational programming & machine Learning with R and Python
+- Computational programming & machine learning with R and Python
+- Statistical Analysis and inference
 - Data processing & querying with SQL
 - Web application development with Shiny and  Bootstrap
-- Collaborative computing with GitHub, Git, & command line programming
+- Collaborative computing with GitHub and Git
 
 ### Featured Projects  
 
