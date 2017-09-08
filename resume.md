@@ -63,14 +63,14 @@ I'm searching for a remote-friendly company that values creativity, diversity an
 
 ### Talks
 
-* [Adventures in Crafting a Data Science Career](https://jasdumas.github.io/talks/rhodyrstats-R-user-group/rhodyrstats-r-user-group-slides.html) | University of Rhode Island (URI) Coastal Institute and RhodyRStats “Careers in R” speaker series
-* [Extending Shiny by Enhancing User Experience with shinyLP](https://jasdumas.github.io/talks/PDX-R-user-group/pdx-r-user-group-slides.html) | Portland, OR R User Group
-* [Open Government Data & Beer Analytics](https://jasdumas.github.io/talks/odsc-boston/odsc-open-gov-beer.html) | Open Data Science Conference 2017 in Boston, MA
+* [Adventures in Crafting a Data Science Career](https://jasdumas.github.io/talks/rhodyrstats-R-user-group/rhodyrstats-r-user-group-slides.html) - University of Rhode Island (URI) Coastal Institute and RhodyRStats “Careers in R” speaker series
+* [Extending Shiny by Enhancing User Experience with shinyLP](https://jasdumas.github.io/talks/PDX-R-user-group/pdx-r-user-group-slides.html) - Portland, OR R User Group
+* [Open Government Data & Beer Analytics](https://jasdumas.github.io/talks/odsc-boston/odsc-open-gov-beer.html) - Open Data Science Conference 2017 in Boston, MA
 
 ### Publications       
 
-* **Dumas J**, Gargano MA, Dancik GM. _shinyGEO: a web-based application for analyzing Gene Expression Omnibus datasets_. Bioinformatics. 2016 Aug 8. | [Paper link](http://bioinformatics.oxfordjournals.org/content/early/2016/08/20/bioinformatics.btw519)
+* **Dumas J**, Gargano MA, Dancik GM. _shinyGEO: a web-based application for analyzing Gene Expression Omnibus datasets_. Bioinformatics. 2016 Aug 8. - [Paper link](http://bioinformatics.oxfordjournals.org/content/early/2016/08/20/bioinformatics.btw519)
 
-* **Dumas J**, et.al., _Feasibility of an electronic stethoscope system for monitoring neonatal bowel sounds_. Connecticut Medicine, Volume 77, Number 8, pp. 467-471, September 2013. | [Paper link](bit.ly/JMD-connmed)   
+* **Dumas J**, et.al., _Feasibility of an electronic stethoscope system for monitoring neonatal bowel sounds_. Connecticut Medicine, Volume 77, Number 8, pp. 467-471, September 2013. - [Paper link](bit.ly/JMD-connmed)   
 
         
