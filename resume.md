@@ -6,7 +6,7 @@ subtitle: Data Scientist
 
 -------------
 
-:e-mail: : jasmine.dumas[at]gmail.com | :pencil: : [jasdumas.github.io](https://jasdumas.github.io/)| :scroll: : [PDF resume version](http://jasdumas.github.io/jasmine_dumas_resume.pdf)
+:e-mail: : jasmine.dumas[at]gmail.com | :pencil: : [jasdumas.github.io](https://jasdumas.github.io/) | :scroll: : [PDF resume version](http://jasdumas.github.io/jasmine_dumas_resume.pdf)
 
 ### About Me
 
