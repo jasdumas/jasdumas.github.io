@@ -48,10 +48,13 @@ I'm searching for a remote-friendly company that values creativity, diversity an
 ### Education 
 
 * **Graduate Analytics Certificate Candidate** at [DePaul University](https://www.cdm.depaul.edu/academics/Pages/MS-in-Predictive-Analytics.aspx), (2015 - expected Fall 2017)
-   * Coursework: Intro to Programming, Data Analytics & Regression, Database Processing for Large-scale Analytics, Advanced Data Analysis, Knowledge Discovery Technologies, Programming Machine Learning Applications. 
+   * _Coursework_: Intro to Programming, Data Analytics & Regression, Database Processing for Large-scale Analytics, Advanced Data Analysis, Knowledge Discovery Technologies, Programming Machine Learning Applications. 
+   
+* **Certificate in Medical Product Development** at [University of California, Irvine Extension](https://ce.uci.edu/areas/life_sciences/medical_products/), (2013)
+    * _Coursework_: Medical Product Life-Cycle Management, Regulatory Requirements for Medical Devices, Medical Product Quality Systems, Fundamentals of Clinical Trials, Medical Device Design and Evaluation.
 
 * **Bachelor of Science in Engineering** in Biomedical Engineering at [University of Hartford](http://www.hartford.edu/ceta/undergraduate/engineering/BM/), (2008 - 2012)
-   * Coursework: Engineering Computer Applications, Calculus (1-2, Multivariable), Differential Equations, Research, Engineering Design, Statics, Dynamics, Mechacnics of Materials, Biomaterials 
+   * _Coursework_: Engineering Computer Applications, Calculus (1-2, Multivariable), Differential Equations, Research, Engineering Design, Statics, Dynamics, Mechacnics of Materials, Biomaterials 
 
 ### Open Source Contributions
 
