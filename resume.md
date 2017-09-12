@@ -56,12 +56,12 @@ I'm searching for a remote-friendly company that values creativity, diversity an
 * **Bachelor of Science in Engineering** in Biomedical Engineering at [University of Hartford](http://www.hartford.edu/ceta/undergraduate/engineering/BM/), (2008 - 2012)
    * _Coursework_: Engineering Computer Applications, Calculus (1-2, Multivariable), Differential Equations, Research, Engineering Design, Statics, Dynamics, Mechacnics of Materials, Biomaterials 
 
-### Open Source Contributions
+### Open Source Software
 
 - [**`gramr`**](https://github.com/ropenscilabs/gramr): CLI wrapper for grammar checks in RMarkdown documents 
 - [**`ttbbeer`**](https://CRAN.R-project.org/package=ttbbeer): Data package of beer statistics from U.S. Department of the Treasury (TTB)
-- [**`shinyLP`**](https://CRAN.R-project.org/package=shinyLP): Bootstrap Components to make landing home pages for shiny web app
-- [**`shinyGEO`**](http://jasdumas.github.io/shinyGEO/): Shiny app for gene expression analysis
+- [**`shinyLP`**](https://CRAN.R-project.org/package=shinyLP): Bootstrap Components to make landing home pages for shiny web apps
+- [**`shinyGEO`**](http://jasdumas.github.io/shinyGEO/): Shiny app for gene expression differential & survival analysis
 
 *More R packages and Shiny apps available at: [https://github.com/jasdumas](https://github.com/jasdumas)*
 
