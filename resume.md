@@ -10,9 +10,9 @@ subtitle: Data Scientist
 
 ### About Me
 
-I’m a Data Scientist & R Programmer with industry experience in Financial Technology, Insurance, Medical Devices, R&D, and Aerospace manufacturing. I'm an active member of the R programming community and have developed **4** open source R packages and participated in **Google Summer of Code, NASA Datanauts, R-Ladies, and Forwards**. 
+I’m a Data Scientist & Engineer with industry experience in financial technology, auto insurance, medical devices, R&D, and aerospace manufacturing. I'm an active member of the R programming community and have developed **4** open source R packages and participated in **Google Summer of Code, NASA Datanauts, R-Ladies, and Forwards**. 
 
-I'm searching for a remote-friendly company that values creativity, diversity and openness as a **lead/Sr. Data Scientist** developing data products & predictive models with R & Python while mentoring Jr. team members.
+I'm searching for a remote-friendly company that values creativity, diversity and openness as a **lead/Sr. Data Scientist** developing data products & predictive models with R & Python while mentoring junior team members.
 
 ### Technical Skills 
 - Computational programming & machine learning with R and Python
