@@ -75,6 +75,6 @@ I'm searching for a remote-friendly company that values creativity, diversity an
 
 * **Dumas J**, Gargano MA, Dancik GM. _shinyGEO: a web-based application for analyzing Gene Expression Omnibus datasets_. Bioinformatics. 2016 Aug 8. - [Paper link](http://bioinformatics.oxfordjournals.org/content/early/2016/08/20/bioinformatics.btw519)
 
-* **Dumas J**, et.al., _Feasibility of an electronic stethoscope system for monitoring neonatal bowel sounds_. Connecticut Medicine, Volume 77, Number 8, pp. 467-471, September 2013. - [Paper link](http://connmed.csms.org/i/157293-sept-2013/21)   
+* **Dumas J**, et.al., _Feasibility of an electronic stethoscope system for monitoring neonatal bowel sounds_. Connecticut Medicine, Volume 77, Number 8, pp. 467-471, September 2013. - [Paper link](http://connmed.csms.org/i/157293-sept-2013/20)   
 
         
