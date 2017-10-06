@@ -21,12 +21,12 @@ For this project analysis I used the [`googlesheets`](https://github.com/jennybc
 
 Here is the resulting visualization:
 
-<iframe width="700" height="600" frameborder="0" scrolling="no" src="https://plot.ly/~jasdumas/54.embed"></iframe>
+<iframe width="900" height="800" frameborder="0" scrolling="no" src="//plot.ly/~jasdumas/54.embed"></iframe>
 
 
 From the graph above, it is pretty clear when I switched from being a part-time intern to a full-time data scientist in early April. Also its interesting to see when I started to work a compressed work week in early June. I unfortunately sometimes walk to lunch events that inadvertently exit my location services out of the original perimeter and also when traveling through Hartford to visit family in New York.
 
-In conclusion, IFTTT was a bit irregular and not completely accurate for logging the location coordinates but overall this is a good start to generating more data and providing insight to about my working hours!
+In conclusion, IFTTT was not completely accurate for logging the location coordinates and therefore the check-in, but overall this is a good start to generating more data in an effortless way and providing insight to about my working hours!
 
 ```r
 ##############################
@@ -90,10 +90,15 @@ merge_time_sheet$time_diff <- abs(merge_time_sheet$time_diff)
 # change seconds into hours (3600 in an hour)
 merge_time_sheet$time_diff <- merge_time_sheet$time_diff / 3600
 
+# change attributes for plotly tooltip
+attributes(merge_time_sheet$time_diff)$units <- "hours"
+
 # so I travel through hartford alot on the highway or walk around
 # hartford for lunch, so I want to remove small time diff observations
-merge_time_sheet = merge_time_sheet[-c(which(merge_time_sheet$time_diff < 3.51666666666667)), ]
-# there are some duplicates but I will leave those for now
+merge_time_sheet = merge_time_sheet[-c(which(merge_time_sheet$time_diff < 1)), ]
+
+# there are some duplicates so i will remove those by distinct date
+merge_time_sheet <- merge_time_sheet %>% group_by(date) %>% distinct(date, .keep_all = TRUE)
 
 # round time diff
 merge_time_sheet$time_diff <- round(merge_time_sheet$time_diff, 2)
@@ -106,16 +111,21 @@ mean(merge_time_sheet$time_diff) # mean of 5.1 hours (even though it says secs)
 ##########
 # data viz
 ##########
-library(ggplot2)
-work_hrs <- ggplot(merge_time_sheet, aes(date, c(time_diff))) +
-                  geom_line(color = "dodgerblue") +
-                  xlab("") +
-                  ylab("Working Hours")
+library(ggplot2) # devtools::install_github('hadley/ggplot2')
+library(dumas)
+work_hrs <- 
+  merge_time_sheet %>% dplyr::filter(date <= as.Date("2016-10-17"), time_diff >= mean(time_diff)) %>% 
+  ggplot(., aes(date, time_diff)) +
+  geom_col(color = "dodgerblue") +
+  theme_minimal() +
+  theme_jasmine(title = "Extrapolated working hours \nLocation check-ins to/from Hartford, CT", 
+                subtitle = "", x = "hours", y = "Working Hours")
 work_hrs
 library(plotly)
-ggplotly(work_hrs)
-## provided my username and API key before this step
-plotly_POST(work_hrs, "Time Series Analysis of Work Hours")
+ggplotly(work_hrs) # preview the interactive one
 
+## provided my username and API key before this step
+s <- signup('jasdumas', 'jasmine.dumas@gmail.com')
+api_create(work_hrs, "Time Series Analysis of Work Hours", fileopt = "overwrite", sharing = "public")
 
 ```

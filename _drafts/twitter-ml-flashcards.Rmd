@@ -43,8 +43,23 @@ library(knitr)
 ```
 
 #### 2. Get tweets for the hash tag and only curated tweets for Chris Albon's work: 
+
+```{r message=FALSE, warning=FALSE, include=FALSE, paged.print=FALSE}
+## name assigned to created app
+appname <- "ml-flashcards"
+## api key (example below is not a real key)
+key <- Sys.getenv("RTWEET_KEY")
+## api secret (example below is not a real key)
+secret <- Sys.getenv("RTWEET_SECRET")
+twitter_token <- create_token(
+  app = appname,
+  consumer_key = key,
+  consumer_secret = secret)
+```
+
+
 ```{r}
-ml_tweets <- search_tweets("#machinelearningflashcards", n = 500, include_rts = FALSE) %>% filter(screen_name == 'chrisalbon')
+ml_tweets <- search_tweets("#machinelearningflashcards", n = 500, include_rts = FALSE, token = twitter_token) %>% filter(screen_name == 'chrisalbon')
 ```
 
 ```{r}
