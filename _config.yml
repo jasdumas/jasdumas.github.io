@@ -27,7 +27,7 @@ avatar: /img/new_avatar.png
 
 # List of links in the navigation bar
 navbar-links:
-  Home: ""
+  Blog: ""
   Projects: projects
   Resources:
     - Data Science Links: ds-resources
@@ -99,8 +99,9 @@ google_analytics: UA-74123437-1
 timezone: "America/New_York"
 #markdown: kramdown
 highlighter: rouge
-permalink: /:year-:month-:day-:title/
-paginate: 5
+permalink: /blog/:year-:month-:day-:title/
+paginate: 10
+paginate_path: "/page:num/"
 gems:
   - jemoji
   - jekyll-sitemap
