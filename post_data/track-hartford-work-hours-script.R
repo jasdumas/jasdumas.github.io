@@ -82,13 +82,14 @@ mean(merge_time_sheet$time_diff) # mean of 5.1 hours (even though it says secs)
 ##########
 library(ggplot2) # devtools::install_github('hadley/ggplot2')
 library(dumas)
+library(wesanderson)
 work_hrs <- 
   merge_time_sheet %>% dplyr::filter(date <= as.Date("2016-10-17"), time_diff >= mean(time_diff)) %>% 
   ggplot(., aes(date, time_diff)) +
-  geom_col(color = "dodgerblue") +
+  geom_col(fill = wes_palette("FantasticFox1", 1), position = "dodge") +
   theme_minimal() +
   theme_jasmine(title = "Extrapolated working hours \nLocation check-ins to/from Hartford, CT", 
-                subtitle = "", x = "hours", y = "Working Hours")
+                subtitle = "", x = "Date", y = "Working Hours")
 work_hrs
 library(plotly)
 ggplotly(work_hrs) # preview the interactive one
