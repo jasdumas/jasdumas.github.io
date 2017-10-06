@@ -65,7 +65,7 @@ bigimg:
 <!-- <h2> <div style="font-family: 'Orbitron', sans-serif;">p-value ≤ 0.05 or it isnt significant</div> </h2> -->
 
 
-<a href="https://jasdumas.github.io/resume/" class="btn btn-outline-secondary btn-lg" role="button">Resume</a>
+<a href="https://jasdumas.github.io/resume/" class=".btn-primary">Resume</a>
 
 <h2>Blog Posts: </h2>
 
@@ -89,7 +89,7 @@ bigimg:
     </p>
 
     <div class="post-entry">
-      {{ post.content | truncatewords: 50 | strip_html | xml_escape}}
+      {{ post.content | truncatewords: 40 | strip_html | xml_escape}}
 	  <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">Read More</a>
     </div>
 
