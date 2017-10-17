@@ -6,9 +6,7 @@ tags: [data-science, career, professional]
 social-share: true
 ---
 
-It has been one year since joining the data science team at [Simple](https://www.simple.com/). Although there have been changes in my role, my team and [the company](http://www.oregonlive.com/silicon-forest/index.ssf/2017/08/another_round_of_layoffs_at_po.html), overall its been a life changing experience filled with opportunity.
-
-I work remotely from my home and sometimes a local coffee shop, which has been extremely positive for my work/life balance. (I'm currently in Portland this week for the quarterly Thing Week with the rest of the remote employees)
+It has been one year since joining the data science team at [Simple](https://www.simple.com/). Although there have been changes in my role, my team and [the company](http://www.oregonlive.com/silicon-forest/index.ssf/2017/08/another_round_of_layoffs_at_po.html), overall its been a life changing experience filled with opportunity. I work remotely from my home and sometimes a local coffee shop, which has been extremely positive for my work/life balance. (I'm currently in Portland this week for the quarterly Thing Week with the rest of the remote employees)
 
 Data Science is an evolving field and while I'm still satisfied making the leap from Engineering, I'd like to share some things about my experience over the past year for anyone interesting in working in applied data science or for tech companies.
 
