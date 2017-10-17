@@ -10,7 +10,7 @@ layout: page
 
 ## Tips & Methodology
 
-+ As a Data Scientist's we have the opportunity to use [open-source](https://opensource.org/) software to model and communicate ideas across the business. Open-source software is surpassing commercial software due to cost, restriction, feature access and is being adopted by hobbyist for weekend data projects to being used for FDA submissions by researchers. 
++ As Data Scientist's we have the opportunity to use [open-source](https://opensource.org/) software to model and communicate ideas across the business. Open-source software is surpassing commercial software due to cost, restriction, feature access and is being adopted by hobbyist for weekend data projects to being used for FDA submissions by researchers. 
 + The open source community and its developers are fearlessly passionate about the tools they create and that leads emerging new features, such as new functions for loss functions in xgboost - so it is advantageous to know how to properly interact with the developers of the tools we use (and love) to do our work, request new features, report bugs and submit technical questions.
 
 ### Google
