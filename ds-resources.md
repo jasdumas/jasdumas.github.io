@@ -110,6 +110,29 @@ SQL or Structured Query Language is a special-purpose programming language desig
 * [Try Git, interactive browser lessons](https://try.github.io/levels/1/challenges/1) 
 * [Literate Programming](http://www.literateprogramming.com/knuthweb.pdf)
 
+## Machine Learning Resources 🤖 📈📉
+
+### Books & Papers 📚
+
+- [The Mythos of Model Interpretability](https://arxiv.org/pdf/1606.03490.pdf)
+- [Towards A Rigorous Science of Interpretable Machine Learning](https://arxiv.org/pdf/1702.08608.pdf)
+- [“Why Should I Trust You?”: Explaining the Predictions of Any Classifier](https://arxiv.org/pdf/1602.04938.pdf)
+- [Applied Predictive Modeling](http://appliedpredictivemodeling.com/)
+
+
+### Courses/Tutorials 🎒 
+
+- [Machine Learning Algorithmic Deep Dive](https://github.com/ledell/useR-machine-learning-tutorial)
+- [Machine Learning in R for beginners (Tutorial)](https://www.datacamp.com/community/tutorials/machine-learning-in-r#gs.pxrR3U8)
+- [keras: Deep Learning in R (Tutorial)](https://www.datacamp.com/community/tutorials/keras-r-deep-learning#gs.saq8F_0)
+- [TensorFlow Tutorial For Beginners (Tutorial)](https://www.datacamp.com/community/tutorials/tensorflow-tutorial#gs.x9wD6_E)
+
+###  Software Tools 🗜️
+
+- [scikit-learn: Machine Learning in Python](http://scikit-learn.org/stable/)
+- [mlr: Machine Learning in R](https://github.com/mlr-org/mlr)
+- [H2o: Fast Scalable Machine Learning API for R & Python](https://www.h2o.ai/) // [H2o University Lessons](http://university.h2o.ai/data-science-101/lesson1.html)
+- [Extreme Gradient Boosting: optimized distributed gradient boosting library for Python, R, Java, Scala, C++](https://github.com/dmlc/xgboost)
 
 
 
