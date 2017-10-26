@@ -6,6 +6,7 @@ tags: [r, rstats, shiny, food, tidyverse]
 output: 
   html_document: 
   self_contained: no
+big-img: /post_data/about-us_our-history_960x542.jpg
 share-img: /post_data/not_hotdog.jpeg
 social-share: true
 ---
@@ -32,7 +33,7 @@ library(httr)
 library(stringr)
 library(purrr)
 # 1. Create an application on the [Yelp developers site](https://www.yelp.com/developers/v3/manage_app) and agree to the Terms and aggreements
-## Set your credentials as environmental variables. 
+## Set your credentials as environment variables. 
 Sys.setenv(YELP_CLIENT_ID='**************')
 Sys.setenv(YELP_SECRET='*****************************')
 
@@ -123,13 +124,15 @@ for (idx in 1:length(response3)) {
 
 The non-premium API access only includes up to 3 reviews and only a sample of the full text, leaving obvious gaps when trying to detect the keyword 'mustard' and contingent on enough reviews which details 🍔 preparation.
 
-In trying to create and publish a `shiny` application that wraps this code, I came up with errors given that OAuth2.0 grants access to users 👩 and not applications 💻. However here is a screenshot of the script above developed into an interactive `shiny` application to search for any [city, state] and the [gist of the code](https://gist.github.com/jasdumas/2c756e781a101d727eb7c881d38e0ad8) if your interested in running a local.
+In trying to create and publish a `shiny` application that wraps this code, I came up with errors given that OAuth2.0 grants access to users 👩 and not applications 💻. However here is a screenshot of the script above developed into an interactive `shiny` application to search for any [city, state] and the [gist of the code](https://gist.github.com/jasdumas/2c756e781a101d727eb7c881d38e0ad8) if your interested in running a local version.
 
 ![](/post_data/not_hotdog.jpeg) 
 
 The name of this `shiny` app is a nod to Silicon Valley's [Not Hotdog](https://www.theverge.com/2017/6/26/15876006/hot-dog-app-android-silicon-valley) application.
 
+---
 
+Image source: https://www.mcdonalds.com/us/en-us/about-us.html
 
 
 
