@@ -1,5 +1,5 @@
 ---
-title: 'Not Mustard: Exploring McDonald\'s Reviews on Yelp with R'
+title: 'Not Mustard\: Exploring McDonald\'s Reviews on Yelp with R'
 subtitle: 'Leveraging tidyverse packages httr, stringr & purrr'
 layout: post
 tags: [r, rstats, shiny, food, tidyverse]
