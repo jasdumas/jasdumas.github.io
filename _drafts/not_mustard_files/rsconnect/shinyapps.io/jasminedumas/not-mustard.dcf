@@ -1,0 +1,13 @@
+name: not-mustard
+title: not-mustard
+username:
+account: jasminedumas
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 228523
+bundleId: 1041591
+url: https://jasminedumas.shinyapps.io/not-mustard/
+when: 1508810575.56293
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: not_hotdog.jpeg|not_mustard.R|test.R
