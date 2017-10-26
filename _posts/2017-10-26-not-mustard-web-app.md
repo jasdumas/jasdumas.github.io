@@ -1,12 +1,12 @@
 ---
-title: 'Not Mustard\: Exploring McDonald\'s Reviews on Yelp with R'
+title: 'Not Mustard - Exploring McDonald\'s Reviews on Yelp with R'
 subtitle: 'Leveraging tidyverse packages httr, stringr & purrr'
 layout: post
 tags: [r, rstats, shiny, food, tidyverse]
 output: 
   html_document: 
   self_contained: no
-share-img: /_drafts/not_mustard_files/not_hotdog.jpeg
+share-img: /post_data/not_hotdog.jpeg
 social-share: true
 ---
 
@@ -125,7 +125,7 @@ The non-premium API access only includes up to 3 reviews and only a sample of th
 
 In trying to create and publish a `shiny` application that wraps this code, I came up with errors given that OAuth2.0 grants access to users 👩 and not applications 💻. However here is a screenshot of the script above developed into an interactive `shiny` application to search for any [city, state] and the [gist of the code](https://gist.github.com/jasdumas/2c756e781a101d727eb7c881d38e0ad8) if your interested in running a local.
 
-![](/Users/jasminedumas/Desktop/GitHub Clone Repos/jasdumas.github.io/_drafts/not_mustard_files/not_hotdog.jpeg) 
+![](/post_data/not_hotdog.jpeg) 
 
 The name of this `shiny` app is a nod to Silicon Valley's [Not Hotdog](https://www.theverge.com/2017/6/26/15876006/hot-dog-app-android-silicon-valley) application.
 
