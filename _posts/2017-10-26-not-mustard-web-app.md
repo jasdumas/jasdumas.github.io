@@ -6,7 +6,7 @@ tags: [r, rstats, shiny, food, tidyverse]
 output: 
   html_document: 
   self_contained: no
-big-img: /post_data/about-us_our-history_960x542.jpg
+bigimg: /post_data/about-us_our-history_960x542.jpg
 share-img: /post_data/not_hotdog.jpeg
 social-share: true
 ---
