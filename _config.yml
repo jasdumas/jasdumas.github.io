@@ -100,7 +100,7 @@ timezone: "America/New_York"
 #markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
-paginate: 10
+paginate: 7
 paginate_path: "/page:num/"
 gems:
   - jemoji
