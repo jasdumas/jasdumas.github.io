@@ -55,6 +55,7 @@ SQL or Structured Query Language is a special-purpose programming language desig
 * [Colorado Open Data Portal](https://data.colorado.gov/)
 * [Open Data Network](http://www.opendatanetwork.com/)
 * [UCI Machine Learning Repository](http://archive.ics.uci.edu/ml/index.html)
+* [Connecticut Open Data Portal](https://data.ct.gov/)
 
 ### Tools  :wrench:
 * [RStudio](https://www.rstudio.com/products/rstudio/download2/)
@@ -87,8 +88,10 @@ SQL or Structured Query Language is a special-purpose programming language desig
 * [**R Packages** by Hadley Wickham](http://r-pkgs.had.co.nz/)
 * [**Advanced R** by Hadley Wickham](http://adv-r.had.co.nz/) - Chapters of Interest: [Data Structures](http://adv-r.had.co.nz/Data-structures.html), [Object-Orientated Field Guide](http://adv-r.had.co.nz/OO-essentials.html), [Style Guide](http://adv-r.had.co.nz/Style.html)
 * [**An Introduction to Statistical Learning with Applications in R** by Gareth James, Robert Tibshirani, and Trevor Hastie](http://www-bcf.usc.edu/~gareth/ISL/ISLR%20Sixth%20Printing.pdf)
+* [**Algorithms to Live By: The Computer Science of Human Decisions**](https://www.amazon.com/Algorithms-Live-Computer-Science-Decisions/dp/1627790365)
 
 ### Online Coursework (MOOCs)  :school_satchel:
+_most courses are :free: ish_
 * [Datacamp.com: Data Analysis in your browser](https://www.datacamp.com/)
 * [Datacamp.com: Machine Learning in R](https://www.datacamp.com/community/tutorials/machine-learning-in-r#gs.wRaIUbc)
 * [Stat545: Data wrangling, exploration, and analysis with R](https://stat545-ubc.github.io/)   
