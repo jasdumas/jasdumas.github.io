@@ -7,7 +7,7 @@ subtitle: These are a few of my favorite links...
 ----------
 
 ### R Programming :cat2:
-R is a programming language and software environment for statistical computing and graphics supported by the R Foundation for Statistical Computing. The R language is widely used among statisticians and data miners for developing statistical software and data analysis. [ [Source](https://en.wikipedia.org/wiki/R_(programming_language)) ]
+> R is a programming language and software environment for statistical computing and graphics supported by the R Foundation for Statistical Computing. The R language is widely used among statisticians and data miners for developing statistical software and data analysis. [ [Source](https://en.wikipedia.org/wiki/R_(programming_language)) ]
 
 * [GLMs from Quick-R](http://www.statmethods.net/advstats/glm.html)
 * [Model Validation: Interpreting Residual Plots](http://www.r-bloggers.com/model-validation-interpreting-residual-plots/)
@@ -31,7 +31,7 @@ R is a programming language and software environment for statistical computing a
 * [LASSO v Ridge v Elastic Net with glmnet](http://www4.stat.ncsu.edu/~post/josh/LASSO_Ridge_Elastic_Net_-_Examples.html)
 
 ### Python :snake:
-Python is a widely used high-level, general-purpose, interpreted, dynamic programming language. Its design philosophy emphasizes code readability, and its syntax allows programmers to express concepts in fewer lines of code than possible in languages such as C++ or Java. [ [Source](https://en.wikipedia.org/wiki/Python_(programming_language)) ]
+> Python is a widely used high-level, general-purpose, interpreted, dynamic programming language. Its design philosophy emphasizes code readability, and its syntax allows programmers to express concepts in fewer lines of code than possible in languages such as C++ or Java. [ [Source](https://en.wikipedia.org/wiki/Python_(programming_language)) ]
 
 * [Python 3 Documentation](https://docs.python.org/3/)
 * [Introduction to Python for Econometrics, Statistics and Data Analysis (PDF)](https://www.kevinsheppard.com/images/0/09/Python_introduction.pdf)
@@ -42,7 +42,7 @@ Python is a widely used high-level, general-purpose, interpreted, dynamic progra
 * [pycon 2017 conference](https://us.pycon.org/2017/)
 
 ### SQL :guitar:
-SQL or Structured Query Language is a special-purpose programming language designed for managing data held in a relational database management system (RDBMS), or for stream processing in a relational data stream management system (RDSMS). [ [Source](https://en.wikipedia.org/wiki/SQL) ]
+> SQL or Structured Query Language is a special-purpose programming language designed for managing data held in a relational database management system (RDBMS), or for stream processing in a relational data stream management system (RDSMS). [ [Source](https://en.wikipedia.org/wiki/SQL) ]
 
 * [SQL school](http://www.w3schools.com/sql/)
 * [SQL tutorial for Data Analysis from Mode Analytics](https://community.modeanalytics.com/sql/tutorial/introduction-to-sql/)
@@ -123,7 +123,7 @@ _most courses are :free: ish_
 - [Applied Predictive Modeling](http://appliedpredictivemodeling.com/)
 
 
-### Courses/Tutorials 🎒 
+### Online Courses/Tutorials 🎒 
 
 - [Machine Learning Algorithmic Deep Dive](https://github.com/ledell/useR-machine-learning-tutorial)
 - [Machine Learning in R for beginners (Tutorial)](https://www.datacamp.com/community/tutorials/machine-learning-in-r#gs.pxrR3U8)
