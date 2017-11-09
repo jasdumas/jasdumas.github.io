@@ -89,7 +89,7 @@ subtitle: These are a few of my favorite links...
 * [**Advanced R** by Hadley Wickham](http://adv-r.had.co.nz/) - Chapters of Interest: [Data Structures](http://adv-r.had.co.nz/Data-structures.html), [Object-Orientated Field Guide](http://adv-r.had.co.nz/OO-essentials.html), [Style Guide](http://adv-r.had.co.nz/Style.html)
 * [**An Introduction to Statistical Learning with Applications in R** by Gareth James, Robert Tibshirani, and Trevor Hastie](http://www-bcf.usc.edu/~gareth/ISL/ISLR%20Sixth%20Printing.pdf)
 * [**R Graphics Cookbook by Winston Chang**](http://www.cookbook-r.com/Graphs/)
-* [**ggplot2: Elegant Graphics for Data Analysis (Use R!) **](http://ggplot2.org/book/)
+* [**ggplot2: Elegant Graphics for Data Analysis (Use R!)**](http://ggplot2.org/book/)
 * [**Python for Data Analysis** by Wes McKinney](https://www.amazon.com/Python-Data-Analysis-Wrangling-IPython/dp/1449319793)
 
 ### Online Coursework (MOOCs)  :school_satchel:
