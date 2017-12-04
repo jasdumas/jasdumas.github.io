@@ -9,15 +9,54 @@ bigimg:
 
 ---------------
 
-I'm available for speaking engagements on topics of **analysis-ready data**, **shiny development**, **beer analytics**, **civic data applications**, and **transitioning into a Data Science Career**. I'm comfortable traveling around Connecticut, Massachusetts, and Rhode Island - please get in touch for further locations and availability.
+I'm available for speaking engagements on topics including but not limited to:
+- shiny development & web applications
+- beer analytics
+- civic data applications
+- transitioning into a data science career 
+
+
+<div align="center">
+<a href="https://goo.gl/forms/pFW2VVuCVKE0Icsy1" class="btn btn-outline-primary">Invite Me to Speak</a> 
+</div>
+
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Invite Me to Speak
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfVEbaU2ASDwxw4pHxxkw1k3rDba1DwIRRR61mdiRFRWF8s5g/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
 ### Talks
 
-#### [Materials for Talks on GitHub](https://github.com/jasdumas/talks)
+I store slide materials for talks on [GitHub](https://github.com/jasdumas/talks). Heard me speak at an event? Submit <a href="" class="btn btn-outline-success">Speaker Feedback</a> 
 
 | Title                                                        | Event                                                                                            | Date            | Materials                                                                                                   |
 |-------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|-----------------|----------------------------------------------------------------------------------------------------------|
-| **IPA & Data frames: Open government data and beer analytics**    | Cardiff, UK R User Group                                                                         | August 2, 2016  | [slides](https://jasdumas.github.io/talks/caRdiff-uk-R-user-group/open-gov-beer.html) |
+| **IPA & Data frames: Open government data and beer analytics**    | R User Group (Cardiff, UK)                                                                         | August 2, 2016  | [slides](https://jasdumas.github.io/talks/caRdiff-uk-R-user-group/open-gov-beer.html) |
 | **Adventures in Crafting a Data Science Career**                  | University of Rhode Island (URI) Coastal Institute and RhodyRStats “Careers in R” speaker series | March 30, 2017  | [slides](https://jasdumas.github.io/talks/rhodyrstats-R-user-group/rhodyrstats-r-user-group-slides.html)                                                                                           |
-| **Extending `Shiny` by Enhancing User Experience with `shinyLP`** | Portland, OR R User Group                                                                        | April 6th, 2017 | [slides](https://jasdumas.github.io/talks/PDX-R-user-group/pdx-r-user-group-slides.html), [twitter picture](https://twitter.com/pdxrlang/status/850166299565015040)                           |
-| **Open Government Data & Beer Analytics**                         | Open Data Science Conference - East                                                              | May 5th, 2017        | [slides](https://jasdumas.github.io/talks/odsc-boston/odsc-open-gov-beer.html), [video recording](https://www.youtube.com/watch?v=GPsa955fNQE)                                                                                           |
+| **Extending `Shiny` by Enhancing User Experience with `shinyLP`** | R User Group (Portland, OR)                                                                        | April 6th, 2017 | [slides](https://jasdumas.github.io/talks/PDX-R-user-group/pdx-r-user-group-slides.html), [twitter picture](https://twitter.com/pdxrlang/status/850166299565015040)                           |
+| **Open Government Data & Beer Analytics**                         | Open Data Science Conference - East (Boston, MA)                                                              | May 5th, 2017        | [slides](https://jasdumas.github.io/talks/odsc-boston/odsc-open-gov-beer.html), [video recording](https://www.youtube.com/watch?v=GPsa955fNQE)                                                                                           |
+| **R, What is it good for? Absolutely Everything!** |[**R User Day @ Texas Data Day**](http://datadaytexas.com/2018-r-user-day/news) | January 27, 2018 | _Coming soon_
