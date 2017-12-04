@@ -15,12 +15,14 @@ I'm available for speaking engagements on topics including but not limited to:
 - civic data applications
 - transitioning into a data science career 
 
-<a class="btn btn-primary" href="https://goo.gl/forms/pFW2VVuCVKE0Icsy1" role="button">Invite Me to Speak</a>
+<a class="btn btn-warning" href="https://goo.gl/forms/pFW2VVuCVKE0Icsy1" role="button">Invite Me to Speak</a>
 
 
 ### Talks
 
-I store slide materials for talks on [GitHub](https://github.com/jasdumas/talks). Heard me speak at an event? Submit <a class="btn btn-success" href="https://goo.gl/forms/TqYUt9t1UHLhbOOT2" role="button">Speaker Feedback</a>
+I store slide materials for talks on [GitHub](https://github.com/jasdumas/talks)
+
+Heard me speak at an event? Submit <a class="btn btn-success" href="https://goo.gl/forms/TqYUt9t1UHLhbOOT2" role="button">Speaker Feedback</a>
  
 
 | Title                                                        | Event                                                                                            | Date            | Materials                                                                                                   |
