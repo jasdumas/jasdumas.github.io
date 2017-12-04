@@ -15,43 +15,13 @@ I'm available for speaking engagements on topics including but not limited to:
 - civic data applications
 - transitioning into a data science career 
 
-
-<div align="center">
-<a href="https://goo.gl/forms/pFW2VVuCVKE0Icsy1" class="btn btn-outline-primary">Invite Me to Speak</a> 
-</div>
-
-
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-  Invite Me to Speak
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfVEbaU2ASDwxw4pHxxkw1k3rDba1DwIRRR61mdiRFRWF8s5g/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        
-      </div>
-    </div>
-  </div>
-</div>
-
+<a class="btn btn-primary" href="https://goo.gl/forms/pFW2VVuCVKE0Icsy1" role="button">Invite Me to Speak</a>
 
 
 ### Talks
 
-I store slide materials for talks on [GitHub](https://github.com/jasdumas/talks). Heard me speak at an event? Submit <a href="" class="btn btn-outline-success">Speaker Feedback</a> 
+I store slide materials for talks on [GitHub](https://github.com/jasdumas/talks). Heard me speak at an event? Submit <a class="btn btn-success" href="https://goo.gl/forms/TqYUt9t1UHLhbOOT2" role="button">Speaker Feedback</a>
+ 
 
 | Title                                                        | Event                                                                                            | Date            | Materials                                                                                                   |
 |-------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|-----------------|----------------------------------------------------------------------------------------------------------|
