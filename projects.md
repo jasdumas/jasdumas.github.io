@@ -40,9 +40,17 @@ subtitle: open source & weekend data science projects
 
 ## Tutorials
 
+* :carrot: [Hipster Veggies: Find Select Trending Vegetables from Twitter using the `rtweet` and `tidyverse` packages](https://github.com/jasdumas/hipster-veggies)
+
+* :us: [The Republic: Local Connecticut Election & Voter Data Analytics Projects](https://github.com/jasdumas/the-republic)
+
+* :robot: [Extracting data from Twitter to get Chris Albon's Machine Learning Flashcards](https://github.com/jasdumas/ml-flashcards): [Blog post](https://jasdumas.github.io/2017-05-02-twitter-ml-flashcards/); [[_also support Chris and buy the flashcards_](https://store.chrisalbon.com/courses/machine-learning-flashcards)]
+
 * :beer: [Web scraping and mapping breweries with import.io and R](http://trendct.org/2016/03/18/tutorial-web-scraping-and-mapping-breweries-with-import-io-and-r/): Getting information on Breweries can be a difficult process with data from multiple sources or sources that have limited access to developers. Import.io instantly turns webpages into data with minimal or no set-up involved. I developed this tutorial to extract meta data on Connecticut-based breweries. 
 
 * :tomato: [Web Scraping the Best of Rotten Tomatoes](http://rpubs.com/jasdumas/rotten-tomatoes): Using the `rvest` package, I web scraped several "best of" film genres lists into a a table and provided a `plotly` data visualization to understand ratings versus reviews. 
+
+
 
 ## Other Projects
 
