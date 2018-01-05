@@ -44,9 +44,9 @@ I'm searching for a **remote-friendly** company that values creativity, diversit
 
 ### Featured Projects  
 
-| ![](https://github.com/jasdumas/scrape/blob/master/beer-scrape/Screen%20Shot%202015-12-14%20at%202.20.11%20PM.jpeg?raw=true) | ![](https://user-images.githubusercontent.com/6685750/34624636-077e20d2-f224-11e7-80e8-aff5c0863085.jpg) |
-|------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
-| **Tutorial on Web scraping craft brewery ratings from Beer Advocate with R and import.io** <a href="http://trendct.org/2016/03/18/tutorial-web-scraping-and-mapping-breweries-with-import-io-and-r/" class="btn btn-warning" role="button">Details</a> | **R-Shiny app for gene expression analysis for bioinformaticians** <a href="http://gdancik.github.io/shinyGEO/" class="btn btn-warning" role="button">Details</a> |
+- [**Tutorial on Web scraping craft brewery ratings from Beer Advocate with R and import.io**](http://trendct.org/2016/03/18/tutorial-web-scraping-and-mapping-breweries-with-import-io-and-r/) 
+
+- [**R-Shiny app for gene expression analysis for bioinformaticians**](http://gdancik.github.io/shinyGEO/)
 
 *More projects available at: [https://jasdumas.github.io/projects/](https://jasdumas.github.io/projects/)*
 
