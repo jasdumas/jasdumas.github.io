@@ -9,22 +9,19 @@ subtitle: Data Scientist
 :e-mail: : jasmine.dumas[at]gmail.com | :pencil: : [jasdumas.github.io](https://jasdumas.github.io/) | :scroll: : [PDF resume version](http://jasdumas.github.io/jasmine_dumas_resume.pdf) 
 
 ### About Me
+I’m a Data Scientist & Engineer with industry experience in financial technology, auto insurance, medical devices, R&D, and aerospace manufacturing. I'm an active member of the R programming community and have developed several open source packages and participated in [Google Summer of Code](https://www.google-melange.com/archive/gsoc/2015/orgs/rproject/projects/jasdumas.html), and [NASA Datanauts](https://open.nasa.gov/blog/welcome-datanauts-2017-spring-class/). 
 
-I’m a Data Scientist & Engineer with industry experience in financial technology, auto insurance, medical devices, R&D, and aerospace manufacturing. I'm an active member of the R programming community and have developed **4** open source R packages and participated in **[Google Summer of Code](https://www.google-melange.com/archive/gsoc/2015/orgs/rproject/projects/jasdumas.html), [NASA Datanauts](https://open.nasa.gov/blog/welcome-datanauts-2017-spring-class/), [R-Ladies](https://www.meetup.com/rladies-connecticut/), and [R Foundation taskforce: Forwards](https://forwards.github.io/about/)**. 
+### Objective
 
 I'm searching for a **remote-friendly** company that values creativity, diversity and openness as a **lead or Sr. Data Scientist** developing data products & algorithms with R & Python while mentoring junior team members.
 
-### Technical Skills 
-- Computational programming & machine learning with R and Python
-- Statistical Analysis and inference
-- Data processing & querying with SQL
-- Web application development with Shiny and Bootstrap
-- Collaborative computing with GitHub and Git
+### Education 
 
-### Featured Projects  
-
-- [Tutorial on Web scraping craft brewery ratings from Beer Advocate with R and import.io](http://trendct.org/2016/03/18/tutorial-web-scraping-and-mapping-breweries-with-import-io-and-r/)
-- [Shiny app for gene expression analysis for bioinformaticians](http://gdancik.github.io/shinyGEO/)
+* **Graduate Analytics Certificate** at [DePaul University](https://www.cdm.depaul.edu/academics/Pages/Current/Analytics-Certificate.aspx), (2015 - expected Fall 2017)
+   * _Coursework_: Intro to Programming, Data Analytics & Regression, Database Processing for Large-scale Analytics, Advanced Data Analysis, Knowledge Discovery Technologies, Programming Machine Learning Applications
+   
+* **Bachelor of Science in Engineering in Biomedical Engineering** at [University of Hartford](http://www.hartford.edu/ceta/undergraduate/engineering/BM/), (2008 - 2012)
+   * _Coursework_: Engineering Computer Applications, Calculus (1-2, Multivariable), Differential Equations, Research, Engineering Design, Statics, Dynamics, Mechacnics of Materials, Biomaterials 
 
 ### Data Science Work Experience
 
@@ -45,16 +42,14 @@ I'm searching for a **remote-friendly** company that values creativity, diversit
 - **Student Developer at Google Summer of Code**, (May 2015 - Aug. 2015)
     - Developed a web application with `r-shiny` to automate differential expression and survival analysis of micro-array gene expression datasets from the NIH Gene Expression Omnibus
 
-### Education 
+### Featured Projects  
 
-* **Graduate Analytics Certificate Candidate** at [DePaul University](https://www.cdm.depaul.edu/academics/Pages/Current/Analytics-Certificate.aspx), (2015 - expected Fall 2017)
-   * _Coursework_: Intro to Programming, Data Analytics & Regression, Database Processing for Large-scale Analytics, Advanced Data Analysis, Knowledge Discovery Technologies, Programming Machine Learning Applications
-   
-* **Certificate in Medical Product Development** at [University of California, Irvine Extension](https://ce.uci.edu/areas/life_sciences/medical_products/), (2013)
-    * _Coursework_: Medical Product Life-Cycle Management, Regulatory Requirements for Medical Devices, Medical Product Quality Systems, Fundamentals of Clinical Trials, Medical Device Design and Evaluation
+| ![](https://github.com/jasdumas/scrape/blob/master/beer-scrape/Screen%20Shot%202015-12-14%20at%202.20.11%20PM.jpeg?raw=true) | ![](https://user-images.githubusercontent.com/6685750/34624636-077e20d2-f224-11e7-80e8-aff5c0863085.jpg) |
+|------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
+| **Tutorial on Web scraping craft brewery ratings from Beer Advocate with R and import.io** <a href="http://trendct.org/2016/03/18/tutorial-web-scraping-and-mapping-breweries-with-import-io-and-r/" class="btn btn-warning" role="button">Details</a> | **R-Shiny app for gene expression analysis for bioinformaticians** <a href="http://gdancik.github.io/shinyGEO/" class="btn btn-warning" role="button">Details</a> |
 
-* **Bachelor of Science in Engineering in Biomedical Engineering** at [University of Hartford](http://www.hartford.edu/ceta/undergraduate/engineering/BM/), (2008 - 2012)
-   * _Coursework_: Engineering Computer Applications, Calculus (1-2, Multivariable), Differential Equations, Research, Engineering Design, Statics, Dynamics, Mechacnics of Materials, Biomaterials 
+*More projects available at: [https://jasdumas.github.io/projects/](https://jasdumas.github.io/projects/)*
+
 
 ### Open Source `R` Software
 
@@ -76,5 +71,13 @@ I'm searching for a **remote-friendly** company that values creativity, diversit
 * **Dumas J**, Gargano MA, Dancik GM. _shinyGEO: a web-based application for analyzing Gene Expression Omnibus datasets_. Bioinformatics. 2016 Aug 8. - [Paper link](http://bioinformatics.oxfordjournals.org/content/early/2016/08/20/bioinformatics.btw519)
 
 * **Dumas J**, et.al., _Feasibility of an electronic stethoscope system for monitoring neonatal bowel sounds_. Connecticut Medicine, Volume 77, Number 8, pp. 467-471, September 2013. - [Paper link](http://connmed.csms.org/i/157293-sept-2013/20)   
+
+### Technical Skills 
+- Computational programming & machine learning with R and Python
+- Statistical Analysis and inference
+- Data processing & querying with SQL
+- Web application development with Shiny and Bootstrap
+- Collaborative computing with GitHub and Git
+
 
         
