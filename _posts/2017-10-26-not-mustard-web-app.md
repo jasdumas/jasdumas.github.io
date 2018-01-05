@@ -1,5 +1,5 @@
 ---
-title: 'Not Mustard - Exploring McDonalds Reviews on Yelp with R'
+title: 'Not Mustard 🍔 Exploring McDonalds Reviews on Yelp with R'
 subtitle: 'Leveraging tidyverse packages httr, stringr & purrr'
 layout: post
 tags: [r, rstats, shiny, food, tidyverse]
@@ -132,7 +132,7 @@ The name of this `shiny` app is a nod to Silicon Valley's [Not Hotdog](https://w
 
 ---
 
-Image source: https://www.mcdonalds.com/us/en-us/about-us.html
+Cover Image source: [https://www.mcdonalds.com/us/en-us/about-us.html](https://www.mcdonalds.com/us/en-us/about-us.html)
 
 
 

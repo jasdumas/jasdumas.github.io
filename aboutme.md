@@ -34,4 +34,4 @@ subtitle: ... and all that jazz!
 
 :bird: [@jasdumas](https://twitter.com/jasdumas) 
 
-**Let's**   [![Gitter](https://badges.gitter.im/jasdumas/jasdumas.github.io.svg)](https://gitter.im/jasdumas/jasdumas.github.io?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+**Let's**  [![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg?style=plastic)](https://gitter.im/jasdumas/jasdumas.github.io?source=orgpage)
