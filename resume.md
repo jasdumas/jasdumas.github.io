@@ -44,7 +44,7 @@ I'm searching for a **remote-friendly** company that values creativity, diversit
 
 ### Featured Projects  
 
-- [**Tutorial on Web scraping craft brewery ratings from Beer Advocate with R and import.io**](http://trendct.org/2016/03/18/tutorial-web-scraping-and-mapping-breweries-with-import-io-and-r/) 
+- [**Tutorial on Web scraping craft brewery ratings from Beer Advocate with R and import.io**](http://trendct.org/2016/03/18/tutorial-web-scraping-and-mapping-breweries-with-import-io-and-r/)
 
 - [**R-Shiny app for gene expression analysis for bioinformaticians**](http://gdancik.github.io/shinyGEO/)
 
