@@ -45,7 +45,6 @@ I'm searching for a **remote-friendly** company that values creativity, diversit
 ### Featured Projects  
 
 - [**Tutorial on Web scraping craft brewery ratings from Beer Advocate with R and import.io**](http://trendct.org/2016/03/18/tutorial-web-scraping-and-mapping-breweries-with-import-io-and-r/)
-
 - [**R-Shiny app for gene expression analysis for bioinformaticians**](http://gdancik.github.io/shinyGEO/)
 
 *More projects available at: [https://jasdumas.github.io/projects/](https://jasdumas.github.io/projects/)*
@@ -69,7 +68,6 @@ I'm searching for a **remote-friendly** company that values creativity, diversit
 ### Research Publications       
 
 * **Dumas J**, Gargano MA, Dancik GM. _shinyGEO: a web-based application for analyzing Gene Expression Omnibus datasets_. Bioinformatics. 2016 Aug 8. - [Paper link](http://bioinformatics.oxfordjournals.org/content/early/2016/08/20/bioinformatics.btw519)
-
 * **Dumas J**, et.al., _Feasibility of an electronic stethoscope system for monitoring neonatal bowel sounds_. Connecticut Medicine, Volume 77, Number 8, pp. 467-471, September 2013. - [Paper link](http://connmed.csms.org/i/157293-sept-2013/20)   
 
 ### Technical Skills 
