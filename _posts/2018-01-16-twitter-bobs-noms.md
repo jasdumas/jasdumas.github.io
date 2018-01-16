@@ -57,36 +57,43 @@ bobs_noms$clean_text <- str_replace(bobs_noms$clean_text, "[[:punct:]]", "") # r
 # let's look at these images in a smaller data set
 bobs_noms_small <- bobs_noms %>% select(created_at, clean_text, media_url)
 
-bobs_noms_small$img_md <- paste0("<img src='",bobs_noms_small$media_url, "' alt='",bobs_noms_small$clean_text ,"' width='600' height='400'>")
+bobs_noms_small$img_md <- paste0("![", bobs_noms_small$clean_text, "](", bobs_noms_small$media_url, ")")
 ```
 
 
 ```r
-data.frame(images = bobs_noms_small$img_md)
+data.frame(images = bobs_noms_small$img_md) %>% 
+kable( format = "markdown") %>%
+  kable_styling(full_width = F, position = 'center') 
 ```
 
-```
-##                                                                                                                                                                                               images
-## 1             <img src='http://pbs.twimg.com/media/DTmdeptVoAAZYpp.jpg' alt='Moroccaninspired lamb meatballs prepped. Naan dough is kneading. Going to be a  sup tonight.' width='600' height='400'>
-## 2                                                                               <img src='http://pbs.twimg.com/media/DTTF55oX0AMyyVL.jpg' alt='Tsukune with tare tonight ' width='600' height='400'>
-## 3                                                                       <img src='http://pbs.twimg.com/media/DS4_fRFU0AA3LVL.jpg' alt='Lamb roast isnt too shabby either ' width='600' height='400'>
-## 4                                                                <img src='http://pbs.twimg.com/media/DS48BemVAAAN38J.jpg' alt='The pain de mie thankfully came out well ' width='600' height='400'>
-## 5  <img src='http://pbs.twimg.com/media/DR7j-HMV4AAzXpH.jpg' alt='Sage rosemary &amp; espresso infused salt rubbed roast lamb. Goose fat roasted potatoes _almost _ done ' width='600' height='400'>
-## 6                                                                                                         <img src='http://pbs.twimg.com/media/DQDDt9qXcAAg_Hb.jpg' alt='' width='600' height='400'>
-## 7                                                                          <img src='http://pbs.twimg.com/media/DPfXiVBXkAAkKAK.jpg' alt='Ham amp; turkey frittata time! ' width='600' height='400'>
-## 8                                                                                              <img src='http://pbs.twimg.com/media/DO34I4oXkAEvmDS.jpg' alt='Postconfit ' width='600' height='400'>
-## 9                                                                                                 <img src='http://pbs.twimg.com/media/DO32TmIX0AAmkT7.jpg' alt='PostPBC ' width='600' height='400'>
-## 10                                                                                                        <img src='http://pbs.twimg.com/media/DO2xnqcXcAAGBZO.jpg' alt='' width='600' height='400'>
-## 11                          <img src='http://pbs.twimg.com/media/DO2D1HQVwAEZQzk.jpg' alt=' is home\n#2's Wedding Sunday.\n20 ppl over tonight for \U0001f983\n#joy\n#nom' width='600' height='400'>
-## 12                                                    <img src='http://pbs.twimg.com/media/DNVuMHWWkAI4biV.jpg' alt='Definitely an Indonesian spring rolls kind of night ' width='600' height='400'>
-## 13                                      <img src='http://pbs.twimg.com/media/DNBMw2NWAAEwGft.jpg' alt='Homemade breadsticks for the homemade pasta and meatballs tonight ' width='600' height='400'>
-## 14                                                                                                        <img src='http://pbs.twimg.com/media/DM8GWXYXcAEAFkJ.jpg' alt='' width='600' height='400'>
-## 15                                                                           <img src='http://pbs.twimg.com/media/DMniz1TX0AAboZw.jpg' alt='Bonein PBC smoked pork roast ' width='600' height='400'>
-## 16                                <img src='http://pbs.twimg.com/media/DMlFfC0X0AAPuVf.jpg' alt='Prosciutto de Parma Cacio di Bosco &amp; spinach omelettes this morning ' width='600' height='400'>
-## 17                                                 <img src='http://pbs.twimg.com/media/DMDWHUdX4AEJF5r.jpg' alt='Our Friday night is shaping up well How’s yours going? ' width='600' height='400'>
-## 18                                                                     <img src='http://pbs.twimg.com/media/DLz-HotX4AEVVY1.jpg' alt='Pork tenderloin on the PBC tonight ' width='600' height='400'>
-## 19   <img src='http://pbs.twimg.com/media/DK-fDgRWkAAGuhe.jpg' alt='Overnight nutmeg-infused yeast waffles with sautéd local picked Maine apples &amp; Maine maple syrup ' width='600' height='400'>
-```
+
+
+|images                                                                                                                                                     |
+|:----------------------------------------------------------------------------------------------------------------------------------------------------------|
+|![Moroccaninspired lamb meatballs prepped. Naan dough is kneading. Going to be a  sup tonight.](http://pbs.twimg.com/media/DTmdeptVoAAZYpp.jpg)            |
+|![Tsukune with tare tonight ](http://pbs.twimg.com/media/DTTF55oX0AMyyVL.jpg)                                                                              |
+|![Lamb roast isnt too shabby either ](http://pbs.twimg.com/media/DS4_fRFU0AA3LVL.jpg)                                                                      |
+|![The pain de mie thankfully came out well ](http://pbs.twimg.com/media/DS48BemVAAAN38J.jpg)                                                               |
+|![Sage rosemary &amp; espresso infused salt rubbed roast lamb. Goose fat roasted potatoes _almost _ done ](http://pbs.twimg.com/media/DR7j-HMV4AAzXpH.jpg) |
+|![](http://pbs.twimg.com/media/DQDDt9qXcAAg_Hb.jpg)                                                                                                        |
+|![Ham amp; turkey frittata time! ](http://pbs.twimg.com/media/DPfXiVBXkAAkKAK.jpg)                                                                         |
+|![Postconfit ](http://pbs.twimg.com/media/DO34I4oXkAEvmDS.jpg)                                                                                             |
+|![PostPBC ](http://pbs.twimg.com/media/DO32TmIX0AAmkT7.jpg)                                                                                                |
+|![](http://pbs.twimg.com/media/DO2xnqcXcAAGBZO.jpg)                                                                                                        |
+|![ is home
+#2's Wedding Sunday.
+20 ppl over tonight for 🦃
+#joy
+#nom](http://pbs.twimg.com/media/DO2D1HQVwAEZQzk.jpg)                                       |
+|![Definitely an Indonesian spring rolls kind of night ](http://pbs.twimg.com/media/DNVuMHWWkAI4biV.jpg)                                                    |
+|![Homemade breadsticks for the homemade pasta and meatballs tonight ](http://pbs.twimg.com/media/DNBMw2NWAAEwGft.jpg)                                      |
+|![](http://pbs.twimg.com/media/DM8GWXYXcAEAFkJ.jpg)                                                                                                        |
+|![Bonein PBC smoked pork roast ](http://pbs.twimg.com/media/DMniz1TX0AAboZw.jpg)                                                                           |
+|![Prosciutto de Parma Cacio di Bosco &amp; spinach omelettes this morning ](http://pbs.twimg.com/media/DMlFfC0X0AAPuVf.jpg)                                |
+|![Our Friday night is shaping up well How’s yours going? ](http://pbs.twimg.com/media/DMDWHUdX4AEJF5r.jpg)                                                 |
+|![Pork tenderloin on the PBC tonight ](http://pbs.twimg.com/media/DLz-HotX4AEVVY1.jpg)                                                                     |
+|![Overnight nutmeg-infused yeast waffles with sautéd local picked Maine apples &amp; Maine maple syrup ](http://pbs.twimg.com/media/DK-fDgRWkAAGuhe.jpg)   |
 
 
 ```r

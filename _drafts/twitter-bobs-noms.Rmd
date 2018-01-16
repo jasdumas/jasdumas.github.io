@@ -60,11 +60,13 @@ bobs_noms$clean_text <- str_replace(bobs_noms$clean_text, "[[:punct:]]", "") # r
 # let's look at these images in a smaller data set
 bobs_noms_small <- bobs_noms %>% select(created_at, clean_text, media_url)
 
-bobs_noms_small$img_md <- paste0("<img src='",bobs_noms_small$media_url, "' alt='",bobs_noms_small$clean_text ,"' width='600' height='400'>")
+bobs_noms_small$img_md <- paste0("![", bobs_noms_small$clean_text, "](", bobs_noms_small$media_url, ")")
 ```
 
 ```{r, imgs}
-data.frame(images = bobs_noms_small$img_md)
+data.frame(images = bobs_noms_small$img_md) %>% 
+kable( format = "markdown") %>%
+  kable_styling(full_width = F, position = 'center') 
 ```
 
 ```{r, func}
