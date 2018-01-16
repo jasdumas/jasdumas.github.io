@@ -64,11 +64,10 @@ bobs_noms_small <- bobs_noms %>% select(created_at, clean_text, media_url)
 bobs_noms_small$img_md <- paste0("![", bobs_noms_small$clean_text, "](", bobs_noms_small$media_url, ")")
 ```
 
-```{r, imgs, asis=T}
-bobs_noms_small$img_md %>% 
+```{r, imgs}
+data.frame(images = bobs_noms_small$img_md) %>% 
 kable( format = "markdown") %>%
-  kable_styling(bootstrap_options = "striped", 
-                full_width = F) 
+  kable_styling(full_width = F, position = 'center') 
 ```
 
 ```{r, func}

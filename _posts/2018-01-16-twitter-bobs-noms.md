@@ -63,15 +63,14 @@ bobs_noms_small$img_md <- paste0("![", bobs_noms_small$clean_text, "](", bobs_no
 
 
 ```r
-bobs_noms_small$img_md %>% 
+data.frame(images = bobs_noms_small$img_md) %>% 
 kable( format = "markdown") %>%
-  kable_styling(bootstrap_options = "striped", 
-                full_width = F) 
+  kable_styling(full_width = F, position = 'center') 
 ```
 
 
 
-|                                                                                                                                                           |
+|images                                                                                                                                                     |
 |:----------------------------------------------------------------------------------------------------------------------------------------------------------|
 |![Moroccaninspired lamb meatballs prepped. Naan dough is kneading. Going to be a  sup tonight.](http://pbs.twimg.com/media/DTmdeptVoAAZYpp.jpg)            |
 |![Tsukune with tare tonight ](http://pbs.twimg.com/media/DTTF55oX0AMyyVL.jpg)                                                                              |
