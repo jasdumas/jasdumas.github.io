@@ -6,7 +6,9 @@ subtitle: Data Scientist
 
 -------------
 
-:e-mail: : jasmine.dumas[at]gmail[dot]com | :pencil: : [jasdumas.github.io](https://jasdumas.github.io/) | :scroll: : [PDF resume version](http://jasdumas.github.io/jasmine_dumas_resume.pdf) 
+:e-mail:: jasmine.dumas[at]gmail[dot]com 
+:pencil:: [jasdumas.github.io](https://jasdumas.github.io/) 
+:scroll:: [PDF resume version](http://jasdumas.github.io/jasmine_dumas_resume.pdf) 
 
 ### About Me
 I’m a Data Scientist & Engineer with industry experience in financial technology, auto insurance, medical devices, R&D, and aerospace manufacturing. I'm an active member of the R programming community and have developed several open source packages and participated in [Google Summer of Code](https://www.google-melange.com/archive/gsoc/2015/orgs/rproject/projects/jasdumas.html), and [NASA Datanauts](https://open.nasa.gov/blog/welcome-datanauts-2017-spring-class/). 
