@@ -5,16 +5,16 @@ subtitle: ... and all that jazz!
 ---
 
 -------------
-:information_source: I like long hikes, big data, and cold craft beer. I currently live in Connecticut with my partner and our Scottish Terrier mix dog,
+:crystal_ball: I like long hikes, big data, and cold craft beer. I currently live in Connecticut with my partner and our Scottish Terrier mix dog,
 [Fiona](https://twitter.com/jasdumas/status/679480102443417600).
 
 :briefcase: Currently working as a **Data Scientist** ([Simple](https://www.simple.com/)). Previously worked as a Associate Data Scientist ([The Hartford](https://www.thehartford.com/)), also in **R&D Engineering** roles ([Medtronic](http://www.medtronic.com/covidien), QDx/Abbott) and as an **Aerospace Manufacturing Engineer** ([AdChem](http://www.acmt.aero/)).
 
-:mortar_board: Currently finishing a Certificate program in **Analytics** at [DePaul University](http://www.cdm.depaul.edu/academics/Pages/current/Analytics-Certificate.aspx) were I'm focused on **Data Mining & Computational Methods**. Previously took **Computer Science courses** at [Johns Hopkins Engineering for Professionals](https://ep.jhu.edu/programs-and-courses/programs/computer-science) school. Previously earned a Professional Certificate in **Medical Product Development** at [University of California, Irvine Extension](http://ce.uci.edu/areas/life_sciences/medical_products/). Previously earned a BSE in **Biomedical Engineering** from the [University of Hartford](http://www.hartford.edu/ceta/undergraduate/engineering/BM/). My senior research project was to develop a prototype [walk-assist](http://www.tuvie.com/wp-content/uploads/ekso-bionic-suit1.jpg) device for a T4 Paraplegic client; project nicknamed "Iron man". *I also enjoy studying topics in machine learning, data science and statistics independently through MOOCs and contributing to open source projects.* 
+:mortar_board: Recently finished a Graduate Certificate program in **Analytics** at [DePaul University](http://www.cdm.depaul.edu/academics/Pages/current/Analytics-Certificate.aspx) were I was focused on **Data Mining & Computational Methods**. Previously took **Computer Science courses** at [Johns Hopkins Engineering for Professionals](https://ep.jhu.edu/programs-and-courses/programs/computer-science) school. Previously earned a Professional Certificate in **Medical Product Development** at [University of California, Irvine Extension](http://ce.uci.edu/areas/life_sciences/medical_products/). Previously earned a BSE in **Biomedical Engineering** from the [University of Hartford](http://www.hartford.edu/ceta/undergraduate/engineering/BM/). My senior research project was to develop a prototype [walk-assist](http://www.tuvie.com/wp-content/uploads/ekso-bionic-suit1.jpg) device for a T4 Paraplegic client; project nicknamed "Iron man". *I also enjoy studying topics in machine learning, data science and statistics independently through MOOCs and contributing to open source projects.* 
 
 :floppy_disk: I like developing open source software tools to help assist others complete their data analysis work! I like programming in R & Python and I'm interested in learning about [Cryptocurrency](https://en.wikipedia.org/wiki/Cryptocurrency)! 
 
-:pencil: I enjoy technical writing and have co-authored two manuscripts, in [*Connecticut Medicine*](https://www.ncbi.nlm.nih.gov/pubmed/24156174) and [*Bioinformatics*](https://www.ncbi.nlm.nih.gov/pubmed/27503226). [My Erdos number is 6](https://www.csauthors.net/distance/paul-erdos/jasmine-dumas).
+:pencil: I enjoy technical writing and have co-authored two research papers, in [*Connecticut Medicine*](https://www.ncbi.nlm.nih.gov/pubmed/24156174) and [*Bioinformatics*](https://www.ncbi.nlm.nih.gov/pubmed/27503226). [My Erdos number is 6](https://www.csauthors.net/distance/paul-erdos/jasmine-dumas).
 
 :earth_americas: I grew up in the *Lower Hudson Valley, NY* and stayed around *Connecticut* after undergrad. I'm *sometimes* available for *remote consulting* opportunities working with [**diverse** teams](http://www.forbes.com/sites/bonniemarcus/2015/08/12/the-lack-of-diversity-in-tech-is-a-cultural-issue/#7170290c3577) to solve interesting challenges with data. Feel free to get in touch with [me](https://jasdumas.github.io/consulting/)!
 
@@ -32,6 +32,6 @@ subtitle: ... and all that jazz!
 
 ### Contact me
 
-:bird: [@jasdumas](https://twitter.com/jasdumas) 
+:bird: I can be best reach on Twitter [@jasdumas](https://twitter.com/jasdumas) 
 
 **Let's**  [![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg?style=plastic)](https://gitter.im/jasdumas/jasdumas.github.io?source=orgpage)
