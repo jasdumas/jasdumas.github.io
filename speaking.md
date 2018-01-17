@@ -9,6 +9,8 @@ bigimg:
 
 ---------------
 
+### Availability
+
 I'm available for speaking engagements on topics including but not limited to:
 - shiny development & web applications
 - beer analytics
@@ -18,12 +20,10 @@ I'm available for speaking engagements on topics including but not limited to:
 <a class="btn btn-warning" href="https://goo.gl/forms/pFW2VVuCVKE0Icsy1" role="button">Invite Me to Speak</a>
 
 
-### Talks
+### Recent & Upcoming Talks
 
-I store slide materials for talks on [GitHub](https://github.com/jasdumas/talks)
+- I store slide materials for talks on [GitHub](https://github.com/jasdumas/talks)
 
-Heard me speak at an event? Submit <a class="btn btn-success" href="https://goo.gl/forms/TqYUt9t1UHLhbOOT2" role="button">Speaker Feedback</a>
- 
 
 | Title                                                        | Event                                                                                            | Date            | Materials                                                                                                   |
 |-------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|-----------------|----------------------------------------------------------------------------------------------------------|
@@ -32,3 +32,7 @@ Heard me speak at an event? Submit <a class="btn btn-success" href="https://goo.
 | **Extending `Shiny` by Enhancing User Experience with `shinyLP`** | R User Group (Portland, OR)                                                                        | April 6th, 2017 | [slides](https://jasdumas.github.io/talks/PDX-R-user-group/pdx-r-user-group-slides.html), [twitter picture](https://twitter.com/pdxrlang/status/850166299565015040)                           |
 | **Open Government Data & Beer Analytics**                         | Open Data Science Conference - East (Boston, MA)                                                              | May 5th, 2017        | [slides](https://jasdumas.github.io/talks/odsc-boston/odsc-open-gov-beer.html), [video recording](https://www.youtube.com/watch?v=GPsa955fNQE)                                                                                           |
 | **R, What is it good for? Absolutely Everything!** |[**R User Day @ Texas Data Day**](http://datadaytexas.com/2018-r-user-day/news) | January 27, 2018 | _Coming soon_
+
+---------------
+
+- Heard me speak at an event? Submit <a class="btn btn-success" href="https://goo.gl/forms/TqYUt9t1UHLhbOOT2" role="button">Speaker Feedback</a>
