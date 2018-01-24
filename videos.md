@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Featured Videos
+cta-text: Invite Me to Speak
+cta-link: "https://goo.gl/forms/pFW2VVuCVKE0Icsy1"
 ---
 
 
