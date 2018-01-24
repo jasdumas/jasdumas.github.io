@@ -1,7 +1,9 @@
 ---
 layout: page
 title: Projects
-subtitle: open source & weekend data science projects
+cta-text: Open Source Contributions
+cta-link: "https://jasdumas.github.io/open-source/"
+subtitle: weekend data science projects
 ---
 
 ---------------
