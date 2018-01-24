@@ -27,7 +27,6 @@ avatar: /img/new_avatar.png
 
 # List of links in the navigation bar
 navbar-links:
-  Blog: ""
   Projects: projects
   Resources:
     - Data Science Links: ds-resources
