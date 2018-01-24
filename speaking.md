@@ -2,6 +2,8 @@
 layout: page
 title: Speaking
 social-share: true
+cta-text: Invite Me to Speak
+cta-link: "https://goo.gl/forms/pFW2VVuCVKE0Icsy1"
 bigimg:
   - "/post_data/speaking-uri.jpg-small": "Speaking at URI Coastal Insitute (2017)"
   - "/post_data/beer-audience.jpg": "Speaking at Open Data Science Conference, Boston, MA (2017)"
@@ -17,13 +19,9 @@ I'm available for speaking engagements on topics including but not limited to:
 - civic data applications
 - transitioning into a data science career 
 
-<a class="btn btn-warning" href="https://goo.gl/forms/pFW2VVuCVKE0Icsy1" role="button">Invite Me to Speak</a>
-
-
 ### Recent & Upcoming Talks
 
-- I store slide materials for talks on [GitHub](https://github.com/jasdumas/talks)
-
+- Heard me speak at an event? Submit <a class="btn btn-success" href="https://goo.gl/forms/TqYUt9t1UHLhbOOT2" role="button">Speaker Feedback</a>
 
 | Title                                                        | Event                                                                                            | Date            | Materials                                                                                                   |
 |-------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|-----------------|----------------------------------------------------------------------------------------------------------|
@@ -33,6 +31,4 @@ I'm available for speaking engagements on topics including but not limited to:
 | **Open Government Data & Beer Analytics**                         | Open Data Science Conference - East (Boston, MA)                                                              | May 5th, 2017        | [slides](https://jasdumas.github.io/talks/odsc-boston/odsc-open-gov-beer.html), [video recording](https://www.youtube.com/watch?v=GPsa955fNQE)                                                                                           |
 | **R, What is it good for? Absolutely Everything!** |[**R User Day @ Texas Data Day**](http://datadaytexas.com/2018-r-user-day/news) | January 27, 2018 | _Coming soon_
 
----------------
 
-- Heard me speak at an event? Submit <a class="btn btn-success" href="https://goo.gl/forms/TqYUt9t1UHLhbOOT2" role="button">Speaker Feedback</a>
