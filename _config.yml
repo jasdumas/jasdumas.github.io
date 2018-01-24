@@ -38,7 +38,7 @@ navbar-links:
     - Resume: resume
     - Consulting: consulting
     - Speaking: speaking
-  Featured Videos: videos
+    - Featured Videos: videos
 nav-search: search
 
 
