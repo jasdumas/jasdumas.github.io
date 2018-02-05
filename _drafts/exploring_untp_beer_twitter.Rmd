@@ -1,16 +1,16 @@
 ---
 title: "Exploratory & sentiment analysis of beer tweets from Untappd on Twitter"
 layout: post
-tags: [r, rstats, beer-analytics]
+tags: [r, rstats, beer-analytics, text-mining, tidyverse]
 output: 
   html_document: 
   self_contained: no
 bigimg: /post_data/beer_flights.JPG
-share-img: /post_data/untp-sentiment.png
+share-img: /post_data/untp-sentiment-1.png
 social-share: true
 ---
 
-```{r}
+```{r fig.height=4, fig.width=6, include=FALSE}
 knitr::opts_chunk$set(
   fig.path = "{{ site.url }}/post_data/untp-",
 	echo = TRUE,
@@ -70,7 +70,7 @@ How many unique users are in the data set?
 length(unique(untp$user_id))
 ```
 
-```{r message=FALSE, warning=FALSE}
+```{r}
 paste(min(untp$created_at), max(untp$created_at), sep = " to " )
 ```
 
@@ -85,7 +85,7 @@ There a few different types of tweet structures that can be shared from the Unta
 
 1. Earning Badges (i.e. tweets that contain 'I just earned the...' or even the word 'badge')
 2. Added review text (i.e. text which ends in a '-' before the default template of 'Drinking a')
-3. Default check-ins (i.e. tweets that begin with 'Drinking ' _a|an|the_)
+3. Default check-ins (i.e. tweets that begin with 'Drinking a')
 4. Brewery offering updates (i.e. tweets that begin with 'Just added ...' for new beers added)
 
 There are granular account social settings available that enable the ease of sharing check-in info to certain linked social media accounts.
@@ -136,7 +136,7 @@ There were numerous 'Middle of the Road' badges awarded of various levels. The d
 > Looking for more kick than a session beer, but want to be able to stay for a few rounds? You have to keep it in the middle. That's 25 beers with an ABV greater than 5% and less than 10%.
 
 So, it would appear that is a popular range of ABV that users are trying, which supports the notion of it'd generally easier to consume more moderate-alcohol content beers rather than heavier beers (Ales vs Stouts).
-```{r, badges}
+```{r fig.height=7, fig.width=5}
 untp %>% group_by(badge_type) %>% 
          summarise(n = n()) %>% 
          dplyr::filter(!is.na(badge_type)) %>% 
@@ -253,7 +253,7 @@ untp_text$clean_beer <- trimws(untp_text$clean_beer)
 ```
 
 Now that we have the reviews and beer/breweries separated, I wonder if there are any commonly reviewed beers that are shared on Twitter? (I want to keep the beer with the brewery at this point in case the [same beer name appears at different breweries](https://www.npr.org/sections/thesalt/2015/01/05/369445171/craft-brewers-are-running-out-of-names-and-into-legal-spats))
-```{r, topbeer}
+```{r fig.height=7, fig.width=5}
 untp_text %>% group_by(clean_beer) %>% 
               summarise(n = n()) %>% 
               arrange(desc(n)) %>% 
@@ -305,8 +305,8 @@ head(untp_sentiment)
 ```
 
 The ['Drifter Pale Ale
-Widmer Brothers Brewing'](https://untappd.com/b/widmer-brothers-brewing-drifter-pale-ale/55591) having the lowest associated sentiment and currently rated: **3.43** and the ['Stone Loral & Dr. Rudi's Inevitable Adventure by Stone Brewing'](https://untappd.com/b/stone-brewing-stone-loral-and-dr-rudi-s-inevitable-adventure/2391432) (which is a IPA - Imperial / Double) having the highest associated sentiment which is currently rated: **3.88**. 
-```{r, sentiment}
+Widmer Brothers Brewing'](https://untappd.com/b/widmer-brothers-brewing-drifter-pale-ale/55591) having the lowest associated sentiment and currently rated: **3.43** and the ['Stone Delicious IPA by Stone Brewing'](https://untappd.com/b/stone-brewing-co-stone-delicious-ipa/392748) having the highest associated sentiment which is currently rated: **3.81**. 
+```{r fig.height=7, fig.width=5}
 ggplot(untp_sentiment, aes(x = clean_beer, y = sentiment, fill = clean_beer)) +
   geom_col(show.legend = FALSE) +
   coord_flip() +
@@ -315,7 +315,7 @@ ggplot(untp_sentiment, aes(x = clean_beer, y = sentiment, fill = clean_beer)) +
 ```
 
 Now, I want to visualize the words to see the most common occurrences from added reviews. The largest word being 'Beer' is the most obvious given the specific Untappd reviews. Then the other words appear to be popular hash tags from the Superbowl such as ['flyeaglesfly'](https://twitter.com/search?q=flyeaglesfly&src=typd).
-```{r, wordcloud}
+```{r fig.height=5, fig.width=5}
 untp_text_tiny %>%
   anti_join(stop_words) %>%
   count(word) %>%
