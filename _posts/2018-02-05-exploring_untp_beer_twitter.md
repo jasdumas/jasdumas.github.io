@@ -6,7 +6,7 @@ output:
   html_document: 
   self_contained: no
 bigimg: /post_data/beer_flights.JPG
-share-img: untp-unnamed-chunk-20-1.png
+share-img: /post_data/untp-sentiment-1.png
 social-share: true
 ---
 
@@ -15,7 +15,7 @@ social-share: true
 
 ## Project Objective
 
-Untappd has some usage restrictions for their [API](https://untappd.com/api/register) namely not allowing any exploratoring of analytics uses, so [I'm](https://untappd.com/user/jasdumas) going to explore tweets of beer and brewery check-ins from the Untappd app to find some implicit trends in how users share their activity.
+Untappd has some usage restrictions for their [API](https://untappd.com/api/register) namely not allowing any exploratory of analytics uses, so [I'm](https://untappd.com/user/jasdumas) going to explore tweets of beer and brewery check-ins from the Untappd app to find some implicit trends in how users share their activity.
 
 ## Exploratory Analysis
 
@@ -52,12 +52,12 @@ head(untp$text)
 ```
 
 ```
-## [1] "I just earned the 'Land of the Free  (Level 11)' badge on @untappd! https://t.co/Bg1VXbH6bJ"
-## [2] "I just earned the 'Taster, Please' badge on @untappd! https://t.co/RTEu9oTZej"              
-## [3] "I just earned the 'Johnny Appleseed  (Level 14)' badge on @untappd! https://t.co/3kcL5rG5tf"
-## [4] "I just earned the 'Keep Your Wits About You' badge on @untappd! https://t.co/7AfRw0DN8g"    
-## [5] "I just earned the 'Hopped Up (Level 47)' badge on @untappd! https://t.co/uEchWummR4"        
-## [6] "I just earned the 'Better Together (Level 12)' badge on @untappd! https://t.co/y7xQdzWyvS"
+## [1] "I just earned the 'Land of the Free (Level 94)' badge on @untappd! https://t.co/oSOzNMA6tn" 
+## [2] "I just earned the 'Wheel of Styles (Level 10)' badge on @untappd! https://t.co/jbW0zjtyAl"  
+## [3] "I just earned the 'God Save the Queen' badge on @untappd! https://t.co/CdhKjOKK40"          
+## [4] "I just earned the 'Draft City (Level 2)' badge on @untappd! https://t.co/Ps0WOIRUot"        
+## [5] "I just earned the 'Middle of the Road (Level 2)' badge on @untappd! https://t.co/XRXVRcc8Iq"
+## [6] "Drinking a GRITz by @BrainDeadBrew at @luckdallas — https://t.co/BPCAmDcpdE"
 ```
 
 From this sample, its apparent that there a few type of default tweets that are available.
@@ -71,7 +71,7 @@ length(unique(untp$user_id))
 ```
 
 ```
-## [1] 5898
+## [1] 5897
 ```
 
 
@@ -80,7 +80,7 @@ paste(min(untp$created_at), max(untp$created_at), sep = " to " )
 ```
 
 ```
-## [1] "2018-02-04 19:28:04 to 2018-02-05 23:20:04"
+## [1] "2018-02-04 19:35:40 to 2018-02-05 23:35:29"
 ```
 
 My initial assumptions were that all the tweets would be posted from the app, but it seems there is a little bit cross-posting going on from Facebook and some nerds who have set up [IFTTT](https://ifttt.com/discover) applet recipes.
@@ -138,7 +138,7 @@ untp %>% group_by(structure_type) %>%
            subtitle = "Most users have shared their badge acheivements", y = "Count of Tweets", x = "")
 ```
 
-![plot of chunk unnamed-chunk-9]({{ site.url }}/post_data/untp-unnamed-chunk-9-1.png)
+![plot of chunk tweettype]({{ site.url }}/post_data/untp-tweettype-1.png)
 
 
 #### What kind of badges are users earning?
@@ -176,7 +176,7 @@ untp %>% group_by(badge_type) %>%
            subtitle = "Brew Bowl LII was the most awarded badge this weekend", y = "Count of Tweets", x = "")
 ```
 
-![plot of chunk unnamed-chunk-11]({{ site.url }}/post_data/untp-unnamed-chunk-11-1.png)
+![plot of chunk topbadge]({{ site.url }}/post_data/untp-topbadge-1.png)
 
 
 #### Where do people check-in from?
@@ -193,16 +193,16 @@ untp %>% group_by(place_full_name) %>%
 
 ```
 ##       place_full_name     n
-## 1                <NA> 14794
+## 1                <NA> 14776
 ## 2   Pennsylvania, USA    81
 ## 3        Florida, USA    66
 ## 4        Portland, OR    62
 ## 5  Cape Girardeau, MO    44
-## 6    Philadelphia, PA    39
-## 7         Phoenix, AZ    37
-## 8        Brooklyn, NY    35
-## 9          Dallas, TX    35
-## 10    Los Angeles, CA    35
+## 6    Philadelphia, PA    38
+## 7         Phoenix, AZ    36
+## 8          Dallas, TX    34
+## 9     Los Angeles, CA    34
+## 10       Brooklyn, NY    33
 ## 11      New York, USA    33
 ```
 
@@ -262,11 +262,11 @@ tibble(hashtags = unlist(untp$hashtags)) %>%
 ## # A tibble: 25 x 2
 ##                hashtags     n
 ##                   <chr> <int>
-##  1                photo  2900
-##  2             brewbowl  2742
-##  3        ibelieveinIPA    64
-##  4            SuperBowl    41
-##  5         FlyEaglesFly    38
+##  1                photo  2897
+##  2             brewbowl  2728
+##  3        ibelieveinIPA    62
+##  4            SuperBowl    40
+##  5         FlyEaglesFly    37
 ##  6         FirstSqueeze    26
 ##  7            craftbeer    21
 ##  8 BrainDeadBottleShare    16
@@ -341,7 +341,7 @@ untp_text %>% group_by(clean_beer) %>%
            subtitle = "", y = "Count of Tweets", x = "")
 ```
 
-![plot of chunk unnamed-chunk-16]({{ site.url }}/post_data/untp-unnamed-chunk-16-1.png)
+![plot of chunk topbeer]({{ site.url }}/post_data/untp-topbeer-1.png)
 
 #### Translating the additional review text as proxy for empirical reviews
 
@@ -405,7 +405,7 @@ ggplot(untp_sentiment, aes(x = clean_beer, y = sentiment, fill = clean_beer)) +
   labs(x = "")
 ```
 
-![plot of chunk unnamed-chunk-19]({{ site.url }}/post_data/untp-unnamed-chunk-19-1.png)
+![plot of chunk sentiment]({{ site.url }}/post_data/untp-sentiment-1.png)
 
 Now, I want to visualize the words to see the most common occurrences from added reviews. The largest word being 'Beer' is the most obvious given the specific Untappd reviews. Then the other words appear to be popular hash tags from the Superbowl such as ['flyeaglesfly'](https://twitter.com/search?q=flyeaglesfly&src=typd).
 
@@ -416,7 +416,7 @@ untp_text_tiny %>%
   with(wordcloud(word, n, max.words = 100, colors = wes_palette("Zissou1")))
 ```
 
-![plot of chunk unnamed-chunk-20]({{ site.url }}/post_data/untp-unnamed-chunk-20-1.png)
+![plot of chunk wordcloud]({{ site.url }}/post_data/untp-wordcloud-1.png)
 
 
 #### Notes:

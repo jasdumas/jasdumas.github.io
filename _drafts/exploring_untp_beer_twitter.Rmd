@@ -106,7 +106,7 @@ untp$structure_type[is.na(untp$structure_type)] <- "additional review"
 
 
 Given that a single check-in can result in multiple badges and multiple social shares, this makes sense to have more tweets associated with the type of beer check-in.
-```{r}
+```{r, tweettype}
 untp %>% group_by(structure_type) %>% 
          summarise(n = n()) %>% 
          mutate(structure_type = fct_reorder(structure_type, n)) %>%
@@ -136,7 +136,7 @@ There were numerous 'Middle of the Road' badges awarded of various levels. The d
 > Looking for more kick than a session beer, but want to be able to stay for a few rounds? You have to keep it in the middle. That's 25 beers with an ABV greater than 5% and less than 10%.
 
 So, it would appear that is a popular range of ABV that users are trying, which supports the notion of it'd generally easier to consume more moderate-alcohol content beers rather than heavier beers (Ales vs Stouts).
-```{r fig.height=7, fig.width=5}
+```{r topbadge}
 untp %>% group_by(badge_type) %>% 
          summarise(n = n()) %>% 
          dplyr::filter(!is.na(badge_type)) %>% 
@@ -253,7 +253,7 @@ untp_text$clean_beer <- trimws(untp_text$clean_beer)
 ```
 
 Now that we have the reviews and beer/breweries separated, I wonder if there are any commonly reviewed beers that are shared on Twitter? (I want to keep the beer with the brewery at this point in case the [same beer name appears at different breweries](https://www.npr.org/sections/thesalt/2015/01/05/369445171/craft-brewers-are-running-out-of-names-and-into-legal-spats))
-```{r fig.height=7, fig.width=5}
+```{r, topbeer}
 untp_text %>% group_by(clean_beer) %>% 
               summarise(n = n()) %>% 
               arrange(desc(n)) %>% 
@@ -306,7 +306,7 @@ head(untp_sentiment)
 
 The ['Drifter Pale Ale
 Widmer Brothers Brewing'](https://untappd.com/b/widmer-brothers-brewing-drifter-pale-ale/55591) having the lowest associated sentiment and currently rated: **3.43** and the ['Stone Delicious IPA by Stone Brewing'](https://untappd.com/b/stone-brewing-co-stone-delicious-ipa/392748) having the highest associated sentiment which is currently rated: **3.81**. 
-```{r fig.height=7, fig.width=5}
+```{r, sentiment}
 ggplot(untp_sentiment, aes(x = clean_beer, y = sentiment, fill = clean_beer)) +
   geom_col(show.legend = FALSE) +
   coord_flip() +
@@ -315,7 +315,7 @@ ggplot(untp_sentiment, aes(x = clean_beer, y = sentiment, fill = clean_beer)) +
 ```
 
 Now, I want to visualize the words to see the most common occurrences from added reviews. The largest word being 'Beer' is the most obvious given the specific Untappd reviews. Then the other words appear to be popular hash tags from the Superbowl such as ['flyeaglesfly'](https://twitter.com/search?q=flyeaglesfly&src=typd).
-```{r fig.height=5, fig.width=5}
+```{r, wordcloud, fig.height=7, fig.width=7}
 untp_text_tiny %>%
   anti_join(stop_words) %>%
   count(word) %>%
