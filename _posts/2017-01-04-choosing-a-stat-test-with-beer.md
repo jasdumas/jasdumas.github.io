@@ -2,7 +2,7 @@
 layout: post
 title: "Explaining Statistical Goodness of fit Tests with Beer (Statistics)"
 subtitle: "Statistics + Beer = Comprehension"
-tags: [rstats, r, statistics, r-bloggers]
+tags: [rstats, r, statistics, r-bloggers, beer-analytics]
 ---
 
 A [goodness of fit test](https://en.wikipedia.org/wiki/Goodness_of_fit) are a collection of statistical techniques used to summarize the differences between observed values and expected values. These tests can be used be used for hypothesis testing, testing residual normality, distribution comparisons, and outcome frequency distribution comparisons.
