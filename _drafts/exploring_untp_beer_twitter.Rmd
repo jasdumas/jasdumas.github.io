@@ -43,12 +43,13 @@ library(maps)
 library(tidytext)
 library(dumas) # http://jasdumas.github.io/dumas/
 library(wordcloud)
+library(magrittr)
 ```
 
 All social media shares from the Untappd app include their own short URL **'untp.beer'**, which makes the search query criteria identifiable using the [`search_tweets()`](http://rtweet.info/) function. 
 ```{r}
 untp <- search_tweets(q = "untp.beer", 
-                      n = 18000, 
+                      n = 1000, 
                       include_rts = FALSE, 
                       retryonratelimit = TRUE,  
                       geocode = lookup_coords("usa"), 
@@ -67,7 +68,7 @@ From this sample, its apparent that there a few type of default tweets that are 
 
 How many unique users are in the data set?
 ```{r}
-length(unique(untp$user_id))
+n_distinct(untp$user_id)
 ```
 
 ```{r}
@@ -92,25 +93,22 @@ There are granular account social settings available that enable the ease of sha
 
 I'm going to detect the string patterns and create a new column in the data set to house them.
 ```{r}
-untp$structure_type <- NA
-
-# earning badges
-untp$structure_type[untp$text %>% str_detect("I just earned the")] <- "badge achievement"
-# default checkin
-untp$structure_type[untp$text %>% str_detect("^Drinking ")] <- "default check-in"
-# brewery updates
-untp$structure_type[untp$text %>% str_detect("^Just added")] <- "brewery update"
-# any NA's left should be tweets that users have added additional text/descriptions
-untp$structure_type[is.na(untp$structure_type)] <- "additional review"
+untp %<>%
+  mutate(structure_type = case_when (
+    str_detect(text, "I just earned the") ~ "badge achievement", 
+    str_detect(text, "^Drinking") ~ "default check-in", 
+    str_detect(text, "^Just added") ~ "brewery update", 
+    TRUE ~ "additional review"
+  ))
 ```
 
 
 Given that a single check-in can result in multiple badges and multiple social shares, this makes sense to have more tweets associated with the type of beer check-in.
 ```{r, tweettype}
-untp %>% group_by(structure_type) %>% 
-         summarise(n = n()) %>% 
-         mutate(structure_type = fct_reorder(structure_type, n)) %>%
-    ggplot(., aes(x = structure_type, y = n)) +
+untp %>% 
+  count(structure_type) %>% 
+  mutate(structure_type = fct_reorder(structure_type, n)) %>%
+  ggplot(aes(x = structure_type, y = n)) +
       geom_bar(stat = "identity", fill = wes_palette("BottleRocket1", 1)) +
       theme_minimal() +
       labs(title = "Count of Tweet Types for Untappd Twitter Shares", 
@@ -127,8 +125,8 @@ The 'Brew Bowl LII' badge is the most popular earned badge available during this
 
 
 ```{r}
-untp$badge_type <- NA
-untp$badge_type <- str_extract(untp$text, "(?<=').*?(?=')")
+untp %<>% 
+  mutate(badge_type = str_extract(text, "(?<=').*?(?=')"))
 ```
 
 There were numerous 'Middle of the Road' badges awarded of various levels. The description of the Level 5 of that badge is:
@@ -137,13 +135,12 @@ There were numerous 'Middle of the Road' badges awarded of various levels. The d
 
 So, it would appear that is a popular range of ABV that users are trying, which supports the notion of it'd generally easier to consume more moderate-alcohol content beers rather than heavier beers (Ales vs Stouts).
 ```{r topbadge}
-untp %>% group_by(badge_type) %>% 
-         summarise(n = n()) %>% 
-         dplyr::filter(!is.na(badge_type)) %>% 
-         arrange(desc(n)) %>% 
-         top_n(25) %>% 
-         mutate(badge_type = fct_reorder(badge_type, n)) %>%
-    ggplot(., aes(x = badge_type, y = n)) +
+untp %>% 
+  count(badge_type) %>% 
+  dplyr::filter(!is.na(badge_type)) %>% 
+  arrange(desc(n)) %>% 
+  top_n(25) %>% 
+  ggplot(aes(x = fct_reorder(badge_type, n), y = n)) +
       geom_bar(stat = "identity", fill = wes_palette("GrandBudapest1", 1)) +
       theme_minimal() +
       coord_flip() +
@@ -156,8 +153,8 @@ untp %>% group_by(badge_type) %>%
 
 Lot's of activity on the [east coast](https://www.thrillist.com/drink/nation/the-16-best-breweries-in-the-northeast) (Boston, MA being the top place at the time of running this analysis) and in the metros across the U.S.! Untappd is based in North Carolina, so it's interesting to not see a lot of activity there, but users can have their location settings turned off for privacy in Twitter. This may also be indicative of users not filling out all the check-in details such as purchase or drinking location. Often times users seem to be drinking and checking-in at home and may want to mask their location given the plethora of missing values.
 ```{r message=FALSE, warning=FALSE}
-untp %>% group_by(place_full_name) %>% 
-  summarise(n = n()) %>% 
+untp %>% 
+  count(place_full_name) %>% 
   arrange(desc(n)) %>% 
   top_n(11) %>% 
   data.frame()
@@ -181,14 +178,13 @@ with(untp, points(lng, lat, pch = 20, cex = .75, col = wes_palette("Cavalcanti1"
 Instead of crafting an ugly regex solution to extract the brewery from the tweet text, the column for `mentions_screen_name` is actually a decent proxy for the beer location if the brewery has a Twitter presence! I really enjoy [Tree House Brewery, Green IPA](https://untappd.com/b/tree-house-brewing-company-green/533174) and it is nice to see many others have tried out beers from their brewery.
 ```{r, topbrew}
 # mentions_screen_name is the brewery that produced the checked-in beer
-tibble(brewery = unlist(untp$mentions_screen_name)) %>% 
-        group_by(brewery) %>% 
-        dplyr::filter(brewery != 'untappd') %>% 
-        summarise(n = n()) %>% 
-        arrange(desc(n)) %>% 
-        top_n(25) %>% 
-  mutate(brewery = fct_reorder(brewery, n)) %>%
-    ggplot(., aes(x = brewery, y = n)) +
+untp %>% 
+  unnest(brewery = mentions_screen_name) %>% 
+  count(brewery) %>% 
+  dplyr::filter(brewery != 'untappd') %>% 
+  arrange(desc(n)) %>% 
+  top_n(25) %>% 
+  ggplot(aes(x = fct_reorder(brewery, n), y = n)) +
       geom_bar(stat = "identity", fill = wes_palette("Moonrise2", 1)) +
       theme_minimal() +
       coord_flip() +
@@ -199,13 +195,14 @@ tibble(brewery = unlist(untp$mentions_screen_name)) %>%
 #### How many pictures of beer are shared?
 
 The #photo is indicative of a paired photo with a tweet from Untappd. The rest of the hash tags align with the Superbowl festivities
+
 ```{r}
-tibble(hashtags = unlist(untp$hashtags)) %>% 
-        group_by(hashtags) %>% 
-        dplyr::filter(!is.na(hashtags)) %>% 
-        summarise(n = n()) %>% 
-        arrange(desc(n)) %>% 
-        top_n(25)
+untp %>%
+  unnest(hashtags) %>% 
+  count(hashtags) %>% 
+  dplyr::filter(!is.na(hashtags)) %>%
+  arrange(desc(n)) %>% 
+  top_n(15)
 ```
 
 #### Did people share more during the Superbowl game?
@@ -241,26 +238,23 @@ user <-untp %>%
 untp_text <- data.frame(review, beer, user$screen_name)
 ```
 
-Let's remove the hash tags from the beer column and the common begging of each description.
+Let's remove the hash tags from the beer column and the common beginning of each description.
 ```{r}
-untp_text$clean_beer <- str_replace(untp_text$beer,"#[a-zA-Z0-9]{1,}", "")
+untp_text %<>%
+  mutate(clean_beer = str_replace(beer,"#[a-zA-Z0-9]{1,}", "")) %>%
+  mutate(clean_beer = str_replace_all(clean_beer, "Drinking a |Drinking an ", "")) %>%
+  mutate(clean_beer = trimws(str_replace_all(clean_beer, "[[:punct:]]", "")))
 
-untp_text$clean_beer <- str_replace_all(untp_text$clean_beer, c("Drinking a |Drinking an "), "") 
-
-untp_text$clean_beer <- str_replace_all(untp_text$clean_beer, "[[:punct:]]", "") 
-
-untp_text$clean_beer <- trimws(untp_text$clean_beer)
 ```
 
 Now that we have the reviews and beer/breweries separated, I wonder if there are any commonly reviewed beers that are shared on Twitter? (I want to keep the beer with the brewery at this point in case the [same beer name appears at different breweries](https://www.npr.org/sections/thesalt/2015/01/05/369445171/craft-brewers-are-running-out-of-names-and-into-legal-spats))
 ```{r, topbeer}
-untp_text %>% group_by(clean_beer) %>% 
-              summarise(n = n()) %>% 
-              arrange(desc(n)) %>% 
-              top_n(15) %>% 
-              dplyr::filter(clean_beer %notin% c("DC", "A")) %>% 
-  mutate(clean_beer = fct_reorder(clean_beer, n)) %>%
-    ggplot(., aes(x = clean_beer, y = n)) +
+untp_text %>% 
+  count(clean_beer) %>% 
+  arrange(desc(n)) %>% 
+  top_n(15) %>% 
+  dplyr::filter(clean_beer %notin% c("DC", "A")) %>% 
+  ggplot(aes(x = fct_reorder(clean_beer, n), y = n)) +
       geom_bar(stat = "identity", fill = wes_palette("BottleRocket2", 1)) +
       theme_minimal() +
       coord_flip() +
@@ -272,8 +266,8 @@ untp_text %>% group_by(clean_beer) %>%
 
 These tweets don't indicate what numerical value that users rated each beer on a scale of 0.0 to 5.0 (0.25 increments) on the app, so I'm going to try and derive some of users opinions about beer from tweets that have additional review text, using the [`tidytext`](https://www.tidytextmining.com/) package. I think there is going to be some sentiment shared that is linked to the Super Bowl, and some selection bias from user's most likely sharing preferred beers.
 ```{r}
-top_beers <- untp_text %>% group_by(clean_beer) %>% 
-              summarise(n = n()) %>% 
+top_beers <- untp_text %>%
+              count(clean_beer) %>% 
               arrange(desc(n)) %>% 
               top_n(20) %>% 
               dplyr::filter(clean_beer %notin% c("DC", "A")) %>% 
@@ -288,14 +282,13 @@ merge_untp <- untp_text_tiny %>%
 
 # tokenize the reviews and remove some of the specific football words
 untp_text_tiny <- merge_untp %>% 
+                  mutate(review = as.character(review)) %>%
                   unnest_tokens(word, review) %>% 
-                  dplyr::filter(word %notin% c("super", "superbowl", "superbowlsunday"
-))
+                  dplyr::filter(word %notin% c("super", "superbowl", "superbowlsunday"))
 ```
 
 ```{r}
-untp_sentiment <- 
-  untp_text_tiny %>%
+untp_sentiment <- untp_text_tiny %>%
     inner_join(get_sentiments("bing")) %>%
     count(clean_beer, sentiment) %>%
     spread(sentiment, n, fill = 0) %>%
