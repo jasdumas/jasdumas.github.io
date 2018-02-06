@@ -49,7 +49,7 @@ library(magrittr)
 All social media shares from the Untappd app include their own short URL **'untp.beer'**, which makes the search query criteria identifiable using the [`search_tweets()`](http://rtweet.info/) function. 
 ```{r}
 untp <- search_tweets(q = "untp.beer", 
-                      n = 1000, 
+                      n = 18000, 
                       include_rts = FALSE, 
                       retryonratelimit = TRUE,  
                       geocode = lookup_coords("usa"), 
