@@ -17,6 +17,13 @@ I’m a Data Scientist & Engineer with industry experience in financial technolo
 
 I'm searching for a **remote-friendly** company that values creativity, diversity and openness as a **lead or Sr. Data Scientist** developing data products & algorithms with R & Python while mentoring junior team members.
 
+### Featured Projects  
+
+- [**Tutorial on Web scraping craft brewery ratings from Beer Advocate with R and import.io**](http://trendct.org/2016/03/18/tutorial-web-scraping-and-mapping-breweries-with-import-io-and-r/)
+- [**R-Shiny app for gene expression analysis for bioinformaticians**](http://gdancik.github.io/shinyGEO/)
+
+*More projects available at: [https://jasdumas.github.io/projects/](https://jasdumas.github.io/projects/)*
+
 ### Education 
 
 * **Graduate Analytics Certificate** at [DePaul University](https://www.cdm.depaul.edu/academics/Pages/Current/Analytics-Certificate.aspx), (2015 - 2017)
@@ -28,8 +35,8 @@ I'm searching for a **remote-friendly** company that values creativity, diversit
 ### Data Science Work Experience
 
  - **Data Scientist 2 at Simple Finance**, (Oct. 2016 - Present)
-    - Lead Data Scientist for the Onboarding product team: responsible for technical mentorship, data product strategy, external data integration with APIs and experimentation design and analysis (A/B Testing)
-    - Developed an early detection predictive model using **feature selection with Gradient Boosted Models** to monitor spikes in ACH returns leading to data-informed decisions for mitigating fraud loss partnered with the risk team
+    - Lead Data Scientist for the Onboarding product team (Jan. 2017 to Aug. 2017): responsible for technical mentorship, data product strategy, external data integration with APIs and experimentation design and analysis (A/B Testing)
+    - Developed an early detection predictive model using **feature selection with Gradient Boosted Models** to monitor spikes in ACH returns leading to data-informed decisions for mitigating fraud loss and partnered with the risk team
     - Developed a rapid prototype using `r-shiny` and `flexdashboard` for performing power analysis
     - Modeled causal impact with Bayesian structural **time series techniques** for fraud prevention and product feature launches
 
@@ -44,13 +51,6 @@ I'm searching for a **remote-friendly** company that values creativity, diversit
 - **Student Developer at Google Summer of Code**, (May 2015 - Aug. 2015)
     - Developed a web application with `r-shiny` to automate differential expression and survival analysis of micro-array gene expression datasets from the NIH Gene Expression Omnibus
 
-### Featured Projects  
-
-- [**Tutorial on Web scraping craft brewery ratings from Beer Advocate with R and import.io**](http://trendct.org/2016/03/18/tutorial-web-scraping-and-mapping-breweries-with-import-io-and-r/)
-- [**R-Shiny app for gene expression analysis for bioinformaticians**](http://gdancik.github.io/shinyGEO/)
-
-*More projects available at: [https://jasdumas.github.io/projects/](https://jasdumas.github.io/projects/)*
-
 
 ### Open Source `R` Software
 
@@ -63,16 +63,34 @@ I'm searching for a **remote-friendly** company that values creativity, diversit
 
 ### Talks
 
-* [Adventures in Crafting a Data Science Career](https://jasdumas.github.io/talks/rhodyrstats-R-user-group/rhodyrstats-r-user-group-slides.html) - University of Rhode Island (URI) Coastal Institute and RhodyRStats “Careers in R” speaker series in _Narragansett, RI_
-* [Extending Shiny by Enhancing User Experience with shinyLP](https://jasdumas.github.io/talks/PDX-R-user-group/pdx-r-user-group-slides.html) - R User Group in _Portland, OR_
+* [R, What is it good for? Absolutely Everything](https://github.com/jasdumas/talks/blob/master/r-data-day-texas/r-user-ddtx-jasmine-dumas.pdf) - R User Day at Data Day Texas 2018 in _Austin, TX_
+
 * [Open Government Data & Beer Analytics](https://jasdumas.github.io/talks/odsc-boston/odsc-open-gov-beer.html) - Open Data Science Conference 2017 in _Boston, MA_
+
+* [Extending Shiny by Enhancing User Experience with shinyLP](https://jasdumas.github.io/talks/PDX-R-user-group/pdx-r-user-group-slides.html) - R User Group in _Portland, OR_
+
+* [Adventures in Crafting a Data Science Career](https://jasdumas.github.io/talks/rhodyrstats-R-user-group/rhodyrstats-r-user-group-slides.html) - University of Rhode Island (URI) Coastal Institute and RhodyRStats “Careers in R” speaker series in _Narragansett, RI_
+
+### Teaching
+
+* **Course Instructor & Developer with DataCamp** (Sept. 2017 - Present)
+    - Currently under-contract developing a `R` course titled: _'Building Big Shiny Apps'_
+
+* **Data Science Instructor (Part-time)** (Oct. 2017 - Dec. 2017)
+    -  Coordinated with [Startup Institute](https://www.startupinstitute.com/intro-courses/data-science/) and [TCB Analytics](http://tcbanalytics.com/2017/09/26/startup-institute-announces-partnership-with-western-new-england-university-and-tcb-analytics-to-deliver-data-science-bootcamp/) for 10 weeks of Intro to R Programming and Tableau Dashboarding
+
 
 ### Research Publications       
 
+* Stella Bollmann, Dianne Cook, **Jasmine Dumas**, John Fox, Julie Josse, Oliver Keyes, Carolin
+Strobl, Heather Turner and Rudolf Debelak. _'Forwards Column'_. The R Journal, Volume 9/2, December 2017. - [Paper Link](https://journal.r-project.org/archive/2017-2/forwards.pdf)
+
 * **Dumas J**, Gargano MA, Dancik GM. _shinyGEO: a web-based application for analyzing Gene Expression Omnibus datasets_. Bioinformatics. 2016 Aug 8. - [Paper link](http://bioinformatics.oxfordjournals.org/content/early/2016/08/20/bioinformatics.btw519)
+
 * **Dumas J**, et.al., _Feasibility of an electronic stethoscope system for monitoring neonatal bowel sounds_. Connecticut Medicine, Volume 77, Number 8, pp. 467-471, September 2013. - [Paper link](http://connmed.csms.org/i/157293-sept-2013/20)   
 
-### Technical Skills 
+
+### Technical Skills [Keywords]
 - Computational programming & machine learning with R and Python
 - Statistical Analysis and inference
 - Data processing & querying with SQL
