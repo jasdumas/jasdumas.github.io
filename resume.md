@@ -7,7 +7,7 @@ subtitle: Data Scientist
 -------------
 
 <div align="center">
-<a href="mailto:jasmine.dumas@gmail.com" class="btn btn-default"><span class="glyphicons glyphicons-envelope"></span>Email</a> 
+<a href="mailto:jasmine.dumas@gmail.com" class="btn btn-info"><span class="glyphicons glyphicons-envelope"></span>Email</a> 
 <a href="https://jasdumas.github.io/" class="btn btn-info"><span class="glyphicons glyphicons-pencil"></span>Website & Blog</a>
 <a href="http://jasdumas.github.io/jasmine_dumas_resume.pdf" class="btn btn-info"><span class="glyphicons glyphicons-download-alt"></span>Download PDF</a>  
 </div>
