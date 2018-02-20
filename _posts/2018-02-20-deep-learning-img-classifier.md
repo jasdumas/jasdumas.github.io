@@ -10,7 +10,7 @@ I have to admit my initial thoughts of deep learning were pessimistic and in ord
 For this image classification project I leveraged a pre-trained model from the `R` interface to [Keras](https://keras.rstudio.com/index.html), that had been previously trained on a similar task. This enabled me to prototype something quickly and cheaply in a weekend and wrap the code as an interactive web app with a `shiny` flexdashboard.  Here is the link to the `shiny` app which enables you to upload a image and return the top 3 predicted classes for that image: [https://jasminedumas.shinyapps.io/image_clf/](https://jasminedumas.shinyapps.io/image_clf/) and a preview of the app in action below.
 
 
-![](/post_data/img_clf_app.jpeg)
+<img src="/post_data/img_clf_app.jpeg" alt="alt text" width="900px" height="600px">
 
 
 
