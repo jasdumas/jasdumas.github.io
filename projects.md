@@ -34,6 +34,8 @@ subtitle: weekend data science projects
 
 * :earth_africa: [*Flexdashboard* of Estimate Population by Zipcode Choropleth map](https://jasminedumas.shinyapps.io/Choropleth_Zipcodes/): a leaflet map showing the estimated population at a state-level by zipcode of the US. 
 
+* :8ball: [*Flexdashboard* of Deep Learning Image Classification with Keras](https://jasminedumas.shinyapps.io/image_clf/): This application uses the ResNet50 model, with weights pre-trained on ImageNet to enable fast experimentation for prediction of uploaded images classes.
+
 ## Media
 
 * :dollar: [R for FinTech](https://jasdumas.github.io/r4fintech/): A in-progress guidebook written in [bookdown](https://bookdown.org/) for R programming with Financial Technology (FinTech) applications.
