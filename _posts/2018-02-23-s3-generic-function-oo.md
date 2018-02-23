@@ -23,7 +23,7 @@ According to Wikipedia:
 > a [generic function](https://en.wikipedia.org/wiki/Generic_function) is a function defined for [polymorphism](https://en.wikipedia.org/wiki/Polymorphism_(computer_science)  which is the provision of a single interface to entities of different types.
 
 
-Wow, that's a mouthful but essentially meaning that the function decides which method to call on different types of classes. Imagine the generic function as a recipe for cookies and the common steps include mixing, baking, and cooling and some different methods for specific types! ðª Ultimately the cookies you make are dictated by what type of ingredients you include.
+Wow, that's a mouthful but essentially meaning that the function decides which method to call on different types of classes. Imagine the generic function as a recipe for cookies and the common steps include mixing, baking, and cooling and some different methods for specific types! 🍪 Ultimately the cookies you make are dictated by what type of ingredients you include.
 
 | Generic Function (recipe)                                                                                                                                      | Method (finishing)                     | Class (ingredient)   |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------|----------------------|
