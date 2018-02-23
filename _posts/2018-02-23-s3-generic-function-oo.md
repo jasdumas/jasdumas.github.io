@@ -10,7 +10,7 @@ bigimg: /post_data/cookies.jpg
 
 In Data Science, there are numerous instances where different techniques call for the use of different tools. For me, this means hopping between R and python on a weekly basis. I've been fortunate enough to have taken formal courses in python & R in the last few years and just by circumstances have chosen R as my primary language in my data science toolkit. This usually equates to a real mental struggle when jumping into a Jupyter Notebook and making trivial mistakes in the first 15 minutes, like below.
 
-<iframe src="http://htmlpreview.github.io/?https://github.com/jasdumas/jasdumas.github.io/blob/master/post_data/iris_head_example.html" style="border: none; width: 800px; height: 1000px"></iframe>
+![](/post_data/python-mess.jpeg)
 
 
 I don't have any tricks yet, aside from a set of data analysis starter notebooks to quell the initial confusion, but I have noticed when I mentor other Data Scientists (those who have R skills and are now learning python or vice versa) and participate in pair-programming, I often drift to explaining the differences between R's generic-function OO and python (and a many other languages) message-passing OO as a means of remembering how to structure functions. I'm only knowledgeable about explaining this differences from printing out and bookmarking Hadley Wickham's [OO Field Guide chapter](http://adv-r.had.co.nz/OO-essentials.html) in the [Advanced R](http://adv-r.had.co.nz/) book! Don't be worried by the title of being too 'Advanced', if you are interested in learning more about the _why_ of certain things in R, it's a great resource.
