@@ -14,7 +14,7 @@ subtitle: Data Scientist
 
 
 ### About Me
-I’m a Data Scientist & Engineer with 5 years of industry experience in financial technology, auto insurance, medical devices, Research & Development, and aerospace manufacturing. I'm an active member of the R programming community and have developed several open source packages, participated in [Google Summer of Code](https://www.google-melange.com/archive/gsoc/2015/orgs/rproject/projects/jasdumas.html), and [NASA Datanauts](https://open.nasa.gov/blog/welcome-datanauts-2017-spring-class/). 
+I’m a Data Scientist & Engineer with 5 years of industry experience across financial technology, auto insurance, R&D medical devices, and aerospace manufacturing. I'm an active member of the R programming community and have developed several open source packages, participated in [Google Summer of Code](https://www.google-melange.com/archive/gsoc/2015/orgs/rproject/projects/jasdumas.html), and [NASA Datanauts](https://open.nasa.gov/blog/welcome-datanauts-2017-spring-class/). 
 
 ### Objective
 
@@ -22,8 +22,9 @@ I'm searching for a **remote-friendly** company that values creativity, diversit
 
 ### Featured Projects  
 
+- [**Deep Learning Image Classification App with Keras and R-shiny**](https://jasminedumas.shinyapps.io/image_clf/)
 - [**Tutorial on Web scraping craft brewery ratings from Beer Advocate with R and import.io**](http://trendct.org/2016/03/18/tutorial-web-scraping-and-mapping-breweries-with-import-io-and-r/)
-- [**R-Shiny app for gene expression analysis for bioinformaticians**](http://gdancik.github.io/shinyGEO/)
+- [**R-shiny app for gene expression analysis for bioinformaticians**](http://gdancik.github.io/shinyGEO/)
 
 *More projects available at: [https://jasdumas.github.io/projects/](https://jasdumas.github.io/projects/)*
 
@@ -33,7 +34,7 @@ I'm searching for a **remote-friendly** company that values creativity, diversit
    * _Coursework_: Intro to Programming, Data Analytics & Regression, Database Processing for Large-scale Analytics, Advanced Data Analysis, Knowledge Discovery Technologies, Programming Machine Learning Applications
    
 * **BS in Engineering in Biomedical Engineering** at [University of Hartford](http://www.hartford.edu/ceta/undergraduate/engineering/BM/), (2008 - 2012)
-   * _Coursework_: Engineering Computer Applications, Calculus (1-2, Multivariable), Differential Equations, Research, Engineering Design, Statics, Dynamics, Mechacnics of Materials, Biomaterials 
+   * _Coursework_: Engineering Computer Applications, Calculus (1-2, Multivariable), Differential Equations, Independent Research, Engineering Design, Statics, Dynamics, Mechacnics of Materials, Biomaterials 
 
 ### Data Science Work Experience
 
@@ -88,11 +89,11 @@ Strobl, Heather Turner and Rudolf Debelak. _'Forwards Column'_. The R Journal, V
 
 
 ### Technical Skills [Keywords]
-- Computational programming & machine learning with R and Python
-- Statistical Analysis and inference
-- Data processing & querying with SQL
-- Web application development with Shiny and Bootstrap
-- Collaborative computing with GitHub and Git
+- Computational programming & machine learning with R and Python [ggplot2. dplyr, tidyverse, pandas, scikit-learn]
+- Statistical Analysis and inference [Regression, Bagging, Boosting, Ensemble, Hypothesis testing]
+- Data processing & querying with SQL [Redshift, postgreSQL]
+- Web application development with Shiny and Bootstrap [HTML, CSS]
+- Collaborative computing with GitHub and Git [Version control]
 
 
         
