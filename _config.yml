@@ -27,18 +27,18 @@ avatar: /img/new_avatar.png
 
 # List of links in the navigation bar
 navbar-links:
-  Projects: projects
+  Projects: "projects"
   Data Science Resources:
-    - Data Science Links: ds-resources
-    - R Tutorials: r-papers
-    - Python Tutorials: py-papers
-    - Course Notes: course-notes
+    - Data Science Links: "ds-resources"
+    - R Tutorials: "r-papers"
+    - Python Tutorials: "py-papers"
+    - Course Notes: "course-notes"
   About Me: 
-    - About Me: aboutme
-    - Resume/CV: resume
-    - Consulting: consulting
-    - Speaking: speaking
-    - Featured Videos: videos
+    - About Me: "aboutme"
+    - Resume/CV: "resume"
+    - Consulting: "consulting"
+    - Speaking: "speaking"
+    - Featured Videos: "videos"
 nav-search: search
 
 
@@ -97,7 +97,7 @@ google_analytics: UA-74123437-1
 
 # Output options (more information on Jekyll's site)
 timezone: "America/New_York"
-#markdown: kramdown
+markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
 paginate: 7
