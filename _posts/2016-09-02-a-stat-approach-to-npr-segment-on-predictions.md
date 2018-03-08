@@ -3,7 +3,7 @@ layout: post
 title: A Statistical Approach To Understanding Why Humans Are Bad at Predictions
 subtitle: Statisticians are Humans too
 bigimg: /post_data/A-League-of-Their-Own.jpg
-tags: [stats, news]
+tags: [statistics, news]
 ---
 
 
