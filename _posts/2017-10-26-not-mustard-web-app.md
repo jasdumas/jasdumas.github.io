@@ -2,7 +2,7 @@
 title: 'Not Mustard 🍔 Exploring McDonalds Reviews on Yelp with R'
 subtitle: 'Leveraging tidyverse packages httr, stringr & purrr'
 layout: post
-tags: [r, rstats, shiny, food, tidyverse]
+tags: [data-science, data-analysis, r, rstats, shiny, food, tidyverse]
 output: 
   html_document: 
   self_contained: no
