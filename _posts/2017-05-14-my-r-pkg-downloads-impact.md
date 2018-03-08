@@ -2,7 +2,7 @@
 title: "Measuring Impact from Giving Talks on My R Package Downloads"
 subtitle: "ggplot2, CausalImpact, & prophet oh my!"
 layout: post
-tags: [rstats, r, forecasting, talks, communication, conferences]
+tags: [rstats, r, forecasting, talks, communication, conferences, data-science, data-analysis]
 output: 
   html_document: 
   self_contained: no
