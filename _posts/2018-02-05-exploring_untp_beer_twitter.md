@@ -1,7 +1,7 @@
 ---
 title: "Exploratory & sentiment analysis of beer tweets from Untappd on Twitter"
 layout: post
-tags: [r, rstats, beer-analytics, text-mining, tidyverse]
+tags: [r, rstats, beer-analytics, text-mining, tidyverse, data-science, data-analysis]
 output: 
   html_document: 
   self_contained: no
