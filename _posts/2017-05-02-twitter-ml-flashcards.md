@@ -2,7 +2,7 @@
 title: 'Extracting data from Twitter for #machinelearningflashcards'
 subtitle: 'A tutorial for machine learning - learning'
 layout: post
-tags: [rstats, r, image-processing, machine-learning, tutorial]
+tags: [rstats, r, image-processing, ml, tutorial, data-science, data-analysis]
 output: 
   html_document: 
     self_contained: no
