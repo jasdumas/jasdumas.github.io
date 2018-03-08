@@ -4,7 +4,7 @@ title: "Extracting data from Twitter for @hrbrmstr's #nom foodie images"
 output: 
   html_document: 
     self_contained: no
-tags: [rstats, r, r-bloggers, tutorial, food, data-science, data-analysis]
+tags: [rstats, r, tutorial, food, data-science, data-analysis]
 ---
 
 
