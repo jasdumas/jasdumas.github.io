@@ -2,7 +2,7 @@
 layout: post
 title: Random Forest Analysis of Adult Income in Python 
 subtitle: ... and a little R & Excel
-tags: [coursera, mooc, python, data-analysis]
+tags: [machine-learning, coursera, mooc, python]
 ---
 
 _Blog post for Week 2 of [Machine Learning for Data Analysis (Coursera)](https://www.coursera.org/learn/machine-learning-data-analysis)_
