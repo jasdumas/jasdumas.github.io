@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Adding a Google Custom Search Engine to your beautiful-jekyll site
-tags: [website, design, beautiful-jekyll]
+tags: [web-development, design, beautiful-jekyll]
 ---
 
 The author and developer of the beautiful-jekyll template, [Dean Attali](http://deanattali.com/2015/03/12/beautiful-jekyll-how-to-build-a-site-in-minutes/) briefly explains the details to include a Google Custom Search Engine to your blog, but I thought I would document the tasks more succinctly for others to follow.
