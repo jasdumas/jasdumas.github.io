@@ -2,7 +2,7 @@
 layout: post
 title: A Choropleth Map, Shiny, & Flexdashboard Walk into a Bar...
 bigimg: /post_data/map.jpg
-tags: [rstats, r, shiny, r-bloggers, dashboard]
+tags: [rstats, r, shiny, dashboard]
 ---
 
 Like most R Programmers, I'm a fan of the R packages that RStudio develops. They recently announced [**Flexdashboards**](https://blog.rstudio.org/2016/05/17/flexdashboard-easy-interactive-dashboards-for-r/): Easy interactive dashboards written in RMarkdown. I'm always trying to expand my R skills with side projects so I've put together a *Flexdashboard* to visualize USA zipcodes on a *choropleth map* and a *shiny* dropdown to dynamically switch States. A choropleth map is a shaded map to show numerical variations such as population density.
