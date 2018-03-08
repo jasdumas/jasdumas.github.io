@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Adding Tags to your beautiful-jekyll site
-tags: [website, design, beautiful-jekyll]
+tags: [web-development, design, beautiful-jekyll]
 ---
 
 
