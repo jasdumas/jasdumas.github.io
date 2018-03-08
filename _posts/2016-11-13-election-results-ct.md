@@ -2,7 +2,7 @@
 layout: post
 title: "Mapping & Web-scraping the 2016 Presidential Election Results in Connecticut"
 subtitle: "Understanding my Neighbors with R and Leaflet"
-tags: [rstats, r, election-2016, data-analysis]
+tags: [data-science, rstats, r, election-2016, data-analysis]
 maps: true
 share-img: "https://github.com/jasdumas/ct-election-2016/blob/master/hrc-plot.jpeg"
 output: 
