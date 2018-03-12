@@ -1,0 +1,101 @@
+---
+layout: page
+title: Hi, I'm Jasmine
+subtitle: Data Scientist / R Programmer / Vegetable Farmer
+cta-text: Let's Work Together
+cta-link: "https://jasdumas.github.io/resume/"
+fb-img: jasdumas.github.io
+css: "/css/index.css"
+meta-title: "Jasmine Dumas"
+meta-description: "Data Scientist in industry with a Background in Predictive Analytics, Machine Learning, and Statistical Computing"
+bigimg:
+  - "/img/hiking-wadsworth.jpg": "Wadsworth Falls State Park, Middletown, CT (2016)"
+  - "/img/mystic5.jpg" : "North Stonington, CT"
+  - "/img/mystic4.jpg" : "North Stonington, CT"
+  - "/img/mystic3.jpg" : "North Stonington, CT"
+  - "/img/mystic5.jpg" : "North Stonington, CT"
+  - "/img/mystic1.jpg" : "North Stonington, CT"
+  - "/img/mystic2.jpg" : "North Stonington, CT"
+  - "/img/ri-beach.jpg" : "Misquamicut State Beach, Westerly, RI (2015)"
+  - "/img/hiking-gay-city.jpg" : "Gay City State Park, Hebron, CT (2015)"
+  - "/img/ri-trip.jpg" : "Aquidneck Island, Newport, RI (2015)"
+  - "/img/ri-kite-festival.jpg" : "Brenton Point State Park, Newport, RI (2015)"
+  - "/img/so-g-farm.jpg" : "South Glastonbury, CT"
+  - "/img/garden.jpg" : "Successful Vegetable Garden at Home! (2015)"
+  - "/img/hiking-ny.jpg" : "James Baird State Park, Pleasant Valley, NY"
+  - "/img/cherry-blossom.jpg" : "Cherry Blossom Festival, Washington, DC (2016)"
+  - "/img/fiona1.jpg" : "Fiona, My Dog!"
+  - "/img/hiking-glastonbury1.jpg" : "Great Pond Reserve, Glastonbury, CT (2015)"
+  - "/img/lake-champlain_vt.jpg" : "Lake Champlain, Burlington, VT (2016)"
+  - "/img/montreal1.jpg" : "Île de Montréal, Montréal, Canada (2015)"
+  - "/img/new_britain.jpg" : "New Britian Musuem of American Art, CT (2016)"
+  - "/img/strawberry.jpg" : "Successful Vegetable Garden at Home! (2016)"
+  - "/img/laptop.jpg" : "A Data Scientist's Laptop after useR! 2016 Conf"
+  - "/img/ggbridge.jpg" : "Golden Gate Bridge, San Fransisco, CA (2016)"
+  - "/img/palm-tree.jpg" : "Stanford University, Stanford, CA (2016)"
+  - "/img/ny-flight.jpg" : "New York City (Area) at Night (2016)"
+  - "/img/groton.jpg" : "Groton, CT (2016)"
+  - "img/pdx-plane.jpg" : "Flying over Portland, OR (2016)"
+  - "img/pdx-rose.jpg" : "International Rose Test Garden, Portland, OR (2016)"
+  - "img/pdx1.jpg" : "Skyline from the Portland, OR Japanese Garden (2016)"
+  - "img/maple-bacon.jpg" : "Maple Bacon Donut from Blue Star Donuts, Portland, OR (2016)"
+  - "img/portlandia.jpg" : "The Portlandia statue, Portland, OR (2016)"
+  - "img/pdx-morning.jpg" : "View of Convention Center at Portland, OR (2016)"
+  - "img/frog.jpg" : "South Glastonbury, CT (2016)"
+---
+
+<!-- <div align="center"> </div>  -->
+<!-- <a href="https://jasdumas.github.io/resume/" class=".btn-primary">Resume</a> -->
+
+<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+
+<h1> <div align = "center" style="font-family: 'Permanent Marker', cursive;">Blog Posts: </div> </h1>
+
+<div class="list-filters">
+  <a href="/ds" class="list-filter">Data Science</a>
+  <span class="list-filter filter-selected">Machine Learning</span>
+  <a href="/tags" class="list-filter">More...</a>
+</div>
+
+<hr>
+
+<div class="posts-list">
+  {% for post in site.tags.machine-learning %}
+  <article class="post-preview">
+    <a href="{{ post.url | prepend: site.baseurl }}">
+	  <h2 class="post-title">{{ post.title }}</h2>
+
+	  {% if post.subtitle %}
+	  <h3 class="post-subtitle">
+	    {{ post.subtitle }}
+	  </h3>
+	  {% endif %}
+    </a>
+
+    <p class="post-meta">
+      Posted on {{ post.date | date: "%B %-d, %Y" }}
+    </p>
+
+    <div class="post-entry">
+      {{ post.content | truncatewords: 40 | strip_html | xml_escape}}
+	  <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">Read More</a>
+    </div>
+
+   </article>
+  {% endfor %}
+</div>
+
+{% if paginator.total_pages > 1 %}
+<ul class="pager main-pager">
+  {% if paginator.previous_page %}
+  <li class="previous">
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
+  </li>
+  {% endif %}
+  {% if paginator.next_page %}
+  <li class="next">
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
+  </li>
+  {% endif %}
+</ul>
+{% endif %}
