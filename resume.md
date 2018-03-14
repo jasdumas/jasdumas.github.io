@@ -7,9 +7,9 @@ subtitle: Data Scientist
 -------------
 
 <div align="center">
-<a href="mailto:jasmine.dumas@gmail.com" class="btn btn-info"><span class="glyphicons glyphicons-envelope"></span>Email</a> 
-<a href="https://jasdumas.github.io/" class="btn btn-info"><span class="glyphicons glyphicons-pencil"></span>Website & Blog</a>
-<a href="http://jasdumas.github.io/jasmine_dumas_resume.pdf" class="btn btn-info"><span class="glyphicons glyphicons-download-alt"></span>Download PDF</a>  
+<a href="mailto:jasmine.dumas@gmail.com" class="btn btn-success"><span class="glyphicons glyphicons-envelope"></span>Email</a> 
+<a href="https://jasdumas.github.io/" class="btn btn-success"><span class="glyphicons glyphicons-pencil"></span>Website & Blog</a>
+<a href="http://jasdumas.github.io/jasmine_dumas_resume.pdf" class="btn btn-success"><span class="glyphicons glyphicons-download-alt"></span>Download PDF</a>  
 </div>
 
 
@@ -18,15 +18,7 @@ I’m a Data Scientist & Engineer with 5 years of industry experience across fin
 
 ### Objective
 
-I'm searching for a **remote-friendly** company that values creativity, diversity and openness as a **lead or Sr. Data Scientist** developing data products & algorithms with R & Python while mentoring junior team members.
-
-### Featured Projects  
-
-- [**Deep Learning Image Classification App with Keras and R-shiny**](https://jasminedumas.shinyapps.io/image_clf/)
-- [**Tutorial on Web scraping craft brewery ratings from Beer Advocate with R and import.io**](http://trendct.org/2016/03/18/tutorial-web-scraping-and-mapping-breweries-with-import-io-and-r/)
-- [**R-shiny app for gene expression analysis for bioinformaticians**](http://gdancik.github.io/shinyGEO/)
-
-*More projects available at: [https://jasdumas.github.io/projects/](https://jasdumas.github.io/projects/)*
+I'm searching for a **remote-friendly** company that values creativity, diversity and openness as a **Machine Learning Engineer or Data Scientist** developing data products & algorithms with R & Python while mentoring junior team members.
 
 ### Education 
 
@@ -39,15 +31,15 @@ I'm searching for a **remote-friendly** company that values creativity, diversit
 ### Data Science Work Experience
 
  - **Data Scientist 2 at Simple Finance**, (Oct. 2016 - Present)
-    - Lead Data Scientist for the Onboarding product team (Jan. 2017 to Aug. 2017): responsible for technical mentorship, data product strategy, external data integration with APIs and experimentation design and analysis (A/B Testing)
-    - Developed an early detection predictive model using **feature selection with Gradient Boosted Models** to monitor spikes in ACH returns leading to data-informed decisions for mitigating fraud loss and partnered with the risk team
-    - Developed a rapid prototype using `r-shiny` and `flexdashboard` for performing power analysis
-    - Modeled causal impact with Bayesian structural **time series techniques** for fraud prevention and product feature launches
+    - Lead Data Scientist for the Onboarding product team: responsible for technical mentorship, data product strategy, external data integration with APIs, experimentation and analyzing product feature launches
+    - Developed an early detection machine learning model to monitor spikes in ACH returns leading to data-informed decisions for mitigating fraud loss
+    - Developed internal data science tools for power analysis and data cleaning
 
 - **Associate Data Scientist at The Hartford Financial Services**, (April 2016 - Oct. 2016)
 - **Data Science Intern at The Hartford Financial Services**, (Nov. 2015 - March 2016)
-    - Research & Implementation of machine learning techniques in **variable reduction and selection** to develop predictive models for auto insurance that improve loss ratio estimates, drive strategic pricing changes and insights on competitive position
-    - Enhancing the team's data science architecture by developing and maintaining an internal **R** package, writing technical documentation and tutorials
+    - Developed machine learning models for auto insurance that improved loss ratio estimates, drove strategic pricing changes and provided insights on competitive position
+    - Enhancing the team’s data science architecture by developing an internal R package, writing technical documentation and tutorials
+
 
 - **Bioinformatics Internship at the University of Connecticut Institute for Systems Genomics (UConn)**, (Sept. 2015 - January 2016)
     - Computational and command line programming to develop a gene database for the annotation of the douglas-fir & walnut genome
@@ -58,6 +50,8 @@ I'm searching for a **remote-friendly** company that values creativity, diversit
 
 ### Open Source `R` Software
 
+
+#### Packages:
 - [**`gramr`**](https://github.com/ropenscilabs/gramr): Provides grammar checks in RMarkdown documents 
 - [**`ttbbeer`**](https://CRAN.R-project.org/package=ttbbeer): Data package of beer statistics from U.S. Department of the Treasury (TTB)
 - [**`shinyLP`**](https://CRAN.R-project.org/package=shinyLP): Bootstrap components to make landing home pages for shiny web apps
@@ -65,7 +59,14 @@ I'm searching for a **remote-friendly** company that values creativity, diversit
 
 *More R packages and Shiny apps available at: [https://github.com/jasdumas](https://github.com/jasdumas)*
 
-### Talks
+#### Featured Projects:  
+- [**Deep Learning Image Classification App with Keras and R-shiny**](https://jasminedumas.shinyapps.io/image_clf/)
+- [**Web scraping tutorial of craft brewery ratings from Beer Advocate**](http://trendct.org/2016/03/18/tutorial-web-scraping-and-mapping-breweries-with-import-io-and-r/)
+
+*More projects available at: [https://jasdumas.github.io/projects/](https://jasdumas.github.io/projects/)*
+
+
+### Invited Talks
 
 * [R, What is it good for? Absolutely Everything](https://github.com/jasdumas/talks/blob/master/r-data-day-texas/r-user-ddtx-jasmine-dumas.pdf) - R User Day at Data Day Texas 2018 in _Austin, TX_
 * [Open Government Data & Beer Analytics](https://jasdumas.github.io/talks/odsc-boston/odsc-open-gov-beer.html) - Open Data Science Conference 2017 in _Boston, MA_
