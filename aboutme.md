@@ -35,3 +35,9 @@ subtitle: ... and all that jazz!
 :bird: I can be best reach on Twitter [@jasdumas](https://twitter.com/jasdumas) 
 
 **Let's**  [![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg?style=plastic)](https://gitter.im/jasdumas/jasdumas.github.io?source=orgpage)
+
+<form method="POST" action="https://formspree.io/jasmine.dumas@gmail.com">
+  <input type="email" name="email" placeholder="Your email">
+  <textarea name="message" placeholder="Your message or comment"></textarea>
+  <button type="submit">Send</button>
+</form>
