@@ -88,6 +88,10 @@ Strobl, Heather Turner and Rudolf Debelak. _'Forwards Column'_. The R Journal, V
 * **Dumas J**, Gargano MA, Dancik GM. _shinyGEO: a web-based application for analyzing Gene Expression Omnibus datasets_. Bioinformatics. 2016 Aug 8. - [Paper link](http://bioinformatics.oxfordjournals.org/content/early/2016/08/20/bioinformatics.btw519)
 * **Dumas J**, et.al., _Feasibility of an electronic stethoscope system for monitoring neonatal bowel sounds_. Connecticut Medicine, Volume 77, Number 8, pp. 467-471, September 2013. - [Paper link](http://connmed.csms.org/i/157293-sept-2013/20)   
 
+### Volunteering
+
+- [Data For Democracy](http://datafordemocracy.org/): Web scraping crime data for Hartford, CT for a Nationwide Metrics Dashboard. https://github.com/Data4Democracy/usa-dashboard/pull/30
+- [Jamie McLeod-Skinner (Oregon's 2nd Congressional District Election, 2018)](https://jamiefororegon.com/): [Election Analytics](https://github.com/jasdumas/jms-election-analytics)
 
 ### Technical Skills [Keywords]
 - Computational programming & machine learning with R and Python [ggplot2. dplyr, tidyverse, pandas, scikit-learn]
