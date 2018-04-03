@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Jasmine Dumas
-subtitle: Data Scientist 
+subtitle: Data Scientist · Machine Learning Engineer
 ---
 
 -------------
@@ -18,7 +18,7 @@ I’m a Data Scientist & Engineer with 5 years of industry experience across fin
 
 ### Objective
 
-I'm searching for a **remote-friendly** company that values creativity, diversity and openness as a **Machine Learning Engineer or Data Scientist** developing data products & algorithms with R & Python while mentoring junior team members.
+I'm searching for a **remote-friendly** company that values creativity, diversity and openness as a **Machine Learning Engineer or Data Scientist** developing data products & algorithms with R & Python while mentoring junior team members. I'm looking to push my career and skills towards adapting machine learning algorithms to improve user experiences and fight fraud.
 
 ### Education 
 
@@ -90,8 +90,8 @@ Strobl, Heather Turner and Rudolf Debelak. _'Forwards Column'_. The R Journal, V
 
 ### Volunteering
 
-- [Data For Democracy](http://datafordemocracy.org/): Web scraping crime data for Hartford, CT for a Nationwide Metrics Dashboard. https://github.com/Data4Democracy/usa-dashboard/pull/30
-- [Jamie McLeod-Skinner (Oregon's 2nd Congressional District Election, 2018)](https://jamiefororegon.com/): [Election Analytics](https://github.com/jasdumas/jms-election-analytics)
+- [Data For Democracy](http://datafordemocracy.org/): Web scraping crime data for [Hartford, CT](https://github.com/Data4Democracy/usa-dashboard/pull/30) for a Nationwide Metrics Dashboard. 
+- [Jamie McLeod-Skinner Campaign](https://jamiefororegon.com/) (Oregon's 2nd Congressional District Election, 2018): [Election Analytics](https://github.com/jasdumas/jms-election-analytics)
 
 ### Technical Skills [Keywords]
 - Computational programming & machine learning with R and Python [ggplot2. dplyr, tidyverse, pandas, scikit-learn]
