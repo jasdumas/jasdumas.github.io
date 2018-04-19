@@ -14,16 +14,16 @@ bigimg:
 
 ---------------
 
-### Availability
+### Availability (Beginning in 2019)
 
-_I'm available for speaking engagements on topics including but not limited to_:
+_I'm not available for the remainder of 2018 for any speaking engagements, but looking to schedule talks for 2019. I have previously given talks on topics including but not limited to_:
 
 - :sparkles: Shiny development & web applications
-- :beers:Beer analytics
+- :beers: Beer analytics
 - :house_with_garden: Civic data applications
 - :computer: Transitioning to a data science career 
 
-### Recent & Upcoming Talks
+### Past Talks
 
 - Heard me speak at an event? Submit <a class="btn btn-success" href="https://goo.gl/forms/TqYUt9t1UHLhbOOT2" role="button">Speaker Feedback</a>
 
