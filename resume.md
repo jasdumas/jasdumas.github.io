@@ -16,7 +16,7 @@ subtitle: Data Scientist · Machine Learning Engineer
 ### About Me
 I’m a Data Scientist & Engineer with 5 years of industry experience across financial technology, auto insurance, R&D medical devices, and aerospace manufacturing. I'm an active member of the R programming community and have developed several open source packages, participated in [Google Summer of Code](https://www.google-melange.com/archive/gsoc/2015/orgs/rproject/projects/jasdumas.html), and [NASA Datanauts](https://open.nasa.gov/blog/welcome-datanauts-2017-spring-class/). 
 
-### Objective
+### Career Goals
 
 I'm searching for a **remote-friendly** company that values creativity, diversity and openness as a **Machine Learning Engineer or Data Scientist** developing data products & algorithms with R & Python while mentoring junior team members. I'm looking to push my career and skills towards adapting machine learning algorithms to improve user experiences and fight fraud.
 
@@ -35,13 +35,13 @@ I'm searching for a **remote-friendly** company that values creativity, diversit
     - Developed an early detection machine learning model to monitor spikes in ACH returns leading to data-informed decisions for mitigating fraud loss
     - Developed internal data science tools for power analysis and data cleaning
 
-- **Associate Data Scientist at The Hartford Financial Services**, (April 2016 - Oct. 2016)
-- **Data Science Intern at The Hartford Financial Services**, (Nov. 2015 - March 2016)
+- **Associate Data Scientist at The Hartford Financial Services**, (Apr. 2016 - Oct. 2016)
+- **Data Science Intern at The Hartford Financial Services**, (Nov. 2015 - Mar. 2016)
     - Developed machine learning models for auto insurance that improved loss ratio estimates, drove strategic pricing changes and provided insights on competitive position
     - Enhancing the team’s data science architecture by developing an internal R package, writing technical documentation and tutorials
 
 
-- **Bioinformatics Internship at the University of Connecticut Institute for Systems Genomics (UConn)**, (Sept. 2015 - January 2016)
+- **Bioinformatics Internship at the University of Connecticut Institute for Systems Genomics (UConn)**, (Sept. 2015 - Jan. 2016)
     - Computational and command line programming to develop a gene database for the annotation of the douglas-fir & walnut genome
 
 - **Student Developer at Google Summer of Code**, (May 2015 - Aug. 2015)
@@ -63,7 +63,7 @@ I'm searching for a **remote-friendly** company that values creativity, diversit
 - [**Deep Learning Image Classification App with Keras and R-shiny**](https://jasminedumas.shinyapps.io/image_clf/)
 - [**Web scraping tutorial of craft brewery ratings from Beer Advocate**](http://trendct.org/2016/03/18/tutorial-web-scraping-and-mapping-breweries-with-import-io-and-r/)
 
-*More projects available at: [https://jasdumas.github.io/projects/](https://jasdumas.github.io/projects/)*
+*More projects available at: [https://jasdumas.com/projects/](https://jasdumas.com/projects/)*
 
 
 ### Invited Talks
