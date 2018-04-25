@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Frequently Asked Questions
-subtitle: Common inquiries for landing a early career data science job
+subtitle: Common inquiries for landing an early career data science job
 date: "4/25/2018"
 bigimg: 
    - "/img/hiking-wadsworth.jpg": "Wadsworth Falls State Park, Middletown, CT (2016)"
