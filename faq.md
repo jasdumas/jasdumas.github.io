@@ -9,8 +9,6 @@ bigimg:
 
 ___
 
-_In-progress as of 4/25/2018_
-
 I frequently get asked these questions about my path into data science, so I put together my common repsonses based on my personal opinion!
 
 ## Should I go back to school and get a Masters if I have a Bachelors? 
@@ -21,7 +19,7 @@ I thought that I needed to go to [graduate school](http://jasdumas.com/2016-07-1
 
 ## Should I go back to school and get a Ph.D? 
 
-**Definetly not**
+![**Definetly not**](/post_data/harry_potter_olivander.gif)
 
 Unless the job calls for developing novel algorithms to send humans to mars 🚀 or creating drugs to cure cancer 💉 a Ph.D is not needed for an early career data science job at a technology company. 
 
@@ -31,14 +29,13 @@ Unless the job calls for developing novel algorithms to send humans to mars 🚀
 
 A varied career background makes for a better data scientist. Highlight your differences in background as a postive in aiding diverse thinking on your new team. If you can't afford to go back to school there are still plently of online resources to teach yourself if you have the time and dedication to self learn.
 
-## How do I find and evaluate data science jobs?
-
-When searching for jobs I look for a team that is language agnostic, has data science tooling for predictive modeling at scale, and mentorship opportunities for junior scientists.
-
 ## How do I find a data science project?
 
 Look to your hobbies for project inspiration. I did [projects](http://jasdumas.com/projects/) centered around bioinformatics, beer and civic open data because that's what I'm interested in. 
 
+## How do I find and evaluate data science jobs?
 
+When searching for jobs I look for a team that is language agnostic, has data science tooling for predictive modeling at scale, and mentorship opportunities for junior scientists.
 
+_Last Updated 4/25/2018_
 
