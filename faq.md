@@ -9,7 +9,7 @@ bigimg:
 
 ___
 
-I frequently get asked these questions about my path into data science, so I put together my common repsonses based on my personal opinion!
+I frequently get asked these questions about my path into data science, so I put together my common repsonses based on my personal opinion to help guide others!
 
 ## Should I go back to school and get a Masters if I have a Bachelors? 
 
@@ -21,9 +21,9 @@ I thought that I needed to go to [graduate school](http://jasdumas.com/2016-07-1
 
 ![**Definetly not**](/post_data/harry_potter_olivander.gif)
 
-Unless the job calls for developing novel algorithms to send humans to mars 🚀 or creating drugs to cure cancer 💉 a Ph.D is not needed for an early career data science job at a technology company. 
+Unless the job calls for developing novel algorithms to send humans to mars 🚀 or creating drugs to cure cancer 💉 a Ph.D is not needed for an early career data science job at most technology companies. 
 
-## What if my background is different (i.e. not CS or Stats) from 'traditional' Data Scientists?
+### What if my background is different (i.e. not CS or Stats) from 'traditional' Data Scientists?
 
 **Maybe, It depends if your background is quantitative**
 
@@ -33,9 +33,13 @@ A varied career background makes for a better data scientist. Highlight your dif
 
 Look to your hobbies for project inspiration. I did [projects](http://jasdumas.com/projects/) centered around bioinformatics, beer and civic open data because that's what I'm interested in. 
 
-## How do I find and evaluate data science jobs?
+## How do I evaluate data science jobs?
 
-When searching for jobs I look for a team that is language agnostic, has data science tooling for predictive modeling at scale, and mentorship opportunities for junior scientists.
+When searching for jobs I look for a team that is language agnostic (R, Python, SQL, Julia), has data science tooling for predictive modeling at scale, and mentorship opportunities for junior scientists.
+
+## Related Resources
+
+- [(Blog post) Advice for graduates applying for data science jobs by Mikhail Popov](https://mpopov.com/blog/advice-for-grads-entering-industry-datasci)
 
 _Last Updated 4/25/2018_
 
