@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: Frequently Asked Questions (FAQ)
 subtitle: Common inquiries for landing a early career data science job
 ---
