@@ -15,7 +15,7 @@ social-share: true
 
 ## Project Objective
 
-Untappd has some usage restrictions for their [API](https://untappd.com/api/register) namely not allowing any exploratory of analytics uses, so [I'm](https://untappd.com/user/jasdumas) going to explore tweets of beer and brewery check-ins from the Untappd app to find some _implicit_ trends in how users share their activity.
+Untappd has some usage restrictions for their [API](https://untappd.com/api/register), namely not allowing any exploration for analytics or data mining use cases, so [I'm](https://untappd.com/user/jasdumas) going to explore tweets of beer and brewery check-ins from the Untappd app to find some _implicit_ trends in how users share their activity.
 
 ## Exploratory Analysis
 
