@@ -62,7 +62,7 @@ I’m a Senior Data Scientist & Engineer with 5 years of industry experience acr
 - [**Deep Learning Image Classification App with Keras and R-shiny**](https://jasminedumas.shinyapps.io/image_clf/)
 - [**Web scraping tutorial of craft brewery ratings from Beer Advocate**](http://trendct.org/2016/03/18/tutorial-web-scraping-and-mapping-breweries-with-import-io-and-r/)
 
-*More projects available at: [https://jasdumas.com/projects/](https://jasdumas.com/projects/)*
+*More projects available at: [http://jasdumas.com/projects/](http://jasdumas.com/projects/)*
 
 
 ### Invited Talks
