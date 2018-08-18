@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Jasmine Dumas
-subtitle: Data Scientist · Machine Learning Engineer
+subtitle: Senior Data Scientist • Statistical Modeling
 ---
 
 -------------
@@ -14,11 +14,7 @@ subtitle: Data Scientist · Machine Learning Engineer
 
 
 ### About Me
-I’m a Data Scientist & Engineer with 5 years of industry experience across financial technology, auto insurance, R&D medical devices, and aerospace manufacturing. I'm an active member of the R programming community and have developed several open source packages, participated in [Google Summer of Code](https://www.google-melange.com/archive/gsoc/2015/orgs/rproject/projects/jasdumas.html), and [NASA Datanauts](https://open.nasa.gov/blog/welcome-datanauts-2017-spring-class/). 
-
-### Career Goals
-
-I'm searching for a **remote-friendly** company that values creativity, diversity and openness as a **Machine Learning Engineer or Data Scientist** developing data products & algorithms with R & Python while mentoring junior team members. I'm looking to push my career and skills towards adapting machine learning algorithms to improve user experiences and fight fraud.
+I’m a Senior Data Scientist & Engineer with 5 years of industry experience across financial technology, auto insurance, R&D medical devices, and aerospace manufacturing. I'm an active member of the R programming community and have developed several open source packages, participated in [Google Summer of Code](https://www.google-melange.com/archive/gsoc/2015/orgs/rproject/projects/jasdumas.html), and [NASA Datanauts](https://open.nasa.gov/blog/welcome-datanauts-2017-spring-class/). 
 
 ### Education 
 
@@ -30,7 +26,10 @@ I'm searching for a **remote-friendly** company that values creativity, diversit
 
 ### Data Science Work Experience
 
- - **Data Scientist 2 at Simple Finance**, (Oct. 2016 - Present)
+- **Senior Data Scientist at Fastly**, (Aug. 2018 - present)
+    - Infrastructure Capacity Planning Team
+
+ - **Data Scientist 2 at Simple Finance**, (Oct. 2016 - Aug. 2018)
     - Lead Data Scientist for the Onboarding product team: responsible for technical mentorship, data product strategy, external data integration with APIs, experimentation and analyzing product feature launches
     - Developed an early detection machine learning model to monitor spikes in ACH returns leading to data-informed decisions for mitigating fraud loss
     - Developed internal data science tools for power analysis and data cleaning
