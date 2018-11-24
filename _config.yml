@@ -14,7 +14,7 @@ baseurl: ""
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: Jasmine Dumas
+title: Jasmine Daly
 
 # Short description of your site
 description: Data Scientist & R Programmer
@@ -49,7 +49,7 @@ nav-search: search
 # Change all these values or delete the ones you don't want.
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
-  name: Jasmine Dumas
+  name: Jasmine Daly
   github: jasdumas
   twitter: jasdumas
   linkedin: in/jasminedumas
