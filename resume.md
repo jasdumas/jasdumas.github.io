@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Jasmine Dumas
+title: Jasmine Daly
 subtitle: Senior Data Scientist • Statistical Modeling
 ---
 
