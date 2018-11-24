@@ -5,7 +5,7 @@ subtitle: ... and all that jazz!
 ---
 
 -------------
-:crystal_ball: I like long hikes, big data, and cold craft beer. I currently live in Connecticut with my partner and our Scottish Terrier mix dog,
+:crystal_ball: I like long hikes, big data, and cold craft beer. I currently live in Connecticut with my wife and our Scottish Terrier mix dog,
 [Fiona](https://twitter.com/jasdumas/status/679480102443417600). When I'm not programming I enjoy visting [covered bridges](http://jasdumas.com/post_data/ct_covered_bridges_map.nb.html) and [growing vegetables](http://hipsterveggies.com/).
 
 :briefcase: Currently working as a **Senior Data Scientist** ([Fastly](https://www.fastly.com/)). Previously worked as a **Data Scientist** ([Simple](https://www.simple.com/)), **Associate Data Scientist** ([The Hartford](https://www.thehartford.com/)), also in **R&D Engineering** roles ([Medtronic](http://www.medtronic.com/covidien), QDx/Abbott) and as an **Aerospace Manufacturing Engineer** ([AdChem](http://www.acmt.aero/)).
