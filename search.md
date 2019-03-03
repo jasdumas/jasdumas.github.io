@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Search jasdumas.github.io"
+title: "Search jasminedaly.com"
 css: "/css/search.css"
 ---
 

@@ -7,27 +7,30 @@ subtitle: Senior Data Scientist • Statistical Modeling
 -------------
 
 <div align="center">
-<a href="mailto:jasmine.dumas@gmail.com" class="btn btn-success"><span class="glyphicons glyphicons-envelope"></span>Email</a> 
+<a href="mailto:jasmine.dumas@gmail.com" class="btn btn-success"><span class="glyphicons glyphicons-envelope"></span>Email</a>
 <a href="https://jasdumas.github.io/" class="btn btn-success"><span class="glyphicons glyphicons-pencil"></span>Website & Blog</a>
-<a href="http://jasdumas.github.io/jasmine_dumas_resume.pdf" class="btn btn-success"><span class="glyphicons glyphicons-download-alt"></span>Download PDF</a>  
+<a href="https://jasdumas.github.io/jasmine_daly_resume_updated_march_2019.pdf" class="btn btn-success"><span class="glyphicons glyphicons-download-alt"></span>Download PDF</a>  
 </div>
 
 
 ### About Me
-I’m a Senior Data Scientist & Engineer with 5 years of industry experience across financial technology, auto insurance, R&D medical devices, and aerospace manufacturing. I'm an active member of the R programming community and have developed several open source packages, participated in [Google Summer of Code](https://www.google-melange.com/archive/gsoc/2015/orgs/rproject/projects/jasdumas.html), and [NASA Datanauts](https://open.nasa.gov/blog/welcome-datanauts-2017-spring-class/). 
+I’m a Senior Data Scientist & Biomedical Engineer with 6 years of experience in several high-tech industries including: cloud computing, finance, insurance, medical devices, and aerospace. I'm an active member of the R programming community and have developed several open source packages, participated in [Google Summer of Code](https://www.google-melange.com/archive/gsoc/2015/orgs/rproject/projects/jasdumas.html), and [NASA Datanauts](https://open.nasa.gov/blog/welcome-datanauts-2017-spring-class/).
 
-### Education 
+### Education
 
 * **Graduate Analytics Certificate** at [DePaul University](https://www.cdm.depaul.edu/academics/Pages/Current/Analytics-Certificate.aspx), (2015 - 2017)
    * _Coursework_: Intro to Programming, Data Analytics & Regression, Database Processing for Large-scale Analytics, Advanced Data Analysis, Knowledge Discovery Technologies, Programming Machine Learning Applications
-   
+
 * **BS in Engineering in Biomedical Engineering** at [University of Hartford](http://www.hartford.edu/ceta/undergraduate/engineering/BM/), (2008 - 2012)
-   * _Coursework_: Engineering Computer Applications, Calculus (1-2, Multivariable), Differential Equations, Independent Research, Engineering Design, Statics, Dynamics, Mechacnics of Materials, Biomaterials 
+   * _Coursework_: Engineering Computer Applications, Calculus (1-2, Multivariable), Differential Equations, Independent Research, Engineering Design, Statics, Dynamics, Mechcanics of Materials, Biomaterials
 
 ### Data Science Work Experience
 
 - **Senior Data Scientist at Fastly**, (Aug. 2018 - present)
-    - Infrastructure Capacity Planning Team
+    - Subject matter expert on forecasting edge cloud platform metrics and capital expenditure for all worldwide data centers on the Infrastructure Capacity Planning & Tools team
+    - Developed several automated procedures for weekly/monthly/long-term reporting using R, R-Markdown and shiny, leading to reduced development time
+    - Advocating for data science best practices through developing an internal R package, creating tutorials/documentation, and participating in data engineering forums
+
 
  - **Data Scientist 2 at Simple Finance**, (Oct. 2016 - Aug. 2018)
     - Lead Data Scientist for the Onboarding product team: responsible for technical mentorship, data product strategy, external data integration with APIs, experimentation and analyzing product feature launches
@@ -51,7 +54,7 @@ I’m a Senior Data Scientist & Engineer with 5 years of industry experience acr
 
 
 #### Packages:
-- [**`gramr`**](https://github.com/ropenscilabs/gramr): Provides grammar checks in RMarkdown documents 
+- [**`gramr`**](https://github.com/ropenscilabs/gramr): Provides grammar checks in RMarkdown documents
 - [**`ttbbeer`**](https://CRAN.R-project.org/package=ttbbeer): Data package of beer statistics from U.S. Department of the Treasury (TTB)
 - [**`shinyLP`**](https://CRAN.R-project.org/package=shinyLP): Bootstrap components to make landing home pages for shiny web apps
 - [**`shinyGEO`**](http://jasdumas.github.io/shinyGEO/): Shiny app for gene expression differential & survival analysis
@@ -62,7 +65,7 @@ I’m a Senior Data Scientist & Engineer with 5 years of industry experience acr
 - [**Deep Learning Image Classification App with Keras and R-shiny**](https://jasminedumas.shinyapps.io/image_clf/)
 - [**Web scraping tutorial of craft brewery ratings from Beer Advocate**](http://trendct.org/2016/03/18/tutorial-web-scraping-and-mapping-breweries-with-import-io-and-r/)
 
-*More projects available at: [http://jasdumas.com/projects/](http://jasdumas.com/projects/)*
+*More projects available at: [https://jasminedaly.com/projects/](https://jasminedaly.com/projects/)*
 
 
 ### Invited Talks
@@ -89,7 +92,7 @@ Strobl, Heather Turner and Rudolf Debelak. _'Forwards Column'_. The R Journal, V
 
 ### Volunteering
 
-- [Data For Democracy](http://datafordemocracy.org/): Web scraping crime data for [Hartford, CT](https://github.com/Data4Democracy/usa-dashboard/pull/30) for a Nationwide Metrics Dashboard. 
+- [Data For Democracy](http://datafordemocracy.org/): Web scraping crime data for [Hartford, CT](https://github.com/Data4Democracy/usa-dashboard/pull/30) for a Nationwide Metrics Dashboard.
 - [Jamie McLeod-Skinner Campaign](https://jamiefororegon.com/) (Oregon's 2nd Congressional District Election, 2018): [Election Analytics](https://github.com/jasdumas/jms-election-analytics)
 
 ### Technical Skills [Keywords]
@@ -98,6 +101,3 @@ Strobl, Heather Turner and Rudolf Debelak. _'Forwards Column'_. The R Journal, V
 - Data processing & querying with SQL [Redshift, postgreSQL]
 - Web application development with Shiny and Bootstrap [HTML, CSS]
 - Collaborative computing with GitHub and Git [Version control]
-
-
-        
