@@ -92,9 +92,8 @@ subtitle: These are a few of my favorite links...
 * [**ggplot2: Elegant Graphics for Data Analysis (Use R!)**](http://ggplot2.org/book/)
 * [**Python for Data Analysis** by Wes McKinney](https://www.amazon.com/Python-Data-Analysis-Wrangling-IPython/dp/1449319793)
 
-### Online Coursework (MOOCs)  :school_satchel:
+### Online Courses/Tutorials  :school_satchel:
 _most courses are :free: ish_
-* [Datacamp.com: Data Analysis in your browser](https://www.datacamp.com/)
 * [Stat545: Data wrangling, exploration, and analysis with R](https://stat545-ubc.github.io/)   
 * [Rstudio resources](https://www.rstudio.com/resources/training/online-learning/)
 * [The Johns Hopkins Data Science Specialization on Coursera](https://www.coursera.org/specialization/jhudatascience/1)
@@ -127,9 +126,10 @@ _most courses are :free: ish_
 ### Online Courses/Tutorials 🎒 
 
 - [Machine Learning Algorithmic Deep Dive](https://github.com/ledell/useR-machine-learning-tutorial)
-- [Machine Learning in R for beginners](https://www.datacamp.com/community/tutorials/machine-learning-in-r#gs.pxrR3U8)
-- [keras: Deep Learning in R](https://www.datacamp.com/community/tutorials/keras-r-deep-learning#gs.saq8F_0)
-- [TensorFlow Tutorial For Beginners](https://www.datacamp.com/community/tutorials/tensorflow-tutorial#gs.x9wD6_E)
+- [Practical Deep Learning for Coders](https://course.fast.ai/)
+- [Machine Learning Crash Course with TensorFlow APIs (Google)](https://developers.google.com/machine-learning/crash-course/)
+- [ntroduction to Machine Learning Problem Framing (Google)](https://developers.google.com/machine-learning/problem-framing/)
+- [Data Preparation and Feature Engineering in ML (Google)](https://developers.google.com/machine-learning/data-prep/)
 
 ###  Software Tools 🗜️
 
