@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Jasmine Daly
+title: Jasmine (Dumas) Daly
 subtitle: Senior Data Scientist • Statistical Modeling
 ---
 
@@ -14,7 +14,7 @@ subtitle: Senior Data Scientist • Statistical Modeling
 
 
 ### About Me
-I’m a Senior Data Scientist & Biomedical Engineer with 6 years of experience in several high-tech industries including: cloud computing, finance, insurance, medical devices, and aerospace. I'm an active member of the R programming community and have developed several open source packages, participated in [Google Summer of Code](https://www.google-melange.com/archive/gsoc/2015/orgs/rproject/projects/jasdumas.html), and [NASA Datanauts](https://open.nasa.gov/blog/welcome-datanauts-2017-spring-class/).
+I’m a Senior Data Scientist & Biomedical Engineer with 7 years of experience in several high-tech industries including: cloud computing, finance, insurance, medical devices, and aerospace. I'm an active member of the R programming community and have developed several open source packages, participated in [Google Summer of Code](https://www.google-melange.com/archive/gsoc/2015/orgs/rproject/projects/jasdumas.html), and [NASA Datanauts](https://open.nasa.gov/blog/welcome-datanauts-2017-spring-class/).
 
 ### Education
 
@@ -77,8 +77,8 @@ I’m a Senior Data Scientist & Biomedical Engineer with 6 years of experience i
 
 ### Teaching
 
-* **Course Instructor & Developer with DataCamp** (Sept. 2017 - Present)
-    - Currently under-contract developing a `R` course titled: _'Building Big Shiny Apps'_
+* **Course Instructor & Developer with DataCamp** (Sept. 2017 - Apr. 2019)
+    - Formally developing a `R` course titled: _'Building Big Shiny Apps'_
 * **Data Science Instructor (Part-time)** (Oct. 2017 - Dec. 2017)
     -  Coordinated with [Startup Institute](https://www.startupinstitute.com/intro-courses/data-science/) and [TCB Analytics](http://tcbanalytics.com/2017/09/26/startup-institute-announces-partnership-with-western-new-england-university-and-tcb-analytics-to-deliver-data-science-bootcamp/) for 10 weeks of Intro to R Programming and Tableau Dashboarding
 
