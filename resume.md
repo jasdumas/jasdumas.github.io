@@ -9,12 +9,19 @@ subtitle: Senior Data Scientist • Statistical Modeling
 <div align="center">
 <a href="mailto:jasmine.dumas@gmail.com" class="btn btn-success"><span class="glyphicons glyphicons-envelope"></span>Email</a>
 <a href="https://jasdumas.github.io/" class="btn btn-success"><span class="glyphicons glyphicons-pencil"></span>Website & Blog</a>
-<a href="https://jasdumas.github.io/jasmine_daly_resume_updated_march_2019.pdf" class="btn btn-success"><span class="glyphicons glyphicons-download-alt"></span>Download PDF</a>  
+<a href="https://jasdumas.github.io/jasmine_daly_resume_updated_december_2019.pdf" class="btn btn-success"><span class="glyphicons glyphicons-download-alt"></span>Download CV PDF</a>  
 </div>
 
 
 ### About Me
-I’m a Senior Data Scientist & Biomedical Engineer with 7 years of experience in several high-tech industries including: cloud computing, finance, insurance, medical devices, and aerospace. I'm an active member of the R programming community and have developed several open source packages, participated in [Google Summer of Code](https://www.google-melange.com/archive/gsoc/2015/orgs/rproject/projects/jasdumas.html), and [NASA Datanauts](https://open.nasa.gov/blog/welcome-datanauts-2017-spring-class/).
+I’m a Senior Data Scientist & Biomedical Engineer who is passionate about developing computational tools & processes to make extracting data insights reproducible & actionable. I have 8 years of experience in several high-tech industries contributing business value by:
+
+* Forecasting edge cloud computing metrics for a global CDN
+* Optimizing the onboarding experience for an online bank through experimentation
+* Developing machine learning models to predict auto insurance premiums
+* Conducting mechanical testing of medical devices for FDA approval
+* Leveraging computer-aided design to illustrate jet engine components
+
 
 ### Education
 
