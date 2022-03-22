@@ -5,12 +5,12 @@ subtitle: ... and all that jazz!
 ---
 
 -------------
-:crystal_ball: I like long hikes, big data, and cold craft beer. I currently live in Connecticut with my wife and our Scottish Terrier mix dog,
-[Fiona](https://twitter.com/jasdumas/status/679480102443417600). When I'm not programming I enjoy visting [covered bridges](https://jasminedaly.com/post_data/ct_covered_bridges_map.nb.html) and [growing vegetables](http://hipsterveggies.com/).
+:family_woman_woman_boy_boy: I like long hikes, big data, and cold craft beer. I currently live in Connecticut with my wife, our twin sons and our Scottish Terrier mix dog,
+[Fiona](https://twitter.com/jasdumas/status/679480102443417600). When I'm not programming I enjoy visting [covered bridges](https://jasminedaly.com/post_data/ct_covered_bridges_map.nb.html), gardens & arboretums and [growing vegetables](http://hipsterveggies.com/).
 
-:briefcase: Currently working as a **Senior Data Scientist** ([Fastly](https://www.fastly.com/)). Previously worked as a **Data Scientist** ([Simple](https://www.simple.com/)), **Associate Data Scientist** ([The Hartford](https://www.thehartford.com/)), also in **R&D Engineering** roles ([Medtronic](http://www.medtronic.com/covidien), QDx/Abbott) and as an **Aerospace Manufacturing Engineer** ([AdChem](http://www.acmt.aero/)).
+:briefcase: I'm currently working on **Data Science & Engineering problems related to improving video+audio call quality** at ([Daily](https://www.daily.co/)). I previously worked as a **Senior Data Scientist** ([Fastly](https://www.fastly.com/)), **Data Scientist** ([Simple](https://www.simple.com/)), **Associate Data Scientist** ([The Hartford](https://www.thehartford.com/)), also in **R&D Engineering** roles ([Medtronic](http://www.medtronic.com/covidien) & QDx/Abbott) and as an **Aerospace Manufacturing Engineer** ([AdChem](http://www.acmt.aero/)).
 
-:mortar_board: I earned a Graduate Certificate in **Analytics** at [DePaul University](http://www.cdm.depaul.edu/academics/Pages/current/Analytics-Certificate.aspx) were I was focused on **Data Mining & Computational Methods**. Previously took **Computer Science courses** at [Johns Hopkins Engineering for Professionals](https://ep.jhu.edu/programs-and-courses/programs/computer-science) school. Previously earned a Professional Certificate in **Medical Product Development** at [University of California, Irvine Extension](http://ce.uci.edu/areas/life_sciences/medical_products/). Previously earned a BSE in **Biomedical Engineering** from the [University of Hartford](http://www.hartford.edu/ceta/undergraduate/engineering/BM/). My senior research project was to develop a prototype [walk-assist](http://www.tuvie.com/wp-content/uploads/ekso-bionic-suit1.jpg) device for a T4 Paraplegic client; project nicknamed "Iron man". *I also enjoy studying topics in machine learning, data science and statistics independently through MOOCs and contributing to open source projects.* 
+:mortar_board: I earned a Graduate Certificate in **Analytics** at [DePaul University](http://www.cdm.depaul.edu/academics/Pages/current/Analytics-Certificate.aspx) were I was focused on **Data Mining & Computational Methods**. Previously took **Computer Science courses** at [Johns Hopkins Engineering for Professionals](https://ep.jhu.edu/programs-and-courses/programs/computer-science) school. Previously earned a Professional Certificate in **Medical Product Development** at [University of California, Irvine Extension](http://ce.uci.edu/areas/life_sciences/medical_products/). Previously earned a BSE in **Biomedical Engineering** from the [University of Hartford](http://www.hartford.edu/ceta/undergraduate/engineering/BM/). My senior research project was to develop a prototype [walk-assist](http://www.tuvie.com/wp-content/uploads/ekso-bionic-suit1.jpg) device for a T4 Paraplegic client; project nicknamed "Iron man". 
 
 :floppy_disk: I like developing open source R software tools to help assist others complete their data analysis work! 
 
@@ -32,7 +32,7 @@ subtitle: ... and all that jazz!
 
 ### Contact me
 
-:bird: I can be best reach on Twitter [@jasdumas](https://twitter.com/jasdumas) 
+:bird: I can be best reached on Twitter [@jasdumas](https://twitter.com/jasdumas) 
 
 **Let's**  [![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg?style=plastic)](https://gitter.im/jasdumas/jasdumas.github.io?source=orgpage)
 
